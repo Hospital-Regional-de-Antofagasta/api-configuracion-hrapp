@@ -39,13 +39,13 @@ describe('Endpoints ubicaciones', () => {
             const response = await request.get('/hra/datos_externos/ubicaciones/')
                 .set('Authorization', 'no-token')
 
-            expect(response.status).toBe(403)
+            expect(response.status).toBe(401)
             expect(response.body).toEqual({ respuesta: mensajes.forbiddenAccess })
 
             done()
         })
         it('Should return lista de ubicaciones', async (done) => {
-            const token = jwt.sign({ PAC_PAC_Numero: 2 }, secret)
+            const token = jwt.sign({ numeroPaciente: 2 }, secret)
             const response = await request.get('/hra/datos_externos/ubicaciones/')
                 .set('Authorization', token)
 
@@ -68,14 +68,9 @@ describe('Endpoints ubicaciones', () => {
             await Ciudades.deleteMany()
             await Comunas.deleteMany()
 
-            const token = jwt.sign({ PAC_PAC_Numero: 2 }, secret)
+            const token = jwt.sign({ numeroPaciente: 2 }, secret)
             const response = await request.get('/hra/datos_externos/ubicaciones/')
                 .set('Authorization', token)
-
-            const regionesObtenidas = await Regiones.find().exec()
-            const provinciasObtenidas = await Provincias.find().exec()
-            const ciudaesObtenidas = await Ciudades.find().exec()
-            const comunasObtenidas = await Comunas.find().exec()
 
             expect(response.status).toBe(200)
             expect(response.body[0].length).toBeFalsy()
