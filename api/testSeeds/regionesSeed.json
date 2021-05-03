@@ -1,0 +1,52 @@
+[{
+    "codigoRegion": "01",
+    "nombre": "Región de Antofagasta"
+  },{
+    "codigoRegion": "02",
+    "nombre": "Región de Arica y Parinacota"
+  },{
+    "codigoRegion": "03",
+    "nombre": "Región de Atacama"
+  },{
+    "codigoRegion": "04",
+    "nombre": "Región Metropolitana"
+  },{
+    "codigoRegion": "05",
+    "nombre": "Otras Regiones"
+  },{
+    "codigoRegion": "06",
+    "nombre": "Región de Tarapacá"
+  },{
+    "codigoRegion": "07",
+    "nombre": "Región de Coquimbo"
+  },{
+    "codigoRegion": "08",
+    "nombre": "Región de Valparaíso"
+  },{
+    "codigoRegion": "09",
+    "nombre": "Región del Libertador Bernado O'Higgins"
+  },{
+    "codigoRegion": "10",
+    "nombre": "Región del Maule"
+  },{
+    "codigoRegion": "11",
+    "nombre": "Región del Bío Bío"
+  },{
+    "codigoRegion": "12",
+    "nombre": "Región de la Araucanía"
+  },{
+    "codigoRegion": "13",
+    "nombre": "Región de los Ríos"
+  },{
+    "codigoRegion": "14",
+    "nombre": "Región de los Lagos"
+  },{
+    "codigoRegion": "15",
+    "nombre": "Región de Aisén"
+  },{
+    "codigoRegion": "16",
+    "nombre": "Región de Magallanes"
+  },{
+    "codigoRegion": "99",
+    "nombre": "Otros Paises"
+  }]
