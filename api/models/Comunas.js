@@ -1,12 +1,16 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
-const Comuna = mongoose.model('comuna', new Schema ({
+const Comuna = mongoose.model(
+  "comuna",
+  new Schema({
     codigoRegion: String,
     codigoProvincia: String,
     codigoCiudad: String,
     codigoComuna: String,
     nombre: String,
-}))
+  }),
+  "comunas"
+);
 
-module.exports = Comuna
+module.exports = Comuna;
