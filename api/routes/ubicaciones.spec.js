@@ -54,8 +54,6 @@ describe('Endpoints ubicaciones', () => {
             const ciudadesObtenidas = await Ciudades.find().exec()
             const comunasObtenidas = await Comunas.find().exec()
 
-            console.log(response.body[0][0].nombre)
-
             expect(response.status).toBe(200)
             expect(response.body[0].length).toEqual(regionesObtenidas.length)
             expect(response.body[1].length).toEqual(provinciasObtenidas.length)
