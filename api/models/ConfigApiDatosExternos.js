@@ -7,6 +7,7 @@ const ConfigApiDatosExternos = mongoose.model(
     mensajes: {
       forbidenAccess: String,
       serverError: String,
+      version: Number,
     },
   })
 );
