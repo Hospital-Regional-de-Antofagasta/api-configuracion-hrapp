@@ -1,11 +1,14 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
-const ConfigApiDatosExternos = mongoose.model('config_api_datos_externo', new Schema ({
+const ConfigApiDatosExternos = mongoose.model(
+  "config_api_datos_externo",
+  new Schema({
     mensajes: {
-        forbidenAccess: String,
-        serverError: String,
-    }
-}))
+      forbidenAccess: String,
+      serverError: String,
+    },
+  })
+);
 
-module.exports = ConfigApiDatosExternos
+module.exports = ConfigApiDatosExternos;

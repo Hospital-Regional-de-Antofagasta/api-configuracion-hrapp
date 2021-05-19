@@ -1,3601 +1,4202 @@
-[{
+[
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "14  ",
     "codigoComuna": "01      ",
     "nombre": "Pichidegua"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "15  ",
     "codigoComuna": "01      ",
     "nombre": "San Vicente"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "16  ",
     "codigoComuna": "01      ",
     "nombre": "Malloa"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "17  ",
     "codigoComuna": "01      ",
     "nombre": "Rengo"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Navidad"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Litueche"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "La Estrella"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Pichilemu"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Marchihue"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "06  ",
     "codigoComuna": "01      ",
     "nombre": "Paredones"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Peralillo"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Palmilla"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "San Fernando"
-  },{
+  },
+  {
     "codigoRegion": "13  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Valdivia"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Pumanque"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Santa Cruz"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "06  ",
     "codigoComuna": "01      ",
     "nombre": "Nancagua"
-  },{
+  },
+  {
     "codigoRegion": "16  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Puerto Natales"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "La Paz"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Ka-bol"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Tirane"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Berlin"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "05  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Andorra la Vella"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "06  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Luanda"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "07  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "The Valley"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "08  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Saint Johns"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "09  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Willemstad"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "10  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Ar-Riya-d"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "11  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Algiers"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "12  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Buenos Aires"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "13  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Echmiadzin"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "14  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Oranjestad"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "15  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Sin Capital"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "16  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Canberra"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "17  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Camberra"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "18  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Baku"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "19  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Nassau"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "20  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Al-Mana-mah"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "21  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Dhaka"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "22  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Bridgetown"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "23  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Bruxelles"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "24  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Belmopan"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "25  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Porto-Novo"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "26  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Hamilton"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "27  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Thimphu"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "28  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Minsk"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "29  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Yangon"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "31  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Sarajevo"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "32  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Gaborone"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "33  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Brasilia"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "34  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Bandar Seri Begawan"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "35  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Sofija"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "36  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Bujumbura"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "37  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Bujumbura"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "38  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Praia"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "39  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Phnum Penh"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "40  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Yaounde"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "41  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Ottawa"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "42  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Ndjamena"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "43  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Beijing"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "44  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Levkosia"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "45  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Sin Capital"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "46  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Bogota"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "47  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Moroni"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "48  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Yamoussoukro"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "49  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "San Jose"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "50  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Zagreb"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "51  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "La Habana"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "52  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Kobenhavn"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "53  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Yibuti"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "54  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Roseau"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "55  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Quito"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "56  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Cairo"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "57  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "San Salvador"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "58  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Abu Dhabi"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "59  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Asmera"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "60  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Bratislava"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "61  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Ljubljana"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "62  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Madrid"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "63  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Palikir"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "64  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "ashington"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "65  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Tallinn"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "66  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Addis Ababa"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "67  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Suva"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "68  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Manila"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "69  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Helsinki"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "70  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Paris"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "71  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Libreville"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "72  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Banjul"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "73  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Tbilisi"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "74  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Accra"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "75  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Gibraltar"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "76  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Saint Georges"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "77  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Athinai"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "78  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Nuuk"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "79  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Basse-Terre"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "80  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Agana"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "81  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Guatemala City"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "82  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Conaky"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "83  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Bissau"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "84  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Malabo"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "85  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Cayenne"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "86  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Georgetown"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "87  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Cayenne"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "88  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Puerto Principe"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "89  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Amsterdan"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "90  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Tegucigalpa"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "91  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Hong Kong"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "92  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Budapest"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "93  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "New Delhi"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "94  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Jakarta"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "95  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Baghdad"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "96  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Tehra-n"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "97  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Dublin"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "98  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Sin Capital"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "99  ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Sin Capital"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "100 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Kingston"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "101 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Sin Capital"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "102 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Sin Capital"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "103 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Reykjavik"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "104 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "George Town"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "105 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "West Island"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "106 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Avarua"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "107 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Tórshavn"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "108 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Sin Capital"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "109 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Sin Capital"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "110 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Sin Capital"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "111 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Hipólito Yrigoyen"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "112 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Garapan"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "113 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Delap-Uliga-Darrit"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "114 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Sin Capital"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "115 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Honiara"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "116 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Cockburn"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "117 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Charlotte Amalie"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "118 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Road Town"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "119 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Sin Capital"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "120 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Yerushalayin"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "121 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Roma"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "122 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Kingston"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "123 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Tokyo"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "124 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Amman"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "125 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Almaty"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "126 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Nairobi"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "127 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Bishkek"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "128 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Bairiki"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "129 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Ahmadi"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "130 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Viangchan"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "131 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Maseru"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "132 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Ri-ga"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "133 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Beirut"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "134 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Monrovia"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "135 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Tarabulus"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "136 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Vaduz"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "137 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Vilnius"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "138 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Luxembourg"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "139 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Macau"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "140 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Skopje"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "141 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Sin Capital"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "142 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Antananarivo"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "143 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Kuala Lumpur"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "144 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Lilongwe"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "145 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Male"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "146 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Bamako"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "147 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Valleta"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "148 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Rabat"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "149 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Fort de France"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "150 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Por Louis"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "151 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Nouakachott"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "152 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Dzaoudzi"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "153 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Cuidad de Mexico"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "154 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Monaco"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "155 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Ulaanbaatar"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "156 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Brades Estate"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "157 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Maputo"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "158 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Windhoek"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "159 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Yaren"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "160 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "kathmandau"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "161 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Managua"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "162 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Niamey"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "163 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Abuja"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "164 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Alofi"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "165 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Oslo"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "166 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Noumea"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "167 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Wellington"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "168 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Masqat"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "169 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Isla mabad"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "170 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Koror"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "171 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Jerico"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "172 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Ciudad de Panama"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "173 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Port Moreby"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "174 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Asuncion"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "175 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Lima"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "176 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Adamstown"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "177 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Papeete"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "178 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Varsovia"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "179 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Lisboa"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "180 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "San Juan"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "181 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Ad Dawh ah"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "182 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Londres"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "183 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Bangui"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "184 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Praga"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "185 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Seul"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "186 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Kishinev"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "187 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Brazzaville"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "188 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Kinshasa"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Tiltil"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Colina"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Lampa"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "San José de Maipo"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Puente Alto"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Pirque"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Curacaví"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "María Pinto"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Melipilla"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "San Pedro"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Alhué"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "05  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Peñaflor"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "05  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "El Monte"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "05  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Talagante"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "05  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Isla de Maipo"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "05  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Padre Hurtado"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "06  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Calera de Tango"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "06  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "San Bernardo"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "06  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Buin"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "06  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Paine"
-  },{
+  },
+  {
     "codigoRegion": "16  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Torres del Paine"
-  },{
+  },
+  {
     "codigoRegion": "16  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Laguna Blanca"
-  },{
+  },
+  {
     "codigoRegion": "16  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "San Gregorio"
-  },{
+  },
+  {
     "codigoRegion": "16  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Río Verde"
-  },{
+  },
+  {
     "codigoRegion": "16  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Punta Arenas"
-  },{
+  },
+  {
     "codigoRegion": "16  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Primavera"
-  },{
+  },
+  {
     "codigoRegion": "16  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Porvenir"
-  },{
+  },
+  {
     "codigoRegion": "16  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Timaukel"
-  },{
+  },
+  {
     "codigoRegion": "16  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Cabo de Hornos"
-  },{
+  },
+  {
     "codigoRegion": "16  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Antártica"
-  },{
+  },
+  {
     "codigoRegion": "15  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Guaitecas"
-  },{
+  },
+  {
     "codigoRegion": "15  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Cisnes"
-  },{
+  },
+  {
     "codigoRegion": "15  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Aysén"
-  },{
+  },
+  {
     "codigoRegion": "15  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Lago Verde"
-  },{
+  },
+  {
     "codigoRegion": "15  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Coyhaique"
-  },{
+  },
+  {
     "codigoRegion": "15  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Río Ibáñez"
-  },{
+  },
+  {
     "codigoRegion": "15  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Chile Chico"
-  },{
+  },
+  {
     "codigoRegion": "15  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Cochrane"
-  },{
+  },
+  {
     "codigoRegion": "15  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Tortel"
-  },{
+  },
+  {
     "codigoRegion": "15  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "O´Higgins"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Osorno"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "San Pablo"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "San Juan de la Costa"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Puyehue"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Puerto Octay"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "06  ",
     "codigoComuna": "01      ",
     "nombre": "Purranque"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "07  ",
     "codigoComuna": "01      ",
     "nombre": "Río Negro"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Puerto Varas"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Los Muermos"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Fresia"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Llanquihue"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Frutillar"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "06  ",
     "codigoComuna": "01      ",
     "nombre": "Puerto Montt"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "07  ",
     "codigoComuna": "01      ",
     "nombre": "Cochamó"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "08  ",
     "codigoComuna": "01      ",
     "nombre": "Calbuco"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "09  ",
     "codigoComuna": "01      ",
     "nombre": "Maullín"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Castro"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Ancud"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Quemchi"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Dalcahue"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Curaco de Vélez"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "06  ",
     "codigoComuna": "01      ",
     "nombre": "Quinchao"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "07  ",
     "codigoComuna": "01      ",
     "nombre": "Puqueldón"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "08  ",
     "codigoComuna": "01      ",
     "nombre": "Chonchi"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "09  ",
     "codigoComuna": "01      ",
     "nombre": "Queilén"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "10  ",
     "codigoComuna": "01      ",
     "nombre": "Quellón"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Chiatén"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Hualaihué"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Futaleufú"
-  },{
+  },
+  {
     "codigoRegion": "14  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Palena"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Angol"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Renaico"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Collipulli"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Purén"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Los Sauces"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "06  ",
     "codigoComuna": "01      ",
     "nombre": "Ercilla"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "07  ",
     "codigoComuna": "01      ",
     "nombre": "Lonquimay"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "08  ",
     "codigoComuna": "01      ",
     "nombre": "Lumaco"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "09  ",
     "codigoComuna": "01      ",
     "nombre": "Traiguén"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "10  ",
     "codigoComuna": "01      ",
     "nombre": "Victoria"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "11  ",
     "codigoComuna": "01      ",
     "nombre": "Curacautín"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Galvarino"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Perquenco"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Carahue"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Nueva Imperial"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Temuco"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "06  ",
     "codigoComuna": "01      ",
     "nombre": "Lautaro"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "07  ",
     "codigoComuna": "01      ",
     "nombre": "Vilcún"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "08  ",
     "codigoComuna": "01      ",
     "nombre": "Melipeuco"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "09  ",
     "codigoComuna": "01      ",
     "nombre": "Saavedra"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "10  ",
     "codigoComuna": "01      ",
     "nombre": "Teodoro Schmidt"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "11  ",
     "codigoComuna": "01      ",
     "nombre": "Freire"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "12  ",
     "codigoComuna": "01      ",
     "nombre": "Cunco"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "13  ",
     "codigoComuna": "01      ",
     "nombre": "Toltén"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "14  ",
     "codigoComuna": "01      ",
     "nombre": "Pitrufquén"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "15  ",
     "codigoComuna": "01      ",
     "nombre": "Gorbea"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "16  ",
     "codigoComuna": "01      ",
     "nombre": "Loncoche"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "17  ",
     "codigoComuna": "01      ",
     "nombre": "Villarrica"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "18  ",
     "codigoComuna": "01      ",
     "nombre": "Pucón"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "19  ",
     "codigoComuna": "01      ",
     "nombre": "Curarrehue"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "20  ",
     "codigoComuna": "01      ",
     "nombre": "Padre Las Casas"
-  },{
+  },
+  {
     "codigoRegion": "12  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "21  ",
     "codigoComuna": "01      ",
     "nombre": "Cholchol"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Cobquecura"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Quirihue"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Ninhue"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "San Carlos"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Ñinquén"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "06  ",
     "codigoComuna": "01      ",
     "nombre": "San Fabián"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "07  ",
     "codigoComuna": "01      ",
     "nombre": "San Nicolás"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "08  ",
     "codigoComuna": "01      ",
     "nombre": "Treguaco"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "09  ",
     "codigoComuna": "01      ",
     "nombre": "Portezuelo"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "10  ",
     "codigoComuna": "01      ",
     "nombre": "Chillán"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "11  ",
     "codigoComuna": "01      ",
     "nombre": "Coihueco"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "12  ",
     "codigoComuna": "01      ",
     "nombre": "Coelemu"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "13  ",
     "codigoComuna": "01      ",
     "nombre": "Ranquil"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "14  ",
     "codigoComuna": "01      ",
     "nombre": "Pinto"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "15  ",
     "codigoComuna": "01      ",
     "nombre": "Quillón"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "16  ",
     "codigoComuna": "01      ",
     "nombre": "Bulnes"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "17  ",
     "codigoComuna": "01      ",
     "nombre": "San Ignacio"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "18  ",
     "codigoComuna": "01      ",
     "nombre": "El Carmen"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "19  ",
     "codigoComuna": "01      ",
     "nombre": "Pemuco"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "20  ",
     "codigoComuna": "01      ",
     "nombre": "Yungay"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "21  ",
     "codigoComuna": "01      ",
     "nombre": "Chillán Viejo"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Tomé"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Talcahuano"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Penco"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Florida"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Concepción"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "06  ",
     "codigoComuna": "01      ",
     "nombre": "Coronel"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "07  ",
     "codigoComuna": "01      ",
     "nombre": "Hualqui"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "08  ",
     "codigoComuna": "01      ",
     "nombre": "Lota"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "09  ",
     "codigoComuna": "01      ",
     "nombre": "Santa Juana"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "10  ",
     "codigoComuna": "01      ",
     "nombre": "San Pedro de la Paz"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "11  ",
     "codigoComuna": "01      ",
     "nombre": "Chiguayante -Hualpén"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "12  ",
     "codigoComuna": "01      ",
     "nombre": "Coelemu"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "13  ",
     "codigoComuna": "01      ",
     "nombre": "Ranquil"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "14  ",
     "codigoComuna": "01      ",
     "nombre": "Pinto"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "15  ",
     "codigoComuna": "01      ",
     "nombre": "Quillón"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "16  ",
     "codigoComuna": "01      ",
     "nombre": "Bulnes"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "17  ",
     "codigoComuna": "01      ",
     "nombre": "San Ignacio"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "18  ",
     "codigoComuna": "01      ",
     "nombre": "El Carmen"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "19  ",
     "codigoComuna": "01      ",
     "nombre": "Pemuco"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "20  ",
     "codigoComuna": "01      ",
     "nombre": "Yungay"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "21  ",
     "codigoComuna": "01      ",
     "nombre": "Chillán Viejo"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "San Rosendo"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Yumbel"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Cabrero"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Laja"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Los Ángeles"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "06  ",
     "codigoComuna": "01      ",
     "nombre": "Tucapel"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "07  ",
     "codigoComuna": "01      ",
     "nombre": "Antuco"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "08  ",
     "codigoComuna": "01      ",
     "nombre": "Quilleco"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "09  ",
     "codigoComuna": "01      ",
     "nombre": "Nacimiento"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "10  ",
     "codigoComuna": "01      ",
     "nombre": "Negrete"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "11  ",
     "codigoComuna": "01      ",
     "nombre": "Mulchén"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "12  ",
     "codigoComuna": "01      ",
     "nombre": "Santa Bárbara"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "13  ",
     "codigoComuna": "01      ",
     "nombre": "Quillaco"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "14  ",
     "codigoComuna": "01      ",
     "nombre": "Alto Bíobio"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Arauco"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Curanilahue"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Lebu"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Los Álamos"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Cañete"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "06  ",
     "codigoComuna": "01      ",
     "nombre": "Contulmo"
-  },{
+  },
+  {
     "codigoRegion": "11  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "07  ",
     "codigoComuna": "01      ",
     "nombre": "Tirúa"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Teno"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Vichuquén"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Hualañé"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Rauco"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Curicó"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "06  ",
     "codigoComuna": "01      ",
     "nombre": "Romeral"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "07  ",
     "codigoComuna": "01      ",
     "nombre": "Licantén"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "08  ",
     "codigoComuna": "01      ",
     "nombre": "Sagrada Familia"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "09  ",
     "codigoComuna": "01      ",
     "nombre": "Molina"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Curepto"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Río Claro"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Constitución"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Pencahue"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Talca"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "06  ",
     "codigoComuna": "01      ",
     "nombre": "Pelarco"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "07  ",
     "codigoComuna": "01      ",
     "nombre": "San Clemente"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "08  ",
     "codigoComuna": "01      ",
     "nombre": "Maule"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "09  ",
     "codigoComuna": "01      ",
     "nombre": "Empedrado"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "10  ",
     "codigoComuna": "01      ",
     "nombre": "San Rafael"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Chanco"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Cauquenes"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Pelluhue"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "San Javier"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Villa Alegre"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Yerbas Buenas"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Colbún"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "06  ",
     "codigoComuna": "01      ",
     "nombre": "Retiro"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "07  ",
     "codigoComuna": "01      ",
     "nombre": "Longaví"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "08  ",
     "codigoComuna": "01      ",
     "nombre": "Parral"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Mostazal"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Graneros"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Codegua"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Rancagua"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Machalí"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "06  ",
     "codigoComuna": "01      ",
     "nombre": "Las Cabras"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "07  ",
     "codigoComuna": "01      ",
     "nombre": "Coltauco"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "08  ",
     "codigoComuna": "01      ",
     "nombre": "Doñihue"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "09  ",
     "codigoComuna": "01      ",
     "nombre": "Olivar"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "10  ",
     "codigoComuna": "01      ",
     "nombre": "Coinco"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "11  ",
     "codigoComuna": "01      ",
     "nombre": "Requínoa"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "12  ",
     "codigoComuna": "01      ",
     "nombre": "Peumo"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "13  ",
     "codigoComuna": "01      ",
     "nombre": "Qta. de Tilcoco"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "07  ",
     "codigoComuna": "01      ",
     "nombre": "Placilla"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "08  ",
     "codigoComuna": "01      ",
     "nombre": "Lolol"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "09  ",
     "codigoComuna": "01      ",
     "nombre": "Chépica"
-  },{
+  },
+  {
     "codigoRegion": "09  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "10  ",
     "codigoComuna": "01      ",
     "nombre": "Chimbarongo"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Petorca"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "La Ligua"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Cabildo"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Papudo"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Zapallar"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Putaendo"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Catemu"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "San Felipe"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Santa María"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Panquehue"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "06  ",
     "codigoComuna": "01      ",
     "nombre": "Llaillay"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Nogales"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Calera"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "La Cruz"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Quillota"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Hijuelas"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "06  ",
     "codigoComuna": "01      ",
     "nombre": "Limache"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "07  ",
     "codigoComuna": "01      ",
     "nombre": "Olmué"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "San Esteban"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Rinconada"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Calle Larga"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Los Andes"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "05  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Puchuncaví"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "05  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Juan Fernández"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "05  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Quintero"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "05  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Concón"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "05  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Viña del Mar"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "05  ",
     "codigoCiudad": "06  ",
     "codigoComuna": "01      ",
     "nombre": "Villa Alemana"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "05  ",
     "codigoCiudad": "07  ",
     "codigoComuna": "01      ",
     "nombre": "Valparaíso"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "05  ",
     "codigoCiudad": "08  ",
     "codigoComuna": "01      ",
     "nombre": "Quilpué"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "05  ",
     "codigoCiudad": "09  ",
     "codigoComuna": "01      ",
     "nombre": "Casablanca"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "06  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Algarrobo"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "06  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "El Quisco"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "06  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "El Tabo"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "06  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Cartagena"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "06  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "San Antonio"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "06  ",
     "codigoCiudad": "06  ",
     "codigoComuna": "01      ",
     "nombre": "Santo Domingo"
-  },{
+  },
+  {
     "codigoRegion": "08  ",
     "codigoProvincia": "07  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Isla de Pascua"
-  },{
+  },
+  {
     "codigoRegion": "07  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "La higuera"
-  },{
+  },
+  {
     "codigoRegion": "07  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Vicuña"
-  },{
+  },
+  {
     "codigoRegion": "07  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "La Serena"
-  },{
+  },
+  {
     "codigoRegion": "07  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Coquimbo"
-  },{
+  },
+  {
     "codigoRegion": "07  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Andacollo"
-  },{
+  },
+  {
     "codigoRegion": "07  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "06  ",
     "codigoComuna": "01      ",
     "nombre": "Paiguano"
-  },{
+  },
+  {
     "codigoRegion": "07  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Ovalle"
-  },{
+  },
+  {
     "codigoRegion": "07  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Rio Hurtado"
-  },{
+  },
+  {
     "codigoRegion": "07  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Punitaqui"
-  },{
+  },
+  {
     "codigoRegion": "07  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Monte Patria"
-  },{
+  },
+  {
     "codigoRegion": "07  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Combarbala"
-  },{
+  },
+  {
     "codigoRegion": "07  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Canela Baja"
-  },{
+  },
+  {
     "codigoRegion": "07  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Illapel"
-  },{
+  },
+  {
     "codigoRegion": "07  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Punitaqui"
-  },{
+  },
+  {
     "codigoRegion": "07  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Los Vilos"
-  },{
+  },
+  {
     "codigoRegion": "07  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Salamanca"
-  },{
+  },
+  {
     "codigoRegion": "13  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Valdivia"
-  },{
+  },
+  {
     "codigoRegion": "13  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Mariquina"
-  },{
+  },
+  {
     "codigoRegion": "13  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Lanco"
-  },{
+  },
+  {
     "codigoRegion": "13  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Corral"
-  },{
+  },
+  {
     "codigoRegion": "13  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Máfil"
-  },{
+  },
+  {
     "codigoRegion": "13  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "06  ",
     "codigoComuna": "01      ",
     "nombre": "Los Lagos"
-  },{
+  },
+  {
     "codigoRegion": "13  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "07  ",
     "codigoComuna": "01      ",
     "nombre": "Paillaco"
-  },{
+  },
+  {
     "codigoRegion": "13  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "08  ",
     "codigoComuna": "01      ",
     "nombre": "Panguipulli"
-  },{
+  },
+  {
     "codigoRegion": "13  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Futrono"
-  },{
+  },
+  {
     "codigoRegion": "13  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "La Unión"
-  },{
+  },
+  {
     "codigoRegion": "13  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Río Bueno"
-  },{
+  },
+  {
     "codigoRegion": "13  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Lago"
-  },{
+  },
+  {
     "codigoRegion": "13  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Ranco"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "189 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Pyonayang"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "190 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Santo Domingo"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "191 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Saint Denis"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "192 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Kigali"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "193 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Bucuresti"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "194 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Moscu"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "195 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Al ayun"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "196 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Apia"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "197 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Pago Pago"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "198 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Basseterre"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "199 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "San Marino"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "200 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "San Pierre"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "201 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Kingstown"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "202 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Jamestown"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "203 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Castries"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "204 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Sao Tome"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "205 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Dakar"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "206 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Dakar"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "207 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Freetown"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "208 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Singapur"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "209 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Damascus"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "210 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Muqdisho"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "211 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Colombo"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "212 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Pretoria"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "213 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Khartoum"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "214 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Estocolmo"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "215 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Bern"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "216 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Paramaribo"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "217 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Mbabane"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "218 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Bangkok"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "219 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Taipei"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "220 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Dar Es Salaam"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "221 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Dushanbe"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "222 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Lome"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "223 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Atafu"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "224 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Nukualofa"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "225 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Port-of-Spain"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "226 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Tu-nis"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "227 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Dushanbe"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "228 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Ankara"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "229 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Vaiaku"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "230 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Kiev"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "231 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Kampala"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "232 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Montevideo"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "233 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Toshkent"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "234 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Port Vila"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "235 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Vaticano"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "236 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Caracas"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "237 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Hanoi"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "238 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Sana"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "239 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Belgrado"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "240 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Kinshasa"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "241 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Lusaka"
-  },{
+  },
+  {
     "codigoRegion": "99  ",
     "codigoProvincia": "242 ",
     "codigoCiudad": "    ",
     "codigoComuna": "01      ",
     "nombre": "Harare"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "16  ",
     "codigoComuna": "01      ",
     "nombre": "Santiago"
-  },{
+  },
+  {
     "codigoRegion": "01  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Calama"
-  },{
+  },
+  {
     "codigoRegion": "01  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Tocopilla"
-  },{
+  },
+  {
     "codigoRegion": "02  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Arica"
-  },{
+  },
+  {
     "codigoRegion": "06  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Iquique"
-  },{
+  },
+  {
     "codigoRegion": "02  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Putre"
-  },{
+  },
+  {
     "codigoRegion": "03  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Chañaral"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "26  ",
     "codigoComuna": "01      ",
     "nombre": "Peñalolén"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "31  ",
     "codigoComuna": "01      ",
     "nombre": "El Bosque"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "01      ",
     "nombre": "Renca"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "11  ",
     "codigoComuna": "01      ",
     "nombre": "Cerro Navia"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "15  ",
     "codigoComuna": "01      ",
     "nombre": "Estación Central"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "01      ",
     "nombre": "Huechuraba"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "01      ",
     "nombre": "Lo Barnechea"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "01      ",
     "nombre": "Pudahuel"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "07  ",
     "codigoComuna": "01      ",
     "nombre": "Vitacura"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "08  ",
     "codigoComuna": "01      ",
     "nombre": "Independencia"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "09  ",
     "codigoComuna": "01      ",
     "nombre": "Recoleta"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "10  ",
     "codigoComuna": "01      ",
     "nombre": "Las Condes"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "13  ",
     "codigoComuna": "01      ",
     "nombre": "Providencia"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "14  ",
     "codigoComuna": "01      ",
     "nombre": "Lo Prado"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "17  ",
     "codigoComuna": "01      ",
     "nombre": "Ñuñoa"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "18  ",
     "codigoComuna": "01      ",
     "nombre": "La Reina"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "19  ",
     "codigoComuna": "01      ",
     "nombre": "Maipú"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "21  ",
     "codigoComuna": "01      ",
     "nombre": "Lo Espejo"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "22  ",
     "codigoComuna": "01      ",
     "nombre": "Pedro Aguirre Cerda"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "23  ",
     "codigoComuna": "01      ",
     "nombre": "San Miguel"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "24  ",
     "codigoComuna": "01      ",
     "nombre": "San Joaquín"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "25  ",
     "codigoComuna": "01      ",
     "nombre": "Macul"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "27  ",
     "codigoComuna": "01      ",
     "nombre": "La Cisterna"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "28  ",
     "codigoComuna": "01      ",
     "nombre": "San Ramón"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "29  ",
     "codigoComuna": "01      ",
     "nombre": "La Granja"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "30  ",
     "codigoComuna": "01      ",
     "nombre": "La Florida"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "32  ",
     "codigoComuna": "01      ",
     "nombre": "La Pintana"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "12  ",
     "codigoComuna": "01      ",
     "nombre": "Quilicura"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "06  ",
     "codigoComuna": "01      ",
     "nombre": "Conchalí"
-  },{
+  },
+  {
     "codigoRegion": "04  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "20  ",
     "codigoComuna": "01      ",
     "nombre": "Cerrillos"
-  },{
+  },
+  {
     "codigoRegion": "03  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Vallenar"
-  },{
+  },
+  {
     "codigoRegion": "03  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Copiapo"
-  },{
+  },
+  {
     "codigoRegion": "01  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "01      ",
     "nombre": "Antofagasta"
-  },{
+  },
+  {
     "codigoRegion": "03  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "02      ",
     "nombre": "Caldera"
-  },{
+  },
+  {
     "codigoRegion": "03  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "02      ",
     "nombre": "Freirina"
-  },{
+  },
+  {
     "codigoRegion": "01  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "02      ",
     "nombre": "Mejillones"
-  },{
+  },
+  {
     "codigoRegion": "03  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "02      ",
     "nombre": "Diego de Almagro"
-  },{
+  },
+  {
     "codigoRegion": "02  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "02      ",
     "nombre": "General Lagos"
-  },{
+  },
+  {
     "codigoRegion": "06  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "01  ",
     "codigoComuna": "02      ",
     "nombre": "Huara"
-  },{
+  },
+  {
     "codigoRegion": "02  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "02      ",
     "nombre": "Camarones"
-  },{
+  },
+  {
     "codigoRegion": "01  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "02      ",
     "nombre": "María Elena"
-  },{
+  },
+  {
     "codigoRegion": "10  ",
     "codigoProvincia": "04  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "02      ",
     "nombre": "Linares"
-  },{
+  },
+  {
     "codigoRegion": "01  ",
     "codigoProvincia": "01  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "03      ",
     "nombre": "P.de Valdivia"
-  },{
+  },
+  {
     "codigoRegion": "01  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "03      ",
     "nombre": "San Pedro de Atacama"
-  },{
+  },
+  {
     "codigoRegion": "01  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "03      ",
     "nombre": "Sierra Gorda"
-  },{
+  },
+  {
     "codigoRegion": "06  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "03      ",
     "nombre": "Camiña"
-  },{
+  },
+  {
     "codigoRegion": "03  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "03      ",
     "nombre": "Huasco"
-  },{
+  },
+  {
     "codigoRegion": "03  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "03      ",
     "nombre": "Tierra Amarilla"
-  },{
+  },
+  {
     "codigoRegion": "03  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "04      ",
     "nombre": "Alto del Carmen"
-  },{
+  },
+  {
     "codigoRegion": "06  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "03  ",
     "codigoComuna": "04      ",
     "nombre": "Colchane"
-  },{
+  },
+  {
     "codigoRegion": "01  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "04      ",
     "nombre": "Taltal"
-  },{
+  },
+  {
     "codigoRegion": "01  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "04      ",
     "nombre": "Toconao"
-  },{
+  },
+  {
     "codigoRegion": "06  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "04  ",
     "codigoComuna": "05      ",
     "nombre": "Pica"
-  },{
+  },
+  {
     "codigoRegion": "01  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "05      ",
     "nombre": "Baquedano"
-  },{
+  },
+  {
     "codigoRegion": "06  ",
     "codigoProvincia": "02  ",
     "codigoCiudad": "05  ",
     "codigoComuna": "06      ",
     "nombre": "Pozo Almonte"
-  },{
+  },
+  {
     "codigoRegion": "06  ",
     "codigoProvincia": "03  ",
     "codigoCiudad": "02  ",
     "codigoComuna": "07      ",
     "nombre": "Alto Hospicio"
-  }] 
+  }
+]
