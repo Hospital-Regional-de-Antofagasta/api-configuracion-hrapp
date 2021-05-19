@@ -51,13 +51,13 @@ describe('Endpoints ubicaciones', () => {
 
             const regionesObtenidas = await Regiones.find().exec()
             const provinciasObtenidas = await Provincias.find().exec()
-            const ciudaesObtenidas = await Ciudades.find().exec()
+            const ciudadesObtenidas = await Ciudades.find().exec()
             const comunasObtenidas = await Comunas.find().exec()
 
             expect(response.status).toBe(200)
             expect(response.body[0].length).toEqual(regionesObtenidas.length)
             expect(response.body[1].length).toEqual(provinciasObtenidas.length)
-            expect(response.body[2].length).toEqual(ciudaesObtenidas.length)
+            expect(response.body[2].length).toEqual(ciudadesObtenidas.length)
             expect(response.body[3].length).toEqual(comunasObtenidas.length)
 
             done()
