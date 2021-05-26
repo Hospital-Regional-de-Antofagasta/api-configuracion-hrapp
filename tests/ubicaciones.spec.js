@@ -1,20 +1,16 @@
 const supertest = require("supertest");
 const mongoose = require("mongoose");
-const jwt = require("jsonwebtoken");
-const app = require("../index");
-const Regiones = require("../models/Regiones");
-const Provincias = require("../models/Provincias");
-const Ciudades = require("../models/Ciudades");
-const Comunas = require("../models/Comunas");
-const regionesSeed = require("../testSeeds/regionesSeed");
-const provinciasSeed = require("../testSeeds/provinciasSeed");
-const ciudadesSeed = require("../testSeeds/ciudadesSeed");
-const comunasSeed = require("../testSeeds/comunasSeed");
-const { mensajes } = require("../config");
+const app = require("../api/index");
+const Regiones = require("../api/models/Regiones");
+const Provincias = require("../api/models/Provincias");
+const Ciudades = require("../api/models/Ciudades");
+const Comunas = require("../api/models/Comunas");
+const regionesSeed = require("../api/testSeeds/regionesSeed");
+const provinciasSeed = require("../api/testSeeds/provinciasSeed");
+const ciudadesSeed = require("../api/testSeeds/ciudadesSeed");
+const comunasSeed = require("../api/testSeeds/comunasSeed");
 
 const request = supertest(app);
-
-const secret = process.env.JWT_SECRET;
 
 beforeEach(async () => {
   await mongoose.disconnect();
@@ -38,21 +34,9 @@ afterEach(async () => {
 
 describe("Endpoints ubicaciones", () => {
   describe("Get lista de ubicaciones", () => {
-    it("Should not return lista de ubicaciones", async (done) => {
-      const response = await request
-        .get("/v1/datos_externos/ubicaciones/")
-        .set("Authorization", "no-token");
-
-      expect(response.status).toBe(401);
-      expect(response.body).toEqual({ respuesta: mensajes.forbiddenAccess });
-
-      done();
-    });
     it("Should return lista de ubicaciones", async (done) => {
-      const token = jwt.sign({ numeroPaciente: 2 }, secret);
       const response = await request
-        .get("/v1/datos_externos/ubicaciones/")
-        .set("Authorization", token);
+        .get("/v1/datos_externos/ubicaciones/");
 
       const regionesObtenidas = await Regiones.find().exec();
       const provinciasObtenidas = await Provincias.find().exec();
@@ -73,10 +57,8 @@ describe("Endpoints ubicaciones", () => {
       await Ciudades.deleteMany();
       await Comunas.deleteMany();
 
-      const token = jwt.sign({ numeroPaciente: 2 }, secret);
       const response = await request
-        .get("/v1/datos_externos/ubicaciones/")
-        .set("Authorization", token);
+        .get("/v1/datos_externos/ubicaciones/");
 
       expect(response.status).toBe(200);
       expect(response.body[0].length).toBeFalsy();

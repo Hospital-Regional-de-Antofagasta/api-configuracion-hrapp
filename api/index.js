@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const ubicaciones = require("./routes/ubicaciones");
+const diasFeriados = require("./routes/diasFeriados");
 const { loadConfig } = require("./config");
 
 const app = express();
@@ -17,5 +18,7 @@ mongoose.connect(process.env.MONGO_URI, {
 loadConfig();
 
 app.use("/v1/datos_externos/ubicaciones", ubicaciones);
+
+app.use("/v1/datos_externos/dias_feriados", diasFeriados);
 
 module.exports = app;
