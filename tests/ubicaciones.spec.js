@@ -2,13 +2,13 @@ const supertest = require("supertest");
 const mongoose = require("mongoose");
 const app = require("../api/index");
 const Regiones = require("../api/models/Regiones");
-const Provincias = require("../api/models/Provincias");
+// const Provincias = require("../api/models/Provincias");
 const Ciudades = require("../api/models/Ciudades");
-const Comunas = require("../api/models/Comunas");
+// const Comunas = require("../api/models/Comunas");
 const regionesSeed = require("../api/testSeeds/regionesSeed");
-const provinciasSeed = require("../api/testSeeds/provinciasSeed");
+// const provinciasSeed = require("../api/testSeeds/provinciasSeed");
 const ciudadesSeed = require("../api/testSeeds/ciudadesSeed");
-const comunasSeed = require("../api/testSeeds/comunasSeed");
+// const comunasSeed = require("../api/testSeeds/comunasSeed");
 
 const request = supertest(app);
 
@@ -19,16 +19,16 @@ beforeEach(async () => {
     useUnifiedTopology: true,
   });
   await Regiones.create(regionesSeed);
-  await Provincias.create(provinciasSeed);
+  // await Provincias.create(provinciasSeed);
   await Ciudades.create(ciudadesSeed);
-  await Comunas.create(comunasSeed);
+  // await Comunas.create(comunasSeed);
 });
 
 afterEach(async () => {
   await Regiones.deleteMany();
-  await Provincias.deleteMany();
+  // await Provincias.deleteMany();
   await Ciudades.deleteMany();
-  await Comunas.deleteMany();
+  // await Comunas.deleteMany();
   await mongoose.disconnect();
 });
 
@@ -39,32 +39,32 @@ describe("Endpoints ubicaciones", () => {
         .get("/v1/datos_externos/ubicaciones/");
 
       const regionesObtenidas = await Regiones.find().exec();
-      const provinciasObtenidas = await Provincias.find().exec();
+      // const provinciasObtenidas = await Provincias.find().exec();
       const ciudadesObtenidas = await Ciudades.find().exec();
-      const comunasObtenidas = await Comunas.find().exec();
+      // const comunasObtenidas = await Comunas.find().exec();
 
       expect(response.status).toBe(200);
       expect(response.body[0].length).toEqual(regionesObtenidas.length);
-      expect(response.body[1].length).toEqual(provinciasObtenidas.length);
-      expect(response.body[2].length).toEqual(ciudadesObtenidas.length);
-      expect(response.body[3].length).toEqual(comunasObtenidas.length);
+      // expect(response.body[1].length).toEqual(provinciasObtenidas.length);
+      expect(response.body[1].length).toEqual(ciudadesObtenidas.length);
+      // expect(response.body[3].length).toEqual(comunasObtenidas.length);
 
       done();
     });
     it("Should return empty lista de ubicaciones", async (done) => {
       await Regiones.deleteMany();
-      await Provincias.deleteMany();
+      // await Provincias.deleteMany();
       await Ciudades.deleteMany();
-      await Comunas.deleteMany();
+      // await Comunas.deleteMany();
 
       const response = await request
         .get("/v1/datos_externos/ubicaciones/");
 
       expect(response.status).toBe(200);
       expect(response.body[0].length).toBeFalsy();
+      // expect(response.body[1].length).toBeFalsy();
       expect(response.body[1].length).toBeFalsy();
-      expect(response.body[2].length).toBeFalsy();
-      expect(response.body[3].length).toBeFalsy();
+      // expect(response.body[3].length).toBeFalsy();
 
       done();
     });
