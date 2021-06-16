@@ -36,7 +36,7 @@ describe("Endpoints ubicaciones", () => {
   describe("Get lista de ubicaciones", () => {
     it("Should return lista de ubicaciones", async (done) => {
       const response = await request
-        .get("/v1/datos_externos/ubicaciones/");
+        .get("/v1/configuracion_hrapp/ubicaciones/");
 
       const regionesObtenidas = await Regiones.find().exec();
       // const provinciasObtenidas = await Provincias.find().exec();
@@ -58,7 +58,7 @@ describe("Endpoints ubicaciones", () => {
       // await Comunas.deleteMany();
 
       const response = await request
-        .get("/v1/datos_externos/ubicaciones/");
+        .get("/v1/configuracion_hrapp/ubicaciones/");
 
       expect(response.status).toBe(200);
       expect(response.body[0].length).toBeFalsy();

@@ -1,0 +1,62 @@
+[
+  {
+    "pagina": "actualizarDatosPaciente",
+    "texto": "actualizarDatosPaciente",
+    "color": "danger"
+  },
+  {
+    "pagina": "detalleReceta",
+    "texto": "detalleReceta",
+    "color": "info"
+  },
+  {
+    "pagina": "historicoHorasExamenes",
+    "texto": "historicoHorasExamenes",
+    "color": "info"
+  },
+  {
+    "pagina": "historicoHorasMedicas",
+    "texto": "historicoHorasMedicas",
+    "color": "info"
+  },
+  {
+    "pagina": "horasExamenes",
+    "texto": "horasExamenes",
+    "color": "warning"
+  },
+  {
+    "pagina": "horasMedicas",
+    "texto": "horasMedicas",
+    "color": "info"
+  },
+  {
+    "pagina": "inicio",
+    "texto": "inicio",
+    "color": "info"
+  },
+  {
+    "pagina": "menuDocumentos",
+    "texto": "menuDocumentos",
+    "color": "info"
+  },
+  {
+    "pagina": "misionVision",
+    "texto": "misionVision",
+    "color": "info"
+  },
+  {
+    "pagina": "pases",
+    "texto": "pases",
+    "color": "info"
+  },
+  {
+    "pagina": "serviciosPaciente",
+    "texto": "serviciosPaciente",
+    "color": "danger"
+  },
+  {
+    "pagina": "solicitudCita",
+    "texto": "solicitudCita",
+    "color": "info"
+  }
+]

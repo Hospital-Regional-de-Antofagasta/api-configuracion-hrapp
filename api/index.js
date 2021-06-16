@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const ubicaciones = require("./routes/ubicaciones");
 const diasFeriados = require("./routes/diasFeriados");
+const mensajesInformacion = require("./routes/mensajesInformacion");
 const { loadConfig } = require("./config");
 
 const app = express();
@@ -19,6 +20,12 @@ loadConfig();
 
 app.use("/v1/datos_externos/ubicaciones", ubicaciones);
 
+app.use("/v1/configuracion_hrapp/ubicaciones", ubicaciones);
+
 app.use("/v1/datos_externos/dias_feriados", diasFeriados);
+
+app.use("/v1/configuracion_hrapp/dias_feriados", diasFeriados);
+
+app.use("/v1/configuracion_hrapp/mensajes_informacion", mensajesInformacion);
 
 module.exports = app;
