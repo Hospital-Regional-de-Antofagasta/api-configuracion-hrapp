@@ -1,7 +1,7 @@
 const supertest = require("supertest");
 const mongoose = require("mongoose");
 const app = require("../api/index");
-const MensajesInformacion = require("../api/models/MensajesInformacion");
+const MensajesInformacion = require("../models/MensajesInformacion");
 const mensajesInformacionSeed = require("../api/testSeeds/mensajesInformacionSeed.json");
 
 const request = supertest(app);

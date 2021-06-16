@@ -1,4 +1,4 @@
-const MensajesInformacion = require("../models/MensajesInformacion");
+const MensajesInformacion = require("../../models/MensajesInformacion");
 const { mensajes } = require("../config");
 
 exports.get = async (req, res) => {

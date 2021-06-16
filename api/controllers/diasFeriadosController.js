@@ -1,4 +1,4 @@
-const DiasFeriados = require("../models/DiasFeriados");
+const DiasFeriados = require("../../models/DiasFeriados");
 const { mensajes } = require("../config");
 
 exports.get = async (req, res) => {

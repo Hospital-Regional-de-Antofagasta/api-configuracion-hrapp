@@ -1,0 +1,56 @@
+[
+  {
+    "icono": "calendar",
+    "title": "ver mis recetas",
+    "subtitle": "revisa cuando podrás retirar tus medicamentos.",
+    "tipo": "receta",
+    "habilitado": true,
+    "posicion": 1,
+    "implementado": true
+  },
+  {
+    "icono": "fitness",
+    "title": "ver mis horas médicas",
+    "subtitle": "revisa tus horas médicas",
+    "tipo": "horasMedicas",
+    "habilitado": true,
+    "posicion": 4,
+    "implementado": true
+  },
+  {
+    "icono": "flask",
+    "title": "ver mis horas en laboratorio",
+    "subtitle": "revisa tus horas de laboratorio.",
+    "tipo": "horasLaboratorio",
+    "habilitado": true,
+    "posicion": 3,
+    "implementado": false
+  },
+  {
+    "icono": "download",
+    "title": "documentos",
+    "subtitle": "busca lo que necesitas y te lo enviamos a tu correo.",
+    "tipo": "documentos",
+    "habilitado": true,
+    "posicion": 2,
+    "implementado": false
+  },
+  {
+    "icono": "log-out-outline",
+    "title": "cerrar sesión",
+    "subtitle": "por seguridad, una vez obtenido lo que necesitas cierra tu sesión.",
+    "tipo": "cerrarSesion",
+    "habilitado": true,
+    "posicion": 99,
+    "implementado": true
+  },
+  {
+    "icono": "log-out-outline-2",
+    "title": "cerrar sesión 2",
+    "subtitle": "por seguridad, una vez obtenido lo que necesitas cierra tu sesión.",
+    "tipo": "cerrarSesion 2",
+    "habilitado": false,
+    "posicion": 5,
+    "implementado": false
+  }
+]

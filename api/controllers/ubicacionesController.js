@@ -1,6 +1,6 @@
-const Regiones = require("../models/Regiones");
+const Regiones = require("../../models/Regiones");
 // const Provincias = require("../models/Provincias");
-const Ciudades = require("../models/Ciudades");
+const Ciudades = require("../../models/Ciudades");
 // const Comunas = require("../models/Comunas");
 const { mensajes } = require("../config");
 
