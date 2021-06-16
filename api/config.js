@@ -1,4 +1,4 @@
-const ConfigApiDatosExternos = require("./models/ConfigApiDatosExternos");
+const ConfigApiDatosExternos = require("../models/ConfigApiDatosExternos");
 
 let mensajes = {
   forbiddenAccess: "Su sesión ha expirado.",
