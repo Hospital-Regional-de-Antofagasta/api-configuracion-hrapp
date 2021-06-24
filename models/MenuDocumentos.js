@@ -11,6 +11,7 @@ const MenuDocumentos = mongoose.model(
     habilitado: Boolean,
     posicion: Number,
     implementado: Boolean,
+    mensajeImplementado: String,
   }),
   "menu_documentos"
 );
