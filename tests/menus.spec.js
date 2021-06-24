@@ -35,21 +35,9 @@ afterEach(async () => {
 
 describe("Endpoints menus", () => {
   describe("Get menu servicios paciente", () => {
-    it("Should not get menu servicios paciente from database", async (done) => {
-      const response = await request
-        .get("/v1/configuracion_hrapp/menu/servicios_paciente/")
-        .set("Authorization", "no-token");
-
-      expect(response.status).toBe(401);
-      expect(response.body).toEqual({ respuesta: mensajes.forbiddenAccess });
-
-      done();
-    });
     it("Should get menu servicios paciente from database", async (done) => {
-      token = jwt.sign({ numeroPaciente: 2 }, secreto);
       const response = await request
         .get("/v1/configuracion_hrapp/menu/servicios_paciente/")
-        .set("Authorization", token);
 
       const menuServiciosPacienteObtenidos = await MenuServiciosPaciente.find().exec();
 
