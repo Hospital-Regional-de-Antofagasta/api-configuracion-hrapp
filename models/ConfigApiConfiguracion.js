@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const ConfigApiDatosExternos = mongoose.model(
-  "config_api_datos_externo",
+const ConfigApiConfiguracion = mongoose.model(
+  "config_api_configuracion",
   new Schema({
     mensajes: {
       forbidenAccess: String,
@@ -12,4 +12,4 @@ const ConfigApiDatosExternos = mongoose.model(
   })
 );
 
-module.exports = ConfigApiDatosExternos;
+module.exports = ConfigApiConfiguracion;

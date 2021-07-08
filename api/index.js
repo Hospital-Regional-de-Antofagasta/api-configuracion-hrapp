@@ -5,6 +5,7 @@ const ubicaciones = require("./routes/ubicaciones");
 const diasFeriados = require("./routes/diasFeriados");
 const mensajesInformacion = require("./routes/mensajesInformacion");
 const menus = require("./routes/menus");
+const configuracionHRApp = require("./routes/configuracionHRApp");
 const { loadConfig } = require("./config");
 
 const app = express();
@@ -29,6 +30,8 @@ app.use("/v1/configuracion_hrapp/dias_feriados", diasFeriados);
 
 app.use("/v1/configuracion_hrapp/mensajes_informacion", mensajesInformacion);
 
-app.use("/v1/configuracion_hrapp/menu/", menus);
+app.use("/v1/configuracion_hrapp/menu", menus);
+
+app.use("/v1/configuracion_hrapp", configuracionHRApp);
 
 module.exports = app;
