@@ -1,4 +1,4 @@
-const ConfigApiDatosExternos = require("../models/ConfigApiDatosExternos");
+const ConfigApiConfiguracion = require("../models/ConfigApiConfiguracion");
 
 let mensajes = {
   forbiddenAccess: "Su sesión ha expirado.",
@@ -7,7 +7,7 @@ let mensajes = {
 
 const loadConfig = async () => {
   try {
-    const config = await ConfigApiMenu.findOne({ version: 1 }).exec();
+    const config = await ConfigApiConfiguracion.findOne({ version: 1 }).exec();
     mensajes = config.mensajes;
   } catch (error) {}
 };

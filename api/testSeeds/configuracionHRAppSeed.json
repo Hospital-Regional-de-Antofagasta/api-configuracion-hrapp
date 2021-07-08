@@ -1,0 +1,23 @@
+[
+  {
+    "funcionalidadesHabilitadas": {
+      "horasMedicas": {
+        "solicitudAnular": true,
+        "solicitudCambiar": true
+      },
+      "horasExamenes": {
+        "solicitudAnular": false,
+        "solicitudCambiar": false
+      }
+    },
+    "parametrosEndpoints": {
+      "documentosPacientes": {
+        "cantidadAObtener": 5
+      }
+    },
+    "textosApp": {
+      "nombreApp": "Hospital En Tus Manos",
+      "mensajeBienvenida": "Bienvenido"
+    }
+  }
+]
