@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const { mensajes } = require("../config");
+const { mensajes } = require("../api/config");
 const secreto = process.env.JWT_SECRET;
 
 const isAuthenticated = (req, res, next) => {
