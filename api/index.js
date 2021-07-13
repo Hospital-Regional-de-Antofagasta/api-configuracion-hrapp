@@ -6,7 +6,6 @@ const diasFeriados = require("./routes/diasFeriados");
 const mensajesInformacion = require("./routes/mensajesInformacion");
 const menus = require("./routes/menus");
 const configuracionHRApp = require("./routes/configuracionHRApp");
-const { loadConfig } = require("./config");
 
 const app = express();
 
@@ -17,8 +16,6 @@ mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
-
-loadConfig();
 
 app.use("/v1/datos_externos/ubicaciones", ubicaciones);
 

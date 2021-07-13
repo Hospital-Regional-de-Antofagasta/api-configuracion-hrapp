@@ -1,18 +1,28 @@
 const ConfigApiConfiguracion = require("../models/ConfigApiConfiguracion");
 
-let mensajes = {
-  forbiddenAccess: "Su sesión ha expirado.",
-  serverError: "Se produjo un error.",
+let mensajesPorDefecto = {
+  forbiddenAccess: {
+    titulo: "Alerta",
+    mensaje: "Su sesión ha expirado.",
+    color: "",
+    icono: "",
+  },
+  serverError: {
+    titulo: "Alerta",
+    mensaje: "Ocurrió un error inesperado.",
+    color: "",
+    icono: "",
+  },
 };
 
-const loadConfig = async () => {
+exports.getMensajes = async (tipo) => {
   try {
-    const config = await ConfigApiConfiguracion.findOne({ version: 1 }).exec();
-    mensajes = config.mensajes;
+    const { mensajes } = await ConfigApiConfiguracion.findOne({
+      version: 1,
+    }).exec();
+    if (mensajes) {
+      return mensajes[tipo];
+    }
+    return mensajesPorDefecto[tipo];
   } catch (error) {}
-};
-
-module.exports = {
-  loadConfig,
-  mensajes,
 };
