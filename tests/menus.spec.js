@@ -41,7 +41,7 @@ describe("Endpoints menus", () => {
   describe("Get menu servicios paciente", () => {
     it("Should get menu servicios paciente from database", async (done) => {
       const response = await request.get(
-        "/v1/configuracion_hrapp/menu/servicios_paciente/"
+        "/v1/configuracion-hrapp/menu/servicios-paciente/"
       );
 
       const menuServiciosPacienteObtenidos =
@@ -64,7 +64,7 @@ describe("Endpoints menus", () => {
   describe("Menu Inicio", () => {
     it("Debería obtener el Menu de Inicio desde la base de datos.", async (done) => {
       const respuesta = await request.get(
-        "/v1/configuracion_hrapp/menu/inicio"
+        "/v1/configuracion-hrapp/menu/inicio"
       );
 
       expect(respuesta.status).toStrictEqual(200);
@@ -98,7 +98,7 @@ describe("Endpoints menus", () => {
   describe("Get menu documentos", () => {
     it("Should not get menu documentos from database", async (done) => {
       const response = await request
-        .get("/v1/configuracion_hrapp/menu/documentos/")
+        .get("/v1/configuracion-hrapp/menu/documentos/")
         .set("Authorization", "no-token");
 
       const mensaje = await getMensajes("forbiddenAccess");
@@ -118,7 +118,7 @@ describe("Endpoints menus", () => {
     it("Should get menu documentos from database", async (done) => {
       token = jwt.sign({ numeroPaciente: 2 }, secreto);
       const response = await request
-        .get("/v1/configuracion_hrapp/menu/documentos/")
+        .get("/v1/configuracion-hrapp/menu/documentos/")
         .set("Authorization", token);
 
       const menuDocumentosObtenidos = await MenuDocumentos.find().exec();

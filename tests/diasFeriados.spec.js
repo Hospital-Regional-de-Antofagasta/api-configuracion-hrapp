@@ -24,7 +24,7 @@ describe("Endpoint dias feriados", () => {
   describe("Get lista de dias feriados", () => {
     it("Should return lista de dias feriados", async (done) => {
       const response = await request.get(
-        "/v1/configuracion_hrapp/dias_feriados/"
+        "/v1/configuracion-hrapp/dias-feriados/"
       );
 
       const diasFeriadosObtenidos = await DiasFeriados.find().exec();
@@ -38,7 +38,7 @@ describe("Endpoint dias feriados", () => {
       await DiasFeriados.deleteMany();
 
       const response = await request.get(
-        "/v1/configuracion_hrapp/dias_feriados"
+        "/v1/configuracion-hrapp/dias-feriados"
       );
 
       expect(response.status).toBe(200);

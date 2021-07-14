@@ -23,7 +23,7 @@ afterEach(async () => {
 describe("Endpoints menus", () => {
   describe("Get configuracion de la HRApp", () => {
     it("Should get configuracion de la HRApp from database", async (done) => {
-      const response = await request.get("/v1/configuracion_hrapp");
+      const response = await request.get("/v1/configuracion-hrapp");
 
       expect(response.status).toBe(200);
 

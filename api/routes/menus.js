@@ -4,7 +4,7 @@ const { isAuthenticated } = require("../../middleware/auth");
 
 const router = express.Router();
 
-router.get("/servicios_paciente", menuController.getServiciospaciente);
+router.get("/servicios-paciente", menuController.getServiciospaciente);
 
 router.get("/inicio", menuController.getInicio);
 

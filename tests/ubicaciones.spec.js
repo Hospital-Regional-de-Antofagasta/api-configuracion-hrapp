@@ -36,7 +36,7 @@ describe("Endpoints ubicaciones", () => {
   describe("Get lista de ubicaciones", () => {
     it("Should return lista de ubicaciones", async (done) => {
       const response = await request.get(
-        "/v1/configuracion_hrapp/ubicaciones/"
+        "/v1/configuracion-hrapp/ubicaciones/"
       );
 
       const regionesObtenidas = await Regiones.find().exec();
@@ -59,7 +59,7 @@ describe("Endpoints ubicaciones", () => {
       // await Comunas.deleteMany();
 
       const response = await request.get(
-        "/v1/configuracion_hrapp/ubicaciones/"
+        "/v1/configuracion-hrapp/ubicaciones/"
       );
 
       expect(response.status).toBe(200);

@@ -9,7 +9,7 @@ const request = supertest(app);
 beforeEach(async () => {
   await mongoose.disconnect();
   await mongoose.connect(
-    `${process.env.MONGO_URI_TEST}mensajes_informacion_test`,
+    `${process.env.MONGO_URI_TEST}mensajes-informacion_test`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -27,7 +27,7 @@ describe("Endpoint mensajes informacion", () => {
   describe("Get lista de mensajes de informacion", () => {
     it("Should return lista de mensajes de informacion", async (done) => {
       const response = await request.get(
-        "/v1/configuracion_hrapp/mensajes_informacion/"
+        "/v1/configuracion-hrapp/mensajes-informacion/"
       );
 
       const mensajesInformacionObtenidos =
@@ -42,7 +42,7 @@ describe("Endpoint mensajes informacion", () => {
       await MensajesInformacion.deleteMany();
 
       const response = await request.get(
-        "/v1/configuracion_hrapp/mensajes_informacion"
+        "/v1/configuracion-hrapp/mensajes-informacion"
       );
 
       expect(response.status).toBe(200);
