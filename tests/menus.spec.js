@@ -102,8 +102,6 @@ describe("Endpoints menus", () => {
         .set("Authorization", "no-token");
 
       const mensaje = await getMensajes("forbiddenAccess");
-      console.log("mensaje", mensaje);
-      console.log("response.body", response.body);
 
       expect(response.status).toBe(401);
       expect(response.body).toEqual({
