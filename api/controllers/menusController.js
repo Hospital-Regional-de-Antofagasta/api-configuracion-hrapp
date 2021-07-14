@@ -5,7 +5,9 @@ const { getMensajes } = require("../config");
 
 exports.getServiciospaciente = async (req, res) => {
   try {
-    const menuServiciosPaciente = await MenuServiciosPaciente.find().exec();
+    const menuServiciosPaciente = await MenuServiciosPaciente.find({
+      version: 1,
+    }).exec();
     const menuServiciosPacienteEnviar = menuServiciosPaciente
       .filter((servicioPaciente) => servicioPaciente.habilitado)
       .sort((primero, segundo) => primero.posicion - segundo.posicion);
@@ -19,6 +21,7 @@ exports.getInicio = async (req, res) => {
   try {
     const menuInicio = await MenuInicio.find({
       habilitado: true,
+      version: 1,
     })
       .sort({ posicion: 1 })
       .exec();
@@ -32,6 +35,7 @@ exports.getDocumentos = async (req, res) => {
   try {
     const menuDocumentos = await MenuDocumentos.find({
       habilitado: true,
+      version: 1,
     })
       .sort({ posicion: 1 })
       .exec();

@@ -7,7 +7,8 @@
     "tipo": "noticia",
     "habilitado": true,
     "implementado": false,
-    "posicion": 1
+    "posicion": 1,
+    "version": 1
   },
   {
     "icono": "business",
@@ -17,7 +18,8 @@
     "tipo": "hra",
     "habilitado": true,
     "implementado": false,
-    "posicion": 3
+    "posicion": 3,
+    "version": 1
   },
   {
     "icono": "test",
@@ -27,7 +29,8 @@
     "tipo": "prueba",
     "habilitado": false,
     "implementado": false,
-    "posicion": 4
+    "posicion": 4,
+    "version": 1
   },
   {
     "icono": "medkit",
@@ -37,6 +40,7 @@
     "tipo": "paciente",
     "habilitado": true,
     "implementado": true,
-    "posicion": 2
+    "posicion": 2,
+    "version": 1
   }
 ]
