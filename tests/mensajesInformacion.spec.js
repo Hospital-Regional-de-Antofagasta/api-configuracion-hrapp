@@ -8,10 +8,13 @@ const request = supertest(app);
 
 beforeEach(async () => {
   await mongoose.disconnect();
-  await mongoose.connect(`${process.env.MONGO_URI_TEST}ubicaciones`, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
+  await mongoose.connect(
+    `${process.env.MONGO_URI_TEST}mensajes_informacion_test`,
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  );
   await MensajesInformacion.create(mensajesInformacionSeed);
 });
 

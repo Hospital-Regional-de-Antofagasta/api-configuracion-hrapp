@@ -1,6 +1,6 @@
 const ConfigApiConfiguracion = require("../models/ConfigApiConfiguracion");
 
-let mensajesPorDefecto = {
+const mensajesPorDefecto = {
   forbiddenAccess: {
     titulo: "Alerta",
     mensaje: "Su sesión ha expirado.",
@@ -24,5 +24,7 @@ exports.getMensajes = async (tipo) => {
       return mensajes[tipo];
     }
     return mensajesPorDefecto[tipo];
-  } catch (error) {}
+  } catch (error) {
+    return mensajesPorDefecto[tipo];
+  }
 };

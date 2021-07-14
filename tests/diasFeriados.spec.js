@@ -8,7 +8,7 @@ const request = supertest(app);
 
 beforeEach(async () => {
   await mongoose.disconnect();
-  await mongoose.connect(`${process.env.MONGO_URI_TEST}ubicaciones`, {
+  await mongoose.connect(`${process.env.MONGO_URI_TEST}feriados_test`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });

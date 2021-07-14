@@ -14,7 +14,7 @@ const request = supertest(app);
 
 beforeEach(async () => {
   await mongoose.disconnect();
-  await mongoose.connect(`${process.env.MONGO_URI_TEST}ubicaciones`, {
+  await mongoose.connect(`${process.env.MONGO_URI_TEST}ubicaciones_test`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
@@ -35,8 +35,9 @@ afterEach(async () => {
 describe("Endpoints ubicaciones", () => {
   describe("Get lista de ubicaciones", () => {
     it("Should return lista de ubicaciones", async (done) => {
-      const response = await request
-        .get("/v1/configuracion_hrapp/ubicaciones/");
+      const response = await request.get(
+        "/v1/configuracion_hrapp/ubicaciones/"
+      );
 
       const regionesObtenidas = await Regiones.find().exec();
       // const provinciasObtenidas = await Provincias.find().exec();
@@ -57,8 +58,9 @@ describe("Endpoints ubicaciones", () => {
       await Ciudades.deleteMany();
       // await Comunas.deleteMany();
 
-      const response = await request
-        .get("/v1/configuracion_hrapp/ubicaciones/");
+      const response = await request.get(
+        "/v1/configuracion_hrapp/ubicaciones/"
+      );
 
       expect(response.status).toBe(200);
       expect(response.body[0].length).toBeFalsy();
