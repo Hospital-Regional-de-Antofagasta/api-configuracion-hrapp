@@ -1,6 +1,6 @@
 const supertest = require("supertest");
 const mongoose = require("mongoose");
-const app = require("../api/index");
+const app = require("../api/app");
 const Regiones = require("../models/Regiones");
 // const Provincias = require("../api/models/Provincias");
 const Ciudades = require("../models/Ciudades");

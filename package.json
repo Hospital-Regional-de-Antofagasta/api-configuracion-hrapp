@@ -1,9 +1,11 @@
 {
-  "name": "api-datos-externos",
+  "name": "api-configuracion-hrapp",
   "version": "1.0.0",
   "description": "This README would normally document whatever steps are necessary to get your application up and running.",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
+    "start --prod": "node server.js",
     "build": "rm -rf public && mkdir public && echo 'Custom Build' > ./public/index.html",
     "babel-build": "./node_modules/.bin/babel . -d dist --ignore node_modules,test,.vscode",
     "dev-build": "nodemon --exec babel-node ./src/index",

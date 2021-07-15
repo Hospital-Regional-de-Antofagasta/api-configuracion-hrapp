@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const MenuServiciosPaciente = mongoose.model(
-  "menu_servicios_paciente",
+  "menu_servicios_pacientes",
   new Schema({
     icono: String,
     title: String,

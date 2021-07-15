@@ -8,9 +8,7 @@ exports.get = async (req, res) => {
   try {
     const ubicaciones = await Promise.all([
       Regiones.find().exec(),
-      // Provincias.find().exec(),
       Ciudades.find().exec(),
-      // Comunas.find().exec(),
     ]);
     res.status(200).send(ubicaciones);
   } catch (error) {

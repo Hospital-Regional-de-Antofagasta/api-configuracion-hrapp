@@ -1,5 +1,5 @@
 const supertest = require("supertest");
-const app = require("../api/index");
+const app = require("../api/app");
 const jwt = require("jsonwebtoken");
 const mongoose = require("mongoose");
 const MenuServiciosPaciente = require("../models/MenuServiciosPaciente");

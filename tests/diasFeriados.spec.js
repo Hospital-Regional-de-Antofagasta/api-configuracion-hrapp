@@ -1,6 +1,6 @@
 const supertest = require("supertest");
 const mongoose = require("mongoose");
-const app = require("../api/index");
+const app = require("../api/app");
 const DiasFeriados = require("../models/DiasFeriados");
 const diasFeriados = require("../api/testSeeds/diasFeriadosSeeds.json");
 
