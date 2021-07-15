@@ -6,7 +6,6 @@ const diasFeriados = require("./routes/diasFeriados");
 const mensajesInformacion = require("./routes/mensajesInformacion");
 const menus = require("./routes/menus");
 const configuracionHRApp = require("./routes/configuracionHRApp");
-const { loadConfig } = require("./config");
 
 const app = express();
 
@@ -18,20 +17,14 @@ mongoose.connect(process.env.MONGO_URI, {
   useUnifiedTopology: true,
 });
 
-loadConfig();
+app.use("/v1/configuracion-hrapp/ubicaciones", ubicaciones);
 
-app.use("/v1/datos_externos/ubicaciones", ubicaciones);
+app.use("/v1/configuracion-hrapp/dias-feriados", diasFeriados);
 
-app.use("/v1/datos_externos/dias_feriados", diasFeriados);
+app.use("/v1/configuracion-hrapp/mensajes-informacion", mensajesInformacion);
 
-app.use("/v1/configuracion_hrapp/ubicaciones", ubicaciones);
+app.use("/v1/configuracion-hrapp/menu", menus);
 
-app.use("/v1/configuracion_hrapp/dias_feriados", diasFeriados);
-
-app.use("/v1/configuracion_hrapp/mensajes_informacion", mensajesInformacion);
-
-app.use("/v1/configuracion_hrapp/menu", menus);
-
-app.use("/v1/configuracion_hrapp", configuracionHRApp);
+app.use("/v1/configuracion-hrapp", configuracionHRApp);
 
 module.exports = app;

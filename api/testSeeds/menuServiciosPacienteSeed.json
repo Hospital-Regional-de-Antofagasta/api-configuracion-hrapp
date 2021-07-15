@@ -6,7 +6,8 @@
     "tipo": "receta",
     "habilitado": true,
     "posicion": 1,
-    "implementado": true
+    "implementado": true,
+    "version": 1
   },
   {
     "icono": "fitness",
@@ -15,7 +16,8 @@
     "tipo": "horasMedicas",
     "habilitado": true,
     "posicion": 4,
-    "implementado": true
+    "implementado": true,
+    "version": 1
   },
   {
     "icono": "flask",
@@ -24,7 +26,8 @@
     "tipo": "horasLaboratorio",
     "habilitado": true,
     "posicion": 3,
-    "implementado": false
+    "implementado": false,
+    "version": 1
   },
   {
     "icono": "download",
@@ -33,7 +36,8 @@
     "tipo": "documentos",
     "habilitado": true,
     "posicion": 2,
-    "implementado": false
+    "implementado": false,
+    "version": 1
   },
   {
     "icono": "log-out-outline",
@@ -42,7 +46,8 @@
     "tipo": "cerrarSesion",
     "habilitado": true,
     "posicion": 99,
-    "implementado": true
+    "implementado": true,
+    "version": 1
   },
   {
     "icono": "log-out-outline-2",
@@ -51,6 +56,7 @@
     "tipo": "cerrarSesion 2",
     "habilitado": false,
     "posicion": 5,
-    "implementado": false
+    "implementado": false,
+    "version": 1
   }
 ]

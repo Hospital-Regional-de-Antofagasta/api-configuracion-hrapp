@@ -1,5 +1,5 @@
 const DiasFeriados = require("../../models/DiasFeriados");
-const { mensajes } = require("../config");
+const { getMensajes } = require("../config");
 
 exports.get = async (req, res) => {
   try {
@@ -8,6 +8,6 @@ exports.get = async (req, res) => {
       .exec();
     res.status(200).send(diasFeriados);
   } catch (error) {
-    res.status(500).send({ respuesta: mensajes.serverError });
+    res.status(500).send({ respuesta: await getMensajes("serverError") });
   }
 };
