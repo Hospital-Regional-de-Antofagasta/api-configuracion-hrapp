@@ -6,7 +6,8 @@
     "tipo": "daus",
     "habilitado": true,
     "posicion": 1,
-    "implementado": true
+    "implementado": true,
+    "version": 1
   },
   {
     "icono": "file",
@@ -15,7 +16,8 @@
     "tipo": "deshabilitado",
     "habilitado": false,
     "posicion": 3,
-    "implementado": true
+    "implementado": true,
+    "version": 1
   },
   {
     "icono": "text",
@@ -24,6 +26,7 @@
     "tipo": "epicrisis",
     "habilitado": true,
     "posicion": 2,
-    "implementado": true
+    "implementado": true,
+    "version": 1
   }
 ]

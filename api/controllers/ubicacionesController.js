@@ -2,7 +2,7 @@ const Regiones = require("../../models/Regiones");
 // const Provincias = require("../models/Provincias");
 const Ciudades = require("../../models/Ciudades");
 // const Comunas = require("../models/Comunas");
-const { mensajes } = require("../config");
+const { getMensajes } = require("../config");
 
 exports.get = async (req, res) => {
   try {
@@ -14,6 +14,6 @@ exports.get = async (req, res) => {
     ]);
     res.status(200).send(ubicaciones);
   } catch (error) {
-    res.status(500).send({ respuesta: mensajes.serverError });
+    res.status(500).send({ respuesta: await getMensajes("serverError") });
   }
 };

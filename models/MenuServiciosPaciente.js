@@ -12,6 +12,7 @@ const MenuServiciosPaciente = mongoose.model(
     posicion: Number,
     implementado: Boolean,
     mensajeImplementado: String,
+    version: Number,
   }),
   "menu_servicios_pacientes"
 );

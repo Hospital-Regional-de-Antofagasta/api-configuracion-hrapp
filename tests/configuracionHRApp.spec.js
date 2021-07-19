@@ -8,7 +8,7 @@ const request = supertest(app);
 
 beforeEach(async () => {
   await mongoose.disconnect();
-  await mongoose.connect(`${process.env.MONGO_URI_TEST}menus_test`, {
+  await mongoose.connect(`${process.env.MONGO_URI_TEST}configuracion_test`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
@@ -23,11 +23,9 @@ afterEach(async () => {
 describe("Endpoints menus", () => {
   describe("Get configuracion de la HRApp", () => {
     it("Should get configuracion de la HRApp from database", async (done) => {
-      const response = await request.get("/v1/configuracion_hrapp");
+      const response = await request.get("/v1/configuracion-hrapp");
 
       expect(response.status).toBe(200);
-
-      console.log(response.body);
 
       expect(response.body).toBeTruthy();
 
