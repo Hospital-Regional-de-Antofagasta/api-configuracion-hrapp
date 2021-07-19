@@ -6,6 +6,6 @@ exports.getConfiguracion = async (req, res) => {
     const configuracionHRApp = await ConfiguracionHRApp.findOne().exec();
     res.status(200).send(configuracionHRApp);
   } catch (error) {
-    res.status(500).send({ respuesta: await getmensajes("serverError") });
+    res.status(500).send({ respuesta: await getMensajes("serverError") });
   }
 };
