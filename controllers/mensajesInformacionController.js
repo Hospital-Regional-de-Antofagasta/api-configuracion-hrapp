@@ -1,5 +1,5 @@
-const MensajesInformacion = require("../../models/MensajesInformacion");
-const { getMensajes } = require("../config");
+const MensajesInformacion = require("../models/MensajesInformacion");
+const { getMensajes } = require("../api/config");
 
 exports.get = async (req, res) => {
   try {

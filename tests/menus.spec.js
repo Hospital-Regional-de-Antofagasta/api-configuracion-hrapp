@@ -8,6 +8,8 @@ const MenuInicio = require("../models/MenuInicio");
 const menuInicioSeed = require("../api/testSeeds/menuInicioSeed.json");
 const MenuDocumentos = require("../models/MenuDocumentos");
 const menuDocumentosSeed = require("../api/testSeeds/menuDocumentosSeed.json");
+const MenuInformacionGeneral = require("../models/MenuInformacionGeneral");
+const menuInformacionGeneralSeed = require("../api/testSeeds/menuInformacionGeneralSeed.json");
 const { getMensajes } = require("../api/config");
 const ConfigApiConfiguracion = require("../models/ConfigApiConfiguracion");
 const configSeed = require("../api/testSeeds/configSeed.json");
@@ -26,6 +28,7 @@ beforeEach(async () => {
   await MenuServiciosPaciente.create(menuServiciosPacienteSeed);
   await MenuInicio.create(menuInicioSeed);
   await MenuDocumentos.create(menuDocumentosSeed);
+  await MenuInformacionGeneral.create(menuInformacionGeneralSeed);
   await ConfigApiConfiguracion.create(configSeed);
 });
 
@@ -33,6 +36,7 @@ afterEach(async () => {
   await MenuServiciosPaciente.deleteMany();
   await MenuInicio.deleteMany();
   await MenuDocumentos.deleteMany();
+  await MenuInformacionGeneral.deleteMany();
   await ConfigApiConfiguracion.deleteMany();
   await mongoose.disconnect();
 });
@@ -131,6 +135,33 @@ describe("Endpoints menus", () => {
       expect(response.body[1].posicion).toBe(
         menuDocumentosObtenidos[2].posicion
       );
+
+      done();
+    });
+  });
+  describe("Get menu informacion general", () => {
+    it("Should get menu informacion general", async (done) => {
+      const response = await request.get(
+        "/v1/configuracion-hrapp/menu/informacion-general/"
+      );
+
+      expect(response.status).toBe(200);
+
+      expect(response.body.length).toBe(3);
+      expect(response.body[0].title).toBe("CEFAMS");
+      expect(response.body[1].title).toBe("Unidades contigententes");
+      expect(response.body[2].title).toBe("Misión y Visión");
+
+      done();
+    });
+    it("Should get no menu informacion general from empty database", async (done) => {
+      await MenuInformacionGeneral.deleteMany();
+      const response = await request.get(
+        "/v1/configuracion-hrapp/menu/informacion-general/"
+      );
+
+      expect(response.status).toBe(200);
+      expect(response.body).toEqual([]);
 
       done();
     });
