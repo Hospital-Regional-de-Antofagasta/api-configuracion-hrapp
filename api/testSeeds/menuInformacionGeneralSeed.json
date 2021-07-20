@@ -1,0 +1,46 @@
+[
+  {
+    "icono": "clinic-medical",
+    "title": "CEFAMS",
+    "subtitle": "Revisa la ubicación de los CEFAMS",
+    "tipo": "cefams",
+    "habilitado": "true",
+    "implementado": "true",
+    "mensajeImplementado": "En construcción",
+    "posicion": 1,
+    "version": 1
+  },
+  {
+    "icono": "hand-holding-medical",
+    "title": "Misión y Visión",
+    "subtitle": "Conoce nuestros objetivos y principios como institución",
+    "tipo": "misionyvision",
+    "habilitado": "true",
+    "implementado": "true",
+    "mensajeImplementado": "En construcción",
+    "posicion": 3,
+    "version": 1
+  },
+  {
+    "icono": "user-md",
+    "title": "Unidades contigententes",
+    "subtitle": "Conoce las unidades contingentes y su cartera de servicios",
+    "tipo": "unidadesContingente",
+    "habilitado": "true",
+    "implementado": "true",
+    "mensajeImplementado": "En construcción",
+    "posicion": 2,
+    "version": 1
+  },
+  {
+    "icono": "user-md",
+    "title": "Unidades contigententes",
+    "subtitle": "Conoce las unidades contingentes y su cartera de servicios",
+    "tipo": "unidadesContingente",
+    "habilitado": "true",
+    "implementado": "true",
+    "mensajeImplementado": "En construcción",
+    "posicion": 2,
+    "version": 2
+  }
+]

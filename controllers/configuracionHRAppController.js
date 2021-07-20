@@ -1,5 +1,5 @@
-const ConfiguracionHRApp = require("../../models/ConfiguracionHRApp");
-const { getMensajes } = require("../config");
+const ConfiguracionHRApp = require("../models/ConfiguracionHRApp");
+const { getMensajes } = require("../api/config");
 
 exports.getConfiguracion = async (req, res) => {
   try {

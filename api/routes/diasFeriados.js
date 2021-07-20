@@ -1,5 +1,5 @@
 const express = require("express");
-const diasFeriadosController = require("../controllers/diasFeriadosController");
+const diasFeriadosController = require("../../controllers/diasFeriadosController");
 
 const router = express.Router();
 
