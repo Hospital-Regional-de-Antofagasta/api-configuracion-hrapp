@@ -34,6 +34,17 @@
   },
   {
     "icono": "user-md",
+    "title": "deshabilitado",
+    "subtitle": "Conoce las unidades contingentes y su cartera de servicios",
+    "tipo": "unidadesContingente",
+    "habilitado": "false",
+    "implementado": "true",
+    "mensajeImplementado": "En construcción",
+    "posicion": 2,
+    "version": 1
+  },
+  {
+    "icono": "user-md",
     "title": "Unidades contigententes",
     "subtitle": "Conoce las unidades contingentes y su cartera de servicios",
     "tipo": "unidadesContingente",
