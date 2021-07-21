@@ -3,6 +3,6 @@ const misionVisionController = require("../../controllers/misionVisionController
 
 const router = express.Router();
 
-router.get("", misionVisionController.getMisionVision);
+router.get("", misionVisionController.get);
 
 module.exports = router;

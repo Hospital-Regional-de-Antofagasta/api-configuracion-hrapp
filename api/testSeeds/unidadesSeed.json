@@ -1,0 +1,152 @@
+[
+  {
+    "nombreUnidad": "Pediatría",
+    "descripcion": "Servicios Clínicos",
+    "carteraServicios": [
+      "Oncología",
+      "Cardiología Infantil",
+      "Nutrición Infantil",
+      "Cirugía y Ortopedía"
+    ],
+    "horarioAtencion": {
+      "hora": {
+        "apertura": "08:00",
+        "cierre": "14:00"
+      },
+      "dia": {
+        "apertura": "Lunes",
+        "cierre": "Viernes"
+      }
+    },
+    "contacto": {
+      "fono": "552758965",
+      "correo": "correo@gmail.com"
+    },
+    "referencia": "1 piso",
+    "imagen": "../assets/images/personal.jpg",
+    "tipo": "serviciosClinicos",
+    "habilitado": true,
+    "posicion": 1,
+    "version": 1
+  },
+  {
+    "nombreUnidad": "Laboratorio Clínico",
+    "descripcion": "Unidades de apoyo",
+    "carteraServicios": [
+      "Oncología",
+      "Cardiología Infantil",
+      "Nutrición Infantil",
+      "Cirugía y Ortopedía"
+    ],
+    "horarioAtencion": {
+      "hora": {
+        "apertura": "08:00",
+        "cierre": "14:00"
+      },
+      "dia": {
+        "apertura": "Lunes",
+        "cierre": "Viernes"
+      }
+    },
+    "contacto": {
+      "fono": "552758965",
+      "correo": "correo@gmail.com"
+    },
+    "referencia": "1 piso",
+    "imagen": "../assets/images/personal.jpg",
+    "tipo": "serviciosClinicos",
+    "habilitado": true,
+    "posicion": 3,
+    "version": 1
+  },
+  {
+    "nombreUnidad": "Unidad serviciosClinicos",
+    "descripcion": "Unidades de apoyo",
+    "carteraServicios": [
+      "Oncología",
+      "Cardiología Infantil",
+      "Nutrición Infantil",
+      "Cirugía y Ortopedía"
+    ],
+    "horarioAtencion": {
+      "hora": {
+        "apertura": "08:00",
+        "cierre": "14:00"
+      },
+      "dia": {
+        "apertura": "Lunes",
+        "cierre": "Viernes"
+      }
+    },
+    "contacto": {
+      "fono": "552758965",
+      "correo": "correo@gmail.com"
+    },
+    "referencia": "1 piso",
+    "imagen": "../assets/images/personal.jpg",
+    "tipo": "serviciosClinicos",
+    "habilitado": true,
+    "posicion": 2,
+    "version": 1
+  },
+  {
+    "nombreUnidad": "Unidad unidadesApoyo",
+    "descripcion": "Unidades de apoyo",
+    "carteraServicios": [
+      "Oncología",
+      "Cardiología Infantil",
+      "Nutrición Infantil",
+      "Cirugía y Ortopedía"
+    ],
+    "horarioAtencion": {
+      "hora": {
+        "apertura": "08:00",
+        "cierre": "14:00"
+      },
+      "dia": {
+        "apertura": "Lunes",
+        "cierre": "Viernes"
+      }
+    },
+    "contacto": {
+      "fono": "552758965",
+      "correo": "correo@gmail.com"
+    },
+    "referencia": "1 piso",
+    "imagen": "../assets/images/personal.jpg",
+    "tipo": "unidadesApoyo",
+    "habilitado": true,
+    "posicion": 10,
+    "version": 1
+  },
+  {
+    "nombreUnidad": "Pediatría 2",
+    "descripcion": "Servicios Clínicos",
+    "carteraServicios": [
+      "Oncología",
+      "Cardiología Infantil",
+      "Nutrición Infantil",
+      "Cirugía y Ortopedía"
+    ],
+    "horarioAtencion": {
+      "hora": {
+        "apertura": "08:00",
+        "cierre": "14:00"
+      },
+      "dia": {
+        "apertura": "Lunes",
+        "cierre": "Viernes"
+      }
+    },
+    "contacto": {
+      "fono": "552758965",
+      "correo": "correo@gmail.com"
+    },
+    "referencia": "1 piso",
+    "imagen": "../assets/images/personal.jpg",
+    "tipo": "serviciosClinicos",
+    "habilitado": true,
+    "posicion": 1,
+    "version": 2
+  }
+]
