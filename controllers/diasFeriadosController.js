@@ -1,5 +1,5 @@
-const DiasFeriados = require("../../models/DiasFeriados");
-const { getMensajes } = require("../config");
+const DiasFeriados = require("../models/DiasFeriados");
+const { getMensajes } = require("../api/config");
 
 exports.get = async (req, res) => {
   try {

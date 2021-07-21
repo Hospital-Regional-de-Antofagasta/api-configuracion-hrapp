@@ -1,5 +1,5 @@
 const express = require("express");
-const configuracionHRAppController = require("../controllers/configuracionHRAppController");
+const configuracionHRAppController = require("../../controllers/configuracionHRAppController");
 
 const router = express.Router();
 
