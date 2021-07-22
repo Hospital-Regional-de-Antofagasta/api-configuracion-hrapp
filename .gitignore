@@ -50,3 +50,4 @@ Thumbs.db
 
 # Envairomental variables
 .env
+.env.dev

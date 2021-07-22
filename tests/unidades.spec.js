@@ -1,5 +1,5 @@
 const supertest = require("supertest");
-const app = require("../api/index");
+const app = require("../api/app");
 const mongoose = require("mongoose");
 const Unidades = require("../models/Unidades");
 const unidadesSeed = require("../api/testSeeds/unidadesSeed.json");
