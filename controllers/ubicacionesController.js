@@ -1,8 +1,6 @@
-const Regiones = require("../../models/Regiones");
-// const Provincias = require("../models/Provincias");
-const Ciudades = require("../../models/Ciudades");
-// const Comunas = require("../models/Comunas");
-const { getMensajes } = require("../config");
+const Regiones = require("../models/Regiones");
+const Ciudades = require("../models/Ciudades");
+const { getMensajes } = require("../api/config");
 
 exports.get = async (req, res) => {
   try {
