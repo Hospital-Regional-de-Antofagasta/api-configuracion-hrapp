@@ -1,8 +1,8 @@
 const supertest = require("supertest");
-const app = require("../api/index");
+const app = require("../app");
 const mongoose = require("mongoose");
 const MisionVision = require("../models/MisionVision");
-const misionVisionSeed = require("../api/testSeeds/misionVisionSeed.json");
+const misionVisionSeed = require("../testSeeds/misionVisionSeed.json");
 
 const request = supertest(app);
 

@@ -1,8 +1,8 @@
 const supertest = require("supertest");
-const app = require("../api/index");
+const app = require("../app");
 const mongoose = require("mongoose");
 const ConfiguracionHRApp = require("../models/ConfiguracionHRApp");
-const configuracionHRAppSeed = require("../api/testSeeds/configuracionHRAppSeed.json");
+const configuracionHRAppSeed = require("../testSeeds/configuracionHRAppSeed.json");
 
 const request = supertest(app);
 

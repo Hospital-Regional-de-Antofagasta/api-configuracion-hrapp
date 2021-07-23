@@ -1,18 +1,18 @@
 const supertest = require("supertest");
-const app = require("../api/index");
+const app = require("../app");
 const mongoose = require("mongoose");
 const MenuServiciosPaciente = require("../models/MenuServiciosPaciente");
-const menuServiciosPacienteSeed = require("../api/testSeeds/menuServiciosPacienteSeed.json");
+const menuServiciosPacienteSeed = require("../testSeeds/menuServiciosPacienteSeed.json");
 const MenuInicio = require("../models/MenuInicio");
-const menuInicioSeed = require("../api/testSeeds/menuInicioSeed.json");
+const menuInicioSeed = require("../testSeeds/menuInicioSeed.json");
 const MenuDocumentos = require("../models/MenuDocumentos");
-const menuDocumentosSeed = require("../api/testSeeds/menuDocumentosSeed.json");
+const menuDocumentosSeed = require("../testSeeds/menuDocumentosSeed.json");
 const MenuInformacionGeneral = require("../models/MenuInformacionGeneral");
-const menuInformacionGeneralSeed = require("../api/testSeeds/menuInformacionGeneralSeed.json");
+const menuInformacionGeneralSeed = require("../testSeeds/menuInformacionGeneralSeed.json");
 const MenuUnidades = require("../models/MenuUnidades");
-const menuUnidadesSeed = require("../api/testSeeds/menuUnidadesSeed.json");
+const menuUnidadesSeed = require("..//testSeeds/menuUnidadesSeed.json");
 const ConfigApiConfiguracion = require("../models/ConfigApiConfiguracion");
-const configSeed = require("../api/testSeeds/configSeed.json");
+const configSeed = require("../testSeeds/configSeed.json");
 
 const request = supertest(app);
 

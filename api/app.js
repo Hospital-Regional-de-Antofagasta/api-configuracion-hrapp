@@ -14,7 +14,9 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect(process.env.MONGO_URI, {
+const connection = process.env.MONGO_URI
+
+mongoose.connect(connection, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
