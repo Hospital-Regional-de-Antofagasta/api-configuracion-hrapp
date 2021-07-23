@@ -1,5 +1,5 @@
 const express = require("express");
-const misionVisionController = require("../../controllers/misionVisionController");
+const misionVisionController = require("../controllers/misionVisionController");
 
 const router = express.Router();
 

@@ -3,7 +3,7 @@ const MenuInicio = require("../models/MenuInicio");
 const MenuDocumentos = require("../models/MenuDocumentos");
 const MenuInformacionGeneral = require("../models/MenuInformacionGeneral");
 const MenuUnidades = require("../models/MenuUnidades");
-const { getMensajes } = require("../api/config");
+const { getMensajes } = require("../config");
 
 exports.getServiciospaciente = async (req, res) => {
   try {

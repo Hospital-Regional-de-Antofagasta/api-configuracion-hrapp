@@ -1,8 +1,8 @@
 const supertest = require("supertest");
-const app = require("../api/app");
+const app = require("../app");
 const mongoose = require("mongoose");
 const Unidades = require("../models/Unidades");
-const unidadesSeed = require("../api/testSeeds/unidadesSeed.json");
+const unidadesSeed = require("../testSeeds/unidadesSeed.json");
 
 const request = supertest(app);
 

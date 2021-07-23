@@ -1,4 +1,4 @@
-const ConfigApiConfiguracion = require("../models/ConfigApiConfiguracion");
+const ConfigApiConfiguracion = require("./models/ConfigApiConfiguracion");
 
 const mensajesPorDefecto = {
   forbiddenAccess: {

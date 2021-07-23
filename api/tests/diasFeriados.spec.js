@@ -1,8 +1,8 @@
 const supertest = require("supertest");
 const mongoose = require("mongoose");
-const app = require("../api/app");
+const app = require("../app");
 const DiasFeriados = require("../models/DiasFeriados");
-const diasFeriados = require("../api/testSeeds/diasFeriadosSeeds.json");
+const diasFeriados = require("../testSeeds/diasFeriadosSeeds.json");
 
 const request = supertest(app);
 
