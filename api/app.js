@@ -35,4 +35,8 @@ app.use("/v1/configuracion-hrapp/mision-vision", misionVision);
 
 app.use("/v1/configuracion-hrapp/unidades", unidades);
 
+app.use("/v1/hola", (req, res) => {
+  res.status(200).send({ hola: "hola"})
+});
+
 module.exports = app;
