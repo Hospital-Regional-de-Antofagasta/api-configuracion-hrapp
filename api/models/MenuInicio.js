@@ -13,6 +13,7 @@ const MenuInicio = mongoose.model(
     posicion: Number,
     implementado: Boolean,
     mensajeImplementado: String,
+    claveUnica: Boolean,
     version: Number,
   }),
   "menu_inicio"
