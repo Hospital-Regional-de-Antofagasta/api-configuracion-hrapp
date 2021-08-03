@@ -24,7 +24,7 @@ exports.checkSiVersionDeprecada = async (req, res) => {
       });
     }
     res.status(200).send({
-      estado: "NO_ENCONTRADA",
+      estado: "OK",
       respuesta: {},
     });
   } catch (error) {
