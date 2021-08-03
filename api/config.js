@@ -13,6 +13,18 @@ const mensajesPorDefecto = {
     color: "",
     icono: "",
   },
+  versionNotFound: {
+    titulo: "Alerta",
+    mensaje: "No se pudo validar la versión de la aplicación.",
+    color: "",
+    icono: "",
+  },
+  versionGone: {
+    titulo: "Nueva Versión",
+    mensaje: "Hay una nueva versión de la aplicación y es necesario actualizarla.",
+    color: "",
+    icono: "face-surprise",
+  },
 };
 
 exports.getMensajes = async (tipo) => {
