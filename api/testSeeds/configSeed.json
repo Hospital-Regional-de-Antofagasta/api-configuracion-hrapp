@@ -12,6 +12,24 @@
         "mensaje": "Ocurrió un error inesperado. -test",
         "color": " -test",
         "icono": " -test"
+      },
+      "versionNotFound": {
+        "titulo": "Alerta -test",
+        "mensaje": "No se pudo validar la versión de la aplicación. -test",
+        "color": " -test",
+        "icono": " -test"
+      },
+      "deprecatedVersion": {
+        "titulo": "Nueva Versión -test",
+        "mensaje": "Hay una nueva versión de la aplicación, es necesario actualizarla. -test",
+        "color": " -test",
+        "icono": "face-surprise -test"
+      },
+      "remindUpdate": {
+        "titulo": "Nueva Versión -test",
+        "mensaje": "Hay una nueva versión de la aplicación, se recomienda actualizarla. -test",
+        "color": " -test",
+        "icono": " -test"
       }
     },
     "version": 1
