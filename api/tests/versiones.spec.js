@@ -114,10 +114,7 @@ describe("Endpoint manage old versions", () => {
         });
 
       expect(response.status).toBe(200);
-      expect(response.body).toEqual({
-        estado: "OK",
-        respuesta: {},
-      });
+      expect(response.body).toEqual({ estado: "OK" });
     });
   });
 });

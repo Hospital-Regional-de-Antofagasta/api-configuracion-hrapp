@@ -23,10 +23,7 @@ exports.checkSiVersionDeprecada = async (req, res) => {
         respuesta: await getMensajes("remindUpdate"),
       });
     }
-    res.status(200).send({
-      estado: "OK",
-      respuesta: {},
-    });
+    res.status(200).send({ estado: "OK" });
   } catch (error) {
     if (process.env.NODE_ENV === "dev")
       return res.status(500).send({
