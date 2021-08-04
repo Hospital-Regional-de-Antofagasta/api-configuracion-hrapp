@@ -8,19 +8,31 @@
       "Nutrición Infantil",
       "Cirugía y Ortopedía"
     ],
-    "horarioAtencion": {
-      "hora": {
-        "apertura": "08:00",
-        "cierre": "14:00"
+    "horarioAtencion": [
+      {
+        "hora": {
+          "apertura": "08:00",
+          "cierre": "14:00"
+        },
+        "dia": {
+          "apertura": "Lunes",
+          "cierre": "Viernes"
+        }
       },
-      "dia": {
-        "apertura": "Lunes",
-        "cierre": "Viernes"
+      {
+        "hora": {
+          "apertura": "08:00",
+          "cierre": "14:00"
+        },
+        "dia": {
+          "apertura": "Lunes",
+          "cierre": "Viernes"
+        }
       }
-    },
+    ],
     "contacto": {
-      "fono": "552758965",
-      "correo": "correo@gmail.com"
+      "fono": ["552758965", "552758966"],
+      "correo": ["correo@gmail.com", "correo2@gmail.com"]
     },
     "referencia": "1 piso",
     "imagen": "../assets/images/personal.jpg",
@@ -38,19 +50,21 @@
       "Nutrición Infantil",
       "Cirugía y Ortopedía"
     ],
-    "horarioAtencion": {
-      "hora": {
-        "apertura": "08:00",
-        "cierre": "14:00"
-      },
-      "dia": {
-        "apertura": "Lunes",
-        "cierre": "Viernes"
+    "horarioAtencion": [
+      {
+        "hora": {
+          "apertura": "08:00",
+          "cierre": "14:00"
+        },
+        "dia": {
+          "apertura": "Lunes",
+          "cierre": "Viernes"
+        }
       }
-    },
+    ],
     "contacto": {
-      "fono": "552758965",
-      "correo": "correo@gmail.com"
+      "fono": ["552758965"],
+      "correo": ["correo@gmail.com"]
     },
     "referencia": "1 piso",
     "imagen": "../assets/images/personal.jpg",
@@ -68,19 +82,21 @@
       "Nutrición Infantil",
       "Cirugía y Ortopedía"
     ],
-    "horarioAtencion": {
-      "hora": {
-        "apertura": "08:00",
-        "cierre": "14:00"
-      },
-      "dia": {
-        "apertura": "Lunes",
-        "cierre": "Viernes"
+    "horarioAtencion": [
+      {
+        "hora": {
+          "apertura": "08:00",
+          "cierre": "14:00"
+        },
+        "dia": {
+          "apertura": "Lunes",
+          "cierre": "Viernes"
+        }
       }
-    },
+    ],
     "contacto": {
-      "fono": "552758965",
-      "correo": "correo@gmail.com"
+      "fono": ["552758965"],
+      "correo": ["correo@gmail.com"]
     },
     "referencia": "1 piso",
     "imagen": "../assets/images/personal.jpg",
@@ -98,19 +114,21 @@
       "Nutrición Infantil",
       "Cirugía y Ortopedía"
     ],
-    "horarioAtencion": {
-      "hora": {
-        "apertura": "08:00",
-        "cierre": "14:00"
-      },
-      "dia": {
-        "apertura": "Lunes",
-        "cierre": "Viernes"
+    "horarioAtencion": [
+      {
+        "hora": {
+          "apertura": "08:00",
+          "cierre": "14:00"
+        },
+        "dia": {
+          "apertura": "Lunes",
+          "cierre": "Viernes"
+        }
       }
-    },
+    ],
     "contacto": {
-      "fono": "552758965",
-      "correo": "correo@gmail.com"
+      "fono": ["552758965"],
+      "correo": ["correo@gmail.com"]
     },
     "referencia": "1 piso",
     "imagen": "../assets/images/personal.jpg",
@@ -128,19 +146,21 @@
       "Nutrición Infantil",
       "Cirugía y Ortopedía"
     ],
-    "horarioAtencion": {
-      "hora": {
-        "apertura": "08:00",
-        "cierre": "14:00"
-      },
-      "dia": {
-        "apertura": "Lunes",
-        "cierre": "Viernes"
+    "horarioAtencion": [
+      {
+        "hora": {
+          "apertura": "08:00",
+          "cierre": "14:00"
+        },
+        "dia": {
+          "apertura": "Lunes",
+          "cierre": "Viernes"
+        }
       }
-    },
+    ],
     "contacto": {
-      "fono": "552758965",
-      "correo": "correo@gmail.com"
+      "fono": ["552758965"],
+      "correo": ["correo@gmail.com"]
     },
     "referencia": "1 piso",
     "imagen": "../assets/images/personal.jpg",
