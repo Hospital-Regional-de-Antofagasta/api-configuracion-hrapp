@@ -3,6 +3,7 @@ const MenuInicio = require("../models/MenuInicio");
 const MenuDocumentos = require("../models/MenuDocumentos");
 const MenuInformacionGeneral = require("../models/MenuInformacionGeneral");
 const MenuUnidades = require("../models/MenuUnidades");
+const MenuTabs = require("../models/MenuTabs");
 const { getMensajes } = require("../config");
 
 exports.getServiciospaciente = async (req, res) => {
@@ -115,6 +116,28 @@ exports.getUnidades = async (req, res) => {
   }
 };
 
+exports.getTabs = async (req, res) => {
+  try {
+    const menuTabs = await MenuTabs.find({
+      habilitado: true,
+      version: 1,
+    })
+      .sort({ posicion: 1 })
+      .exec();
+    res.status(200).send(menuTabs);
+  } catch (error) {
+    if (process.env.NODE_ENV === "dev")
+      return res.status(500).send({
+        respuesta: await getMensajes("serverError"),
+        detalles_error: {
+          nombre: error.name,
+          mensaje: error.message,
+        },
+      });
+    res.status(500).send({ respuesta: await getMensajes("serverError") });
+  }
+};
+
 exports.getMenusCargaInicio = async (req, res) => {
   try {
     const menuServiciosPaciente = await MenuServiciosPaciente.find({
@@ -147,12 +170,19 @@ exports.getMenusCargaInicio = async (req, res) => {
     })
       .sort({ posicion: 1 })
       .exec();
+    const menuTabs = await MenuTabs.find({
+      habilitado: true,
+      version: 1,
+    })
+      .sort({ posicion: 1 })
+      .exec();
     const menusCargaInicio = {
       menuServiciosPaciente,
       menuInicio,
       // menuDocumentos,
       menuInformacionGeneral,
       menuUnidades,
+      menuTabs,
     };
     res.status(200).send(menusCargaInicio);
   } catch (error) {

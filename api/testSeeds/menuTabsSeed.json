@@ -1,0 +1,56 @@
+[
+  {
+    "icono": "clinic-medical",
+    "title": "inicio",
+    "tab": "tabs/tab1",
+    "habilitado": true,
+    "implementado": true,
+    "posicion": 1,
+    "version": 1
+  },
+  {
+    "icono": "hospital",
+    "title": "Informaciones",
+    "tab": "tab3",
+    "habilitado": true,
+    "implementado": true,
+    "posicion": 3,
+    "version": 1
+  },
+  {
+    "icono": "newspaper",
+    "title": "Noticias",
+    "tab": "noticia",
+    "habilitado": true,
+    "implementado": true,
+    "posicion": 2,
+    "version": 1
+  },
+  {
+    "icono": "briefcase-medical",
+    "title": "Servicios",
+    "tab": "tab2",
+    "habilitado": true,
+    "implementado": true,
+    "posicion": 4,
+    "version": 1
+  },
+  {
+    "icono": "briefcase-medical",
+    "title": "Servicios version 2",
+    "tab": "tab2",
+    "habilitado": true,
+    "implementado": true,
+    "posicion": 4,
+    "version": 2
+  },
+  {
+    "icono": "briefcase-medical",
+    "title": "Servicios deshabilitado",
+    "tab": "tab2",
+    "habilitado": false,
+    "implementado": true,
+    "posicion": 4,
+    "version": 1
+  }
+]

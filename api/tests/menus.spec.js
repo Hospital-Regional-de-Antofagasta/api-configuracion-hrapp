@@ -10,7 +10,9 @@ const menuDocumentosSeed = require("../testSeeds/menuDocumentosSeed.json");
 const MenuInformacionGeneral = require("../models/MenuInformacionGeneral");
 const menuInformacionGeneralSeed = require("../testSeeds/menuInformacionGeneralSeed.json");
 const MenuUnidades = require("../models/MenuUnidades");
-const menuUnidadesSeed = require("..//testSeeds/menuUnidadesSeed.json");
+const menuUnidadesSeed = require("../testSeeds/menuUnidadesSeed.json");
+const MenuTabs = require("../models/MenuTabs");
+const menuTabsSeed = require("../testSeeds/menuTabsSeed.json");
 const ConfigApiConfiguracion = require("../models/ConfigApiConfiguracion");
 const configSeed = require("../testSeeds/configSeed.json");
 
@@ -27,6 +29,7 @@ beforeEach(async () => {
   await MenuDocumentos.create(menuDocumentosSeed);
   await MenuInformacionGeneral.create(menuInformacionGeneralSeed);
   await MenuUnidades.create(menuUnidadesSeed);
+  await MenuTabs.create(menuTabsSeed);
   await ConfigApiConfiguracion.create(configSeed);
 });
 
@@ -36,6 +39,7 @@ afterEach(async () => {
   await MenuDocumentos.deleteMany();
   await MenuInformacionGeneral.deleteMany();
   await MenuUnidades.deleteMany();
+  await MenuTabs.deleteMany();
   await ConfigApiConfiguracion.deleteMany();
   await mongoose.disconnect();
 });
@@ -142,6 +146,29 @@ describe("Endpoints menus", () => {
       done();
     });
   });
+  describe("Get menu tabs", () => {
+    it("Should get menu tabs", async (done) => {
+      const response = await request.get("/v1/configuracion-hrapp/menu/tabs");
+
+      expect(response.status).toBe(200);
+
+      expect(response.body.length).toBe(4);
+      expect(response.body[0].title).toBe("inicio");
+      expect(response.body[1].title).toBe("Noticias");
+      expect(response.body[2].title).toBe("Informaciones");
+
+      done();
+    });
+    it("Should get no menu tabs from empty database", async (done) => {
+      await MenuTabs.deleteMany();
+      const response = await request.get("/v1/configuracion-hrapp/menu/tabs");
+
+      expect(response.status).toBe(200);
+      expect(response.body).toEqual([]);
+
+      done();
+    });
+  });
   describe("Get menus carga inicial", () => {
     it("Should get menus carga inicial", async (done) => {
       const response = await request.get(
@@ -190,6 +217,11 @@ describe("Endpoints menus", () => {
       expect(response.body.menuUnidades[2].title).toBe(
         "Unidades de Apoyo y Terapéutico"
       );
+      // menu tabs
+      expect(response.body.menuTabs.length).toBe(4);
+      expect(response.body.menuTabs[0].title).toBe("inicio");
+      expect(response.body.menuTabs[1].title).toBe("Noticias");
+      expect(response.body.menuTabs[2].title).toBe("Informaciones");
 
       done();
     });

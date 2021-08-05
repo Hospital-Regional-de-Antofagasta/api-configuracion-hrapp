@@ -13,6 +13,8 @@ router.get("/informacion-general", menuController.getInformacionGeneral);
 
 router.get("/unidades", menuController.getUnidades);
 
+router.get("/tabs", menuController.getTabs);
+
 router.get("/carga-inicial", menuController.getMenusCargaInicio);
 
 module.exports = router;
