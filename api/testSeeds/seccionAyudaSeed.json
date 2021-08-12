@@ -1,0 +1,118 @@
+[
+  {
+    "titulo": "¿Necesitas Ayuda?",
+    "preguntas": [
+      {
+        "texto": "¿Como Solicito un documento?",
+        "slide": 1
+      },
+      {
+        "texto": "¿Cuanto tarda en llegar el documento una vez solicitado?",
+        "slide": 3
+      },
+      {
+        "texto": "¿Cuantas veces puedo solicitar un documento?",
+        "slide": 2
+      }
+    ],
+    "respuestas": [],
+    "icono": "",
+    "posicion": 1,
+    "tipo": "documentos",
+    "version": 1,
+    "habilitado": true
+  },
+  {
+    "titulo": "",
+    "preguntas": [
+      {
+        "texto": "¿Como Solicito un documento?",
+        "slide": 0
+      }
+    ],
+    "respuestas": ["GIF"],
+    "icono": "clock",
+    "posicion": 2,
+    "tipo": "documentos",
+    "version": 1,
+    "habilitado": true
+  },
+  {
+    "titulo": "",
+    "preguntas": [
+      {
+        "texto": "¿Cuanto tarda en llegar el documento una vez solicitado?",
+        "slide": 0
+      }
+    ],
+    "respuesta": ["¡Si todo sale bien, no más de 5 minutos!"],
+    "icono": "clock",
+    "posicion": 4,
+    "tipo": "documentos",
+    "version": 1,
+    "habilitado": true
+  },
+  {
+    "titulo": "",
+    "preguntas": [
+      {
+        "texto": "¿Cuantas veces puedo solicitar un documento?",
+        "slide": 0
+      }
+    ],
+    "respuestas": [
+      "¡Las veces que quieras!",
+      "Mientras no exista una solicitud previa"
+    ],
+    "icono": "clock",
+    "posicion": 3,
+    "tipo": "documentos",
+    "version": 1,
+    "habilitado": true
+  },
+  {
+    "titulo": "deshabilitado",
+    "preguntas": [
+      {
+        "texto": "¿Cuanto tarda en llegar el documento una vez solicitado?",
+        "slide": 0
+      }
+    ],
+    "respuesta": ["¡Si todo sale bien, no más de 5 minutos!"],
+    "icono": "clock",
+    "posicion": 4,
+    "tipo": "documentos",
+    "version": 1,
+    "habilitado": false
+  },
+  {
+    "titulo": "2",
+    "preguntas": [
+      {
+        "texto": "¿Cuanto tarda en llegar el documento una vez solicitado?",
+        "slide": 0
+      }
+    ],
+    "respuesta": ["¡Si todo sale bien, no más de 5 minutos!"],
+    "icono": "clock",
+    "posicion": 4,
+    "tipo": "documentos",
+    "version": 2,
+    "habilitado": true
+  },
+  {
+    "titulo": "no-documentos",
+    "preguntas": [
+      {
+        "texto": "¿Cuanto tarda en llegar el documento una vez solicitado?",
+        "slide": 0
+      }
+    ],
+    "respuesta": ["¡Si todo sale bien, no más de 5 minutos!"],
+    "icono": "clock",
+    "posicion": 4,
+    "tipo": "no-documentos",
+    "version": 1,
+    "habilitado": true
+  }
+]

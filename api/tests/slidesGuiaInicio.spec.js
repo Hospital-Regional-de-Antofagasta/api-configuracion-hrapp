@@ -95,7 +95,7 @@ describe("Endpoints slides guia inicio", () => {
 
       done();
     });
-    it("Should get no unidades from empty database", async (done) => {
+    it("Should get no slides guia de inicio from empty database", async (done) => {
       await SlidesGuiaInicio.deleteMany();
       const response = await request.get("/v1/configuracion-hrapp/slides-guia-inicio");
 
