@@ -9,6 +9,7 @@ const configuracionHRApp = require("./routes/configuracionHRApp");
 const misionVision = require("./routes/misionVision");
 const unidades = require("./routes/unidades");
 const versiones = require("./routes/versiones");
+const slidesGuiaInicio = require("./routes/slidesGuiaInicio");
 
 const app = express();
 
@@ -37,5 +38,7 @@ app.use("/v1/configuracion-hrapp/mision-vision", misionVision);
 app.use("/v1/configuracion-hrapp/unidades", unidades);
 
 app.use("/v1/configuracion-hrapp/version", versiones);
+
+app.use("/v1/configuracion-hrapp/slides-guia-inicio", slidesGuiaInicio);
 
 module.exports = app;
