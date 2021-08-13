@@ -3,9 +3,9 @@ const { getMensajes } = require("../config");
 
 exports.get = async (req, res) => {
   try {
-    const tipo = req.query.tipo;
-    const filter = tipo ? {
-      tipo,
+    const pagina = req.query.pagina;
+    const filter = pagina ? {
+      pagina,
       habilitado: true,
       version: 1,
     } : {

@@ -22,8 +22,8 @@ afterEach(async () => {
 
 describe("Endpoints seccion ayuda", () => {
   describe("Get seccion ayuda", () => {
-    it("Should get seccion ayuda de tipo documentos", async (done) => {
-      const response = await request.get(`/v1/configuracion-hrapp/seccion-ayuda?tipo=documentos`);
+    it("Should get seccion ayuda de pagina documentos", async (done) => {
+      const response = await request.get(`/v1/configuracion-hrapp/seccion-ayuda?pagina=documentos`);
 
       expect(response.status).toBe(200);
 
@@ -45,7 +45,7 @@ describe("Endpoints seccion ayuda", () => {
       expect(response.body[0].respuestas.length).toBe(0);
       expect(response.body[0].icono).toBe("");
       expect(response.body[0].posicion).toBe(1);
-      expect(response.body[0].tipo).toBe("documentos");
+      expect(response.body[0].pagina).toBe("documentos");
       expect(response.body[0].version).toBe(1);
       expect(response.body[0].habilitado).toBe(true);
 

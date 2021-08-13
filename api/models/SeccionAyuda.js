@@ -13,7 +13,7 @@ const SeccionAyuda = mongoose.model(
     ],
     respuestas: [String],
     icono: String,
-    tipo: String,
+    pagina: String,
     posicion: Number,
     habilitado: Boolean,
     version: Number,

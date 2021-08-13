@@ -18,7 +18,7 @@
     "respuestas": [],
     "icono": "",
     "posicion": 1,
-    "tipo": "documentos",
+    "pagina": "documentos",
     "version": 1,
     "habilitado": true
   },
@@ -33,7 +33,7 @@
     "respuestas": ["GIF"],
     "icono": "clock",
     "posicion": 2,
-    "tipo": "documentos",
+    "pagina": "documentos",
     "version": 1,
     "habilitado": true
   },
@@ -48,7 +48,7 @@
     "respuesta": ["¡Si todo sale bien, no más de 5 minutos!"],
     "icono": "clock",
     "posicion": 4,
-    "tipo": "documentos",
+    "pagina": "documentos",
     "version": 1,
     "habilitado": true
   },
@@ -66,7 +66,7 @@
     ],
     "icono": "clock",
     "posicion": 3,
-    "tipo": "documentos",
+    "pagina": "documentos",
     "version": 1,
     "habilitado": true
   },
@@ -81,7 +81,7 @@
     "respuesta": ["¡Si todo sale bien, no más de 5 minutos!"],
     "icono": "clock",
     "posicion": 4,
-    "tipo": "documentos",
+    "pagina": "documentos",
     "version": 1,
     "habilitado": false
   },
@@ -96,7 +96,7 @@
     "respuesta": ["¡Si todo sale bien, no más de 5 minutos!"],
     "icono": "clock",
     "posicion": 4,
-    "tipo": "documentos",
+    "pagina": "documentos",
     "version": 2,
     "habilitado": true
   },
@@ -111,7 +111,7 @@
     "respuesta": ["¡Si todo sale bien, no más de 5 minutos!"],
     "icono": "clock",
     "posicion": 4,
-    "tipo": "no-documentos",
+    "pagina": "no-documentos",
     "version": 1,
     "habilitado": true
   }
