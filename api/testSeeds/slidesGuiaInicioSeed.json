@@ -8,8 +8,14 @@
       "bold": true
     },
     "imagen": {
-      "url": "../assets/images/logoTipo.png",
-      "descripcion": "Logo"
+      "src": "https://via.placeholder.com/500x500",
+      "srcset": [
+        "https://via.placeholder.com/1500x1500 2160w",
+        "https://via.placeholder.com/1000x1000 1080w",
+        "https://via.placeholder.com/500x500 720w",
+        "https://via.placeholder.com/250x250 480w"
+      ],
+      "alt": "imagen"
     },
     "icono": {
       "icono": "",
@@ -84,8 +90,14 @@
       "bold": true
     },
     "imagen": {
-      "url": "../assets/images/Meson.jpeg",
-      "descripcion": "Imagen Atención"
+      "src": "https://via.placeholder.com/500x500",
+      "srcset": [
+        "https://via.placeholder.com/1500x1500 2160w",
+        "https://via.placeholder.com/1000x1000 1080w",
+        "https://via.placeholder.com/500x500 720w",
+        "https://via.placeholder.com/250x250 480w"
+      ],
+      "alt": "imagen"
     },
     "icono": {
       "icono": "",
@@ -189,8 +201,14 @@
       "bold": true
     },
     "imagen": {
-      "url": "../assets/images/personalHospital.jpg",
-      "descripcion": "Imagen funcionarios"
+      "src": "https://via.placeholder.com/500x500",
+      "srcset": [
+        "https://via.placeholder.com/1500x1500 2160w",
+        "https://via.placeholder.com/1000x1000 1080w",
+        "https://via.placeholder.com/500x500 720w",
+        "https://via.placeholder.com/250x250 480w"
+      ],
+      "alt": "imagen"
     },
     "icono": {
       "icono": "",
@@ -264,8 +282,14 @@
       "bold": true
     },
     "imagen": {
-      "url": "../assets/images/personalHospital.jpg",
-      "descripcion": "Imagen funcionarios"
+      "src": "https://via.placeholder.com/500x500",
+      "srcset": [
+        "https://via.placeholder.com/1500x1500 2160w",
+        "https://via.placeholder.com/1000x1000 1080w",
+        "https://via.placeholder.com/500x500 720w",
+        "https://via.placeholder.com/250x250 480w"
+      ],
+      "alt": "imagen"
     },
     "icono": {
       "icono": "",
@@ -339,8 +363,14 @@
       "bold": true
     },
     "imagen": {
-      "url": "../assets/images/personalHospital.jpg",
-      "descripcion": "Imagen funcionarios"
+      "src": "https://via.placeholder.com/500x500",
+      "srcset": [
+        "https://via.placeholder.com/1500x1500 2160w",
+        "https://via.placeholder.com/1000x1000 1080w",
+        "https://via.placeholder.com/500x500 720w",
+        "https://via.placeholder.com/250x250 480w"
+      ],
+      "alt": "imagen"
     },
     "icono": {
       "icono": "",

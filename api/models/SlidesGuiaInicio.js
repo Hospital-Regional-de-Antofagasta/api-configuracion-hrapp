@@ -12,8 +12,9 @@ const SlidesGuiaInicio = mongoose.model(
       bold: Boolean,
     },
     imagen: {
-      url: String,
-      descripcion: String,
+      src: String,
+      srcset: [String],
+      alt: String,
     },
     icono: {
       icono: String,
