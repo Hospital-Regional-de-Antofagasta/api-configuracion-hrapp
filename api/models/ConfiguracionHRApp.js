@@ -23,6 +23,38 @@ const ConfiguracionHRApp = mongoose.model(
       nombreApp: String,
       mensajeBienvenida: String,
     },
+    imagenesApp: {
+      logoHrapp: {
+        src: String,
+        srcset: [String],
+        alt: String,
+      },
+      inicio: {
+        src: String,
+        srcset: [String],
+        alt: String,
+      },
+      informacionGeneral: {
+        src: String,
+        srcset: [String],
+        alt: String,
+      },
+      serviciosPaciente: {
+        src: String,
+        srcset: [String],
+        alt: String,
+      },
+      misionVision: {
+        src: String,
+        srcset: [String],
+        alt: String,
+      },
+      menuPrestaciones: {
+        src: String,
+        srcset: [String],
+        alt: String,
+      },
+    },
   }),
   "configuracion_hrapp"
 );

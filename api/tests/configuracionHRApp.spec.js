@@ -50,6 +50,33 @@ describe("Endpoints menus", () => {
       expect(response.body.textosApp.nombreApp).toBe("Hospital En Tus Manos");
       expect(response.body.textosApp.mensajeBienvenida).toBe("Bienvenido");
 
+      expect(response.body.imagenesApp.logoHrapp.src).toBe(
+        "https://via.placeholder.com/1000x500"
+      );
+      expect(response.body.imagenesApp.logoHrapp.srcset.length).toBe(
+        4
+      );
+      expect(response.body.imagenesApp.logoHrapp.srcset[0]).toBe(
+        "https://via.placeholder.com/3000x1500 2160w"
+      );
+      expect(response.body.imagenesApp.logoHrapp.srcset[1]).toBe(
+        "https://via.placeholder.com/2000x1000 1080w"
+      );
+      expect(response.body.imagenesApp.logoHrapp.srcset[2]).toBe(
+        "https://via.placeholder.com/1000x500 720w"
+      );
+      expect(response.body.imagenesApp.logoHrapp.srcset[3]).toBe(
+        "https://via.placeholder.com/500x250 480w"
+      );
+      expect(response.body.imagenesApp.logoHrapp.alt).toBe(
+        "imagenes"
+      );
+      expect(response.body.imagenesApp.inicio).toBeTruthy();
+      expect(response.body.imagenesApp.informacionGeneral).toBeTruthy();
+      expect(response.body.imagenesApp.serviciosPaciente).toBeTruthy();
+      expect(response.body.imagenesApp.misionVision).toBeTruthy();
+      expect(response.body.imagenesApp.menuPrestaciones).toBeTruthy();
+
       done();
     });
   });

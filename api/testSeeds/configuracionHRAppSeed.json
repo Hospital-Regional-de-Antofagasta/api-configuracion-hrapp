@@ -18,6 +18,68 @@
     "textosApp": {
       "nombreApp": "Hospital En Tus Manos",
       "mensajeBienvenida": "Bienvenido"
+    },
+    "imagenesApp": {
+      "logoHrapp": {
+        "src": "https://via.placeholder.com/1000x500",
+        "srcset": [
+          "https://via.placeholder.com/3000x1500 2160w",
+          "https://via.placeholder.com/2000x1000 1080w",
+          "https://via.placeholder.com/1000x500 720w",
+          "https://via.placeholder.com/500x250 480w"
+        ],
+        "alt": "imagenes"
+      },
+      "inicio": {
+        "src": "https://via.placeholder.com/1000x500",
+        "srcset": [
+          "https://via.placeholder.com/3000x1500 2160w",
+          "https://via.placeholder.com/2000x1000 1080w",
+          "https://via.placeholder.com/1000x500 720w",
+          "https://via.placeholder.com/500x250 480w"
+        ],
+        "alt": "imagenes"
+      },
+      "informacionGeneral": {
+        "src": "https://via.placeholder.com/1000x500",
+        "srcset": [
+          "https://via.placeholder.com/3000x1500 2160w",
+          "https://via.placeholder.com/2000x1000 1080w",
+          "https://via.placeholder.com/1000x500 720w",
+          "https://via.placeholder.com/500x250 480w"
+        ],
+        "alt": "imagenes"
+      },
+      "serviciosPaciente": {
+        "src": "https://via.placeholder.com/1000x500",
+        "srcset": [
+          "https://via.placeholder.com/3000x1500 2160w",
+          "https://via.placeholder.com/2000x1000 1080w",
+          "https://via.placeholder.com/1000x500 720w",
+          "https://via.placeholder.com/500x250 480w"
+        ],
+        "alt": "imagenes"
+      },
+      "misionVision": {
+        "src": "https://via.placeholder.com/1000x500",
+        "srcset": [
+          "https://via.placeholder.com/3000x1500 2160w",
+          "https://via.placeholder.com/2000x1000 1080w",
+          "https://via.placeholder.com/1000x500 720w",
+          "https://via.placeholder.com/500x250 480w"
+        ],
+        "alt": "imagenes"
+      },
+      "menuPrestaciones": {
+        "src": "https://via.placeholder.com/1000x500",
+        "srcset": [
+          "https://via.placeholder.com/3000x1500 2160w",
+          "https://via.placeholder.com/2000x1000 1080w",
+          "https://via.placeholder.com/1000x500 720w",
+          "https://via.placeholder.com/500x250 480w"
+        ],
+        "alt": "imagenes"
+      }
     }
   }
 ]
