@@ -35,7 +35,16 @@
       "correo": ["correo@gmail.com", "correo2@gmail.com"]
     },
     "referencia": "1 piso",
-    "imagen": "../assets/images/personal.jpg",
+    "imagen": {
+      "src": "https://via.placeholder.com/1000x500",
+      "srcset": [
+        "https://via.placeholder.com/30000x1500 2160w",
+        "https://via.placeholder.com/2000x1000 1080w",
+        "https://via.placeholder.com/1000x500 720w",
+        "https://via.placeholder.com/500x250 480w"
+      ],
+      "alt": "imagen"
+    },
     "tipo": "serviciosClinicos",
     "habilitado": true,
     "posicion": 1,
@@ -67,7 +76,16 @@
       "correo": ["correo@gmail.com"]
     },
     "referencia": "1 piso",
-    "imagen": "../assets/images/personal.jpg",
+    "imagen": {
+      "src": "https://via.placeholder.com/1000x500",
+      "srcset": [
+        "https://via.placeholder.com/30000x1500 2160w",
+        "https://via.placeholder.com/2000x1000 1080w",
+        "https://via.placeholder.com/1000x500 720w",
+        "https://via.placeholder.com/500x250 480w"
+      ],
+      "alt": "imagen"
+    },
     "tipo": "serviciosClinicos",
     "habilitado": true,
     "posicion": 3,
@@ -99,7 +117,16 @@
       "correo": ["correo@gmail.com"]
     },
     "referencia": "1 piso",
-    "imagen": "../assets/images/personal.jpg",
+    "imagen": {
+      "src": "https://via.placeholder.com/1000x500",
+      "srcset": [
+        "https://via.placeholder.com/30000x1500 2160w",
+        "https://via.placeholder.com/2000x1000 1080w",
+        "https://via.placeholder.com/1000x500 720w",
+        "https://via.placeholder.com/500x250 480w"
+      ],
+      "alt": "imagen"
+    },
     "tipo": "serviciosClinicos",
     "habilitado": true,
     "posicion": 2,
@@ -131,7 +158,16 @@
       "correo": ["correo@gmail.com"]
     },
     "referencia": "1 piso",
-    "imagen": "../assets/images/personal.jpg",
+    "imagen": {
+      "src": "https://via.placeholder.com/1000x500",
+      "srcset": [
+        "https://via.placeholder.com/30000x1500 2160w",
+        "https://via.placeholder.com/2000x1000 1080w",
+        "https://via.placeholder.com/1000x500 720w",
+        "https://via.placeholder.com/500x250 480w"
+      ],
+      "alt": "imagen"
+    },
     "tipo": "unidadesApoyo",
     "habilitado": true,
     "posicion": 10,
@@ -163,7 +199,16 @@
       "correo": ["correo@gmail.com"]
     },
     "referencia": "1 piso",
-    "imagen": "../assets/images/personal.jpg",
+    "imagen": {
+      "src": "https://via.placeholder.com/1000x500",
+      "srcset": [
+        "https://via.placeholder.com/30000x1500 2160w",
+        "https://via.placeholder.com/2000x1000 1080w",
+        "https://via.placeholder.com/1000x500 720w",
+        "https://via.placeholder.com/500x250 480w"
+      ],
+      "alt": "imagen"
+    },
     "tipo": "serviciosClinicos",
     "habilitado": true,
     "posicion": 1,

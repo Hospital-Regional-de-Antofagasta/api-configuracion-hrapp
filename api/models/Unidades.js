@@ -24,7 +24,11 @@ const Unidades = mongoose.model(
       correo: [String],
     },
     referencia: String,
-    imagen: String,
+    imagen: {
+      src: String,
+      srcset: [String],
+      alt: String,
+    },
     tipo: String,
     habilitado: Boolean,
     posicion: Number,
