@@ -24,11 +24,6 @@ const ConfiguracionHRApp = mongoose.model(
       mensajeBienvenida: String,
     },
     imagenesApp: {
-      logoHrapp: {
-        src: String,
-        srcset: [String],
-        alt: String,
-      },
       inicio: {
         src: String,
         srcset: [String],
