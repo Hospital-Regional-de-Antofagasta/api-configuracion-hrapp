@@ -1,14 +1,14 @@
 const supertest = require("supertest");
-const app = require("../app");
+const app = require("../api/app");
 const mongoose = require("mongoose");
-const ConfiguracionHRApp = require("../models/ConfiguracionHRApp");
-const configuracionHRAppSeed = require("../testSeeds/configuracionHRAppSeed.json");
+const ConfiguracionHRApp = require("../api/models/ConfiguracionHRApp");
+const configuracionHRAppSeed = require("./testSeeds/configuracionHRAppSeed.json");
 
 const request = supertest(app);
 
 beforeEach(async () => {
   await mongoose.disconnect();
-  await mongoose.connect(`${process.env.MONGO_URI_TEST}configuracion_test`, {
+  await mongoose.connect(`${process.env.MONGO_URI}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });

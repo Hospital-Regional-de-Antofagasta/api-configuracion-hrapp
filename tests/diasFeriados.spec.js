@@ -1,14 +1,14 @@
 const supertest = require("supertest");
 const mongoose = require("mongoose");
-const app = require("../app");
-const DiasFeriados = require("../models/DiasFeriados");
-const diasFeriados = require("../testSeeds/diasFeriadosSeeds.json");
+const app = require("../api/app");
+const DiasFeriados = require("../api/models/DiasFeriados");
+const diasFeriados = require("./testSeeds/diasFeriadosSeeds.json");
 
 const request = supertest(app);
 
 beforeEach(async () => {
   await mongoose.disconnect();
-  await mongoose.connect(`${process.env.MONGO_URI_TEST}feriados_test`, {
+  await mongoose.connect(`${process.env.MONGO_URI}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });

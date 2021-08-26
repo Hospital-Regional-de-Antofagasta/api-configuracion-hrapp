@@ -1,18 +1,18 @@
 const supertest = require("supertest");
 const mongoose = require("mongoose");
-const app = require("../app");
-const Versiones = require("../models/Versiones");
-const versionesSeed = require("../testSeeds/versionesSeed.json");
-const { getMensajes } = require("../config");
-const ConfigApiConfiguracion = require("../models/ConfigApiConfiguracion");
-const configSeed = require("../testSeeds/configSeed.json");
+const app = require("../api/app");
+const Versiones = require("../api/models/Versiones");
+const versionesSeed = require("./testSeeds/versionesSeed.json");
+const { getMensajes } = require("../api/config");
+const ConfigApiConfiguracion = require("../api/models/ConfigApiConfiguracion");
+const configSeed = require("./testSeeds/configSeed.json");
 
 const request = supertest(app);
 
 beforeEach(async () => {
   await mongoose.disconnect();
   await mongoose.connect(
-    `${process.env.MONGO_URI_TEST}deprecar_versiones_antiguas_test`,
+    `${process.env.MONGO_URI}`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,

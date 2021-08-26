@@ -21,7 +21,7 @@ dist/
 
 # Maven
 target/
-dist/
+
 
 # JetBrains IDE
 .idea/
@@ -51,3 +51,10 @@ Thumbs.db
 # Envairomental variables
 .env
 .env.dev
+
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+/.tests.*

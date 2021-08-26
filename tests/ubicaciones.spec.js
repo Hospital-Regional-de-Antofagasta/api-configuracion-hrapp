@@ -1,16 +1,16 @@
 const supertest = require("supertest");
 const mongoose = require("mongoose");
-const app = require("../app");
-const Regiones = require("../models/Regiones");
-const Ciudades = require("../models/Ciudades");
-const regionesSeed = require("../testSeeds/regionesSeed");
-const ciudadesSeed = require("../testSeeds/ciudadesSeed");
+const app = require("../api/app");
+const Regiones = require("../api/models/Regiones");
+const Ciudades = require("../api/models/Ciudades");
+const regionesSeed = require("./testSeeds/regionesSeed.json");
+const ciudadesSeed = require("./testSeeds/ciudadesSeed.json");
 
 const request = supertest(app);
 
 beforeEach(async () => {
   await mongoose.disconnect();
-  await mongoose.connect(`${process.env.MONGO_URI_TEST}ubicaciones_test`, {
+  await mongoose.connect(`${process.env.MONGO_URI}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
