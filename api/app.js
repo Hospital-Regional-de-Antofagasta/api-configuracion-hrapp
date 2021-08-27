@@ -49,7 +49,7 @@ app.use("/v1/configuracion-hrapp/slides-guia-inicio", slidesGuiaInicio);
 app.use("/v1/configuracion-hrapp/seccion-ayuda", seccionAyuda);
 
 if (require.main === module) { // true if file is executed
-  process.listeners("SIGINT",function (){
+  process.on("SIGINT",function (){
     process.exit();
   });
   app.listen(port, () => {

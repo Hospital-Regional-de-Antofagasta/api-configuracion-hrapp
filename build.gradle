@@ -20,9 +20,9 @@ docker {
 }
 
 dockerRun {
-    name 'mongo'
-    image 'mongo:5.0'
-    ports '27017:27017'
+    name  "mongo"
+    image "mongo:5.0"
+    ports  "27017:27017"
     daemonize true
     ignoreExitValue true
 }
@@ -34,17 +34,15 @@ tasks.named("dockerRemoveContainer"){t-> t.dependsOn(dockerStop)}
 
 tasks.named("dockerRun"){t->
     {
+        t.doLast {
+            new File(runningMongo).text = "Running mongo"
+        }
         t.outputs.file runningMongo
     }
 }
 
 task startMongo {
     dependsOn "dockerRun"
-
-    doLast {
-        new File(runningMongo).text = "Running mongo"
-    }
-
     outputs.file runningMongo
 }
 
@@ -74,16 +72,28 @@ task test(type: NpmTask) {
 }
 
 task apiBuild(type: NodeTask) {
+    inputs.files fileTree('api')
+
     script = file("build.js")
     args = [ "$project.projectDir/api/app.js","$project.buildDir/node"]
+
+    outputs.file "$project.buildDir/node/app.js";
+}
+
+task dockerLogin(type:Exec){
+    commandLine "docker","login", "-u", "_json_key", "-p \$(cat keyfile.json)"
+}
+
+task publish {
+    dependsOn build
 }
 
 dockerfileZip.dependsOn test
 apiBuild.dependsOn test
 docker.dependsOn test, apiBuild
 assemble.dependsOn "docker"
-
 clean.dependsOn stopMongo
+dockerPush.dependsOn assemble, dockerLogin
 
 clean {
     delete testsExecutedMarkerName
