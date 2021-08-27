@@ -81,7 +81,8 @@ task apiBuild(type: NodeTask) {
 }
 
 task dockerLogin(type:Exec){
-    commandLine "docker","login", "-u", "_json_key", "-p \$(cat keyfile.json)"
+    commandLine "docker", "login", "-u", "_json_key", "--password-stdin", "https://gcr.io"
+    standardInput new BufferedInputStream(new FileInputStream("key.json"))
 }
 
 task publish {
