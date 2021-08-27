@@ -15,6 +15,9 @@
         "cantidadAObtener": 5
       }
     },
+    "parametrosApp": {
+      "cantidadVisitasParaReview": 20
+    },
     "textosApp": {
       "nombreApp": "Hospital en tus Manos",
       "mensajeBienvenida": "Bienvenido",

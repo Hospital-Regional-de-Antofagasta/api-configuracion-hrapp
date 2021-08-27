@@ -19,6 +19,9 @@ const ConfiguracionHRApp = mongoose.model(
         cantidadAObtener: Number,
       },
     },
+    parametrosApp: {
+      cantidadVisitasParaReview: Number,
+    },
     textosApp: {
       nombreApp: String,
       mensajeBienvenida: String,

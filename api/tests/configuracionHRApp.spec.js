@@ -45,8 +45,12 @@ describe("Endpoints menus", () => {
       expect(
         response.body.parametrosEndpoints.documentosPacientes.cantidadAObtener
       ).toBe(5);
+      // parametrosApp
+      expect(
+        response.body.parametrosApp.cantidadVisitasParaReview
+      ).toBe(20);
       // textosApp
-      expect(response.body.textosApp.nombreApp).toBe("Hospital En Tus Manos");
+      expect(response.body.textosApp.nombreApp).toBe("Hospital en tus Manos");
       expect(response.body.textosApp.mensajeBienvenida).toBe("Bienvenido");
       // textosApp tituloPaginas
       expect(Object.keys(response.body.textosApp.tituloPaginas).length).toBe(
