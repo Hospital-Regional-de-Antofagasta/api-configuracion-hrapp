@@ -1,12 +1,22 @@
 plugins{
     id "base"
     id "nl.eleven.node-gradle.node" version "1.0.0"
+    id "com.google.osdetector" version "1.7.0"
+    id "com.github.rmee.kubectl" version "1.1.20200614081240"
+    id "com.github.rmee.helm" version "1.1.20200614081240"
+    id "com.github.rmee.gcloud" version "1.1.20200614081240"
     id "com.palantir.docker" version "0.28.0"
     id "com.palantir.docker-run" version "0.28.0"
 }
 
+project.version = "1.0.0-SNAPSHOT"
+
+
 var nodeVersion = "16.8.0"
-var tag = "1.0.0-SNAPSHOT"
+var imageId = "gcr.io/saludantofagasta-proy1/$project.name:$project.version"
+var zona = System.getenv("API_ZONE")
+var cluster = System.getenv("API_CLUSTER")
+
 
 node {
     download true
@@ -15,7 +25,7 @@ node {
 
 
 docker {
-    name "$project.name:$tag"
+    name imageId
     files fileTree("$project.buildDir/node")
 }
 
@@ -68,6 +78,7 @@ task test(type: NpmTask) {
     doLast {
         new File(testsExecutedMarkerName).text = 'delete this file to force re-execution JavaScript tests'
     }
+
     outputs.file testsExecutedMarkerName
 }
 
@@ -80,22 +91,64 @@ task apiBuild(type: NodeTask) {
     outputs.file "$project.buildDir/node/app.js";
 }
 
-task dockerLogin(type:Exec){
+task gcrLogin(type:Exec){
     commandLine "docker", "login", "-u", "_json_key", "--password-stdin", "https://gcr.io"
     standardInput new BufferedInputStream(new FileInputStream("key.json"))
 }
 
-task publish {
-    dependsOn build
-}
-
 dockerfileZip.dependsOn test
 apiBuild.dependsOn test
+dockerPrepare.dependsOn apiBuild
 docker.dependsOn test, apiBuild
 assemble.dependsOn "docker"
 clean.dependsOn stopMongo
-dockerPush.dependsOn assemble, dockerLogin
+dockerPush.dependsOn build, gcrLogin
+
+gcloud {
+    cli {
+        imageName = 'google/cloud-sdk'
+        imageTag = '352.0.0'
+    }
+
+    keyFile = file("$projectDir/key.json")
+    zone = zona
+    project = "saludantofagasta-proy1"
+
+    gke {
+        clusterName =  cluster
+    }
+}
+
+gcloudSetProject.dependsOn gcloudActivateServiceAccount
+gcloudGetKubernetesCredentials.dependsOn gcloudSetProject
+
+task deployQA() {
+    dependsOn dockerPush,gcloudGetKubernetesCredentials, helmPackage
+    doFirst {
+        kubectl.exec({ commandLine = "kubectl apply -f=${file('kubernetes/ .yaml')}" })
+
+        File yamlFile = file("build/helm/crnk-example.yaml")
+        yamlFile.parentFile.mkdirs()
+
+        helm.exec({
+            commandLine = "helm template --name=crnk --set image.tag=${imageId} ${helmPackageCrnkExample.outputs.files.singleFile} --namespace=default"
+            stdoutFile = yamlFile
+        })
+
+        kubectl.exec({ commandLine = "kubectl apply -f=${yamlFile} -n=default" })
+    }
+}
+
+
+
 
 clean {
     delete testsExecutedMarkerName
+}
+
+task echo {
+    dependsOn gcloudGetKubernetesCredentials
+    doLast {
+        kubectl.exec({commandLine = "kubectl config get-contexts"})
+    }
 }
