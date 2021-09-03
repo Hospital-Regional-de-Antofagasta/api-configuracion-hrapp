@@ -13,10 +13,7 @@ project.version = "1.0.0-SNAPSHOT"
 
 
 var nodeVersion = "16.8.0"
-var imageId = "gcr.io/saludantofagasta-proy1/$project.name:$project.version"
-var zona = System.getenv("API_ZONE")
-var cluster = System.getenv("API_CLUSTER")
-
+String imageId = "gcr.io/saludantofagasta-proy1/$project.name:$project.version"
 
 node {
     download true
@@ -53,7 +50,6 @@ tasks.named("dockerRun"){t->
 
 task startMongo {
     dependsOn "dockerRun"
-    outputs.file runningMongo
 }
 
 task stopMongo {
@@ -88,7 +84,7 @@ task apiBuild(type: NodeTask) {
     script = file("build.js")
     args = [ "$project.projectDir/api/app.js","$project.buildDir/node"]
 
-    outputs.file "$project.buildDir/node/app.js";
+    outputs.file "$project.buildDir/node/app.js"
 }
 
 task gcrLogin(type:Exec){
@@ -99,7 +95,7 @@ task gcrLogin(type:Exec){
 dockerfileZip.dependsOn test
 apiBuild.dependsOn test
 dockerPrepare.dependsOn apiBuild
-docker.dependsOn test, apiBuild
+tasks.named("docker").get().dependsOn test, apiBuild
 assemble.dependsOn "docker"
 clean.dependsOn stopMongo
 dockerPush.dependsOn build, gcrLogin
@@ -111,11 +107,11 @@ gcloud {
     }
 
     keyFile = file("$projectDir/key.json")
-    zone = zona
+    zone = System.getenv("API_ZONE")
     project = "saludantofagasta-proy1"
 
     gke {
-        clusterName =  cluster
+        clusterName =  System.getenv("API_CLUSTER")
     }
 }
 
