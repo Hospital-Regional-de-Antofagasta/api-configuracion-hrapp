@@ -10,24 +10,36 @@
     ],
     "horarioAtencion": [
       {
-        "hora": {
-          "apertura": "08:00",
-          "cierre": "14:00"
-        },
+        "categoria": "Secretaria",
+        "hora": [
+          {
+            "apertura": "08:00",
+            "cierre": "14:00"
+          },
+          {
+            "apertura": "15:00",
+            "cierre": "18:00"
+          }
+        ],
         "dia": {
           "apertura": "Lunes",
-          "cierre": "Viernes"
-        }
+          "cierre": "Sábado"
+        },
+        "nota": "Incluído festivos."
       },
       {
-        "hora": {
-          "apertura": "08:00",
-          "cierre": "14:00"
-        },
+        "categoria":"Encargado",
+        "hora": [
+          {
+            "apertura": "08:00",
+            "cierre": "14:00"
+          }
+        ],
         "dia": {
           "apertura": "Lunes",
           "cierre": "Viernes"
-        }
+        },
+        "nota":""
       }
     ],
     "contacto": {
@@ -61,14 +73,18 @@
     ],
     "horarioAtencion": [
       {
-        "hora": {
-          "apertura": "08:00",
-          "cierre": "14:00"
-        },
+        "categoria":"",
+        "hora": [
+          {
+            "apertura": "08:00",
+            "cierre": "14:00"
+          }
+        ],
         "dia": {
           "apertura": "Lunes",
           "cierre": "Viernes"
-        }
+        },
+        "nota":""
       }
     ],
     "contacto": {
@@ -102,14 +118,18 @@
     ],
     "horarioAtencion": [
       {
-        "hora": {
-          "apertura": "08:00",
-          "cierre": "14:00"
-        },
+        "categoria":"",
+        "hora": [
+          {
+            "apertura": "08:00",
+            "cierre": "14:00"
+          }
+        ],
         "dia": {
           "apertura": "Lunes",
           "cierre": "Viernes"
-        }
+        },
+        "nota":""
       }
     ],
     "contacto": {
@@ -143,14 +163,18 @@
     ],
     "horarioAtencion": [
       {
-        "hora": {
-          "apertura": "08:00",
-          "cierre": "14:00"
-        },
+        "categoria":"",
+        "hora": [
+          {
+            "apertura": "08:00",
+            "cierre": "14:00"
+          }
+        ],
         "dia": {
           "apertura": "Lunes",
           "cierre": "Viernes"
-        }
+        },
+        "nota":""
       }
     ],
     "contacto": {
@@ -184,14 +208,18 @@
     ],
     "horarioAtencion": [
       {
-        "hora": {
-          "apertura": "08:00",
-          "cierre": "14:00"
-        },
+        "categoria":"",
+        "hora": [
+          {
+            "apertura": "08:00",
+            "cierre": "14:00"
+          }
+        ],
         "dia": {
           "apertura": "Lunes",
           "cierre": "Viernes"
-        }
+        },
+        "nota":""
       }
     ],
     "contacto": {

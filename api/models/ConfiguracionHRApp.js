@@ -295,6 +295,7 @@ const ConfiguracionHRApp = mongoose.model(
         alt: String,
       },
     },
+    version: Number,
   }),
   "configuracion_hrapp"
 );

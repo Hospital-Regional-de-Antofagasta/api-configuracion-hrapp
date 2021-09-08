@@ -9,14 +9,18 @@ const Unidades = mongoose.model(
     carteraServicios: [String],
     horarioAtencion: [
       {
-        hora: {
-          apertura: String,
-          cierre: String,
-        },
+        categoria: String,
+        hora: [
+          {
+            apertura: String,
+            cierre: String,
+          },
+        ],
         dia: {
           apertura: String,
           cierre: String,
         },
+        nota: String,
       },
     ],
     contacto: {
