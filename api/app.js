@@ -11,13 +11,14 @@ const unidades = require("./routes/unidades");
 const versiones = require("./routes/versiones");
 const slidesGuiaInicio = require("./routes/slidesGuiaInicio");
 const seccionAyuda = require("./routes/seccionAyuda");
+const diccionarioSiglas = require("./routes/diccionarioSiglas");
 
 const app = express();
 
 app.use(express.json());
 app.use(cors());
 
-const connection = process.env.MONGO_URI
+const connection = process.env.MONGO_URI;
 
 mongoose.connect(connection, {
   useNewUrlParser: true,
@@ -43,5 +44,7 @@ app.use("/v1/configuracion-hrapp/version", versiones);
 app.use("/v1/configuracion-hrapp/slides-guia-inicio", slidesGuiaInicio);
 
 app.use("/v1/configuracion-hrapp/seccion-ayuda", seccionAyuda);
+
+app.use("/v1/configuracion-hrapp/diccionario-siglas", diccionarioSiglas);
 
 module.exports = app;
