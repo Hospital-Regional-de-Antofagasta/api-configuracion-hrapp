@@ -1,8 +1,15 @@
+import org.unbrokendome.gradle.plugins.helm.command.tasks.*
+import org.unbrokendome.gradle.plugins.helm.command.*
+
+
 plugins{
     id "base"
     id "nl.eleven.node-gradle.node" version "1.0.0"
     id "org.unbroken-dome.gitversion" version "0.10.0"
     id 'org.unbroken-dome.helm' version '1.5.0'
+    id 'org.unbroken-dome.helm-commands' version '1.5.0'
+    id 'org.unbroken-dome.helm-publish' version '1.5.0'
+    id 'org.unbroken-dome.helm-releases' version '1.5.0'
     id "com.google.osdetector" version "1.7.0"
     id "com.github.rmee.kubectl" version "1.1.20200614081240"
     id "com.github.rmee.gcloud" version "1.1.20200614081240"
@@ -10,24 +17,12 @@ plugins{
     id "com.palantir.docker-run" version "0.28.0"
 }
 
-project.version = "1.0.0-SNAPSHOT"
-
-
 var nodeVersion = "16.8.0"
-String imageId = "gcr.io/saludantofagasta-proy1/$project.name:$project.version"
 
 gitVersion{
 
     rules{
         baseVersion = "1.0.0"
-
-        onBranch(~/release\/(\d+).(\d+)/){
-            def tag = findLatestTag ~/v${matches[1]}.${matches[2]}.(\d+)(\.*)/
-            println "$tag"
-            version.mayor = matches[1]
-            version.menor = matches[2]
-            version.menor
-        }
 
         onBranch(~/feature\/(.+)/) {
             def lastTag = findLatestTag ~/v?(\d+)\.(\d+)/
@@ -43,10 +38,12 @@ gitVersion{
             }
 
             version.prereleaseTag = matches[1]
-            version.buildMetadata = "$commits"
         }
     }
 }
+
+version = gitVersion.determineVersion()
+String imageId = "gcr.io/saludantofagasta-proy1/$project.name:$project.version"
 
 node {
     download true
@@ -79,6 +76,11 @@ tasks.named("dockerRun"){t->
         }
         t.outputs.file runningMongo
     }
+}
+
+task installPluginRelease(type: AbstractHelmCommandTask){
+
+
 }
 
 task startMongo {
@@ -172,8 +174,6 @@ task deployQA() {
 clean {
     delete testsExecutedMarkerName
 }
-
-version = gitVersion.determineVersion()
 
 task printVersion {
     doLast { println project.version }
