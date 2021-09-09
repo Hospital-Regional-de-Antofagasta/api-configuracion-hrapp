@@ -1,9 +1,10 @@
 plugins{
     id "base"
     id "nl.eleven.node-gradle.node" version "1.0.0"
+    id "org.unbroken-dome.gitversion" version "0.10.0"
+    id 'org.unbroken-dome.helm' version '1.5.0'
     id "com.google.osdetector" version "1.7.0"
     id "com.github.rmee.kubectl" version "1.1.20200614081240"
-    id "com.github.rmee.helm" version "1.1.20200614081240"
     id "com.github.rmee.gcloud" version "1.1.20200614081240"
     id "com.palantir.docker" version "0.28.0"
     id "com.palantir.docker-run" version "0.28.0"
@@ -14,6 +15,38 @@ project.version = "1.0.0-SNAPSHOT"
 
 var nodeVersion = "16.8.0"
 String imageId = "gcr.io/saludantofagasta-proy1/$project.name:$project.version"
+
+gitVersion{
+
+    rules{
+        baseVersion = "1.0.0"
+
+        onBranch(~/release\/(\d+).(\d+)/){
+            def tag = findLatestTag ~/v${matches[1]}.${matches[2]}.(\d+)(\.*)/
+            println "$tag"
+            version.mayor = matches[1]
+            version.menor = matches[2]
+            version.menor
+        }
+
+        onBranch(~/feature\/(.+)/) {
+            def lastTag = findLatestTag ~/v?(\d+)\.(\d+)/
+            def commits  = 0;
+
+            if(lastTag){
+                version.mayor = lastTag.mayor
+                version.minor = lastTag.minor
+                version.patch = lastTag.minor
+                commits = countCommitsSince(lastTag, true)
+            } else {
+                commits = countCommitsSince(branchPoint('develop'))
+            }
+
+            version.prereleaseTag = matches[1]
+            version.buildMetadata = "$commits"
+        }
+    }
+}
 
 node {
     download true
@@ -136,15 +169,12 @@ task deployQA() {
 }
 
 
-
-
 clean {
     delete testsExecutedMarkerName
 }
 
-task echo {
-    dependsOn gcloudGetKubernetesCredentials
-    doLast {
-        kubectl.exec({commandLine = "kubectl config get-contexts"})
-    }
+version = gitVersion.determineVersion()
+
+task printVersion {
+    doLast { println project.version }
 }
