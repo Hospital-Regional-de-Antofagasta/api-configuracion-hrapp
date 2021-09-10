@@ -1,6 +1,4 @@
 import org.unbrokendome.gradle.plugins.helm.command.tasks.*
-import org.unbrokendome.gradle.plugins.helm.command.*
-
 
 plugins{
     id "base"
@@ -17,24 +15,20 @@ plugins{
     id "com.palantir.docker-run" version "0.28.0"
 }
 
+
 var nodeVersion = "16.8.0"
 
 gitVersion{
-
     rules{
         baseVersion = "1.0.0"
 
         onBranch(~/feature\/(.+)/) {
             def lastTag = findLatestTag ~/v?(\d+)\.(\d+)/
-            def commits  = 0;
 
             if(lastTag){
                 version.mayor = lastTag.mayor
                 version.minor = lastTag.minor
                 version.patch = lastTag.minor
-                commits = countCommitsSince(lastTag, true)
-            } else {
-                commits = countCommitsSince(branchPoint('develop'))
             }
 
             version.prereleaseTag = matches[1]
@@ -44,6 +38,36 @@ gitVersion{
 
 version = gitVersion.determineVersion()
 String imageId = "gcr.io/saludantofagasta-proy1/$project.name:$project.version"
+
+
+helm {
+    downloadClient {
+        enabled = true
+        version = "3.6.3"
+    }
+
+    charts {
+        api {
+            chartName = "$project.name"
+            version = "$project.version"
+            sourceDir = file("$projectDir/helm/$project.name")
+        }
+    }
+
+    releases {
+        api {
+            from charts.api
+
+        }
+    }
+
+    releaseTargets{
+        local {
+            kubeContext = "docker-desktop"
+        }
+    }
+}
+
 
 node {
     download true
@@ -78,11 +102,6 @@ tasks.named("dockerRun"){t->
     }
 }
 
-task installPluginRelease(type: AbstractHelmCommandTask){
-
-
-}
-
 task startMongo {
     dependsOn "dockerRun"
 }
@@ -94,6 +113,7 @@ task stopMongo {
         delete runningMongo
     }
 }
+
 
 task test(type: NpmTask) {
     dependsOn npmInstall, startMongo
@@ -153,22 +173,6 @@ gcloud {
 gcloudSetProject.dependsOn gcloudActivateServiceAccount
 gcloudGetKubernetesCredentials.dependsOn gcloudSetProject
 
-task deployQA() {
-    dependsOn dockerPush,gcloudGetKubernetesCredentials, helmPackage
-    doFirst {
-        kubectl.exec({ commandLine = "kubectl apply -f=${file('kubernetes/ .yaml')}" })
-
-        File yamlFile = file("build/helm/crnk-example.yaml")
-        yamlFile.parentFile.mkdirs()
-
-        helm.exec({
-            commandLine = "helm template --name=crnk --set image.tag=${imageId} ${helmPackageCrnkExample.outputs.files.singleFile} --namespace=default"
-            stdoutFile = yamlFile
-        })
-
-        kubectl.exec({ commandLine = "kubectl apply -f=${yamlFile} -n=default" })
-    }
-}
 
 
 clean {
