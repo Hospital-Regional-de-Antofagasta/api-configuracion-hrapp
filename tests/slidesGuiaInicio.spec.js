@@ -38,8 +38,12 @@ describe("Endpoints slides guia inicio", () => {
       expect(response.body[0].titulo.alineamiento).toBe("center");
       expect(response.body[0].titulo.bold).toBe(true);
 
-      expect(response.body[0].imagen.url).toBe("../assets/images/logoTipo.png");
-      expect(response.body[0].imagen.descripcion).toBe("Logo");
+      expect(response.body[0].imagen.src).toBe("https://via.placeholder.com/500x500");
+      expect(response.body[0].imagen.srcset[0]).toBe("https://via.placeholder.com/1500x1500 2160w");
+      expect(response.body[0].imagen.srcset[1]).toBe("https://via.placeholder.com/1000x1000 1080w");
+      expect(response.body[0].imagen.srcset[2]).toBe("https://via.placeholder.com/500x500 720w");
+      expect(response.body[0].imagen.srcset[3]).toBe("https://via.placeholder.com/250x250 480w");
+      expect(response.body[0].imagen.alt).toBe("imagen");
 
       expect(response.body[0].icono.icono).toBe("");
       expect(response.body[0].icono.color).toBe("tertiary");

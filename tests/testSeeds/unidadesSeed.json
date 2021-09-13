@@ -10,24 +10,36 @@
     ],
     "horarioAtencion": [
       {
-        "hora": {
-          "apertura": "08:00",
-          "cierre": "14:00"
-        },
+        "categoria": "Secretaria",
+        "hora": [
+          {
+            "apertura": "08:00",
+            "cierre": "14:00"
+          },
+          {
+            "apertura": "15:00",
+            "cierre": "18:00"
+          }
+        ],
         "dia": {
           "apertura": "Lunes",
-          "cierre": "Viernes"
-        }
+          "cierre": "Sábado"
+        },
+        "nota": "Incluído festivos."
       },
       {
-        "hora": {
-          "apertura": "08:00",
-          "cierre": "14:00"
-        },
+        "categoria":"Encargado",
+        "hora": [
+          {
+            "apertura": "08:00",
+            "cierre": "14:00"
+          }
+        ],
         "dia": {
           "apertura": "Lunes",
           "cierre": "Viernes"
-        }
+        },
+        "nota":""
       }
     ],
     "contacto": {
@@ -35,7 +47,16 @@
       "correo": ["correo@gmail.com", "correo2@gmail.com"]
     },
     "referencia": "1 piso",
-    "imagen": "../assets/images/personal.jpg",
+    "imagen": {
+      "src": "https://via.placeholder.com/1000x500",
+      "srcset": [
+        "https://via.placeholder.com/30000x1500 2160w",
+        "https://via.placeholder.com/2000x1000 1080w",
+        "https://via.placeholder.com/1000x500 720w",
+        "https://via.placeholder.com/500x250 480w"
+      ],
+      "alt": "imagen"
+    },
     "tipo": "serviciosClinicos",
     "habilitado": true,
     "posicion": 1,
@@ -52,14 +73,18 @@
     ],
     "horarioAtencion": [
       {
-        "hora": {
-          "apertura": "08:00",
-          "cierre": "14:00"
-        },
+        "categoria":"",
+        "hora": [
+          {
+            "apertura": "08:00",
+            "cierre": "14:00"
+          }
+        ],
         "dia": {
           "apertura": "Lunes",
           "cierre": "Viernes"
-        }
+        },
+        "nota":""
       }
     ],
     "contacto": {
@@ -67,7 +92,16 @@
       "correo": ["correo@gmail.com"]
     },
     "referencia": "1 piso",
-    "imagen": "../assets/images/personal.jpg",
+    "imagen": {
+      "src": "https://via.placeholder.com/1000x500",
+      "srcset": [
+        "https://via.placeholder.com/30000x1500 2160w",
+        "https://via.placeholder.com/2000x1000 1080w",
+        "https://via.placeholder.com/1000x500 720w",
+        "https://via.placeholder.com/500x250 480w"
+      ],
+      "alt": "imagen"
+    },
     "tipo": "serviciosClinicos",
     "habilitado": true,
     "posicion": 3,
@@ -84,14 +118,18 @@
     ],
     "horarioAtencion": [
       {
-        "hora": {
-          "apertura": "08:00",
-          "cierre": "14:00"
-        },
+        "categoria":"",
+        "hora": [
+          {
+            "apertura": "08:00",
+            "cierre": "14:00"
+          }
+        ],
         "dia": {
           "apertura": "Lunes",
           "cierre": "Viernes"
-        }
+        },
+        "nota":""
       }
     ],
     "contacto": {
@@ -99,7 +137,16 @@
       "correo": ["correo@gmail.com"]
     },
     "referencia": "1 piso",
-    "imagen": "../assets/images/personal.jpg",
+    "imagen": {
+      "src": "https://via.placeholder.com/1000x500",
+      "srcset": [
+        "https://via.placeholder.com/30000x1500 2160w",
+        "https://via.placeholder.com/2000x1000 1080w",
+        "https://via.placeholder.com/1000x500 720w",
+        "https://via.placeholder.com/500x250 480w"
+      ],
+      "alt": "imagen"
+    },
     "tipo": "serviciosClinicos",
     "habilitado": true,
     "posicion": 2,
@@ -116,14 +163,18 @@
     ],
     "horarioAtencion": [
       {
-        "hora": {
-          "apertura": "08:00",
-          "cierre": "14:00"
-        },
+        "categoria":"",
+        "hora": [
+          {
+            "apertura": "08:00",
+            "cierre": "14:00"
+          }
+        ],
         "dia": {
           "apertura": "Lunes",
           "cierre": "Viernes"
-        }
+        },
+        "nota":""
       }
     ],
     "contacto": {
@@ -131,7 +182,16 @@
       "correo": ["correo@gmail.com"]
     },
     "referencia": "1 piso",
-    "imagen": "../assets/images/personal.jpg",
+    "imagen": {
+      "src": "https://via.placeholder.com/1000x500",
+      "srcset": [
+        "https://via.placeholder.com/30000x1500 2160w",
+        "https://via.placeholder.com/2000x1000 1080w",
+        "https://via.placeholder.com/1000x500 720w",
+        "https://via.placeholder.com/500x250 480w"
+      ],
+      "alt": "imagen"
+    },
     "tipo": "unidadesApoyo",
     "habilitado": true,
     "posicion": 10,
@@ -148,14 +208,18 @@
     ],
     "horarioAtencion": [
       {
-        "hora": {
-          "apertura": "08:00",
-          "cierre": "14:00"
-        },
+        "categoria":"",
+        "hora": [
+          {
+            "apertura": "08:00",
+            "cierre": "14:00"
+          }
+        ],
         "dia": {
           "apertura": "Lunes",
           "cierre": "Viernes"
-        }
+        },
+        "nota":""
       }
     ],
     "contacto": {
@@ -163,7 +227,16 @@
       "correo": ["correo@gmail.com"]
     },
     "referencia": "1 piso",
-    "imagen": "../assets/images/personal.jpg",
+    "imagen": {
+      "src": "https://via.placeholder.com/1000x500",
+      "srcset": [
+        "https://via.placeholder.com/30000x1500 2160w",
+        "https://via.placeholder.com/2000x1000 1080w",
+        "https://via.placeholder.com/1000x500 720w",
+        "https://via.placeholder.com/500x250 480w"
+      ],
+      "alt": "imagen"
+    },
     "tipo": "serviciosClinicos",
     "habilitado": true,
     "posicion": 1,
