@@ -18,6 +18,14 @@ plugins{
 
 var nodeVersion = "16.8.0"
 
+var projectId = System.getenv("PROJECT_ID")
+var clusterZone  = System.getenv("API_ZONE")
+var clusterName = System.getenv("API_CLUSTER")
+var apiKey = System.getenv("API_KEY")
+var mongoIp = System.getenv("MONGO_IP")
+
+
+
 gitVersion{
     rules{
         baseVersion = "1.0.0"
@@ -36,11 +44,14 @@ gitVersion{
     }
 }
 
+//Aca se usa la version.
 version = gitVersion.determineVersion()
-String imageId = "gcr.io/saludantofagasta-proy1/$project.name:$project.version"
-
+String imageId = "gcr.io/$projectId/$project.name:$project.version"
 
 helm {
+
+    namespace = "cl-dssa-api"
+
     downloadClient {
         enabled = true
         version = "3.6.3"
@@ -55,15 +66,40 @@ helm {
     }
 
     releases {
-        api {
+        "api-configuracion" {
             from charts.api
 
+            forTarget('local') {
+                values.put('secrets.mongoUrl', "mongodb://$mongoIp:27017/hrapp_dev")
+            }
+
+            forTarget('staging') {
+                values.put('secrets.apiKey', apiKey)
+                values.put('secrets.mongoUrl', "mongodb://$mongoIp:27017/hrapp")
+            }
+
+            forTarget('production'){
+                values.put('secrets.apiKey', apiKey)
+                values.put('secrets.mongoUrl', "mongodb://$mongoIp:27017/hrapp")
+            }
+
+            forAnyTarget{
+                values.put('image.tag', project.version)
+            }
         }
     }
 
     releaseTargets{
         local {
             kubeContext = "docker-desktop"
+        }
+
+        staging {
+            kubeContext = "gke_${projectId}_${clusterZone}_${clusterName}"
+        }
+
+        production {
+            kubeContext = "gke_${projectId}_${clusterZone}_${clusterName}"
         }
     }
 }
@@ -115,7 +151,7 @@ task stopMongo {
 }
 
 
-task test(type: NpmTask) {
+task testApi(type: NpmTask) {
     dependsOn npmInstall, startMongo
     environment CI: 'true'
 
@@ -147,10 +183,10 @@ task gcrLogin(type:Exec){
     standardInput new BufferedInputStream(new FileInputStream("key.json"))
 }
 
-dockerfileZip.dependsOn test
-apiBuild.dependsOn test
+dockerfileZip.dependsOn testApi
+apiBuild.dependsOn testApi
 dockerPrepare.dependsOn apiBuild
-tasks.named("docker").get().dependsOn test, apiBuild
+tasks.named("docker").get().dependsOn testApi, apiBuild
 assemble.dependsOn "docker"
 clean.dependsOn stopMongo
 dockerPush.dependsOn build, gcrLogin
@@ -162,17 +198,25 @@ gcloud {
     }
 
     keyFile = file("$projectDir/key.json")
-    zone = System.getenv("API_ZONE")
+    zone = clusterZone
     project = "saludantofagasta-proy1"
 
     gke {
-        clusterName =  System.getenv("API_CLUSTER")
+        clusterName = clusterName
     }
 }
 
 gcloudSetProject.dependsOn gcloudActivateServiceAccount
 gcloudGetKubernetesCredentials.dependsOn gcloudSetProject
 
+task createNamespace(type:Exec){
+    commandLine 'kubectl', 'create','namespace','cl-dssa-api'
+    ignoreExitValue true
+}
+
+helmInstallApiConfiguracionToLocal.dependsOn dockerPush, createNamespace
+helmInstallApiConfiguracionToStaging.dependsOn dockerPush, gcloudGetKubernetesCredentials
+helmInstallApiConfiguracionToProduction.dependsOn dockerPush, gcloudGetKubernetesCredentials
 
 
 clean {

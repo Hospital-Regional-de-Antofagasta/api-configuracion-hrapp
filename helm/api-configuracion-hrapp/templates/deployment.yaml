@@ -36,13 +36,17 @@ spec:
               protocol: TCP
           livenessProbe:
             httpGet:
-              path: {{ .Values.h}}
-              port: http
+              path: /v1/configuracion-hrapp/
+              port: {{ .Values.service.targetPort }}
           readinessProbe:
             httpGet:
               path: /v1/configuracion-hrapp/
-              port: http
+              port: {{ .Values.service.targetPort }}
           env:
+            - name: PORT
+              value: "{{ .Values.service.targetPort }}"
+            - name: HOSTNAME
+              value: localhost
             - name: JWT_SECRET
               valueFrom:
                 secretKeyRef:
