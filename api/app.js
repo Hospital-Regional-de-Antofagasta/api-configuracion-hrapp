@@ -1,4 +1,3 @@
-const dotenv = require("dotenv");
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -12,6 +11,7 @@ const unidades = require("./routes/unidades");
 const versiones = require("./routes/versiones");
 const slidesGuiaInicio = require("./routes/slidesGuiaInicio");
 const seccionAyuda = require("./routes/seccionAyuda");
+const diccionarioSiglas = require("./routes/diccionarioSiglas");
 
 dotenv.config();
 const app = express();
@@ -47,6 +47,8 @@ app.use("/v1/configuracion-hrapp/version", versiones);
 app.use("/v1/configuracion-hrapp/slides-guia-inicio", slidesGuiaInicio);
 
 app.use("/v1/configuracion-hrapp/seccion-ayuda", seccionAyuda);
+
+app.use("/v1/configuracion-hrapp/diccionario-siglas", diccionarioSiglas);
 
 if (require.main === module) { // true if file is executed
   process.on("SIGINT",function (){
