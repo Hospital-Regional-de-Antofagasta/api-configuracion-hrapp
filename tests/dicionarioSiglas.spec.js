@@ -8,7 +8,7 @@ const request = supertest(app);
 
 beforeEach(async () => {
   await mongoose.disconnect();
-  await mongoose.connect(`${process.env.MONGO_URI}`, {
+  await mongoose.connect(`${process.env.MONGO_URI}/config_test`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
@@ -28,12 +28,12 @@ describe("Endpoints diccionario siglas", () => {
       expect(response.status).toBe(200);
 
       expect(response.body.length).toBe(3);
-/*      expect(response.body[0].siglaComparacion).toBe("cae");
+      expect(response.body[0].siglaComparacion).toBe("cae");
       expect(response.body[0].sigla).toBe("CAE");
-      expect(response.body[1].siglaComparacion).tºoBe("cao");
+      expect(response.body[1].siglaComparacion).toBe("cao");
       expect(response.body[1].sigla).toBe("CAO");
       expect(response.body[2].siglaComparacion).toBe("cau");
-      expect(response.body[2].sigla).toBe("CAU");*/
+      expect(response.body[2].sigla).toBe("CAU");
 
       done();
     });
