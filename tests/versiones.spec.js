@@ -12,7 +12,7 @@ const request = supertest(app);
 beforeEach(async () => {
   await mongoose.disconnect();
   await mongoose.connect(
-    `${process.env.MONGO_URI}`,
+    `${process.env.MONGO_URI}/config_test`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
