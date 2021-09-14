@@ -1,3 +1,4 @@
+const dotenv = require("dotenv")
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -13,12 +14,15 @@ const slidesGuiaInicio = require("./routes/slidesGuiaInicio");
 const seccionAyuda = require("./routes/seccionAyuda");
 const diccionarioSiglas = require("./routes/diccionarioSiglas");
 
+dotenv.config();
 const app = express();
 
 app.use(express.json());
 app.use(cors());
 
-const connection = process.env.MONGO_URI;
+const connection = process.env.MONGO_URI
+const port = process.env.PORT
+const localhost = process.env.HOSTNAME
 
 mongoose.connect(connection, {
   useNewUrlParser: true,
@@ -46,5 +50,14 @@ app.use("/v1/configuracion-hrapp/slides-guia-inicio", slidesGuiaInicio);
 app.use("/v1/configuracion-hrapp/seccion-ayuda", seccionAyuda);
 
 app.use("/v1/configuracion-hrapp/diccionario-siglas", diccionarioSiglas);
+
+if (require.main === module) { // true if file is executed
+  process.on("SIGINT",function (){
+    process.exit();
+  });
+  app.listen(port, () => {
+    console.log(`App listening at http://${localhost}:${port}`)
+  })
+}
 
 module.exports = app;

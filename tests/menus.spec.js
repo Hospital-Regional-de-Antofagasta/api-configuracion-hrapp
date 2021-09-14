@@ -1,26 +1,26 @@
 const supertest = require("supertest");
-const app = require("../app");
+const app = require("../api/app");
 const mongoose = require("mongoose");
-const MenuServiciosPaciente = require("../models/MenuServiciosPaciente");
-const menuServiciosPacienteSeed = require("../testSeeds/menuServiciosPacienteSeed.json");
-const MenuInicio = require("../models/MenuInicio");
-const menuInicioSeed = require("../testSeeds/menuInicioSeed.json");
-const MenuDocumentos = require("../models/MenuDocumentos");
-const menuDocumentosSeed = require("../testSeeds/menuDocumentosSeed.json");
-const MenuInformacionGeneral = require("../models/MenuInformacionGeneral");
-const menuInformacionGeneralSeed = require("../testSeeds/menuInformacionGeneralSeed.json");
-const MenuUnidades = require("../models/MenuUnidades");
-const menuUnidadesSeed = require("../testSeeds/menuUnidadesSeed.json");
-const MenuTabs = require("../models/MenuTabs");
-const menuTabsSeed = require("../testSeeds/menuTabsSeed.json");
-const ConfigApiConfiguracion = require("../models/ConfigApiConfiguracion");
-const configSeed = require("../testSeeds/configSeed.json");
+const MenuServiciosPaciente = require("../api/models/MenuServiciosPaciente");
+const menuServiciosPacienteSeed = require("./testSeeds/menuServiciosPacienteSeed.json");
+const MenuInicio = require("../api/models/MenuInicio");
+const menuInicioSeed = require("./testSeeds/menuInicioSeed.json");
+const MenuDocumentos = require("../api/models/MenuDocumentos");
+const menuDocumentosSeed = require("./testSeeds/menuDocumentosSeed.json");
+const MenuInformacionGeneral = require("../api/models/MenuInformacionGeneral");
+const menuInformacionGeneralSeed = require("./testSeeds/menuInformacionGeneralSeed.json");
+const MenuUnidades = require("../api/models/MenuUnidades");
+const menuUnidadesSeed = require("./testSeeds/menuUnidadesSeed.json");
+const MenuTabs = require("../api/models/MenuTabs");
+const menuTabsSeed = require("./testSeeds/menuTabsSeed.json");
+const ConfigApiConfiguracion = require("../api/models/ConfigApiConfiguracion");
+const configSeed = require("./testSeeds/configSeed.json");
 
 const request = supertest(app);
 
 beforeEach(async () => {
   await mongoose.disconnect();
-  await mongoose.connect(`${process.env.MONGO_URI_TEST}menus_test`, {
+  await mongoose.connect(`${process.env.MONGO_URI}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });

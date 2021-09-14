@@ -1,14 +1,14 @@
 const supertest = require("supertest");
-const app = require("../app");
+const app = require("../api/app");
 const mongoose = require("mongoose");
-const SeccionAyuda = require("../models/SeccionAyuda");
-const seccionAyudaSeed = require("../testSeeds/seccionAyudaSeed.json");
+const SeccionAyuda = require("../api/models/SeccionAyuda");
+const seccionAyudaSeed = require("./testSeeds/seccionAyudaSeed.json");
 
 const request = supertest(app);
 
 beforeEach(async () => {
   await mongoose.disconnect();
-  await mongoose.connect(`${process.env.MONGO_URI_TEST}menus_test`, {
+  await mongoose.connect(`${process.env.MONGO_URI}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });

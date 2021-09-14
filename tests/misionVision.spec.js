@@ -1,14 +1,14 @@
 const supertest = require("supertest");
-const app = require("../app");
+const app = require("../api/app");
 const mongoose = require("mongoose");
-const MisionVision = require("../models/MisionVision");
-const misionVisionSeed = require("../testSeeds/misionVisionSeed.json");
+const MisionVision = require("../api/models/MisionVision");
+const misionVisionSeed = require("./testSeeds/misionVisionSeed.json");
 
 const request = supertest(app);
 
 beforeEach(async () => {
   await mongoose.disconnect();
-  await mongoose.connect(`${process.env.MONGO_URI_TEST}menus_test`, {
+  await mongoose.connect(`${process.env.MONGO_URI}`, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });

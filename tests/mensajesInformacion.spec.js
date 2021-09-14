@@ -1,15 +1,15 @@
 const supertest = require("supertest");
 const mongoose = require("mongoose");
-const app = require("../app");
-const MensajesInformacion = require("../models/MensajesInformacion");
-const mensajesInformacionSeed = require("../testSeeds/mensajesInformacionSeed.json");
+const app = require("../api/app");
+const MensajesInformacion = require("../api/models/MensajesInformacion");
+const mensajesInformacionSeed = require("./testSeeds/mensajesInformacionSeed.json");
 
 const request = supertest(app);
 
 beforeEach(async () => {
   await mongoose.disconnect();
   await mongoose.connect(
-    `${process.env.MONGO_URI_TEST}mensajes_informacion_test`,
+    `${process.env.MONGO_URI}`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
