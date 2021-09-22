@@ -4,29 +4,9 @@ const Schema = mongoose.Schema;
 const Unidades = mongoose.model(
   "unidades",
   new Schema({
-    nombreUnidad: String,
+    nombre: String,
     descripcion: String,
-    carteraServicios: [String],
-    horarioAtencion: [
-      {
-        categoria: String,
-        hora: [
-          {
-            apertura: String,
-            cierre: String,
-          },
-        ],
-        dia: {
-          apertura: String,
-          cierre: String,
-        },
-        nota: String,
-      },
-    ],
-    contacto: {
-      fono: [String],
-      correo: [String],
-    },
+    servicios: [{ nombre: String }],
     referencia: String,
     imagen: {
       src: String,
@@ -37,6 +17,23 @@ const Unidades = mongoose.model(
     habilitado: Boolean,
     posicion: Number,
     version: Number,
+    atencion: [
+      {
+        nombreHorario: String,
+        tipoAtencion: String,
+        atencionFeriados: Boolean,
+        horarioAtencion: [
+          {
+            diaAtencion: { diaApertura: String, diaCierre: String },
+            horaAtencion: [{ horaApertura: String, horaCierre: String }],
+          },
+        ],
+        contactos: {
+          telefonos: [{ numero: String }],
+          correos: [{ correo: String }],
+        },
+      },
+    ],
   }),
   "unidades"
 );

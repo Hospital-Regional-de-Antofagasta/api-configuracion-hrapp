@@ -1,51 +1,13 @@
 [
   {
-    "nombreUnidad": "Pediatría",
+    "nombre": "Pediatría",
     "descripcion": "Servicios Clínicos",
-    "carteraServicios": [
-      "Oncología",
-      "Cardiología Infantil",
-      "Nutrición Infantil",
-      "Cirugía y Ortopedía"
+    "servicios": [
+      {"nombre":"Oncología"},
+      {"nombre":"Cardiología Infantil"},
+      {"nombre":"Nutrición Infantil"},
+      {"nombre":"Cirugía y Ortopedía"}
     ],
-    "horarioAtencion": [
-      {
-        "categoria": "Secretaria",
-        "hora": [
-          {
-            "apertura": "08:00",
-            "cierre": "14:00"
-          },
-          {
-            "apertura": "15:00",
-            "cierre": "18:00"
-          }
-        ],
-        "dia": {
-          "apertura": "Lunes",
-          "cierre": "Sábado"
-        },
-        "nota": "Incluído festivos."
-      },
-      {
-        "categoria":"Encargado",
-        "hora": [
-          {
-            "apertura": "08:00",
-            "cierre": "14:00"
-          }
-        ],
-        "dia": {
-          "apertura": "Lunes",
-          "cierre": "Viernes"
-        },
-        "nota":""
-      }
-    ],
-    "contacto": {
-      "fono": ["552758965", "552758966"],
-      "correo": ["correo@gmail.com", "correo2@gmail.com"]
-    },
     "referencia": "1 piso",
     "imagen": {
       "src": "https://via.placeholder.com/1000x500",
@@ -60,37 +22,69 @@
     "tipo": "serviciosClinicos",
     "habilitado": true,
     "posicion": 1,
-    "version": 1
+    "version": 1,
+    "atencion": [
+      {
+        "nombreHorario": "Secretaria",
+        "tipoAtencion": "Presencial",
+        "atencionFeriados": true,
+        "horarioAtencion": [
+          {
+            "diaAtencion": {
+              "diaApertura": "lunes",
+              "diaCierre": "sábado"
+            },
+            "horaAtencion":[
+              {
+                "horaApertura": "08:00",
+                "horaCierre": "14:00"
+              },
+              {
+                "horaApertura": "15:00",
+                "horaCierre": "18:00"
+              }
+            ]            
+          }          
+        ],
+        "contactos": {
+          "telefonos": [{"numero":"552758965"}, {"numero":"552758966"}],
+          "correos": [{"correo":"correo@gmail.com"}, {"correo":"correo2@gmail.com"}]
+        }
+      },
+      {
+        "nombreHorario": "Encargado",
+        "tipoAtencion": "Presencial",
+        "atencionFeriados": true,
+        "horarioAtencion": [
+          {
+            "diaAtencion": {
+              "diaApertura": "lunes",
+              "diaCierre": "viernes"
+            },
+            "horaAtencion":[
+              {
+                "horaApertura": "08:00",
+                "horaCierre": "14:00"
+              }
+            ]            
+          }          
+        ],
+        "contactos": {
+          "telefonos": [{"numero":"552758111"}, {"numero":"552758222"}],
+          "correos": [{"correo":"correo1@gmail.com"}, {"correo":"correo5@gmail.com"}]
+        }
+      }
+    ]    
   },
   {
-    "nombreUnidad": "Laboratorio Clínico",
+    "nombre": "Laboratorio Clínico",
     "descripcion": "Unidades de apoyo",
-    "carteraServicios": [
-      "Oncología",
-      "Cardiología Infantil",
-      "Nutrición Infantil",
-      "Cirugía y Ortopedía"
+    "servicios": [
+      {"nombre":"Oncología"},
+      {"nombre":"Cardiología Infantil"},
+      {"nombre":"Nutrición Infantil"},
+      {"nombre":"Cirugía y Ortopedía"}
     ],
-    "horarioAtencion": [
-      {
-        "categoria":"",
-        "hora": [
-          {
-            "apertura": "08:00",
-            "cierre": "14:00"
-          }
-        ],
-        "dia": {
-          "apertura": "Lunes",
-          "cierre": "Viernes"
-        },
-        "nota":""
-      }
-    ],
-    "contacto": {
-      "fono": ["552758965"],
-      "correo": ["correo@gmail.com"]
-    },
     "referencia": "1 piso",
     "imagen": {
       "src": "https://via.placeholder.com/1000x500",
@@ -105,37 +99,42 @@
     "tipo": "serviciosClinicos",
     "habilitado": true,
     "posicion": 3,
-    "version": 1
+    "version": 1,
+    "atencion": [
+      {
+        "nombreHorario": "",
+        "tipoAtencion": "Presencial",
+        "atencionFeriados": false,
+        "horarioAtencion": [
+          {
+            "diaAtencion": {
+              "diaApertura": "lunes",
+              "diaCierre": "viernes"
+            },
+            "horaAtencion":[
+              {
+                "horaApertura": "08:00",
+                "horaCierre": "14:00"
+              }
+            ]            
+          }          
+        ],
+        "contactos": {
+          "telefonos": [{"numero":"552758965"}],
+          "correos": [{"correo":"correo@gmail.com"}]
+        }
+      }
+    ]   
   },
   {
-    "nombreUnidad": "Unidad serviciosClinicos",
+    "nombre": "Unidad serviciosClinicos",
     "descripcion": "Unidades de apoyo",
-    "carteraServicios": [
-      "Oncología",
-      "Cardiología Infantil",
-      "Nutrición Infantil",
-      "Cirugía y Ortopedía"
+    "servicios": [
+      {"nombre":"Oncología"},
+      {"nombre":"Cardiología Infantil"},
+      {"nombre":"Nutrición Infantil"},
+      {"nombre":"Cirugía y Ortopedía"}
     ],
-    "horarioAtencion": [
-      {
-        "categoria":"",
-        "hora": [
-          {
-            "apertura": "08:00",
-            "cierre": "14:00"
-          }
-        ],
-        "dia": {
-          "apertura": "Lunes",
-          "cierre": "Viernes"
-        },
-        "nota":""
-      }
-    ],
-    "contacto": {
-      "fono": ["552758965"],
-      "correo": ["correo@gmail.com"]
-    },
     "referencia": "1 piso",
     "imagen": {
       "src": "https://via.placeholder.com/1000x500",
@@ -150,37 +149,42 @@
     "tipo": "serviciosClinicos",
     "habilitado": true,
     "posicion": 2,
-    "version": 1
+    "version": 1,
+    "atencion": [
+      {
+        "nombreHorario": "",
+        "tipoAtencion": "Presencial",
+        "atencionFeriados": false,
+        "horarioAtencion": [
+          {
+            "diaAtencion": {
+              "diaApertura": "lunes",
+              "diaCierre": "viernes"
+            },
+            "horaAtencion":[
+              {
+                "horaApertura": "08:00",
+                "horaCierre": "15:00"
+              }
+            ]            
+          }          
+        ],
+        "contactos": {
+          "telefonos": [{"numero":"552758965"}],
+          "correos": [{"correo":"correo@gmail.com"}]
+        }
+      }
+    ]   
   },
   {
-    "nombreUnidad": "Unidad unidadesApoyo",
+    "nombre": "Unidad unidadesApoyo",
     "descripcion": "Unidades de apoyo",
-    "carteraServicios": [
-      "Oncología",
-      "Cardiología Infantil",
-      "Nutrición Infantil",
-      "Cirugía y Ortopedía"
+    "servicios": [
+      {"nombre":"Oncología"},
+      {"nombre":"Cardiología Infantil"},
+      {"nombre":"Nutrición Infantil"},
+      {"nombre":"Cirugía y Ortopedía"}
     ],
-    "horarioAtencion": [
-      {
-        "categoria":"",
-        "hora": [
-          {
-            "apertura": "08:00",
-            "cierre": "14:00"
-          }
-        ],
-        "dia": {
-          "apertura": "Lunes",
-          "cierre": "Viernes"
-        },
-        "nota":""
-      }
-    ],
-    "contacto": {
-      "fono": ["552758965"],
-      "correo": ["correo@gmail.com"]
-    },
     "referencia": "1 piso",
     "imagen": {
       "src": "https://via.placeholder.com/1000x500",
@@ -195,37 +199,42 @@
     "tipo": "unidadesApoyo",
     "habilitado": true,
     "posicion": 10,
-    "version": 1
+    "version": 1,
+    "atencion": [
+      {
+        "nombreHorario": "",
+        "tipoAtencion": "Presencial",
+        "atencionFeriados": false,
+        "horarioAtencion": [
+          {
+            "diaAtencion": {
+              "diaApertura": "lunes",
+              "diaCierre": "viernes"
+            },
+            "horaAtencion":[
+              {
+                "horaApertura": "08:00",
+                "horaCierre": "15:00"
+              }
+            ]            
+          }          
+        ],
+        "contactos": {
+          "telefonos": [{"numero":"552758965"}],
+          "correos": [{"correo":"correo@gmail.com"}]
+        }
+      }
+    ] 
   },
   {
-    "nombreUnidad": "Pediatría 2",
+    "nombre": "Pediatría 2",
     "descripcion": "Servicios Clínicos",
-    "carteraServicios": [
-      "Oncología",
-      "Cardiología Infantil",
-      "Nutrición Infantil",
-      "Cirugía y Ortopedía"
+    "servicios": [
+      {"nombre":"Oncología"},
+      {"nombre":"Cardiología Infantil"},
+      {"nombre":"Nutrición Infantil"},
+      {"nombre":"Cirugía y Ortopedía"}
     ],
-    "horarioAtencion": [
-      {
-        "categoria":"",
-        "hora": [
-          {
-            "apertura": "08:00",
-            "cierre": "14:00"
-          }
-        ],
-        "dia": {
-          "apertura": "Lunes",
-          "cierre": "Viernes"
-        },
-        "nota":""
-      }
-    ],
-    "contacto": {
-      "fono": ["552758965"],
-      "correo": ["correo@gmail.com"]
-    },
     "referencia": "1 piso",
     "imagen": {
       "src": "https://via.placeholder.com/1000x500",
@@ -240,6 +249,31 @@
     "tipo": "serviciosClinicos",
     "habilitado": true,
     "posicion": 1,
-    "version": 2
+    "version": 2,
+    "atencion": [
+      {
+        "nombreHorario": "",
+        "tipoAtencion": "Presencial",
+        "atencionFeriados": false,
+        "horarioAtencion": [
+          {
+            "diaAtencion": {
+              "diaApertura": "lunes",
+              "diaCierre": "viernes"
+            },
+            "horaAtencion":[
+              {
+                "horaApertura": "08:00",
+                "horaCierre": "15:00"
+              }
+            ]            
+          }          
+        ],
+        "contactos": {
+          "telefonos": [{"numero":"552758965"}],
+          "correos": [{"correo":"correo@gmail.com"}]
+        }
+      }
+    ]
   }
 ]
