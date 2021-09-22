@@ -3,12 +3,12 @@ on:
   push:
     branches:
       - develop
-env:
-  PROJECT_ID: ${{ secrets.GCP_PROJECT }}
 jobs:
   setup-build:
     name: Configurar, Construir
     runs-on: ubuntu-latest
+    env:
+      PROJECT_ID: ${{ secrets.CGP_PROJECT }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -19,8 +19,8 @@ jobs:
           PORT: "3000"
           HOST_NAME: "localhost"
           JWT_SECRET: "TEST"
-          PROJECT_ID: ${{ secrets.GCP_PROJECT }}
         run: |
+          echo $PROJECT_ID
           touch key.json
           chmod +x ./gradlew
           ./gradlew build
