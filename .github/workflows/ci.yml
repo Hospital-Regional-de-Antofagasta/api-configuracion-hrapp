@@ -4,7 +4,7 @@ on:
     branches:
       - develop
 env:
-  PROJECT_IO: ${{ secrets.GCP_PROJECT }}
+  PROJECT_ID: ${{ secrets.GCP_PROJECT }}
 jobs:
   setup-build:
     name: Configurar, Construir
@@ -19,6 +19,7 @@ jobs:
           PORT: "3000"
           HOST_NAME: "localhost"
           JWT_SECRET: "TEST"
+          PROJECT_ID: ${{ secrets.GCP_PROJECT }}
         run: |
           touch key.json
           chmod +x ./gradlew
