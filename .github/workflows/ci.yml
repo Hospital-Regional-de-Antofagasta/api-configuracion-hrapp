@@ -13,6 +13,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: Generate json
+        env:
+          KEY: ${{ secrets.GCP_KEY }}
+        run: |
+          printf $KEY > key.json
+
       - name: Build Test
         env:
           MONGO_URI: "mongodb://localhost:27017/hrapp_dev"
@@ -20,7 +26,5 @@ jobs:
           HOST_NAME: "localhost"
           JWT_SECRET: "TEST"
         run: |
-          echo $PROJECT_ID
-          touch key.json
           chmod +x ./gradlew
           ./gradlew build
