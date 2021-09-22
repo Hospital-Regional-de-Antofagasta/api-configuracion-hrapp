@@ -1,0 +1,24 @@
+name: Integración continua
+on:
+  push:
+    branches:
+      - develop
+    branches-ignore:
+      - master
+      - 'release/*'
+jobs:
+  setup-build:
+    name: Configurar, Construir
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@2
+
+      - name: Build Test
+        env:
+          MONGO_URI: "mongodb://localhost:27017/hrapp_dev"
+          PORT: "3000"
+          HOST_NAME: "localhost"
+          JWT_SECRET: "TEST"
+        run: |
+          gradlew build
