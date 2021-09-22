@@ -18,5 +18,6 @@ jobs:
           HOST_NAME: "localhost"
           JWT_SECRET: "TEST"
         run: |
+          touch key.json
           chmod +x ./gradlew
           ./gradlew build
