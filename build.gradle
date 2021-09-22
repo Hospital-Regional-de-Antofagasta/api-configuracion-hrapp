@@ -1,5 +1,3 @@
-import org.unbrokendome.gradle.plugins.helm.command.tasks.*
-
 plugins{
     id "base"
     id "nl.eleven.node-gradle.node" version "1.0.0"
@@ -18,13 +16,11 @@ plugins{
 
 var nodeVersion = "16.8.0"
 
-var projectId = System.getenv("PROJECT_ID")
-var clusterZone  = System.getenv("API_ZONE")
-var clusterName = System.getenv("API_CLUSTER")
-var apiKey = System.getenv("API_KEY")
-var mongoIp = System.getenv("MONGO_IP")
-
-
+var projectId = System.getenv("PROJECT_ID") ?: "PROJECT"
+var clusterZone  = System.getenv("API_ZONE") ?: "ZONE"
+var clusterName = System.getenv("API_CLUSTER") ?: "CLUSTER"
+var apiKey = System.getenv("API_KEY") ?: "0123456789ABCDEF"
+var mongoIp = System.getenv("MONGO_IP") ?: "localhost"
 
 gitVersion{
     rules{
