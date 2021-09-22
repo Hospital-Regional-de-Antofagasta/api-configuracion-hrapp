@@ -87,7 +87,7 @@ helm {
 
     releaseTargets{
         local {
-            kubeContext = "docker-desktop"
+            kubeContext = "kind-kind" // es el nombre del cluster, en windows es docker-desktop
         }
 
         staging {
