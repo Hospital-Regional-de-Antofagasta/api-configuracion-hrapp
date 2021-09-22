@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - develop
+env:
+  PROJECT_IO: ${{ secrets.GCP_PROJECT }}
 jobs:
   setup-build:
     name: Configurar, Construir
