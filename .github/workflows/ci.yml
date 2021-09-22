@@ -18,4 +18,5 @@ jobs:
           HOST_NAME: "localhost"
           JWT_SECRET: "TEST"
         run: |
-          gradlew build
+          chmod +x ./gradlew
+          ./gradlew build
