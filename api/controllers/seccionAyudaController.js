@@ -24,8 +24,6 @@ exports.get = async (req, res) => {
 
     res.status(200).send(seccionAyuda);
   } catch (error) {
-    console.log(error.name);
-    console.log(error.message);
     if (process.env.NODE_ENV === "dev")
       return res.status(500).send({
         respuesta: await getMensajes("serverError"),

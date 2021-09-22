@@ -28,10 +28,10 @@ describe("Endpoints unidades", () => {
       expect(response.status).toBe(200);
 
       expect(response.body.length).toBe(4);
-      expect(response.body[0].nombreUnidad).toBe("Pediatría");
-      expect(response.body[1].nombreUnidad).toBe("Unidad serviciosClinicos");
-      expect(response.body[2].nombreUnidad).toBe("Laboratorio Clínico");
-      expect(response.body[3].nombreUnidad).toBe("Unidad unidadesApoyo");
+      expect(response.body[0].nombre).toBe("Pediatría");
+      expect(response.body[1].nombre).toBe("Unidad serviciosClinicos");
+      expect(response.body[2].nombre).toBe("Laboratorio Clínico");
+      expect(response.body[3].nombre).toBe("Unidad unidadesApoyo");
 
       done();
     });
@@ -43,9 +43,9 @@ describe("Endpoints unidades", () => {
       expect(response.status).toBe(200);
 
       expect(response.body.length).toBe(3);
-      expect(response.body[0].nombreUnidad).toBe("Pediatría");
-      expect(response.body[1].nombreUnidad).toBe("Unidad serviciosClinicos");
-      expect(response.body[2].nombreUnidad).toBe("Laboratorio Clínico");
+      expect(response.body[0].nombre).toBe("Pediatría");
+      expect(response.body[1].nombre).toBe("Unidad serviciosClinicos");
+      expect(response.body[2].nombre).toBe("Laboratorio Clínico");
 
       done();
     });
