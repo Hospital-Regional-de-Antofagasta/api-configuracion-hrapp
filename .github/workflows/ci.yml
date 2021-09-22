@@ -3,9 +3,6 @@ on:
   push:
     branches:
       - develop
-    branches-ignore:
-      - master
-      - 'release/*'
 jobs:
   setup-build:
     name: Configurar, Construir
