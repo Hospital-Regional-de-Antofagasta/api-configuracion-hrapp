@@ -28,6 +28,5 @@
             HOST_NAME: "localhost"
             JWT_SECRET: "TEST"
           run: |
-            cat $KEY > key.json
             chmod +x ./gradlew
             ./gradlew helmInstallApiConfiguracionToCloud
