@@ -336,7 +336,7 @@ task gcloudContexts(type:Exec) {
     dependsOn gcloudGetKubernetesCredentials
 
     commandLine "env"
-    commandLine "whereis", "gcloud"
+    //commandLine "whereis", "gcloud"
 
     doLast {
         kubectl.exec({commandLine = "kubectl config get-contexts"})
