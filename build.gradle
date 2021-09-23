@@ -314,6 +314,7 @@ task createNamespace(type:Exec){
 task gcloudLogin(type:Exec) {
     commandLine "gcloud", "auth", "activate-service-account"
     args "--key-file", "key.json"
+    args "--project", "$projectId"
 }
 
 task gcloudGetContextCredentials(type:Exec){
@@ -321,6 +322,7 @@ task gcloudGetContextCredentials(type:Exec){
 
     commandLine "gcloud", "container", "clusters", "get-credentials", "$clusterNombre"
     args "--zone", "$clusterZone"
+    args "--project", "$projectId"
 }
 
 helmInstallApiConfiguracionToLocal.dependsOn dockerPush, createNamespace
