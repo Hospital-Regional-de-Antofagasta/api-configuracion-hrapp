@@ -133,7 +133,7 @@ gitVersion{
         onBranch(~/feature\/(.+)/) {
             def lastTag = findLatestTag ~/v?(\d+)\.(\d+).(\d+)-\D+\.?(\d+)/
             int commitsFromLastTag
-            int commitsFromDevelop = countCommitsSince branchPoint('develop'), true
+            int commitsFromDevelop = countCommitsSince branchPoint(~/.*\/develop/), true
 
             if(lastTag){
                 version.major = lastTag.matches[1].toInteger()
@@ -141,7 +141,7 @@ gitVersion{
                 version.patch = lastTag.matches[3].toInteger()
                 commitsFromLastTag = lastTag.matches[4]
             } else {
-                commitsFromLastTag =  countCommitsSince branchPoint('master'), true
+                commitsFromLastTag =  countCommitsSince branchPoint(~/.*\/master/), true
             }
 
             version.prereleaseTag = "${matches[1]}.$commitsFromLastTag"
