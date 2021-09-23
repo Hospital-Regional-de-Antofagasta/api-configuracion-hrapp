@@ -330,13 +330,17 @@ task createNamespace(type:Exec){
     ignoreExitValue true
 }
 
+task gcloudContexts {
+    dependsOn gcloudGetKubernetesCredentials
+    doLast {
+        kubectl.exec({commandLine = "kubectl config get-contexts"})
+    }
+}
+
 helmInstallApiConfiguracionToLocal.dependsOn dockerPush, createNamespace
-helmInstallApiConfiguracionToCloud.dependsOn dockerPush, gcloudGetKubernetesCredentials
+helmInstallApiConfiguracionToCloud.dependsOn dockerPush, gcloudGetKubernetesCredentials, gcloudContexts
+
 
 clean {
     delete testsExecutedMarkerName
-}
-
-task printVersion {
-    doLast { println project.version }
 }
