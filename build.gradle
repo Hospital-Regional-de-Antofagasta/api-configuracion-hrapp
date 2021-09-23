@@ -19,7 +19,7 @@ plugins{
 var nodeVersion = "16.8.0"
 var projectId = System.getenv("PROJECT_ID") ?: "project"
 var clusterZone  = System.getenv("API_ZONE") ?: "ZONE"
-var clusterName = System.getenv("API_CLUSTER") ?: "CLUSTER"
+var clusterNombre = System.getenv("API_CLUSTER") ?: "CLUSTER"
 var apiKey = System.getenv("API_KEY") ?: "0123456789ABCDEF"
 var mongoIp = System.getenv("MONGO_IP") ?: "localhost"
 var keyJson = System.getenv("KEY") ?: "{}"
@@ -207,7 +207,7 @@ helm {
         }
 
         cloud {
-            kubeContext = "gke_${projectId}_${clusterZone}_${clusterName}"
+            kubeContext = "gke_${projectId}_${clusterZone}_${clusterNombre}"
         }
     }
 }
@@ -318,7 +318,7 @@ gcloud {
     project = "saludantofagasta-proy1"
 
     gke {
-        clusterName = clusterName
+        clusterName = clusterNombre
     }
 }
 
