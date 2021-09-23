@@ -332,9 +332,10 @@ task createNamespace(type:Exec){
     ignoreExitValue true
 }
 
-task gcloudContexts(Type:Exec) {
+task gcloudContexts(type:Exec) {
     dependsOn gcloudGetKubernetesCredentials
 
+    commandLine "env"
     commandLine "whereis", "gcloud"
 
     doLast {
