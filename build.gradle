@@ -15,34 +15,147 @@ plugins{
 
 
 var nodeVersion = "16.8.0"
-
-var projectId = System.getenv("PROJECT_ID") ?: "PROJECT"
+var projectId = System.getenv("PROJECT_ID") ?: "project"
 var clusterZone  = System.getenv("API_ZONE") ?: "ZONE"
 var clusterName = System.getenv("API_CLUSTER") ?: "CLUSTER"
 var apiKey = System.getenv("API_KEY") ?: "0123456789ABCDEF"
 var mongoIp = System.getenv("MONGO_IP") ?: "localhost"
+var commitId
 
 gitVersion{
     rules{
         baseVersion = "1.0.0"
 
-        onBranch(~/feature\/(.+)/) {
-            def lastTag = findLatestTag ~/v?(\d+)\.(\d+)/
+        always{
+            commitId = head.id
+        }
 
-            if(lastTag){
-                version.mayor = lastTag.mayor
-                version.minor = lastTag.minor
-                version.patch = lastTag.minor
+        onBranch('master'){
+            def tag = findLatestTag ~/v?(\d+\.\d+\.\d+)/
+            version = tag.matches[1]
+            version.buildMetadata = "sha256:${head.id}"
+        }
+
+        //baseVersion = "1.0.0"
+        onBranch(~/hotfix\/.+/){
+            def commits = countCommitsSince branchPoint('master')
+            def tag = findLatestTag ~/v?(\d+).(\d+).(\d+)/
+            def major = tag.matches[1].toInteger()
+            def minor = tag.matches[2].toInteger()
+            def patch = tag.matches[3].toInteger() + 1
+            def tagPatchBeta = findLatestTag ~/v?$major.$minor.$patch-beta\.(\d+).+/
+
+            println tagPatchBeta
+
+            def betaVersion = 1;
+            if(tagPatchBeta){
+                betaVersion = tagPatchBeta.matches[1].toInteger() + 1
+            }
+            version.major = major
+            version.minor = minor
+            version.patch = patch
+            version.prereleaseTag = "beta.$betaVersion"
+            version.buildMetadata = "$commits"
+
+        }
+
+        onBranch(~/bugfix\/(.+)/){
+            def branchRelease = branchPoint(~/release\/(\d+).(\d+).0/)
+            def commitsFromDevelop = countCommitsSince branchPoint('develop')
+            def commitsFromRelease = countCommitsSince branchRelease
+            def major = branchRelease.matches[1].toInteger()
+            def minor = branchRelease.matches[2].toInteger()
+            def betaVersion = 1;
+            def tag = findLatestTag ~/v?$major.$minor.0-beta\.(\d+).+/
+            if(tag){
+                betaVersion = tag.matches[1].toInteger() + 1
             }
 
-            version.prereleaseTag = matches[1]
+            version.major = major
+            version.minor = minor
+            version.patch = 0
+            version.prereleaseTag = "beta.$betaVersion"
+            version.buildMetadata = "$commitsFromDevelop-${matches[1]}.$commitsFromRelease"
+        }
+
+        onBranch(~/release\/(\d+).(\d+).0/){
+            def commits = countCommitsSince branchPoint('develop')
+            def major = matches[1].toInteger()
+            def minor = matches[2].toInteger()
+            def betaVersion = 1;
+            def tag = findLatestTag ~/v?$major.$minor.0-beta\.(\d+).+/
+            if(tag){
+                betaVersion = tag.matches[1].toInteger() + 1
+            }
+
+            version.major = major
+            version.minor = minor
+            version.patch = 0
+            version.prereleaseTag = "beta.$betaVersion"
+            version.buildMetadata = "$commits"
+        }
+
+        onBranch('develop'){
+            def lastTag = findLatestTag ~/v?((\d+)\.(\d+)\.0)/, true
+            def branch = branchPoint ~/.*\/origin\/release\/((\d+).(\d+).(\d+))/
+
+            def versionMatchers
+            int commits = 0
+
+            if(lastTag && branch){
+                if (lastTag.matches[1] < branch.matches[1]){
+                    commits =  countCommitsSince  branch, true
+                    versionMatchers = branch.matches
+                }
+                else {
+                    commits = countCommitsSince lastTag, true
+                    versionMatchers = lastTag.matches
+                }
+            }
+
+            if( !versionMatchers && lastTag ){
+                commits = countCommitsSince lastTag, true
+                versionMatchers = lastTag.matches
+            }
+
+            if(versionMatchers) {
+                version.major = versionMatchers[2].toInteger()
+                version.minor = versionMatchers[3].toInteger() + 1
+                version.patch = 0
+            }
+            else {
+                commits =  countCommitsSince branchPoint('master'), true
+            }
+
+            version.prereleaseTag = "alpha.$commits"
+        }
+
+        onBranch(~/feature\/(.+)/) {
+            def lastTag = findLatestTag ~/v?(\d+)\.(\d+).(\d+)-\D+\.?(\d+)/
+            int commitsFromLastTag
+            int commitsFromDevelop = countCommitsSince branchPoint('develop'), true
+
+            if(lastTag){
+                version.major = lastTag.matches[1].toInteger()
+                version.minor = lastTag.matches[2].toInteger()
+                version.patch = lastTag.matches[3].toInteger()
+                commitsFromLastTag = lastTag.matches[4]
+            } else {
+                commitsFromLastTag =  countCommitsSince branchPoint('master'), true
+            }
+
+            version.prereleaseTag = "${matches[1]}.$commitsFromLastTag"
+            version.buildMetadata = "$commitsFromDevelop"
         }
     }
 }
 
 //Aca se usa la version.
-version = gitVersion.determineVersion()
-String imageId = "gcr.io/$projectId/$project.name:$project.version"
+def versionActual = gitVersion.determineVersion();
+version = versionActual
+def versionImg = "$versionActual".replace('+','-')
+
+String imageId = "gcr.io/$projectId/$project.name:$versionImg"
 
 helm {
 
@@ -90,11 +203,7 @@ helm {
             kubeContext = "kind-kind" // es el nombre del cluster, en windows es docker-desktop
         }
 
-        staging {
-            kubeContext = "gke_${projectId}_${clusterZone}_${clusterName}"
-        }
-
-        production {
+        cloud {
             kubeContext = "gke_${projectId}_${clusterZone}_${clusterName}"
         }
     }
@@ -211,9 +320,7 @@ task createNamespace(type:Exec){
 }
 
 helmInstallApiConfiguracionToLocal.dependsOn dockerPush, createNamespace
-helmInstallApiConfiguracionToStaging.dependsOn dockerPush, gcloudGetKubernetesCredentials
-helmInstallApiConfiguracionToProduction.dependsOn dockerPush, gcloudGetKubernetesCredentials
-
+helmInstallApiConfiguracionToCloud.dependsOn dockerPush, gcloudGetKubernetesCredentials
 
 clean {
     delete testsExecutedMarkerName
