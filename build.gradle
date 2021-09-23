@@ -163,6 +163,7 @@ String imageId = "gcr.io/$projectId/$project.name:$versionImg"
 helm {
 
     namespace = "cl-dssa-api"
+    kubeConfig = file("$project.buildDir/home/.kube/config")
 
     downloadClient {
         enabled = true
