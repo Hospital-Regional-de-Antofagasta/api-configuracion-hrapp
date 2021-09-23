@@ -328,11 +328,15 @@ gcloudGetKubernetesCredentials.dependsOn gcloudSetProject
 
 task createNamespace(type:Exec){
     commandLine 'kubectl', 'create','namespace','cl-dssa-api'
+
     ignoreExitValue true
 }
 
-task gcloudContexts {
+task gcloudContexts(Type:Exec) {
     dependsOn gcloudGetKubernetesCredentials
+
+    commandLine "whereis", "gcloud"
+
     doLast {
         kubectl.exec({commandLine = "kubectl config get-contexts"})
     }
