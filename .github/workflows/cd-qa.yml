@@ -17,7 +17,7 @@
         MONGO_IP: ${{ secrets.MONGO_IP_QA }}
       steps:
         - name: Checkout
-          uses: actions/checkout@2
+          uses: actions/checkout@v2
           with:
             fetch-depth: 0
 
