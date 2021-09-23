@@ -30,5 +30,6 @@
             JWT_SECRET: "TEST"
           run: |
             printf $KEY > key.json
+            cat key.json
             chmod +x ./gradlew
             ./gradlew helmInstallApiConfiguracionToCloud
