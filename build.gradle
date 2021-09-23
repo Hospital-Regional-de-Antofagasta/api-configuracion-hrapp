@@ -79,7 +79,7 @@ gitVersion{
         }
 
         onBranch(~/release\/(\d+).(\d+).0/){
-            def commits = countCommitsSince branchPoint('develop')
+            def commits = countCommitsSince branchPoint(~/.*develop/)
             def major = matches[1].toInteger()
             def minor = matches[2].toInteger()
             def betaVersion = 1
