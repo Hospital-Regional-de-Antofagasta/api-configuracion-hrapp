@@ -47,7 +47,7 @@ gitVersion{
 
             println tagPatchBeta
 
-            def betaVersion = 1;
+            def betaVersion = 1
             if(tagPatchBeta){
                 betaVersion = tagPatchBeta.matches[1].toInteger() + 1
             }
@@ -65,7 +65,7 @@ gitVersion{
             def commitsFromRelease = countCommitsSince branchRelease
             def major = branchRelease.matches[1].toInteger()
             def minor = branchRelease.matches[2].toInteger()
-            def betaVersion = 1;
+            def betaVersion = 1
             def tag = findLatestTag ~/v?$major.$minor.0-beta\.(\d+).+/
             if(tag){
                 betaVersion = tag.matches[1].toInteger() + 1
@@ -82,7 +82,7 @@ gitVersion{
             def commits = countCommitsSince branchPoint('develop')
             def major = matches[1].toInteger()
             def minor = matches[2].toInteger()
-            def betaVersion = 1;
+            def betaVersion = 1
             def tag = findLatestTag ~/v?$major.$minor.0-beta\.(\d+).+/
             if(tag){
                 betaVersion = tag.matches[1].toInteger() + 1
@@ -113,7 +113,7 @@ gitVersion{
                 }
             }
 
-            if( !versionMatchers && lastTag ){
+            if( versionMatchers==null && lastTag ){
                 commits = countCommitsSince lastTag, true
                 versionMatchers = lastTag.matches
             }
@@ -133,7 +133,7 @@ gitVersion{
         onBranch(~/feature\/(.+)/) {
             def lastTag = findLatestTag ~/v?(\d+)\.(\d+).(\d+)-\D+\.?(\d+)/
             int commitsFromLastTag
-            int commitsFromDevelop = countCommitsSince branchPoint(~/.*\/develop/), true
+            int commitsFromDevelop = countCommitsSince branchPoint('develop'), true
 
             if(lastTag){
                 version.major = lastTag.matches[1].toInteger()
@@ -141,7 +141,7 @@ gitVersion{
                 version.patch = lastTag.matches[3].toInteger()
                 commitsFromLastTag = lastTag.matches[4]
             } else {
-                commitsFromLastTag =  countCommitsSince branchPoint(~/.*\/master/), true
+                commitsFromLastTag =  countCommitsSince branchPoint('master'), true
             }
 
             version.prereleaseTag = "${matches[1]}.$commitsFromLastTag"
@@ -151,7 +151,7 @@ gitVersion{
 }
 
 //Aca se usa la version.
-def versionActual = gitVersion.determineVersion();
+def versionActual = gitVersion.determineVersion()
 version = versionActual
 def versionImg = "$versionActual".replace('+','-')
 
