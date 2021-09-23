@@ -9,8 +9,6 @@ plugins{
     id 'org.unbroken-dome.helm-publish' version '1.5.0'
     id 'org.unbroken-dome.helm-releases' version '1.5.0'
     id "com.google.osdetector" version "1.7.0"
-    id "com.github.rmee.kubectl" version "1.1.20200614081240"
-    id "com.github.rmee.gcloud" version "1.1.20200614081240"
     id "com.palantir.docker" version "0.28.0"
     id "com.palantir.docker-run" version "0.28.0"
 }
@@ -163,7 +161,6 @@ String imageId = "gcr.io/$projectId/$project.name:$versionImg"
 helm {
 
     namespace = "cl-dssa-api"
-    kubeConfig = file("$project.buildDir/home/.kube/config")
 
     downloadClient {
         enabled = true
@@ -308,43 +305,26 @@ assemble.dependsOn "docker"
 clean.dependsOn stopMongo
 dockerPush.dependsOn build, gcrLogin
 
-gcloud {
-    cli {
-        imageName = 'google/cloud-sdk'
-        imageTag = '352.0.0'
-    }
-
-    keyFile = file("$projectDir/key.json")
-    zone = clusterZone
-    project = "saludantofagasta-proy1"
-
-    gke {
-        clusterName = clusterNombre
-    }
-}
-
-gcloudSetProject.dependsOn gcloudActivateServiceAccount
-gcloudGetKubernetesCredentials.dependsOn gcloudSetProject
-
 task createNamespace(type:Exec){
     commandLine 'kubectl', 'create','namespace','cl-dssa-api'
 
     ignoreExitValue true
 }
 
-task gcloudContexts(type:Exec) {
-    dependsOn gcloudGetKubernetesCredentials
+task gcloudLogin(type:Exec) {
+    commandLine "gcloud", "auth", "activate-service-account"
+    args "--key-file", "key.json"
+}
 
-    commandLine "gcloud", "version"
-    //commandLine "whereis", "gcloud"
+task gcloudGetContextCredentials(type:Exec){
+    dependsOn gcloudLogin
 
-    doLast {
-        kubectl.exec({commandLine = "kubectl config get-contexts"})
-    }
+    commandLine "gcloud", "container", "clusters", "get-credentials", "$clusterNombre"
+    args "--zone", "$clusterZone"
 }
 
 helmInstallApiConfiguracionToLocal.dependsOn dockerPush, createNamespace
-helmInstallApiConfiguracionToCloud.dependsOn dockerPush, gcloudGetKubernetesCredentials, gcloudContexts
+helmInstallApiConfiguracionToCloud.dependsOn dockerPush, gcloudGetContextCredentials
 
 
 clean {
