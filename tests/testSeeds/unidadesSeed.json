@@ -8,17 +8,22 @@
       {"nombre":"Nutrición Infantil"},
       {"nombre":"Cirugía y Ortopedía"}
     ],
-    "referencia": "1 piso",
-    "imagen": {
-      "src": "https://via.placeholder.com/1000x500",
-      "srcset": [
-        "https://via.placeholder.com/30000x1500 2160w",
-        "https://via.placeholder.com/2000x1000 1080w",
-        "https://via.placeholder.com/1000x500 720w",
-        "https://via.placeholder.com/500x250 480w"
-      ],
-      "alt": "imagen"
-    },
+    "ubicaciones": [
+      {
+        "nombre":"",
+        "referencia": "1 piso",
+        "imagen": {
+          "src": "https://via.placeholder.com/1000x500",
+          "srcset": [
+            "https://via.placeholder.com/30000x1500 2160w",
+            "https://via.placeholder.com/2000x1000 1080w",
+            "https://via.placeholder.com/1000x500 720w",
+            "https://via.placeholder.com/500x250 480w"
+          ],
+          "alt": "imagen"
+        }
+      }
+    ],
     "tipo": "serviciosClinicos",
     "habilitado": true,
     "posicion": 1,
@@ -85,17 +90,22 @@
       {"nombre":"Nutrición Infantil"},
       {"nombre":"Cirugía y Ortopedía"}
     ],
-    "referencia": "1 piso",
-    "imagen": {
-      "src": "https://via.placeholder.com/1000x500",
-      "srcset": [
-        "https://via.placeholder.com/30000x1500 2160w",
-        "https://via.placeholder.com/2000x1000 1080w",
-        "https://via.placeholder.com/1000x500 720w",
-        "https://via.placeholder.com/500x250 480w"
-      ],
-      "alt": "imagen"
-    },
+    "ubicaciones": [
+      {
+        "nombre":"",
+        "referencia": "1 piso",
+        "imagen": {
+          "src": "https://via.placeholder.com/1000x500",
+          "srcset": [
+            "https://via.placeholder.com/30000x1500 2160w",
+            "https://via.placeholder.com/2000x1000 1080w",
+            "https://via.placeholder.com/1000x500 720w",
+            "https://via.placeholder.com/500x250 480w"
+          ],
+          "alt": "imagen"
+        }
+      }
+    ],
     "tipo": "serviciosClinicos",
     "habilitado": true,
     "posicion": 3,
@@ -135,17 +145,22 @@
       {"nombre":"Nutrición Infantil"},
       {"nombre":"Cirugía y Ortopedía"}
     ],
-    "referencia": "1 piso",
-    "imagen": {
-      "src": "https://via.placeholder.com/1000x500",
-      "srcset": [
-        "https://via.placeholder.com/30000x1500 2160w",
-        "https://via.placeholder.com/2000x1000 1080w",
-        "https://via.placeholder.com/1000x500 720w",
-        "https://via.placeholder.com/500x250 480w"
-      ],
-      "alt": "imagen"
-    },
+    "ubicaciones": [
+      {
+        "nombre":"",
+        "referencia": "1 piso",
+        "imagen": {
+          "src": "https://via.placeholder.com/1000x500",
+          "srcset": [
+            "https://via.placeholder.com/30000x1500 2160w",
+            "https://via.placeholder.com/2000x1000 1080w",
+            "https://via.placeholder.com/1000x500 720w",
+            "https://via.placeholder.com/500x250 480w"
+          ],
+          "alt": "imagen"
+        }
+      }
+    ],
     "tipo": "serviciosClinicos",
     "habilitado": true,
     "posicion": 2,
@@ -185,17 +200,22 @@
       {"nombre":"Nutrición Infantil"},
       {"nombre":"Cirugía y Ortopedía"}
     ],
-    "referencia": "1 piso",
-    "imagen": {
-      "src": "https://via.placeholder.com/1000x500",
-      "srcset": [
-        "https://via.placeholder.com/30000x1500 2160w",
-        "https://via.placeholder.com/2000x1000 1080w",
-        "https://via.placeholder.com/1000x500 720w",
-        "https://via.placeholder.com/500x250 480w"
-      ],
-      "alt": "imagen"
-    },
+    "ubicaciones": [
+      {
+        "nombre":"",
+        "referencia": "1 piso",
+        "imagen": {
+          "src": "https://via.placeholder.com/1000x500",
+          "srcset": [
+            "https://via.placeholder.com/30000x1500 2160w",
+            "https://via.placeholder.com/2000x1000 1080w",
+            "https://via.placeholder.com/1000x500 720w",
+            "https://via.placeholder.com/500x250 480w"
+          ],
+          "alt": "imagen"
+        }
+      }
+    ],
     "tipo": "unidadesApoyo",
     "habilitado": true,
     "posicion": 10,
@@ -235,17 +255,22 @@
       {"nombre":"Nutrición Infantil"},
       {"nombre":"Cirugía y Ortopedía"}
     ],
-    "referencia": "1 piso",
-    "imagen": {
-      "src": "https://via.placeholder.com/1000x500",
-      "srcset": [
-        "https://via.placeholder.com/30000x1500 2160w",
-        "https://via.placeholder.com/2000x1000 1080w",
-        "https://via.placeholder.com/1000x500 720w",
-        "https://via.placeholder.com/500x250 480w"
-      ],
-      "alt": "imagen"
-    },
+    "ubicaciones": [
+      {
+        "nombre":"",
+        "referencia": "1 piso",
+        "imagen": {
+          "src": "https://via.placeholder.com/1000x500",
+          "srcset": [
+            "https://via.placeholder.com/30000x1500 2160w",
+            "https://via.placeholder.com/2000x1000 1080w",
+            "https://via.placeholder.com/1000x500 720w",
+            "https://via.placeholder.com/500x250 480w"
+          ],
+          "alt": "imagen"
+        }
+      }
+    ],
     "tipo": "serviciosClinicos",
     "habilitado": true,
     "posicion": 1,

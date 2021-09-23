@@ -3,7 +3,9 @@ const { getMensajes } = require("../config");
 
 exports.getConfiguracion = async (req, res) => {
   try {
-    const configuracionHRApp = await ConfiguracionHRApp.findOne().exec();
+    const configuracionHRApp = await ConfiguracionHRApp.findOne({
+      version: 1,
+    }).exec();
     res.status(200).send(configuracionHRApp);
   } catch (error) {
     if (process.env.NODE_ENV === "dev")

@@ -32,7 +32,7 @@ describe("Endpoints unidades", () => {
       expect(response.body[1].nombre).toBe("Unidad serviciosClinicos");
       expect(response.body[2].nombre).toBe("Laboratorio Clínico");
       expect(response.body[3].nombre).toBe("Unidad unidadesApoyo");
-
+      
       done();
     });
     it("Should get unidades por tipo", async (done) => {

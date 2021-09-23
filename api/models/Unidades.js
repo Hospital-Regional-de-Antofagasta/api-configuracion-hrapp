@@ -7,12 +7,17 @@ const Unidades = mongoose.model(
     nombre: String,
     descripcion: String,
     servicios: [{ nombre: String }],
-    referencia: String,
-    imagen: {
-      src: String,
-      srcset: [String],
-      alt: String,
-    },
+    ubicaciones: [
+      {
+        nombre: String,
+        referencia: String,
+        imagen: {
+          src: String,
+          srcset: [String],
+          alt: String,
+        }
+      }
+    ],
     tipo: String,
     habilitado: Boolean,
     posicion: Number,
