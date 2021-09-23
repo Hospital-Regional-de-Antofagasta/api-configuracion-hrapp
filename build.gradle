@@ -1,3 +1,5 @@
+import java.nio.charset.StandardCharsets
+
 plugins{
     id "base"
     id "nl.eleven.node-gradle.node" version "1.0.0"
@@ -20,6 +22,7 @@ var clusterZone  = System.getenv("API_ZONE") ?: "ZONE"
 var clusterName = System.getenv("API_CLUSTER") ?: "CLUSTER"
 var apiKey = System.getenv("API_KEY") ?: "0123456789ABCDEF"
 var mongoIp = System.getenv("MONGO_IP") ?: "localhost"
+var keyJson = System.getenv("KEY") ?: "{}"
 var commitId
 
 gitVersion{
@@ -215,7 +218,6 @@ node {
     version nodeVersion
 }
 
-
 docker {
     name imageId
     files fileTree("$project.buildDir/node")
@@ -285,7 +287,7 @@ task apiBuild(type: NodeTask) {
 
 task gcrLogin(type:Exec){
     commandLine "docker", "login", "-u", "_json_key", "--password-stdin", "https://gcr.io"
-    standardInput new BufferedInputStream(new FileInputStream("key.json"))
+    standardInput new ByteArrayInputStream(keyJson.getBytes(StandardCharsets.UTF_8))
 }
 
 dockerfileZip.dependsOn testApi
