@@ -124,7 +124,7 @@ gitVersion{
                 version.patch = 0
             }
             else {
-                commits =  countCommitsSince branchPoint('master'), true
+                commits =  countCommitsSince branchPoint(~/.*\/master/), true
             }
 
             version.prereleaseTag = "alpha.$commits"

@@ -17,6 +17,8 @@
       steps:
         - name: Checkout
           uses: actions/checkout@2
+          with:
+            fetch-depth: 0
 
         - name: Build Test
           env:

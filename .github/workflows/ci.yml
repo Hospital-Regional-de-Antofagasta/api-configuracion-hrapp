@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          fetch-deṕth: 0
 
       - name: Build Test
         env:
@@ -23,4 +25,4 @@ jobs:
         run: |
           printf $KEY > key.json
           chmod +x ./gradlew
-          ./gradlew build --no-deamon --debug --stack
+          ./gradlew build --no-deamon --info --stack
