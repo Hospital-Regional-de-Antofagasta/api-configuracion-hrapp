@@ -9,10 +9,10 @@
       name: Configurar, Construir
       runs-on: ubuntu-latest
       env:
-        PROJECT_ID: "saludantofagasta-proy1"
+        PROJECT_ID: ${{ secrets.CGP_PROJECT }}
         KEY: ${{ secrets.GCP_KEY }}
-        API_ZONE: "us-east4-a"
-        API_CLUSTER: "cluster-qa"
+        API_ZONE: ${{ secrets.GCP_ZONE_QA }}
+        API_CLUSTER: ${{ secrets.GCP_CLUSTER_QA }}
         API_KEY: ${{ secrets.API_KEY }}
         MONGO_IP: ${{ secrets.MONGO_IP_QA }}
       steps:
