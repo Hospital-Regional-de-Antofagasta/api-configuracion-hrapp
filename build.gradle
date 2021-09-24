@@ -98,7 +98,7 @@ gitVersion{
 
         onBranch('develop'){
             def lastTag = findLatestTag ~/v?((\d+)\.(\d+)\.0)/, true
-            def branch = branchPoint ~/.*\/origin\/release\/((\d+).(\d+).(\d+))/
+            def branch = branchPoint ~/.*\/release\/((\d+).(\d+).(\d+))/
 
             def versionMatchers
             int commits = 0
