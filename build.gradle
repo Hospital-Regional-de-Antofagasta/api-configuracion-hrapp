@@ -8,7 +8,6 @@ plugins{
     id 'org.unbroken-dome.helm-commands' version '1.5.0'
     id 'org.unbroken-dome.helm-publish' version '1.5.0'
     id 'org.unbroken-dome.helm-releases' version '1.5.0'
-    id "com.google.osdetector" version "1.7.0"
     id "com.palantir.docker" version "0.28.0"
     id "com.palantir.docker-run" version "0.28.0"
 }
