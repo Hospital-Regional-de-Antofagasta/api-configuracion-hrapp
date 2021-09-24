@@ -183,12 +183,7 @@ helm {
                 values.put('secrets.mongoUrl', "mongodb://$mongoIp:27017/hrapp_dev")
             }
 
-            forTarget('staging') {
-                values.put('secrets.apiKey', apiKey)
-                values.put('secrets.mongoUrl', "mongodb://$mongoIp:27017/hrapp")
-            }
-
-            forTarget('production'){
+            forTarget('cloud') {
                 values.put('secrets.apiKey', apiKey)
                 values.put('secrets.mongoUrl', "mongodb://$mongoIp:27017/hrapp")
             }
