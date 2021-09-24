@@ -194,7 +194,7 @@ helm {
             }
 
             forAnyTarget{
-                values.put('image.tag', project.version)
+                values.put('image.tag', versionImg)
             }
         }
     }
