@@ -6,39 +6,46 @@ const Unidades = mongoose.model(
   new Schema({
     nombre: String,
     descripcion: String,
-    servicios: [{ nombre: String }],
-    ubicaciones: [
+    servicios: [String],
+    atenciones: [
       {
         nombre: String,
-        referencia: String,
+        horario: {
+          nota: String,
+          atiendeFeriados: Boolean,
+          periodos: [
+            {
+              dias: {
+                inicio: String,
+                fin: String,
+              },
+              horas: {
+                inicio: String,
+                fin: String,
+              },
+            },
+          ],
+        },
+        contactos: {
+          telefonos: [String],
+          correos: [String],
+        },
+      },
+    ],
+    referencias: [
+      {
+        ubicacion: String,
         imagen: {
           src: String,
-          srcset: [String],
           alt: String,
-        }
-      }
+          srcset: [String],
+        },
+      },
     ],
     tipo: String,
     habilitado: Boolean,
     posicion: Number,
     version: Number,
-    atencion: [
-      {
-        nombreHorario: String,
-        tipoAtencion: String,
-        atencionFeriados: Boolean,
-        horarioAtencion: [
-          {
-            diaAtencion: { diaApertura: String, diaCierre: String },
-            horaAtencion: [{ horaApertura: String, horaCierre: String }],
-          },
-        ],
-        contactos: {
-          telefonos: [{ numero: String }],
-          correos: [{ correo: String }],
-        },
-      },
-    ],
   }),
   "unidades"
 );
