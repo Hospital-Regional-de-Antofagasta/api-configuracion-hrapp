@@ -19,10 +19,12 @@ const Unidades = mongoose.model(
                 inicio: String,
                 fin: String,
               },
-              horas: {
-                inicio: String,
-                fin: String,
-              },
+              horas: [
+                {
+                  inicio: String,
+                  fin: String,
+                },
+              ],
             },
           ],
         },

@@ -21,10 +21,12 @@
                   "inicio": "lunes",
                   "fin": "sábado"
                 },
-                "horas": {
-                  "inicio": "08:00",
-                  "fin": "14:00"
-                }
+                "horas": [
+                  {
+                    "inicio": "08:00",
+                    "fin": "14:00"
+                  }
+                ]
               }
             ]
           }
@@ -46,10 +48,12 @@
                   "inicio": "lunes",
                   "fin": "viernes"
                 },
-                "horas": {
-                  "inicio": "08:00",
-                  "fin": "14:00"
-                }
+                "horas": [
+                  {
+                    "inicio": "08:00",
+                    "fin": "14:00"
+                  }
+                ]
               }
             ]
           }
@@ -97,10 +101,12 @@
                   "inicio": "lunes",
                   "fin": "viernes"
                 },
-                "horas": {
-                  "inicio": "08:00",
-                  "fin": "15:00"
-                }
+                "horas": [
+                  {
+                    "inicio": "08:00",
+                    "fin": "15:00"
+                  }
+                ]
               }
             ]
           }
@@ -148,10 +154,12 @@
                   "inicio": "martes",
                   "fin": "viernes"
                 },
-                "horas": {
-                  "inicio": "08:00",
-                  "fin": "16:00"
-                }
+                "horas": [
+                  {
+                    "inicio": "08:00",
+                    "fin": "16:00"
+                  }
+                ]
               }
             ]
           }
@@ -199,10 +207,12 @@
                   "inicio": "martes",
                   "fin": "viernes"
                 },
-                "horas": {
-                  "inicio": "08:00",
-                  "fin": "16:00"
-                }
+                "horas": [
+                  {
+                    "inicio": "08:00",
+                    "fin": "16:00"
+                  }
+                ]
               }
             ]
           }
@@ -255,10 +265,12 @@
                   "inicio": "martes",
                   "fin": "viernes"
                 },
-                "horas": {
-                  "inicio": "08:00",
-                  "fin": "16:00"
-                }
+                "horas": [
+                  {
+                    "inicio": "08:00",
+                    "fin": "16:00"
+                  }
+                ]
               }
             ]
           }
@@ -311,10 +323,12 @@
                   "inicio": "martes",
                   "fin": "viernes"
                 },
-                "horas": {
-                  "inicio": "08:00",
-                  "fin": "16:00"
-                }
+                "horas": [
+                  {
+                    "inicio": "08:00",
+                    "fin": "16:00"
+                  }
+                ]
               }
             ]
           }
