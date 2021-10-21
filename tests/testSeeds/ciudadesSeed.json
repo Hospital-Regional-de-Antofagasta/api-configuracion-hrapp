@@ -1,0 +1,2090 @@
+[
+  {
+    "codigoRegion": "06  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Huara"
+  },
+  {
+    "codigoRegion": "06  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Iquique"
+  },
+  {
+    "codigoRegion": "01  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Tocopilla"
+  },
+  {
+    "codigoRegion": "01  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Antofagasta"
+  },
+  {
+    "codigoRegion": "01  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Calama"
+  },
+  {
+    "codigoRegion": "03  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Chañaral"
+  },
+  {
+    "codigoRegion": "03  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Huasco"
+  },
+  {
+    "codigoRegion": "07  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "01      ",
+    "nombre": "La higuera"
+  },
+  {
+    "codigoRegion": "07  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Ovalle"
+  },
+  {
+    "codigoRegion": "07  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Canela"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Chaitén"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Petorca"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Putaendo"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Nogales"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "01      ",
+    "nombre": "San Esteban"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "05  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Puchuncaví"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "07  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Isla de Pascua"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Mostazal"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "06  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Algarrobo"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Peralillo"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Teno"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Curepto"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Navidad"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Chanco"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "01      ",
+    "nombre": "San Javier"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Cobquecura"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Tomé"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "01      ",
+    "nombre": "San Rosendo"
+  },
+  {
+    "codigoRegion": "03  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Copiapó"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Arauco"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Angol"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Galvarino"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Puerto Varas"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Castro"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Quilicura"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Osorno"
+  },
+  {
+    "codigoRegion": "15  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Guaitecas"
+  },
+  {
+    "codigoRegion": "15  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Lago Verde"
+  },
+  {
+    "codigoRegion": "15  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Río Ibáñez"
+  },
+  {
+    "codigoRegion": "15  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Cochrane"
+  },
+  {
+    "codigoRegion": "16  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Laguna Blanca"
+  },
+  {
+    "codigoRegion": "16  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Natales"
+  },
+  {
+    "codigoRegion": "16  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Primavera"
+  },
+  {
+    "codigoRegion": "16  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Cabo de Hornos"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Tiltil"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Curacaví"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "05  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Peñaflor"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "06  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Calera de Tango"
+  },
+  {
+    "codigoRegion": "13  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Valdivia"
+  },
+  {
+    "codigoRegion": "13  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Futrono"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "01      ",
+    "nombre": "San José de Maipo"
+  },
+  {
+    "codigoRegion": "02  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Arica"
+  },
+  {
+    "codigoRegion": "02  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "01      ",
+    "nombre": "Putre"
+  },
+  {
+    "codigoRegion": "02  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "02      ",
+    "nombre": "General Lagos"
+  },
+  {
+    "codigoRegion": "07  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Río Hurtado"
+  },
+  {
+    "codigoRegion": "02  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Camarones"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Puente Alto"
+  },
+  {
+    "codigoRegion": "13  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "02      ",
+    "nombre": "La Unión"
+  },
+  {
+    "codigoRegion": "13  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Mariquina"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "06  ",
+    "codigoCiudad": "02      ",
+    "nombre": "San Bernardo"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "05  ",
+    "codigoCiudad": "02      ",
+    "nombre": "El Monte"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "02      ",
+    "nombre": "María Pinto"
+  },
+  {
+    "codigoRegion": "16  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Antártica"
+  },
+  {
+    "codigoRegion": "16  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Porvenir"
+  },
+  {
+    "codigoRegion": "16  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Torres del Paine"
+  },
+  {
+    "codigoRegion": "16  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "02      ",
+    "nombre": "San Gregorio"
+  },
+  {
+    "codigoRegion": "15  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Tortel"
+  },
+  {
+    "codigoRegion": "15  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Chile Chico"
+  },
+  {
+    "codigoRegion": "15  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Cisnes"
+  },
+  {
+    "codigoRegion": "01  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "02      ",
+    "nombre": "María Elena"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "02      ",
+    "nombre": "San Pablo"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Hualaihué"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Huechuraba"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Ancud"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Los Muermos"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Perquenco"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Renaico"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Curanilahue"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Yumbel"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Talcahuano"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Quirihue"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Villa Alegre"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Cauquenes"
+  },
+  {
+    "codigoRegion": "07  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Illapel"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Litueche"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Río Claro"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Vichuquén"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Palmilla"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "06  ",
+    "codigoCiudad": "02      ",
+    "nombre": "El Quisco"
+  },
+  {
+    "codigoRegion": "15  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Coihaique"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Graneros"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "05  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Juan Fernández"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Rinconada"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Calera"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Catemu"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "02      ",
+    "nombre": "La Ligua"
+  },
+  {
+    "codigoRegion": "03  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Caldera"
+  },
+  {
+    "codigoRegion": "07  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Vicuña"
+  },
+  {
+    "codigoRegion": "03  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Vallenar"
+  },
+  {
+    "codigoRegion": "03  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Diego de Almagro"
+  },
+  {
+    "codigoRegion": "01  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Ollagüe"
+  },
+  {
+    "codigoRegion": "01  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Mejillones"
+  },
+  {
+    "codigoRegion": "06  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Alto Hospicio"
+  },
+  {
+    "codigoRegion": "06  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Camiña"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "02      ",
+    "nombre": "Colina"
+  },
+  {
+    "codigoRegion": "13  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Río Bueno"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Pirque"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "05  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Talagante"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "06  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Buin"
+  },
+  {
+    "codigoRegion": "13  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Lanco"
+  },
+  {
+    "codigoRegion": "06  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Colchane"
+  },
+  {
+    "codigoRegion": "15  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Aisén"
+  },
+  {
+    "codigoRegion": "01  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Sierra Gorda"
+  },
+  {
+    "codigoRegion": "01  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "03      ",
+    "nombre": "San Pedro de Atacama"
+  },
+  {
+    "codigoRegion": "03  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Freirina"
+  },
+  {
+    "codigoRegion": "07  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "03      ",
+    "nombre": "La Serena"
+  },
+  {
+    "codigoRegion": "03  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Tierra Amarilla"
+  },
+  {
+    "codigoRegion": "07  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Punitaqui"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Cabildo"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "03      ",
+    "nombre": "San Felipe"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "03      ",
+    "nombre": "La Cruz"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Calle Larga"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "05  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Quintero"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Codegua"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "06  ",
+    "codigoCiudad": "03      ",
+    "nombre": "El Tabo"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "03      ",
+    "nombre": "San Fernando"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Hualañé"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Constitución"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "03      ",
+    "nombre": "La Estrella"
+  },
+  {
+    "codigoRegion": "07  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Los Vilos"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Pelluhue"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Yerbas Buenas"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Ninhue"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Penco"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Cabrero"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Lebu"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Collipulli"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Carahue"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Fresia"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Quemchi"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Lo Barnechea"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Futaleufú"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "03      ",
+    "nombre": "San Juan de la Costa"
+  },
+  {
+    "codigoRegion": "15  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "03      ",
+    "nombre": "O'Higgins"
+  },
+  {
+    "codigoRegion": "16  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Río Verde"
+  },
+  {
+    "codigoRegion": "16  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Timaukel"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Lampa"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "03      ",
+    "nombre": "Melipilla"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "04      ",
+    "nombre": "San Pedro"
+  },
+  {
+    "codigoRegion": "16  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Punta Arenas"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Puyehue"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Palena"
+  },
+  {
+    "codigoRegion": "13  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Lago Ranco"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Pudahuel"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Dalcahue"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Llanquihue"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Nueva Imperial"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Purén"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Los Álamos"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Laja"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Florida"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "04      ",
+    "nombre": "San Carlos"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Colbún"
+  },
+  {
+    "codigoRegion": "07  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Salamanca"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Pichilemu"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Pencahue"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Rauco"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Pumanque"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "06  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Cartagena"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Rancagua"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "05  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Concón"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Los Andes"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Quillota"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Santa María"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Papudo"
+  },
+  {
+    "codigoRegion": "07  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Monte Patria"
+  },
+  {
+    "codigoRegion": "07  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Coquimbo"
+  },
+  {
+    "codigoRegion": "03  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Alto del Carmen"
+  },
+  {
+    "codigoRegion": "01  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Taltal"
+  },
+  {
+    "codigoRegion": "06  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Pica"
+  },
+  {
+    "codigoRegion": "13  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Corral"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "06  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Paine"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "05  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Isla de Maipo"
+  },
+  {
+    "codigoRegion": "01  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "04      ",
+    "nombre": "Toconao"
+  },
+  {
+    "codigoRegion": "01  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Baquedano"
+  },
+  {
+    "codigoRegion": "13  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Ranco"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "05  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Padre Hurtado"
+  },
+  {
+    "codigoRegion": "13  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Máfil"
+  },
+  {
+    "codigoRegion": "06  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Pozo Almonte"
+  },
+  {
+    "codigoRegion": "07  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Andacollo"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Zapallar"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Panquehue"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Hijuelas"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "05  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Viña del Mar"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Machalí"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "06  ",
+    "codigoCiudad": "05      ",
+    "nombre": "San Antonio"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Santa Cruz"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Curicó"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Talca"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Marchihue"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Linares"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Concepción"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Los Ángeles"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Cañete"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Los Sauces"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Temuco"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Frutillar"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Curaco de Vélez"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Renca"
+  },
+  {
+    "codigoRegion": "07  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Combarbalá"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Puerto Octay"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Ñiquén"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "05      ",
+    "nombre": "Alhué"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "06      ",
+    "nombre": "Purranque"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "06      ",
+    "nombre": "Conchalí"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "06      ",
+    "nombre": "Quinchao"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "06      ",
+    "nombre": "Puerto Montt"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "06      ",
+    "nombre": "Lautaro"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "06      ",
+    "nombre": "Ercilla"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "06      ",
+    "nombre": "Contulmo"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "06      ",
+    "nombre": "Tucapel"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "06      ",
+    "nombre": "Coronel"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "06      ",
+    "nombre": "Retiro"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "06      ",
+    "nombre": "Paredones"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "06      ",
+    "nombre": "San Fabián"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "06      ",
+    "nombre": "Pelarco"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "06      ",
+    "nombre": "Romeral"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "06      ",
+    "nombre": "Nancagua"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "06  ",
+    "codigoCiudad": "06      ",
+    "nombre": "Santo Domingo"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "06      ",
+    "nombre": "Las Cabras"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "05  ",
+    "codigoCiudad": "06      ",
+    "nombre": "Villa Alemana"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "06      ",
+    "nombre": "Limache"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "06      ",
+    "nombre": "Llaillay"
+  },
+  {
+    "codigoRegion": "07  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "06      ",
+    "nombre": "Paiguano"
+  },
+  {
+    "codigoRegion": "13  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "06      ",
+    "nombre": "Los Lagos"
+  },
+  {
+    "codigoRegion": "13  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "07      ",
+    "nombre": "Paillaco"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "07      ",
+    "nombre": "Olmué"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "05  ",
+    "codigoCiudad": "07      ",
+    "nombre": "Valparaíso"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "07      ",
+    "nombre": "Coltauco"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "07      ",
+    "nombre": "Placilla"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "07      ",
+    "nombre": "Licantén"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "07      ",
+    "nombre": "San Clemente"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "07      ",
+    "nombre": "San Nicolás"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "07      ",
+    "nombre": "Longaví"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "07      ",
+    "nombre": "Hualqui"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "07      ",
+    "nombre": "Antuco"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "07      ",
+    "nombre": "Tirúa"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "07      ",
+    "nombre": "Lonquimay"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "07      ",
+    "nombre": "Vilcún"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "07      ",
+    "nombre": "Cochamó"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "07      ",
+    "nombre": "Puqueldón"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "07      ",
+    "nombre": "Vitacura"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "07      ",
+    "nombre": "Río Negro"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "08      ",
+    "nombre": "Independencia"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "08      ",
+    "nombre": "Chonchi"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "08      ",
+    "nombre": "Calbuco"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "08      ",
+    "nombre": "Melipeuco"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "08      ",
+    "nombre": "Lumaco"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "08      ",
+    "nombre": "Quilleco"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "08      ",
+    "nombre": "Lota"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "04  ",
+    "codigoCiudad": "08      ",
+    "nombre": "Parral"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "08      ",
+    "nombre": "Treguaco"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "08      ",
+    "nombre": "Maule"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "08      ",
+    "nombre": "Sagrada Familia"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "08      ",
+    "nombre": "Lolol"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "08      ",
+    "nombre": "Doñihue"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "05  ",
+    "codigoCiudad": "08      ",
+    "nombre": "Quilpué"
+  },
+  {
+    "codigoRegion": "13  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "08      ",
+    "nombre": "Panguipulli"
+  },
+  {
+    "codigoRegion": "08  ",
+    "codigoProvincia": "05  ",
+    "codigoCiudad": "09      ",
+    "nombre": "Casablanca"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "09      ",
+    "nombre": "Olivar"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "09      ",
+    "nombre": "Chépica"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "09      ",
+    "nombre": "Molina"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "09      ",
+    "nombre": "Empedrado"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "09      ",
+    "nombre": "Portezuelo"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "09      ",
+    "nombre": "Santa Juana"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "09      ",
+    "nombre": "Nacimiento"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "09      ",
+    "nombre": "Traiguén"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "09      ",
+    "nombre": "Saavedra"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "09      ",
+    "nombre": "Maullín"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "09      ",
+    "nombre": "Queilén"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "09      ",
+    "nombre": "Recoleta"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "10      ",
+    "nombre": "Las Condes"
+  },
+  {
+    "codigoRegion": "14  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "10      ",
+    "nombre": "Quellón"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "10      ",
+    "nombre": "Teodoro Schmidt"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "10      ",
+    "nombre": "Victoria"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "10      ",
+    "nombre": "Negrete"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "10      ",
+    "nombre": "San Pedro de la Paz"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "10      ",
+    "nombre": "Chillán"
+  },
+  {
+    "codigoRegion": "10  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "10      ",
+    "nombre": "San Rafael"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "10      ",
+    "nombre": "Chimbarongo"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "10      ",
+    "nombre": "Coinco"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "11      ",
+    "nombre": "Requínoa"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "11      ",
+    "nombre": "Chiguayante"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "11      ",
+    "nombre": "Coihueco"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "11      ",
+    "nombre": "Mulchén"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "11      ",
+    "nombre": "Curacautín"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "11      ",
+    "nombre": "Freire"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "11      ",
+    "nombre": "Cerro Navia"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "12      ",
+    "nombre": "Quinta Normal"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "12      ",
+    "nombre": "Cunco"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "12      ",
+    "nombre": "Santa Bárbara"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "12      ",
+    "nombre": "Coelemu"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "12      ",
+    "nombre": "Peumo"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "13      ",
+    "nombre": "Toltén"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "13      ",
+    "nombre": "Providencia"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "13      ",
+    "nombre": "Quinta de Tilcoco"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "13      ",
+    "nombre": "Ránquil"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "13      ",
+    "nombre": "Quilaco"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "14      ",
+    "nombre": "Lo Prado"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "14      ",
+    "nombre": "Pitrufquén"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "03  ",
+    "codigoCiudad": "14      ",
+    "nombre": "Alto Bío Bío"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "14      ",
+    "nombre": "Pinto"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "14      ",
+    "nombre": "Pichidegua"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "15      ",
+    "nombre": "San Vicente"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "15      ",
+    "nombre": "Quillón"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "15      ",
+    "nombre": "Gorbea"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "15      ",
+    "nombre": "Estación Central"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "16      ",
+    "nombre": "Santiago"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "16      ",
+    "nombre": "Loncoche"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "16      ",
+    "nombre": "Bulnes"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "16      ",
+    "nombre": "Malloa"
+  },
+  {
+    "codigoRegion": "09  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "17      ",
+    "nombre": "Rengo"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "17      ",
+    "nombre": "San Ignacio"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "17      ",
+    "nombre": "Villarrica"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "17      ",
+    "nombre": "Ñuñoa"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "18      ",
+    "nombre": "La Reina"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "18      ",
+    "nombre": "Pucón"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "18      ",
+    "nombre": "El Carmen"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "19      ",
+    "nombre": "Pemuco"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "19      ",
+    "nombre": "Curarrehue"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "19      ",
+    "nombre": "Maipú"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "20      ",
+    "nombre": "Cerrillos"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "20      ",
+    "nombre": "Padre Las Casas"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "20      ",
+    "nombre": "Yungay"
+  },
+  {
+    "codigoRegion": "11  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "21      ",
+    "nombre": "Chillán Viejo"
+  },
+  {
+    "codigoRegion": "12  ",
+    "codigoProvincia": "02  ",
+    "codigoCiudad": "21      ",
+    "nombre": "Cholchol"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "21      ",
+    "nombre": "Lo Espejo"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "22      ",
+    "nombre": "Pedro Aguirre Cerda"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "23      ",
+    "nombre": "San Miguel"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "24      ",
+    "nombre": "San Joaquín"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "25      ",
+    "nombre": "Macul"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "26      ",
+    "nombre": "Peñalolén"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "27      ",
+    "nombre": "La Cisterna"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "28      ",
+    "nombre": "San Ramón"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "29      ",
+    "nombre": "La Granja"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "30      ",
+    "nombre": "La Florida"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "31      ",
+    "nombre": "El Bosque"
+  },
+  {
+    "codigoRegion": "04  ",
+    "codigoProvincia": "01  ",
+    "codigoCiudad": "32      ",
+    "nombre": "La Pintana"
+  }
+]

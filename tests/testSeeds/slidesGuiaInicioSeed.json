@@ -1,0 +1,439 @@
+[
+  {
+    "titulo": {
+      "texto": "¡Bienvenido!",
+      "color": "primary",
+      "tamanio": "larger",
+      "alineamiento": "center",
+      "bold": true
+    },
+    "imagen": {
+      "src": "https://via.placeholder.com/500x500",
+      "srcset": [
+        "https://via.placeholder.com/1500x1500 2160w",
+        "https://via.placeholder.com/1000x1000 1080w",
+        "https://via.placeholder.com/500x500 720w",
+        "https://via.placeholder.com/250x250 480w"
+      ],
+      "alt": "imagen"
+    },
+    "icono": {
+      "icono": "",
+      "color": "tertiary"
+    },
+    "subtitulo": {
+      "texto": "Ingresa y obten acceso a",
+      "color": "primary",
+      "tamanio": "large",
+      "alineamiento": "center",
+      "bold": true
+    },
+    "contenido": {
+      "texto": {
+        "texto": "",
+        "color": "secondary",
+        "tamanio": "medium",
+        "alineamiento": "start",
+        "bold": true
+      },
+      "lista": [
+        {
+          "icono": {
+            "icono": "briefcase-medical",
+            "color": "secondary",
+            "tamanio": "x-large",
+            "alineamiento": "center"
+          },
+          "texto": {
+            "texto": "Tu información hospitalaria",
+            "color": "dark",
+            "tamanio": "small",
+            "alineamiento": "start",
+            "bold": true
+          }
+        },
+        {
+          "icono": {
+            "icono": "hospital",
+            "color": "secondary",
+            "tamanio": "x-large",
+            "alineamiento": "center"
+          },
+          "texto": {
+            "texto": "Información útil sobre el hospital",
+            "color": "dark",
+            "tamanio": "small",
+            "alineamiento": "start",
+            "bold": true
+          }
+        }
+      ]
+    },
+    "boton": {
+      "texto": "",
+      "icono": "arrow-right",
+      "color": "medium",
+      "tamanio": "small",
+      "alineamiento": "center",
+      "bold": false
+    },
+    "animacion": true,
+    "habilitado": true,
+    "posicion": 1,
+    "version": 1
+  },
+  {
+    "titulo": {
+      "texto": "",
+      "color": "primary",
+      "tamanio": "small",
+      "bold": true
+    },
+    "imagen": {
+      "src": "https://via.placeholder.com/500x500",
+      "srcset": [
+        "https://via.placeholder.com/1500x1500 2160w",
+        "https://via.placeholder.com/1000x1000 1080w",
+        "https://via.placeholder.com/500x500 720w",
+        "https://via.placeholder.com/250x250 480w"
+      ],
+      "alt": "imagen"
+    },
+    "icono": {
+      "icono": "",
+      "color": "tertiary"
+    },
+    "subtitulo": {
+      "texto": "Servicios Hospitalarios",
+      "color": "primary",
+      "tamanio": "large",
+      "bold": true
+    },
+    "contenido": {
+      "texto": {
+        "texto": "",
+        "color": "secondary",
+        "tamanio": "medium",
+        "alineamiento": "start",
+        "bold": true
+      },
+      "lista": [
+        {
+          "icono": {
+            "icono": "pills",
+            "color": "secondary",
+            "tamanio": "x-large",
+            "alineamiento": "center"
+          },
+          "texto": {
+            "texto": "Revisa cuando podrás recepcionar tus medicamentos",
+            "color": "dark",
+            "tamanio": "small",
+            "alineamiento": "start",
+            "bold": true
+          }
+        },
+        {
+          "icono": {
+            "icono": "heart",
+            "color": "secondary",
+            "tamanio": "x-large",
+            "alineamiento": "center"
+          },
+          "texto": {
+            "texto": "Administra todas tus horas médicas y de laboratorio",
+            "color": "dark",
+            "tamanio": "small",
+            "alineamiento": "start",
+            "bold": true
+          }
+        },
+        {
+          "icono": {
+            "icono": "file-medical",
+            "color": "secondary",
+            "tamanio": "x-large",
+            "alineamiento": "center"
+          },
+          "texto": {
+            "texto": "Solicita envió de tus exámenes al correo",
+            "color": "dark",
+            "tamanio": "small",
+            "alineamiento": "start",
+            "bold": true
+          }
+        },
+        {
+          "icono": {
+            "icono": "download",
+            "color": "secondary",
+            "tamanio": "x-large",
+            "alineamiento": "center"
+          },
+          "texto": {
+            "texto": "Busca lo que necesitas y te lo enviamos a tu correo",
+            "color": "dark",
+            "tamanio": "small",
+            "alineamiento": "start",
+            "bold": true
+          }
+        }
+      ]
+    },
+    "boton": {
+      "texto": "",
+      "icono": "arrow-right",
+      "color": "medium",
+      "tamanio": "small",
+      "alineamiento": "center",
+      "bold": false
+    },
+    "animacion": true,
+    "habilitado": true,
+    "posicion": 3,
+    "version": 1
+  },
+  {
+    "titulo": {
+      "texto": "Informaciones",
+      "color": "primary",
+      "tamanio": "larger",
+      "bold": true
+    },
+    "imagen": {
+      "src": "https://via.placeholder.com/500x500",
+      "srcset": [
+        "https://via.placeholder.com/1500x1500 2160w",
+        "https://via.placeholder.com/1000x1000 1080w",
+        "https://via.placeholder.com/500x500 720w",
+        "https://via.placeholder.com/250x250 480w"
+      ],
+      "alt": "imagen"
+    },
+    "icono": {
+      "icono": "",
+      "color": "tertiary"
+    },
+    "subtitulo": {
+      "texto": "",
+      "color": "primary",
+      "tamanio": "large",
+      "bold": true
+    },
+    "contenido": {
+      "texto": {
+        "texto": "",
+        "color": "medium",
+        "tamanio": "small",
+        "alineamiento": "center",
+        "bold": false
+      },
+      "lista": [
+        {
+          "icono": {
+            "icono": "",
+            "color": "secondary",
+            "tamanio": "x-large",
+            "alineamiento": "center"
+          },
+          "texto": {
+            "texto": "Encuentra información actual sobre todo lo que el hospital tiene para ofrecerte, detalles sobre las unidades y su ubicación, etc.",
+            "color": "medium",
+            "tamanio": "small",
+            "alineamiento": "center",
+            "bold": false
+          }
+        },
+        {
+          "icono": {
+            "icono": "question-circle",
+            "color": "secondary",
+            "tamanio": "x-large",
+            "alineamiento": "center"
+          },
+          "texto": {
+            "texto": "Si necesitas ayuda dentro de la aplicación presiona este icono y te ayudará",
+            "color": "dark",
+            "tamanio": "small",
+            "alineamiento": "center",
+            "bold": true
+          }
+        }
+      ]
+    },
+    "boton": {
+      "texto": "Continuar",
+      "icono": "arrow-right",
+      "color": "primary",
+      "tamanio": "small",
+      "alineamiento": "center",
+      "bold": true
+    },
+    "animacion": false,
+    "habilitado": true,
+    "posicion": 2,
+    "version": 1
+  },
+  {
+    "titulo": {
+      "texto": "Informaciones deshabilitado",
+      "color": "primary",
+      "tamanio": "larger",
+      "bold": true
+    },
+    "imagen": {
+      "src": "https://via.placeholder.com/500x500",
+      "srcset": [
+        "https://via.placeholder.com/1500x1500 2160w",
+        "https://via.placeholder.com/1000x1000 1080w",
+        "https://via.placeholder.com/500x500 720w",
+        "https://via.placeholder.com/250x250 480w"
+      ],
+      "alt": "imagen"
+    },
+    "icono": {
+      "icono": "",
+      "color": "tertiary"
+    },
+    "subtitulo": {
+      "texto": "",
+      "color": "primary",
+      "tamanio": "large",
+      "bold": true
+    },
+    "contenido": {
+      "texto": {
+        "texto": "",
+        "color": "medium",
+        "tamanio": "small",
+        "alineamiento": "center",
+        "bold": false
+      },
+      "lista": [
+        {
+          "icono": {
+            "icono": "",
+            "color": "secondary",
+            "tamanio": "x-large",
+            "alineamiento": "center"
+          },
+          "texto": {
+            "texto": "Encuentra información actual sobre todo lo que el hospital tiene para ofrecerte, detalles sobre las unidades y su ubicación, etc.",
+            "color": "medium",
+            "tamanio": "small",
+            "alineamiento": "center",
+            "bold": false
+          }
+        },
+        {
+          "icono": {
+            "icono": "question-circle",
+            "color": "secondary",
+            "tamanio": "x-large",
+            "alineamiento": "center"
+          },
+          "texto": {
+            "texto": "Si necesitas ayuda dentro de la aplicación presiona este icono y te ayudará",
+            "color": "dark",
+            "tamanio": "small",
+            "alineamiento": "center",
+            "bold": true
+          }
+        }
+      ]
+    },
+    "boton": {
+      "texto": "Continuar",
+      "icono": "arrow-right",
+      "color": "primary",
+      "tamanio": "small",
+      "alineamiento": "center",
+      "bold": true
+    },
+    "animacion": false,
+    "habilitado": false,
+    "posicion": 2,
+    "version": 1
+  },
+  {
+    "titulo": {
+      "texto": "Informaciones 2",
+      "color": "primary",
+      "tamanio": "larger",
+      "bold": true
+    },
+    "imagen": {
+      "src": "https://via.placeholder.com/500x500",
+      "srcset": [
+        "https://via.placeholder.com/1500x1500 2160w",
+        "https://via.placeholder.com/1000x1000 1080w",
+        "https://via.placeholder.com/500x500 720w",
+        "https://via.placeholder.com/250x250 480w"
+      ],
+      "alt": "imagen"
+    },
+    "icono": {
+      "icono": "",
+      "color": "tertiary"
+    },
+    "subtitulo": {
+      "texto": "",
+      "color": "primary",
+      "tamanio": "large",
+      "bold": true
+    },
+    "contenido": {
+      "texto": {
+        "texto": "",
+        "color": "medium",
+        "tamanio": "small",
+        "alineamiento": "center",
+        "bold": false
+      },
+      "lista": [
+        {
+          "icono": {
+            "icono": "",
+            "color": "secondary",
+            "tamanio": "x-large",
+            "alineamiento": "center"
+          },
+          "texto": {
+            "texto": "Encuentra información actual sobre todo lo que el hospital tiene para ofrecerte, detalles sobre las unidades y su ubicación, etc.",
+            "color": "medium",
+            "tamanio": "small",
+            "alineamiento": "center",
+            "bold": false
+          }
+        },
+        {
+          "icono": {
+            "icono": "question-circle",
+            "color": "secondary",
+            "tamanio": "x-large",
+            "alineamiento": "center"
+          },
+          "texto": {
+            "texto": "Si necesitas ayuda dentro de la aplicación presiona este icono y te ayudará",
+            "color": "dark",
+            "tamanio": "small",
+            "alineamiento": "center",
+            "bold": true
+          }
+        }
+      ]
+    },
+    "boton": {
+      "texto": "Continuar",
+      "icono": "arrow-right",
+      "color": "primary",
+      "tamanio": "small",
+      "alineamiento": "center",
+      "bold": true
+    },
+    "animacion": false,
+    "habilitado": true,
+    "posicion": 2,
+    "version": 2
+  }
+]

@@ -1,0 +1,52 @@
+[
+  {
+    "icono": "folder",
+    "title": "ver mis Documentos de Atención de Urgencias",
+    "subtitle": "Selecciona el Documentos de Atención de Urgencias que deseas obtener",
+    "tipo": "daus",
+    "habilitado": true,
+    "posicion": 1,
+    "implementado": true,
+    "version": 1
+  },
+  {
+    "icono": "file",
+    "title": "ver mis horas médicas",
+    "subtitle": "revisa tus horas médicas",
+    "tipo": "deshabilitado",
+    "habilitado": true,
+    "posicion": 3,
+    "implementado": true,
+    "version": 1
+  },
+  {
+    "icono": "text",
+    "title": "Solicitar mi última Epicrisis",
+    "subtitle": "Solicita el envío del documento a mi correo electrónico",
+    "tipo": "epicrisis",
+    "habilitado": true,
+    "posicion": 2,
+    "implementado": true,
+    "version": 1
+  },
+  {
+    "icono": "text",
+    "title": "Deshabilitado",
+    "subtitle": "Solicita el envío del documento a mi correo electrónico",
+    "tipo": "epicrisis",
+    "habilitado": false,
+    "posicion": 2,
+    "implementado": true,
+    "version": 1
+  },
+  {
+    "icono": "text",
+    "title": "Solicitar mi última Epicrisis 2",
+    "subtitle": "Solicita el envío del documento a mi correo electrónico",
+    "tipo": "epicrisis",
+    "habilitado": true,
+    "posicion": 2,
+    "implementado": true,
+    "version": 2
+  }
+]

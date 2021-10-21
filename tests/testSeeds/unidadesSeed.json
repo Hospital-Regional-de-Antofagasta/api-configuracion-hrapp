@@ -1,0 +1,362 @@
+[
+  {
+    "nombre": "Pediatría",
+    "descripcion": "Servicios Clínicos",
+    "servicios": [
+      "Oncología",
+      "Cardiología Infantil",
+      "Nutrición Infantil",
+      "Cirugía y Ortopedía"
+    ],
+    "atenciones": [
+      {
+        "nombre": "Secretaría",
+        "horario": [
+          {
+            "nota": "",
+            "atiendeFeriados": true,
+            "periodos": [
+              {
+                "dias": {
+                  "inicio": "lunes",
+                  "fin": "sábado"
+                },
+                "horas": [
+                  {
+                    "inicio": "08:00",
+                    "fin": "14:00"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "contactos": {
+          "telefonos": ["552758965", "552758966"],
+          "correos": ["correo@gmail.com", "correo2@gmail.com"]
+        }
+      },
+      {
+        "nombre": "Encargado",
+        "horario": [
+          {
+            "nota": "Atención telefónica",
+            "atiendeFeriados": true,
+            "periodos": [
+              {
+                "dias": {
+                  "inicio": "lunes",
+                  "fin": "viernes"
+                },
+                "horas": [
+                  {
+                    "inicio": "08:00",
+                    "fin": "14:00"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "contactos": {
+          "telefonos": ["552758111", "552758222"],
+          "correos": ["correo1@gmail.com", "correo5@gmail.com"]
+        }
+      }
+    ],
+    "referencias": [
+      {
+        "ubicacion": "1 piso",
+        "imagen": {
+          "src": "https://via.placeholder.com/1000x500",
+          "alt": "imagen",
+          "srcset": [
+            "https://via.placeholder.com/30000x1500 2160w",
+            "https://via.placeholder.com/2000x1000 1080w",
+            "https://via.placeholder.com/1000x500 720w",
+            "https://via.placeholder.com/500x250 480w"
+          ]
+        }
+      }
+    ],
+    "tipo": "serviciosClinicos",
+    "habilitado": true,
+    "posicion": 1,
+    "version": 1
+  },
+  {
+    "nombre": "Laboratorio Clínico",
+    "descripcion": "Unidades de apoyo",
+    "servicios": ["Oncología", "Cardiología Infantil", "Nutrición Infantil"],
+    "atenciones": [
+      {
+        "nombre": "",
+        "horario": [
+          {
+            "nota": "",
+            "atiendeFeriados": false,
+            "periodos": [
+              {
+                "dias": {
+                  "inicio": "lunes",
+                  "fin": "viernes"
+                },
+                "horas": [
+                  {
+                    "inicio": "08:00",
+                    "fin": "15:00"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "contactos": {
+          "telefonos": ["552758965"],
+          "correos": ["correo3@gmail.com"]
+        }
+      }
+    ],
+    "referencias": [
+      {
+        "ubicacion": "2 piso",
+        "imagen": {
+          "src": "https://via.placeholder.com/1000x500",
+          "alt": "imagen",
+          "srcset": [
+            "https://via.placeholder.com/30000x1500 2160w",
+            "https://via.placeholder.com/2000x1000 1080w",
+            "https://via.placeholder.com/1000x500 720w",
+            "https://via.placeholder.com/500x250 480w"
+          ]
+        }
+      }
+    ],
+    "tipo": "serviciosClinicos",
+    "habilitado": true,
+    "posicion": 3,
+    "version": 1
+  },
+  {
+    "nombre": "Unidad serviciosClinicos",
+    "descripcion": "Unidades de apoyo 2",
+    "servicios": ["Oncología", "Nutrición Infantil"],
+    "atenciones": [
+      {
+        "nombre": "",
+        "horario": [
+          {
+            "nota": "",
+            "atiendeFeriados": false,
+            "periodos": [
+              {
+                "dias": {
+                  "inicio": "martes",
+                  "fin": "viernes"
+                },
+                "horas": [
+                  {
+                    "inicio": "08:00",
+                    "fin": "16:00"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "contactos": {
+          "telefonos": ["552758965"],
+          "correos": ["correo3@gmail.com"]
+        }
+      }
+    ],
+    "referencias": [
+      {
+        "ubicacion": "3 piso",
+        "imagen": {
+          "src": "https://via.placeholder.com/1000x500",
+          "alt": "imagen",
+          "srcset": [
+            "https://via.placeholder.com/30000x1500 2160w",
+            "https://via.placeholder.com/2000x1000 1080w",
+            "https://via.placeholder.com/1000x500 720w",
+            "https://via.placeholder.com/500x250 480w"
+          ]
+        }
+      }
+    ],
+    "tipo": "serviciosClinicos",
+    "habilitado": true,
+    "posicion": 2,
+    "version": 1
+  },
+  {
+    "nombre": "Unidad unidadesApoyo",
+    "descripcion": "Unidades de apoyo 2",
+    "servicios": ["Oncología", "Nutrición Infantil", "Nutrición"],
+    "atenciones": [
+      {
+        "nombre": "",
+        "horario": [
+          {
+            "nota": "",
+            "atiendeFeriados": false,
+            "periodos": [
+              {
+                "dias": {
+                  "inicio": "martes",
+                  "fin": "viernes"
+                },
+                "horas": [
+                  {
+                    "inicio": "08:00",
+                    "fin": "16:00"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "contactos": {
+          "telefonos": ["552758965"],
+          "correos": ["correo3@gmail.com"]
+        }
+      }
+    ],
+    "referencias": [
+      {
+        "ubicacion": "3 piso",
+        "imagen": {
+          "src": "https://via.placeholder.com/1000x500",
+          "alt": "imagen",
+          "srcset": [
+            "https://via.placeholder.com/30000x1500 2160w",
+            "https://via.placeholder.com/2000x1000 1080w",
+            "https://via.placeholder.com/1000x500 720w",
+            "https://via.placeholder.com/500x250 480w"
+          ]
+        }
+      }
+    ],
+    "tipo": "serviciosClinicos3",
+    "habilitado": true,
+    "posicion": 4,
+    "version": 1
+  },
+  {
+    "nombre": "Pediatría 2",
+    "descripcion": "Servicios Clínicos 2",
+    "servicios": [
+      "Oncología",
+      "Cardiología Infantil",
+      "Nutrición Infantil",
+      "Cirugía y Ortopedía"
+    ],
+    "atenciones": [
+      {
+        "nombre": "",
+        "horario": [
+          {
+            "nota": "",
+            "atiendeFeriados": false,
+            "periodos": [
+              {
+                "dias": {
+                  "inicio": "martes",
+                  "fin": "viernes"
+                },
+                "horas": [
+                  {
+                    "inicio": "08:00",
+                    "fin": "16:00"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "contactos": {
+          "telefonos": ["552758965"],
+          "correos": ["correo3@gmail.com"]
+        }
+      }
+    ],
+    "referencias": [
+      {
+        "ubicacion": "3 piso",
+        "imagen": {
+          "src": "https://via.placeholder.com/1000x500",
+          "alt": "imagen",
+          "srcset": [
+            "https://via.placeholder.com/30000x1500 2160w",
+            "https://via.placeholder.com/2000x1000 1080w",
+            "https://via.placeholder.com/1000x500 720w",
+            "https://via.placeholder.com/500x250 480w"
+          ]
+        }
+      }
+    ],
+    "tipo": "serviciosClinicos3",
+    "habilitado": true,
+    "posicion": 1,
+    "version": 2
+  },
+  {
+    "nombre": "Pediatría 2",
+    "descripcion": "Servicios Clínicos 2",
+    "servicios": [
+      "Oncología",
+      "Cardiología Infantil",
+      "Nutrición Infantil",
+      "Cirugía y Ortopedía"
+    ],
+    "atenciones": [
+      {
+        "nombre": "",
+        "horario": [
+          {
+            "nota": "",
+            "atiendeFeriados": false,
+            "periodos": [
+              {
+                "dias": {
+                  "inicio": "martes",
+                  "fin": "viernes"
+                },
+                "horas": [
+                  {
+                    "inicio": "08:00",
+                    "fin": "16:00"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "contactos": {
+          "telefonos": ["552758965"],
+          "correos": ["correo3@gmail.com"]
+        }
+      }
+    ],
+    "referencias": [
+      {
+        "ubicacion": "3 piso",
+        "imagen": {
+          "src": "https://via.placeholder.com/1000x500",
+          "alt": "imagen",
+          "srcset": [
+            "https://via.placeholder.com/30000x1500 2160w",
+            "https://via.placeholder.com/2000x1000 1080w",
+            "https://via.placeholder.com/1000x500 720w",
+            "https://via.placeholder.com/500x250 480w"
+          ]
+        }
+      }
+    ],
+    "tipo": "serviciosClinicos3",
+    "habilitado": false,
+    "posicion": 1,
+    "version": 2
+  }
+]

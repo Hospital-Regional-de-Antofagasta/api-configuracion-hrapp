@@ -1,0 +1,46 @@
+[
+  {
+    "icono": "newspaper",
+    "title": "Últimas noticias",
+    "subtitle": "Revisa las últimas noticias y cápsulas informativas",
+    "redirecTo": "/tabs",
+    "tipo": "noticia",
+    "habilitado": true,
+    "implementado": false,
+    "posicion": 1,
+    "version": 1
+  },
+  {
+    "icono": "business",
+    "title": "Hospital en tu mano",
+    "subtitle": "Conoce nuestras unidades y ubicación de los CESFAM",
+    "redirecTo": "/tabs",
+    "tipo": "hra",
+    "habilitado": true,
+    "implementado": false,
+    "posicion": 3,
+    "version": 1
+  },
+  {
+    "icono": "test",
+    "title": "Prueba",
+    "subtitle": "Esta es una opción de prueba",
+    "redirecTo": "/tabs",
+    "tipo": "prueba",
+    "habilitado": false,
+    "implementado": false,
+    "posicion": 4,
+    "version": 1
+  },
+  {
+    "icono": "medkit",
+    "title": "¿Eres paciente?",
+    "subtitle": "Revisa tus horas médicas y tus recetas",
+    "redirecTo": "",
+    "tipo": "paciente",
+    "habilitado": true,
+    "implementado": true,
+    "posicion": 2,
+    "version": 1
+  }
+]

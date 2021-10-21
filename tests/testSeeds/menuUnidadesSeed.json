@@ -1,0 +1,57 @@
+[
+  {
+    "icono": "book-medical",
+    "title": "Servicios Clínicos",
+    "subtitle": "Conoce información relevante respecto a todos los servicios",
+    "tipo": "serviciosClinicos",
+    "habilitado": "true",
+    "implementado": "true",
+    "mensajeImplementado": "En construcción",
+    "posicion": 1,
+    "version": 1
+  },
+  {
+    "icono": "user-nurse",
+    "title": "Unidades de Apoyo y Terapéutico",
+    "subtitle": "Conoce información relevante respecto a todas las unidades",
+    "tipo": "unidadesApoyo",
+    "habilitado": "true",
+    "implementado": "true",
+    "mensajeImplementado": "En construcción",
+    "posicion": 3,
+    "version": 1
+  },
+  {
+    "icono": "user-nurse",
+    "title": "Otras Unidades",
+    "subtitle": "Conoce información relevante respecto a todas las unidades",
+    "tipo": "unidadesApoyo",
+    "habilitado": "true",
+    "implementado": "true",
+    "mensajeImplementado": "En construcción",
+    "posicion": 2,
+    "version": 1
+  },
+  {
+    "icono": "user-nurse",
+    "title": "deshabilitado",
+    "subtitle": "Conoce información relevante respecto a todas las unidades",
+    "tipo": "unidadesApoyo",
+    "habilitado": "false",
+    "implementado": "true",
+    "mensajeImplementado": "En construcción",
+    "posicion": 2,
+    "version": 1
+  },
+  {
+    "icono": "user-nurse",
+    "title": "Otras Unidades 2",
+    "subtitle": "Conoce información relevante respecto a todas las unidades",
+    "tipo": "unidadesApoyo",
+    "habilitado": "true",
+    "implementado": "true",
+    "mensajeImplementado": "En construcción",
+    "posicion": 2,
+    "version": 2
+  }
+]

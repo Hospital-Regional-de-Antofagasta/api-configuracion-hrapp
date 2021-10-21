@@ -1,0 +1,321 @@
+[
+  {
+    "funcionalidadesHabilitadas": {
+      "horasMedicas": {
+        "solicitudAnular": true,
+        "solicitudCambiar": true
+      },
+      "horasExamenes": {
+        "solicitudAnular": false,
+        "solicitudCambiar": false
+      }
+    },
+    "parametrosEndpoints": {
+      "documentosPacientes": {
+        "cantidadAObtener": 5
+      }
+    },
+    "parametrosApp": {
+      "cantidadVisitasParaReview": 20
+    },
+    "textosApp": {
+      "nombreApp": "Hospital en tus Manos",
+      "mensajeBienvenida": "Bienvenido",
+      "tituloPaginas": {
+        "informacionGeneral": "Información general",
+        "menuPrestaciones": "Prestaciones",
+        "misionVision": "Misión y Visión",
+        "serviciosPaciente": "Servicios",
+        "recetas": "Recetas",
+        "horasMedicas": "Horas Médicas",
+        "historicoHorasMedicas": "Histórico",
+        "solicitudCita": "Generar Solicitud",
+        "actualizarDatosPaciente": "Información Personal",
+        "horasExamenes": "Horas Examenes",
+        "historicoHorasExamenes": "Histórico",
+        "menuDocumentos": "Documentos",
+        "solicitudDocumentos": "Generar Solicitud"
+      },
+      "alertas": {
+        "fueraDePlazoCambiar": {
+          "titulo": "Fuera de plazo",
+          "mensaje": "Las solicitudes de cambio se deben realizar con 3 días hábiles previo a la fecha de la hora."
+        },
+        "fueraDePlazoAnular": {
+          "titulo": "Fuera de plazo",
+          "mensaje": "Las solicitudes de anulación se deben realizar con 1 días hábiles previo a la fecha de la hora."
+        },
+        "consultarActualizacionPendiente": {
+          "titulo": "¡Oops!",
+          "mensaje": "Ocurrió un problema al traer sus datos de contacto."
+        },
+        "alertasCamposNoValidosNumeroOculto": {
+          "titulo": "Revisa el campo \"Número\"",
+          "mensaje": "El valor <strong>{{direccionNumero}}</strong> no es valido."
+        },
+        "alertasCamposNoValidosPoblacionOculto": {
+          "titulo": "Revisa el campo \"Población\"",
+          "mensaje": "Debe ingresar una población valida."
+        },
+        "alertasCamposNoValidosCalleOculto": {
+          "titulo": "Revisa el campo \"Calle\"",
+          "mensaje": "Debe ingresar una calle valida."
+        },
+        "alertasCamposNoValidosDepartamentoOculto": {
+          "titulo": "Revisa el campo \"Departamento\"",
+          "mensaje": "Debe ingresar un departamento valido."
+        },
+        "alertasCamposNoValidosCorreoOculto": {
+          "titulo": "Revisa el campo \"Correo\"",
+          "mensaje": "Debe ingresar un correo valido."
+        },
+        "alertasCamposNoValidosFonoOculto": {
+          "titulo": "Revisa el campo \"Teléfono\"",
+          "mensaje": "Debe ingresar un télefono valido."
+        },
+        "alertasCamposNoValidosCeluOculto": {
+          "titulo": "Revisa el campo \"Celular\"",
+          "mensaje": "Debe ingresar un celular valido."
+        },
+        "alertasCamposNoValidosTelefonoMovilFijo": {
+          "titulo": "Falta ingresar campo obligatorio",
+          "mensaje": "Es necesario que agregue un télefono o un móvil de contacto."
+        },
+        "alertasCamposNoValidosRegionOculto": {
+          "titulo": "Revisa el campo \"Región\"",
+          "mensaje": "Debe ingresar una Región."
+        },
+        "alertasCamposNoValidosComunaOculto": {
+          "titulo": "Revisa el campo \"Comuna\"",
+          "mensaje": "Debe ingresar una Comuna."
+        },
+        "inicioSesion": {
+          "titulo": "",
+          "mensaje": "Debe iniciar sesión previamente con clave única para acceder a esta sección."
+        },
+        "actualizacionDatosPacienteEnCurso": {
+          "titulo": "Actualización de datos en curso",
+          "mensaje": "Espere que sus datos terminen de actualizarce, para volver a intentar."
+        },
+        "errorInesperado": {
+          "titulo": "",
+          "mensaje": "Ocurrió un error inesperado, vuelva a intentar."
+        },
+        "redirectConSesionEInternet": {
+          "titulo": "",
+          "mensaje": "Error de conexión."
+        }
+      },
+      "componentes": {
+        "citaPaciente": {
+          "dr": "Dr(a):",
+          "hora": "Hora:",
+          "hrs": "hrs",
+          "lugar": "lugar:",
+          "fecha": "Fecha",
+          "zonaHoraria": "Zona horaria de Antofagasta",
+          "alta": "Dado de Alta",
+          "btnCambioHora": "Cambio de hora",
+          "btnAnularHora": "Anular hora"
+        },
+        "citasPacienteHistorico": {
+          "noHayDatos": "Usted no tiene citas registradas."
+        },
+        "citasPacienteHoy": {
+          "noHayDatos": "Usted no tiene citas registradas para hoy."
+        },
+        "citasPacienteProximas": {
+          "noHayDatos": "Usted no tiene citas registradas próximamente."
+        },
+        "datosContactoSolicitud": {
+          "datosContacto": "Datos de Contacto",
+          "bdgActualizacionEnCurso": "Actualización en curso...",
+          "telefono": "Teléfono:",
+          "celular": "Celular:",
+          "correo": "Correo:",
+          "arroba": "@",
+          "mensajeRelevante": "Si esta información no esta correcta, actualízala antes de generar la solicitud",
+          "espera": "Espere un momento...",
+          "btnActualizar": "Actualizar"
+        },
+        "datosMedicoSolicitud": {
+          "informacionHoraMedica": "Información de Hora Médica",
+          "especialista": "Especialista:",
+          "servicio": "Servicio:",
+          "lugar": "Lugar:",
+          "fecha": "Fecha:",
+          "hora": "Hora:",
+          "hrs": "hrs:",
+          "cargando": "Cargando datos médicos..."
+        },
+        "datosPaciente": {
+          "bdgActualizacionDatosCurso": "Actualización de datos en curso...",
+          "localidad": "Localidad",
+          "region": "Región",
+          "campoObligatorio": "Este campo es obligatorio.",
+          "comuna": "Comuna",
+          "direccion": "Dirección",
+          "poblacion": "Población",
+          "poblacionNoValida": "Población no válida.",
+          "caracteresPermitidos": "Caracteres permitidos: . , $ % - _¿?¡!()",
+          "calleNoValida": "Calle no válida.",
+          "numero": "Número",
+          "numeroNoValido": "Número no válido. Ingrese solo números con largo máximo de 6 dígitos.",
+          "detalleDireccion": "Detalle Dirección",
+          "departamentoNoValido": "Departamento no válido.",
+          "contacto": "Contacto",
+          "telefono": "Teléfono",
+          "telefonoNoValido": "Teléfono no válido. Ingrese solo números de 6 o 9 dígitos.",
+          "celular": "Celular",
+          "celularPrimerosDigitos": "+569",
+          "celularNoValido": "Celular no válido. Ingrese solo números de 8 dígitos.",
+          "minimoUnNumeroContacto": "Debe ingresar como mínimo un numero de contacto. El Teléfono o Celular.",
+          "correo": "Correo",
+          "correoValido": "Debe ingresar un correo válido.",
+          "btnActualizar": "Actualizar",
+          "btnConfirmar": "Confirmar"
+        },
+        "detalleUnidad": {
+          "noHayDatos": "No se ha ingresado información.",
+          "descripcion": "Descripción",
+          "servicios": "Cartera de Sevicios",
+          "enumerador": "-",
+          "horarioAtencion": "Horario de Atención",
+          "separadorDias": "a",
+          "separadorHoras": "-",
+          "contacto": "Contacto",
+          "fono": "Fono",
+          "correo": "Correo",
+          "referrencia": "Referencia"
+        },
+        "documento": {
+          "btnSolicitar": "Solicitar"
+        },
+        "informacionReceta": {
+          "numeroReceta": "Receta N°",
+          "dr": "Dr(a):",
+          "paseActual": "Pase Actual: N°",
+          "fechaRetiro": "Fecha Retiro:"
+        },
+        "listaDocumentos": {
+          "noHayDatos": "Usted no tiene documentos disponibles."
+        },
+        "medicamentosReceta": {
+          "medicamentos": "Medicamentos"
+        },
+        "pasesReceta": {
+          "pases": "Pases",
+          "numeroPase": "Pase N°"
+        }
+      },
+      "paginas": {
+        "historicoHorasExamenes": {
+          "tituloSeccion": "Histórico Horas Exámenes",
+          "cargando": "Estamos cargando su histórico de horas de exámenes..."
+        },
+        "historicoHorasMedicas": {
+          "tituloSeccion": "Histórico Médicas",
+          "cargando": "Estamos cargando su histórico de horas médicas..."
+        },
+        "horasExamenes": {
+          "seccionHoy": "Hoy",
+          "historico": "Últimos 6 meses",
+          "seccionProximas": "Próximas Horas",
+          "cargando": "Estamos cargando sus horas de exámenes..."
+        },
+        "horasMedicas": {
+          "seccionHoy": "Hoy",
+          "historico": "Últimos 6 meses",
+          "seccionProximas": "Próximas Horas",
+          "cargando": "Estamos cargando sus horas médicas..."
+        },
+        "inicio": {
+          "cargando": "Estamos preparando todo para comenzar..."
+        },
+        "menuDocumentos": {
+          "cargando": "Estamos cargando sus documentos..."
+        },
+        "misionVision": {
+          "cargando": "Estamos cargando la visión y misión..."
+        },
+        "recetas": {
+          "noHayDatos": "Usted no tiene recetas registradas.",
+          "cargando": "Estamos cargando sus recetas..."
+        },
+        "solicitudCita": {
+          "motivo": "Motivo",
+          "campoObligatorio": "Este campo es obligatorio.",
+          "detalle": "Detalle",
+          "campoObligatorioOtro": "Este campo es obligatorio, cuando el motivo es \"Otro\".",
+          "validacionDetalle": "El detalle no puede superar los 200 caracteres y solo se permiten números y letras.",
+          "caracteresValidosDetalles": "Debe ingresar caracteres válidos y no comenzar con espacio. Caracteres válidos: . , $ % - _¿?¡!()",
+          "btnEnviar": "Enviar Solicitud"
+        },
+        "solicitudDocumentos": {
+          "titulo": "Solicitar Documento",
+          "tituloSeccion": "Documento a Solicitar",
+          "btnSolicitar": "Solicitar"
+        },
+        "unidades": {
+          "noHayDatos": "No se ha ingresado información de las prestaciones de esta unidad."
+        },
+        "versionDeprecada": {
+          "btnActualizar": "Actualizar"
+        }
+      }
+    },
+    "imagenesApp": {
+      "inicio": {
+        "src": "https://via.placeholder.com/1000x500",
+        "srcset": [
+          "https://via.placeholder.com/3000x1500 2160w",
+          "https://via.placeholder.com/2000x1000 1080w",
+          "https://via.placeholder.com/1000x500 720w",
+          "https://via.placeholder.com/500x250 480w"
+        ],
+        "alt": "imagenes"
+      },
+      "informacionGeneral": {
+        "src": "https://via.placeholder.com/1000x500",
+        "srcset": [
+          "https://via.placeholder.com/3000x1500 2160w",
+          "https://via.placeholder.com/2000x1000 1080w",
+          "https://via.placeholder.com/1000x500 720w",
+          "https://via.placeholder.com/500x250 480w"
+        ],
+        "alt": "imagenes"
+      },
+      "serviciosPaciente": {
+        "src": "https://via.placeholder.com/1000x500",
+        "srcset": [
+          "https://via.placeholder.com/3000x1500 2160w",
+          "https://via.placeholder.com/2000x1000 1080w",
+          "https://via.placeholder.com/1000x500 720w",
+          "https://via.placeholder.com/500x250 480w"
+        ],
+        "alt": "imagenes"
+      },
+      "misionVision": {
+        "src": "https://via.placeholder.com/1000x500",
+        "srcset": [
+          "https://via.placeholder.com/3000x1500 2160w",
+          "https://via.placeholder.com/2000x1000 1080w",
+          "https://via.placeholder.com/1000x500 720w",
+          "https://via.placeholder.com/500x250 480w"
+        ],
+        "alt": "imagenes"
+      },
+      "menuPrestaciones": {
+        "src": "https://via.placeholder.com/1000x500",
+        "srcset": [
+          "https://via.placeholder.com/3000x1500 2160w",
+          "https://via.placeholder.com/2000x1000 1080w",
+          "https://via.placeholder.com/1000x500 720w",
+          "https://via.placeholder.com/500x250 480w"
+        ],
+        "alt": "imagenes"
+      }
+    },
+    "version": 1
+  }
+]
