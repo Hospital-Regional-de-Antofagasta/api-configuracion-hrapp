@@ -59,6 +59,11 @@ spec:
                 secretKeyRef:
                   name: {{ include "api-configuracion-hrapp.secrets" . }}
                   key: mongo
+            - name: JWT_SECRET_INTERNO
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "api-login-clave-unica.secrets" . }}
+                  key: i-jwt-key
 
           {{- if .Values.resources }}
           resources:

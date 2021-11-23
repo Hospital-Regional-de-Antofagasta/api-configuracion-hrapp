@@ -15,6 +15,7 @@
         API_KEY: ${{ secrets.API_KEY }}
         MONGO_IP: ${{ secrets.MONGO_IP_PROD }}
         NODE_ENV: "prod"
+        I_JWT_KEY: ${{ secrets.I_JWT_KEY_PROD }}
       steps:
         - name: Checkout
           uses: actions/checkout@v2
@@ -28,6 +29,7 @@
             PORT: "3000"
             HOST_NAME: "localhost"
             JWT_SECRET: "TEST"
+            JWT_SECRET_INTERNO: "TEST"
           run: |
             chmod +x ./gradlew
             ./gradlew helmInstallApiConfiguracionToCloud
