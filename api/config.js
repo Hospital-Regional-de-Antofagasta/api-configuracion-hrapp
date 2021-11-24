@@ -2,7 +2,7 @@ const ConfigApiConfiguracion = require("./models/ConfigApiConfiguracion");
 
 const mensajesPorDefecto = {
   forbiddenAccess: {
-    titulo: "Alerta",
+    titulo: "Acceso Denegado",
     mensaje: "Su sesión ha expirado.",
     color: "",
     icono: "",
@@ -19,11 +19,35 @@ const mensajesPorDefecto = {
     color: "",
     icono: "",
   },
-  versionGone: {
+  remindUpdate: {
     titulo: "Nueva Versión",
     mensaje: "Hay una nueva versión de la aplicación y es necesario actualizarla.",
     color: "",
     icono: "face-surprise",
+  },
+  insufficientPermission: {
+    titulo: "Acceso Denegado",
+    mensaje: "No tiene los permisos para realizar esta acción.",
+    color: "",
+    icono: "",
+  },
+  badRequest: {
+    titulo: "Datos inválidos",
+    mensaje: "Los datos enviados son inválidos.",
+    color: "",
+    icono: "",
+  },
+  created: {
+    titulo: "Elemento Creado",
+    mensaje: "El elemento fue creado con éxito.",
+    color: "",
+    icono: "",
+  },
+  success: {
+    titulo: "Acción Realizada",
+    mensaje: "La cción fue realizada con éxito.",
+    color: "",
+    icono: "",
   },
 };
 

@@ -2,7 +2,7 @@
   {
     "mensajes": {
       "forbiddenAccess": {
-        "titulo": "Alerta -test",
+        "titulo": "Acceso Denegado -test",
         "mensaje": "Su sesión ha expirado. -test",
         "color": " -test",
         "icono": " -test"
@@ -27,7 +27,31 @@
       },
       "remindUpdate": {
         "titulo": "Nueva Versión -test",
-        "mensaje": "Hay una nueva versión de la aplicación, se recomienda actualizarla. -test",
+        "mensaje": "Hay una nueva versión de la aplicación y es necesario actualizarla. -test",
+        "color": " -test",
+        "icono": "face-surprise -test"
+      },
+      "insufficientPermission": {
+        "titulo": "Acceso Denegado -test",
+        "mensaje": "No tiene los permisos para realizar esta acción. -test",
+        "color": " -test",
+        "icono": " -test"
+      },
+      "badRequest": {
+        "titulo": "Datos inválidos -test",
+        "mensaje": "Los datos enviados son inválidos. -test",
+        "color": " -test",
+        "icono": " -test"
+      },
+      "created": {
+        "titulo": "Elemento Creado -test",
+        "mensaje": "El elemento fue creado con éxito. -test",
+        "color": " -test",
+        "icono": " -test"
+      },
+      "success": {
+        "titulo": "Acción Realizada -test",
+        "mensaje": "La cción fue realizada con éxito. -test",
         "color": " -test",
         "icono": " -test"
       }
