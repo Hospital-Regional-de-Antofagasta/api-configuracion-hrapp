@@ -22,7 +22,7 @@ afterEach(async () => {
 
 describe("Endpoints mision vision", () => {
   describe("Get mision y vision", () => {
-    it("Should get mision y vision", async (done) => {
+    it("Should get mision y vision", async () => {
       const response = await request.get(
         "/v1/configuracion-hrapp/mision-vision/"
       );
@@ -36,10 +36,8 @@ describe("Endpoints mision vision", () => {
       expect(response.body.vision.titulo).toEqual("titulo vision");
       expect(response.body.vision.texto).toEqual("texto vision");
       expect(response.body.vision.icono).toEqual("icono vision");
-
-      done();
     });
-    it("Should get no mision y vision from empty database", async (done) => {
+    it("Should get no mision y vision from empty database", async () => {
       await MisionVision.deleteMany();
       const response = await request.get(
         "/v1/configuracion-hrapp/mision-vision/"
@@ -47,7 +45,6 @@ describe("Endpoints mision vision", () => {
 
       expect(response.status).toBe(200);
       expect(response.body).toEqual({});
-
-      done();});
+    });
   });
 });

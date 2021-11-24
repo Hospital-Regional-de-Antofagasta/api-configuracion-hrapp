@@ -2,6 +2,7 @@ const supertest = require("supertest");
 const app = require("../api/app");
 const jwt = require("jsonwebtoken");
 const mongoose = require("mongoose");
+const { getMensajes } = require("../api/config");
 const MenuServiciosPaciente = require("../api/models/MenuServiciosPaciente");
 const menuServiciosPacienteSeed = require("./testSeeds/menuServiciosPacienteSeed.json");
 const MenuInicio = require("../api/models/MenuInicio");
@@ -23,7 +24,11 @@ const secretoInterno = process.env.JWT_SECRET_INTERNO;
 
 const tokenInterno = jwt.sign(
   {
-    _id: userId,
+    user: {
+      "_id": "61832a43c8a4d50009607cab",
+      "userName": "admin",
+      "role": "admin"
+    },
   },
   secretoInterno
 );
@@ -56,7 +61,7 @@ afterEach(async () => {
 
 describe("Endpoints menus", () => {
   describe("Get menu servicios paciente", () => {
-    it("Should get menu servicios paciente from database", async (done) => {
+    it("Should get menu servicios paciente from database", async () => {
       const response = await request.get(
         "/v1/configuracion-hrapp/menu/servicios-paciente/"
       );
@@ -66,12 +71,10 @@ describe("Endpoints menus", () => {
       expect(response.body[0].title).toBe("ver mis recetas");
       expect(response.body[1].title).toBe("documentos");
       expect(response.body[2].title).toBe("ver mis horas en laboratorio");
-
-      done();
     });
   });
   describe("Menu Inicio", () => {
-    it("Debería obtener el Menu de Inicio desde la base de datos.", async (done) => {
+    it("Debería obtener el Menu de Inicio desde la base de datos.", async () => {
       const response = await request.get("/v1/configuracion-hrapp/menu/inicio");
 
       expect(response.status).toStrictEqual(200);
@@ -80,12 +83,10 @@ describe("Endpoints menus", () => {
       expect(response.body[0].title).toBe("Últimas noticias");
       expect(response.body[1].title).toBe("¿Eres paciente?");
       expect(response.body[2].title).toBe("Hospital en tu mano");
-
-      done();
     });
   });
   describe("Get menu documentos", () => {
-    it("Should get menu documentos from database", async (done) => {
+    it("Should get menu documentos from database", async () => {
       const response = await request.get(
         "/v1/configuracion-hrapp/menu/documentos/"
       );
@@ -98,12 +99,10 @@ describe("Endpoints menus", () => {
       );
       expect(response.body[1].title).toBe("Solicitar mi última Epicrisis");
       expect(response.body[2].title).toBe("ver mis horas médicas");
-
-      done();
     });
   });
   describe("Get menu informacion general", () => {
-    it("Should get menu informacion general", async (done) => {
+    it("Should get menu informacion general", async () => {
       const response = await request.get(
         "/v1/configuracion-hrapp/menu/informacion-general/"
       );
@@ -114,10 +113,8 @@ describe("Endpoints menus", () => {
       expect(response.body[0].title).toBe("CEFAMS");
       expect(response.body[1].title).toBe("Unidades contigententes");
       expect(response.body[2].title).toBe("Misión y Visión");
-
-      done();
     });
-    it("Should get no menu informacion general from empty database", async (done) => {
+    it("Should get no menu informacion general from empty database", async () => {
       await MenuInformacionGeneral.deleteMany();
       const response = await request.get(
         "/v1/configuracion-hrapp/menu/informacion-general/"
@@ -125,8 +122,6 @@ describe("Endpoints menus", () => {
 
       expect(response.status).toBe(200);
       expect(response.body).toEqual([]);
-
-      done();
     });
   });
   describe("Get menu unidades", () => {
@@ -221,7 +216,7 @@ describe("Endpoints menus", () => {
           .set("Authorization", tokenInterno)
           .send({});
 
-        const mensaje = await getMensajes("badData");
+        const mensaje = await getMensajes("badRequest");
 
         expect(response.status).toBe(400);
         expect(response.body).toEqual({
@@ -247,7 +242,7 @@ describe("Endpoints menus", () => {
             posicion: 2,
           });
 
-        const mensaje = await getMensajes("badData");
+        const mensaje = await getMensajes("badRequest");
 
         expect(response.status).toBe(400);
         expect(response.body).toEqual({
@@ -275,7 +270,7 @@ describe("Endpoints menus", () => {
             posicion: 2,
           });
 
-        const mensaje = await getMensajes("badData");
+        const mensaje = await getMensajes("badRequest");
 
         expect(response.status).toBe(400);
         expect(response.body).toEqual({
@@ -370,7 +365,7 @@ describe("Endpoints menus", () => {
           .set("Authorization", tokenInterno)
           .send({});
 
-        const mensaje = await getMensajes("badData");
+        const mensaje = await getMensajes("badRequest");
 
         expect(response.status).toBe(400);
         expect(response.body).toEqual({
@@ -393,7 +388,7 @@ describe("Endpoints menus", () => {
             posicion: 2,
           });
 
-        const mensaje = await getMensajes("badData");
+        const mensaje = await getMensajes("badRequest");
 
         expect(response.status).toBe(400);
         expect(response.body).toEqual({
@@ -413,7 +408,7 @@ describe("Endpoints menus", () => {
             icono: "user-nurse#",
           });
 
-        const mensaje = await getMensajes("badData");
+        const mensaje = await getMensajes("badRequest");
 
         expect(response.status).toBe(400);
         expect(response.body).toEqual({
@@ -497,14 +492,14 @@ describe("Endpoints menus", () => {
           },
         });
       });
-      it("Should not delete item for menu unidades if it does not exists", async () => {
+      it("Should not delete item for menu unidades if it does not exists", async (done) => {
         await MenuUnidades.deleteMany();
         const response = await request
           .delete("/v1/configuracion-hrapp/menu/unidades/67832a43c8a5d50009607cab")
           .set("Authorization", tokenInterno)
           .send({});
 
-        const mensaje = await getMensajes("badData");
+        const mensaje = await getMensajes("badRequest");
 
         expect(response.status).toBe(400);
         expect(response.body).toEqual({
@@ -515,6 +510,7 @@ describe("Endpoints menus", () => {
             icono: mensaje.icono,
           },
         });
+        done();
       });
       it("Should delete item for menu unidades", async () => {
         const response = await request
@@ -542,7 +538,7 @@ describe("Endpoints menus", () => {
     });
   });
   describe("Get menu tabs", () => {
-    it("Should get menu tabs", async (done) => {
+    it("Should get menu tabs", async () => {
       const response = await request.get("/v1/configuracion-hrapp/menu/tabs");
 
       expect(response.status).toBe(200);
@@ -551,21 +547,17 @@ describe("Endpoints menus", () => {
       expect(response.body[0].title).toBe("inicio");
       expect(response.body[1].title).toBe("Noticias");
       expect(response.body[2].title).toBe("Informaciones");
-
-      done();
     });
-    it("Should get no menu tabs from empty database", async (done) => {
+    it("Should get no menu tabs from empty database", async () => {
       await MenuTabs.deleteMany();
       const response = await request.get("/v1/configuracion-hrapp/menu/tabs");
 
       expect(response.status).toBe(200);
       expect(response.body).toEqual([]);
-
-      done();
     });
   });
   describe("Get menus carga inicial", () => {
-    it("Should get menus carga inicial", async (done) => {
+    it("Should get menus carga inicial", async () => {
       const response = await request.get(
         "/v1/configuracion-hrapp/menu/carga-inicial"
       );
@@ -617,8 +609,6 @@ describe("Endpoints menus", () => {
       expect(response.body.menuTabs[0].title).toBe("inicio");
       expect(response.body.menuTabs[1].title).toBe("Noticias");
       expect(response.body.menuTabs[2].title).toBe("Informaciones");
-
-      done();
     });
   });
 });
