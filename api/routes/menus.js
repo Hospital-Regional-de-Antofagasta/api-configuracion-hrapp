@@ -1,6 +1,7 @@
 const express = require("express");
 const menuController = require("../controllers/menusController");
 const { isAuthenticated, hasRole } = require("../middleware/authInterno");
+const { invalidaData, requiredData, itemExists } = require("../middleware/validarMenuUnidades");
 
 const router = express.Router();
 
@@ -18,6 +19,8 @@ router.post(
   "/unidades",
   isAuthenticated,
   hasRole(["user", "admin"]),
+  requiredData,
+  invalidaData,
   menuController.createItemUnidad
 );
 
@@ -25,6 +28,8 @@ router.put(
   "/unidades/:_id",
   isAuthenticated,
   hasRole(["user", "admin"]),
+  itemExists,
+  invalidaData,
   menuController.updateItemUnidad
 );
 
@@ -32,6 +37,7 @@ router.delete(
   "/unidades/:_id",
   isAuthenticated,
   hasRole(["user", "admin"]),
+  itemExists,
   menuController.deleteItemUnidad
 );
 

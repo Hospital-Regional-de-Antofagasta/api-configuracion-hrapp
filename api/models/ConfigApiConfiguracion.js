@@ -29,7 +29,31 @@ const ConfigApiConfiguracion = mongoose.model(
         color: String,
         icono: String,
       },
-      remindUpdate: {
+      insufficientPermission: {
+        titulo: String,
+        mensaje: String,
+        color: String,
+        icono: String,
+      },
+      badRequest: {
+        titulo: String,
+        mensaje: String,
+        color: String,
+        icono: String,
+      },
+      created: {
+        titulo: String,
+        mensaje: String,
+        color: String,
+        icono: String,
+      },
+      success: {
+        titulo: String,
+        mensaje: String,
+        color: String,
+        icono: String,
+      },
+      notFound: {
         titulo: String,
         mensaje: String,
         color: String,

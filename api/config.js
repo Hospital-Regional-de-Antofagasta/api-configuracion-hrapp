@@ -21,7 +21,8 @@ const mensajesPorDefecto = {
   },
   remindUpdate: {
     titulo: "Nueva Versión",
-    mensaje: "Hay una nueva versión de la aplicación y es necesario actualizarla.",
+    mensaje:
+      "Hay una nueva versión de la aplicación y es necesario actualizarla.",
     color: "",
     icono: "face-surprise",
   },
@@ -45,7 +46,13 @@ const mensajesPorDefecto = {
   },
   success: {
     titulo: "Acción Realizada",
-    mensaje: "La cción fue realizada con éxito.",
+    mensaje: "La acción fue realizada con éxito.",
+    color: "",
+    icono: "",
+  },
+  notFound: {
+    titulo: "Elemento No Encontrado",
+    mensaje: "El elemento no fue encontrado.",
     color: "",
     icono: "",
   },

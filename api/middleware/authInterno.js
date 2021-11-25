@@ -20,6 +20,7 @@ exports.isAuthenticated = async (req, res, next) => {
           .send({ respuesta: await getMensajes("forbiddenAccess") });
 
       const { user } = decoded;
+
       req.user = user;
 
       next();

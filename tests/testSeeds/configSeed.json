@@ -51,7 +51,13 @@
       },
       "success": {
         "titulo": "Acción Realizada -test",
-        "mensaje": "La cción fue realizada con éxito. -test",
+        "mensaje": "La acción fue realizada con éxito. -test",
+        "color": " -test",
+        "icono": " -test"
+      },
+      "notFound": {
+        "titulo": "Elemento No Encontrado -test",
+        "mensaje": "El elemento no fue encontrado. -test",
         "color": " -test",
         "icono": " -test"
       }
