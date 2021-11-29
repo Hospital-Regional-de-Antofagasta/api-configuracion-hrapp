@@ -19,10 +19,17 @@ const mensajesPorDefecto = {
     color: "",
     icono: "",
   },
-  remindUpdate: {
+  deprecatedVersion: {
     titulo: "Nueva Versión",
     mensaje:
       "Hay una nueva versión de la aplicación y es necesario actualizarla.",
+    color: "",
+    icono: "face-surprise",
+  },
+  remindUpdate: {
+    titulo: "Nueva Versión",
+    mensaje:
+      "Hay una nueva versión de la aplicación y se recomienda actualizarla.",
     color: "",
     icono: "face-surprise",
   },

@@ -97,15 +97,10 @@ exports.getInformacionGeneral = async (req, res) => {
 exports.getItemsUnidades = async (req, res) => {
   try {
     const { incluirDeshabilitados } = req.query;
-    const filter =
-      incluirDeshabilitados === "true"
-        ? {
-            version: 1,
-          }
-        : {
-            habilitado: true,
-            version: 1,
-          };
+
+    let filter = { version: 1 };
+
+    if (incluirDeshabilitados !== "true") filter.habilitado = true;
 
     const menuUnidades = await MenuUnidades.find(filter)
       .sort({ posicion: 1 })
@@ -128,6 +123,8 @@ exports.createItemUnidad = async (req, res) => {
   try {
     const item = req.body;
 
+    item.implementado = true;
+    item.mensajeImplementado = "En construcción";
     item.version = 1;
 
     await MenuUnidades.create(item);

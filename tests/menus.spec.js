@@ -1,6 +1,6 @@
 const supertest = require("supertest");
-const app = require("../api/app");
 const jwt = require("jsonwebtoken");
+const app = require("../api/app");
 const mongoose = require("mongoose");
 const { getMensajes } = require("../api/config");
 const ConfigApiConfiguracion = require("../api/models/ConfigApiConfiguracion");
@@ -27,7 +27,7 @@ const tokenInterno = jwt.sign(
     user: {
       _id: "61832a43c8a4d50009607cab",
       userName: "admin",
-      role: "admin"
+      role: "admin",
     },
   },
   secretoInterno
@@ -38,7 +38,7 @@ const tokenInternoSinUsuario = jwt.sign(
     user: {
       _id: "61832a43c8a4d50009607cab",
       userName: "admin",
-      role: ""
+      role: "",
     },
   },
   secretoInterno
@@ -248,13 +248,11 @@ describe("Endpoints menus", () => {
         const mensaje = await getMensajes("badRequest");
 
         expect(response.status).toBe(400);
-        expect(response.body).toEqual({
-          respuesta: {
-            titulo: mensaje.titulo,
-            mensaje: mensaje.mensaje,
-            color: mensaje.color,
-            icono: mensaje.icono,
-          },
+        expect(response.body.respuesta).toEqual({
+          titulo: mensaje.titulo,
+          mensaje: mensaje.mensaje,
+          color: mensaje.color,
+          icono: mensaje.icono,
         });
       });
       it("Should not create item for menu unidades with incomplete data", async () => {
@@ -266,21 +264,17 @@ describe("Endpoints menus", () => {
             title: "Otras Unidades",
             tipo: "unidadesApoyo",
             habilitado: true,
-            implementado: true,
-            mensajeImplementado: "En construcción",
             posicion: 2,
           });
 
         const mensaje = await getMensajes("badRequest");
 
         expect(response.status).toBe(400);
-        expect(response.body).toEqual({
-          respuesta: {
-            titulo: mensaje.titulo,
-            mensaje: mensaje.mensaje,
-            color: mensaje.color,
-            icono: mensaje.icono,
-          },
+        expect(response.body.respuesta).toEqual({
+          titulo: mensaje.titulo,
+          mensaje: mensaje.mensaje,
+          color: mensaje.color,
+          icono: mensaje.icono,
         });
       });
       it("Should not create item for menu unidades with invalid data", async () => {
@@ -294,21 +288,17 @@ describe("Endpoints menus", () => {
               "Conoce información relevante respecto a todas las unidades",
             tipo: "unidadesApoyo",
             habilitado: true,
-            implementado: true,
-            mensajeImplementado: "En construcción",
             posicion: 2,
           });
 
         const mensaje = await getMensajes("badRequest");
 
         expect(response.status).toBe(400);
-        expect(response.body).toEqual({
-          respuesta: {
-            titulo: mensaje.titulo,
-            mensaje: mensaje.mensaje,
-            color: mensaje.color,
-            icono: mensaje.icono,
-          },
+        expect(response.body.respuesta).toEqual({
+          titulo: mensaje.titulo,
+          mensaje: mensaje.mensaje,
+          color: mensaje.color,
+          icono: mensaje.icono,
         });
       });
       it("Should create item for menu unidades", async () => {
@@ -321,8 +311,6 @@ describe("Endpoints menus", () => {
             subtitle: "Subtítulo",
             tipo: "tipo",
             habilitado: true,
-            implementado: true,
-            mensajeImplementado: "En construcción",
             posicion: 5,
           });
 
@@ -415,16 +403,14 @@ describe("Endpoints menus", () => {
         const mensaje = await getMensajes("notFound");
 
         expect(response.status).toBe(404);
-        expect(response.body).toEqual({
-          respuesta: {
-            titulo: mensaje.titulo,
-            mensaje: mensaje.mensaje,
-            color: mensaje.color,
-            icono: mensaje.icono,
-          },
+        expect(response.body.respuesta).toEqual({
+          titulo: mensaje.titulo,
+          mensaje: mensaje.mensaje,
+          color: mensaje.color,
+          icono: mensaje.icono,
         });
       });
-      it("Should not update item for menu unidades with incomplete data", async () => {
+      it("Should not update item for menu unidades with invalid data", async () => {
         const response = await request
           .put("/v1/configuracion-hrapp/menu/unidades/67832a43c8a5d50009607cab")
           .set("Authorization", tokenInterno)
@@ -438,13 +424,11 @@ describe("Endpoints menus", () => {
         const mensaje = await getMensajes("badRequest");
 
         expect(response.status).toBe(400);
-        expect(response.body).toEqual({
-          respuesta: {
-            titulo: mensaje.titulo,
-            mensaje: mensaje.mensaje,
-            color: mensaje.color,
-            icono: mensaje.icono,
-          },
+        expect(response.body.respuesta).toEqual({
+          titulo: mensaje.titulo,
+          mensaje: mensaje.mensaje,
+          color: mensaje.color,
+          icono: mensaje.icono,
         });
       });
       it("Should not update item for menu unidades from invalid data", async () => {
@@ -458,13 +442,11 @@ describe("Endpoints menus", () => {
         const mensaje = await getMensajes("badRequest");
 
         expect(response.status).toBe(400);
-        expect(response.body).toEqual({
-          respuesta: {
-            titulo: mensaje.titulo,
-            mensaje: mensaje.mensaje,
-            color: mensaje.color,
-            icono: mensaje.icono,
-          },
+        expect(response.body.respuesta).toEqual({
+          titulo: mensaje.titulo,
+          mensaje: mensaje.mensaje,
+          color: mensaje.color,
+          icono: mensaje.icono,
         });
       });
       it("Should update item for menu unidades", async () => {
@@ -506,7 +488,9 @@ describe("Endpoints menus", () => {
     describe("DELETE /v1/configuracion-hrapp/menu/unidades", () => {
       it("Should not delete item for menu unidades without token", async () => {
         const response = await request
-          .delete("/v1/configuracion-hrapp/menu/unidades/67832a43c8a5d50009607cab")
+          .delete(
+            "/v1/configuracion-hrapp/menu/unidades/67832a43c8a5d50009607cab"
+          )
           .send({});
 
         const mensaje = await getMensajes("forbiddenAccess");
@@ -523,7 +507,9 @@ describe("Endpoints menus", () => {
       });
       it("Should not delete item for menu unidades with invalid token", async () => {
         const response = await request
-          .delete("/v1/configuracion-hrapp/menu/unidades/67832a43c8a5d50009607cab")
+          .delete(
+            "/v1/configuracion-hrapp/menu/unidades/67832a43c8a5d50009607cab"
+          )
           .set("Authorization", "no-token")
           .send({});
 
@@ -541,7 +527,9 @@ describe("Endpoints menus", () => {
       });
       it("Should not delete item for menu unidades with invalid token", async () => {
         const response = await request
-          .delete("/v1/configuracion-hrapp/menu/unidades/67832a43c8a5d50009607cab")
+          .delete(
+            "/v1/configuracion-hrapp/menu/unidades/67832a43c8a5d50009607cab"
+          )
           .set("Authorization", tokenInternoSinUsuario)
           .send({});
 
@@ -557,29 +545,30 @@ describe("Endpoints menus", () => {
           },
         });
       });
-      it("Should not delete item for menu unidades if it does not exists", async (done) => {
+      it("Should not delete item for menu unidades if it does not exists", async () => {
         await MenuUnidades.deleteMany();
         const response = await request
-          .delete("/v1/configuracion-hrapp/menu/unidades/67832a43c8a5d50009607cab")
+          .delete(
+            "/v1/configuracion-hrapp/menu/unidades/67832a43c8a5d50009607cab"
+          )
           .set("Authorization", tokenInterno)
           .send({});
 
         const mensaje = await getMensajes("notFound");
 
         expect(response.status).toBe(404);
-        expect(response.body).toEqual({
-          respuesta: {
-            titulo: mensaje.titulo,
-            mensaje: mensaje.mensaje,
-            color: mensaje.color,
-            icono: mensaje.icono,
-          },
+        expect(response.body.respuesta).toEqual({
+          titulo: mensaje.titulo,
+          mensaje: mensaje.mensaje,
+          color: mensaje.color,
+          icono: mensaje.icono,
         });
-        done();
       });
       it("Should delete item for menu unidades", async () => {
         const response = await request
-          .delete("/v1/configuracion-hrapp/menu/unidades/67832a43c8a5d50009607cab")
+          .delete(
+            "/v1/configuracion-hrapp/menu/unidades/67832a43c8a5d50009607cab"
+          )
           .set("Authorization", tokenInterno);
 
         const mensaje = await getMensajes("success");
