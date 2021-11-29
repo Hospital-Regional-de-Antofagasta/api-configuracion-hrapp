@@ -31,7 +31,7 @@ exports.create = async (req, res) => {
 
     unidad.version = 1;
 
-    const result = await Unidades.create(unidad);
+    await Unidades.create(unidad);
 
     res.status(201).send({ respuesta: await getMensajes("created") });
   } catch (error) {
@@ -55,6 +55,7 @@ exports.update = async (req, res) => {
 
     delete unidad._id;
     delete unidad.__v;
+    delete unidad.version;
 
     await Unidades.updateOne({ _id }, unidad).exec();
 

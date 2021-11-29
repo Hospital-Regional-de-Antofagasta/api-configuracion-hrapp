@@ -151,6 +151,7 @@ exports.updateItemUnidad = async (req, res) => {
 
     delete item._id;
     delete item.__v;
+    delete item.version;
 
     await MenuUnidades.updateOne({ _id }, item).exec();
 
