@@ -62,7 +62,7 @@ spec:
             - name: JWT_SECRET_INTERNO
               valueFrom:
                 secretKeyRef:
-                  name: {{ include "api-login-clave-unica.secrets" . }}
+                  name: {{ include "api-configuracion-hrapp.secrets" . }}
                   key: i-jwt-key
 
           {{- if .Values.resources }}
