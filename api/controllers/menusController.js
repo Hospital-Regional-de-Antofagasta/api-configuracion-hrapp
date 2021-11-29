@@ -94,15 +94,91 @@ exports.getInformacionGeneral = async (req, res) => {
   }
 };
 
-exports.getUnidades = async (req, res) => {
+exports.getItemsUnidades = async (req, res) => {
   try {
-    const menuUnidades = await MenuUnidades.find({
-      habilitado: true,
-      version: 1,
-    })
+    const { incluirDeshabilitados } = req.query;
+
+    let filter = { version: 1 };
+
+    if (incluirDeshabilitados !== "true") filter.habilitado = true;
+
+    const menuUnidades = await MenuUnidades.find(filter)
       .sort({ posicion: 1 })
       .exec();
     res.status(200).send(menuUnidades);
+  } catch (error) {
+    if (process.env.NODE_ENV === "dev")
+      return res.status(500).send({
+        respuesta: await getMensajes("serverError"),
+        detalles_error: {
+          nombre: error.name,
+          mensaje: error.message,
+        },
+      });
+    res.status(500).send({ respuesta: await getMensajes("serverError") });
+  }
+};
+
+exports.createItemUnidad = async (req, res) => {
+  try {
+    const item = req.body;
+
+    item.implementado = true;
+    item.mensajeImplementado = "En construcción";
+    item.version = 1;
+
+    await MenuUnidades.create(item);
+
+    res.status(201).send({ respuesta: await getMensajes("created") });
+  } catch (error) {
+    if (process.env.NODE_ENV === "dev")
+      return res.status(500).send({
+        respuesta: await getMensajes("serverError"),
+        detalles_error: {
+          nombre: error.name,
+          mensaje: error.message,
+        },
+      });
+    res.status(500).send({ respuesta: await getMensajes("serverError") });
+  }
+};
+
+exports.updateItemUnidad = async (req, res) => {
+  try {
+    const { _id } = req.params;
+
+    const item = req.body;
+
+    delete item._id;
+    delete item.__v;
+
+    await MenuUnidades.updateOne({ _id }, item).exec();
+
+    res.status(200).send({ respuesta: await getMensajes("success")});
+  } catch (error) {
+    console.log({
+      nombre: error.name,
+      mensaje: error.message,
+    })
+    if (process.env.NODE_ENV === "dev")
+      return res.status(500).send({
+        respuesta: await getMensajes("serverError"),
+        detalles_error: {
+          nombre: error.name,
+          mensaje: error.message,
+        },
+      });
+    res.status(500).send({ respuesta: await getMensajes("serverError") });
+  }
+};
+
+exports.deleteItemUnidad = async (req, res) => {
+  try {
+    const { _id } = req.params;
+
+    await MenuUnidades.deleteOne({ _id }).exec();
+
+    res.status(200).send({ respuesta: await getMensajes("success")});
   } catch (error) {
     if (process.env.NODE_ENV === "dev")
       return res.status(500).send({
