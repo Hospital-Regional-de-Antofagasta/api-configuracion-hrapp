@@ -121,7 +121,7 @@ exports.getItemsUnidades = async (req, res) => {
 
 exports.createItemUnidad = async (req, res) => {
   try {
-    const item = req.body;
+    const { _id, ...item } = req.body;
 
     item.implementado = true;
     item.mensajeImplementado = "En construcción";
@@ -155,12 +155,12 @@ exports.updateItemUnidad = async (req, res) => {
 
     await MenuUnidades.updateOne({ _id }, item).exec();
 
-    res.status(200).send({ respuesta: await getMensajes("success")});
+    res.status(200).send({ respuesta: await getMensajes("success") });
   } catch (error) {
     console.log({
       nombre: error.name,
       mensaje: error.message,
-    })
+    });
     if (process.env.NODE_ENV === "dev")
       return res.status(500).send({
         respuesta: await getMensajes("serverError"),
@@ -179,7 +179,7 @@ exports.deleteItemUnidad = async (req, res) => {
 
     await MenuUnidades.deleteOne({ _id }).exec();
 
-    res.status(200).send({ respuesta: await getMensajes("success")});
+    res.status(200).send({ respuesta: await getMensajes("success") });
   } catch (error) {
     if (process.env.NODE_ENV === "dev")
       return res.status(500).send({

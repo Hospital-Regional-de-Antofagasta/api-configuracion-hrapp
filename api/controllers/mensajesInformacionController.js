@@ -3,7 +3,9 @@ const { getMensajes } = require("../config");
 
 exports.get = async (req, res) => {
   try {
-    const mensajesInformacion = await MensajesInformacion.find().exec();
+    const mensajesInformacion = await MensajesInformacion.find()
+      .sort({ pagina: 1 })
+      .exec();
     res.status(200).send(mensajesInformacion);
   } catch (error) {
     if (process.env.NODE_ENV === "dev")
@@ -23,7 +25,7 @@ exports.updateMany = async (req, res) => {
     const mensajesInformacion = req.body;
 
     for (let mensaje of mensajesInformacion) {
-      const { pagina, ...datosAActualizar } = mensaje;
+      const { _id, pagina, ...datosAActualizar } = mensaje;
 
       const filter = { pagina };
 

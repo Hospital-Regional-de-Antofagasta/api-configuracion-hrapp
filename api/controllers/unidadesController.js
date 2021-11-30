@@ -27,7 +27,7 @@ exports.get = async (req, res) => {
 
 exports.create = async (req, res) => {
   try {
-    const unidad = req.body;
+    const { _id, ...unidad } = req.body;
 
     unidad.version = 1;
 
@@ -59,7 +59,7 @@ exports.update = async (req, res) => {
 
     await Unidades.updateOne({ _id }, unidad).exec();
 
-    res.status(200).send({ respuesta: await getMensajes("success")});
+    res.status(200).send({ respuesta: await getMensajes("success") });
   } catch (error) {
     if (process.env.NODE_ENV === "dev")
       return res.status(500).send({
@@ -79,7 +79,7 @@ exports.delete = async (req, res) => {
 
     await Unidades.deleteOne({ _id }).exec();
 
-    res.status(200).send({ respuesta: await getMensajes("success")});
+    res.status(200).send({ respuesta: await getMensajes("success") });
   } catch (error) {
     if (process.env.NODE_ENV === "dev")
       return res.status(500).send({

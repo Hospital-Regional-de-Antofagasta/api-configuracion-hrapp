@@ -450,7 +450,9 @@ describe("Endpoint mensajes informacion", () => {
         },
       });
 
-      const mensajesInformacion = await MensajesInformacion.find().exec();
+      const mensajesInformacion = await MensajesInformacion.find()
+        .sort({ pagina: 1 })
+        .exec();
 
       expect(mensajesInformacion.length).toBe(12);
 

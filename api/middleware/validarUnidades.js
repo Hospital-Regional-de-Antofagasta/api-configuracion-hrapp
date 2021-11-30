@@ -185,12 +185,12 @@ exports.invalidaData = async (req, res, next) => {
     } = req.body;
 
     const regexString = new RegExp(
-      /^[\s\w\.\,\-áéíóúÁÉÍÓÚñÑ%$¡!¿?(){}[\]:;'"+*/<>@]+$/
+      /^[\s\w\.\,\-áéíóúÁÉÍÓÚñÑ%$¡!¿?(){}[\]:;'"+*@]+$/
     );
     const regexCorreo = new RegExp(
       /^[a-zA-Z0-9_\-\.]+@([a-zA-Z0-9_-]+\.)+[a-zA-Z0-9_-]+$/
     );
-    const regexNumber = new RegExp(/^\d$/);
+    const regexNumber = new RegExp(/^\d*$/);
     const regexBoolean = new RegExp(/^true|false$/);
     const regexSrcUrl = new RegExp(
       /^[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)$/
@@ -198,6 +198,7 @@ exports.invalidaData = async (req, res, next) => {
     const regexSrcsetUrl = new RegExp(
       /^[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*) \d+w$/
     );
+    const regexTipo = new RegExp(/^[a-zA-Z]{1,50}$/);
 
     if (nombre !== undefined)
       if (!regexString.test(nombre))
@@ -336,7 +337,7 @@ exports.invalidaData = async (req, res, next) => {
     }
 
     if (tipo !== undefined)
-      if (!regexString.test(tipo))
+      if (!regexTipo.test(tipo))
         return res.status(400).send({
           respuesta: await getMensajes("badRequest"),
           detalles_error: "El tipo no tiene el formato correcto.",
