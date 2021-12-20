@@ -117,12 +117,6 @@ exports.requiredData = async (req, res, next) => {
       if (!imagen) {
         const { src, alt, srcset } = imagen;
 
-        if (!src)
-          return res.status(400).send({
-            respuesta: await getMensajes("badRequest"),
-            detalles_error: "Se debe ingresar la url por defecto de la imagen.",
-          });
-
         if (!alt)
           return res.status(400).send({
             respuesta: await getMensajes("badRequest"),
@@ -171,7 +165,7 @@ exports.requiredData = async (req, res, next) => {
   }
 };
 
-exports.invalidaData = async (req, res, next) => {
+exports.invalidData = async (req, res, next) => {
   try {
     const {
       nombre,
@@ -185,7 +179,7 @@ exports.invalidaData = async (req, res, next) => {
     } = req.body;
 
     const regexString = new RegExp(
-      /^[\s\w\.\,\-áéíóúÁÉÍÓÚñÑ%$¡!¿?(){}[\]:;'"+*@]+$/
+      /^[\s\w\.\,\-áéíóúÁÉÍÓÚñÑ%$¡!¿?(){}[\]:;'"+*@]*$/
     );
     const regexCorreo = new RegExp(
       /^[a-zA-Z0-9_\-\.]+@([a-zA-Z0-9_-]+\.)+[a-zA-Z0-9_-]+$/
@@ -313,12 +307,13 @@ exports.invalidaData = async (req, res, next) => {
 
       const { src, alt, srcset } = imagen;
 
-      if (!regexSrcUrl.test(src))
-        return res.status(400).send({
-          respuesta: await getMensajes("badRequest"),
-          detalles_error:
-            "La url por defecto de la imagen no tiene el formato correcto.",
-        });
+      if (src)
+        if (!regexSrcUrl.test(src))
+          return res.status(400).send({
+            respuesta: await getMensajes("badRequest"),
+            detalles_error:
+              "La url por defecto de la imagen no tiene el formato correcto.",
+          });
 
       if (!regexString.test(alt))
         return res.status(400).send({
@@ -396,6 +391,65 @@ exports.elementExists = async (req, res, next) => {
         respuesta: await getMensajes("notFound"),
         detalles_error: "No se encontró la unidad.",
       });
+
+    next();
+  } catch (error) {
+    if (process.env.NODE_ENV === "dev")
+      return res.status(500).send({
+        respuesta: await getMensajes("serverError"),
+        detalles_error: {
+          nombre: error.name,
+          mensaje: error.message,
+        },
+      });
+    res.status(500).send({ respuesta: await getMensajes("serverError") });
+  }
+};
+
+exports.invalidImages = async (req, res, next) => {
+  try {
+    const {
+      nombre,
+      descripcion,
+      servicios,
+      atenciones,
+      referencias,
+      tipo,
+      habilitado,
+      posicion,
+    } = req.body;
+
+    const regexResolucion = new RegExp(/^[0-9]{3,4}x[0-9]{3,4}$/);
+
+    for (let referencia of referencias) {
+      const { ubicacion, imagen } = referencia;
+
+      const { imagenesEnviar } = imagen;
+
+      if (imagenesEnviar)
+        for (let imagenEnviar of imagenesEnviar) {
+          const { imagen, resolucion } = imagenEnviar;
+
+          const allowedMimeTypes = ["image/png", "image/jpeg"];
+
+          const mimeType = imagen.match(
+            /data:([a-zA-Z0-9]+\/[a-zA-Z0-9-.+]+).*,.*/
+          )[1];
+
+          if (!allowedMimeTypes.includes(mimeType))
+            return res.status(400).send({
+              respuesta: await getMensajes("badRequest"),
+              detalles_error: "La imagen debe ser image/png o image/jpeg",
+            });
+
+          if (!regexResolucion.test(resolucion))
+            return res.status(400).send({
+              respuesta: await getMensajes("badRequest"),
+              detalles_error:
+                "La resolucion de la imagen no tiene el formato correcto.",
+            });
+        }
+    }
 
     next();
   } catch (error) {

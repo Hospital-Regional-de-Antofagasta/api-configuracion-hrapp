@@ -41,6 +41,7 @@ const Unidades = mongoose.model(
           src: String,
           alt: String,
           srcset: [String],
+          carpeta: String,
         },
       },
     ],

@@ -3,8 +3,9 @@ const unidadesController = require("../controllers/unidadesController");
 const { isAuthenticated, hasRole } = require("../middleware/authInterno");
 const {
   requiredData,
-  invalidaData,
+  invalidData,
   elementExists,
+  invalidImages,
 } = require("../middleware/validarUnidades");
 
 const router = express.Router();
@@ -19,7 +20,8 @@ router.post(
   isAuthenticated,
   hasRole(["user", "admin"]),
   requiredData,
-  invalidaData,
+  invalidData,
+  invalidImages,
   unidadesController.create
 );
 
@@ -29,7 +31,8 @@ router.put(
   hasRole(["user", "admin"]),
   elementExists,
   requiredData,
-  invalidaData,
+  invalidData,
+  invalidImages,
   unidadesController.update
 );
 
