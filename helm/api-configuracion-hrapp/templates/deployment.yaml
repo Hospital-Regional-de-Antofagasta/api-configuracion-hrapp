@@ -33,7 +33,7 @@ spec:
       containers:
           volumeMounts:
           - name: gcloud-access-volume
-            mountPath: /var/app/gcskey.json
+            mountPath: /home/runner/work/api-configuracion-hrapp/api-configuracion-hrapp/gcskey.json
             subPath: gcskey.json
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
