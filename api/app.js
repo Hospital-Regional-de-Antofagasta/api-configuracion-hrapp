@@ -16,7 +16,7 @@ const diccionarioSiglas = require("./routes/diccionarioSiglas");
 
 const app = express();
 
-app.use(express.json({limit: '10mb'}));
+app.use(express.json({limit: '50mb'}));
 app.use(cors());
 
 const connection = process.env.MONGO_URI

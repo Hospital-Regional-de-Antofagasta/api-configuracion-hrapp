@@ -430,6 +430,12 @@ exports.invalidImages = async (req, res, next) => {
         for (let imagenEnviar of imagenesEnviar) {
           const { imagen, resolucion } = imagenEnviar;
 
+          if (!imagen)
+            return res.status(400).send({
+              respuesta: await getMensajes("badRequest"),
+              detalles_error: "La imagen no debe ser vacía.",
+            });
+
           const allowedMimeTypes = ["image/png", "image/jpeg"];
 
           const mimeType = imagen.match(
@@ -439,7 +445,7 @@ exports.invalidImages = async (req, res, next) => {
           if (!allowedMimeTypes.includes(mimeType))
             return res.status(400).send({
               respuesta: await getMensajes("badRequest"),
-              detalles_error: "La imagen debe ser image/png o image/jpeg",
+              detalles_error: "La imagen debe ser image/png o image/jpeg.",
             });
 
           if (!regexResolucion.test(resolucion))

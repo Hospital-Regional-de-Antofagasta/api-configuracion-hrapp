@@ -58,6 +58,11 @@ exports.update = async (req, res) => {
 
     const unidadAntigua = await Unidades.findOne({ _id: idUnidad }).exec();
 
+    await eliminarImagenesReferenciasEliminada(
+      unidad.referencias,
+      unidadAntigua.referencias
+    );
+
     unidad.referencias = await subirImagenesReferencias(
       unidad.referencias,
       unidadAntigua.referencias
@@ -117,7 +122,10 @@ const subirImagenesReferencias = async (referencias, referenciasAntiguas) => {
       }
     // verificar si se subio una nueva imagen para esta referencia
     if (!referencia.imagen.imagenesEnviar) {
-      if (referenciaAntiguaAActualizar) newReferencias.push(referenciaAntiguaAActualizar);
+      if (referenciaAntiguaAActualizar) {
+        referenciaAntiguaAActualizar.ubicacion = referenciasAntiguas.ubicacion;
+        newReferencias.push(referenciaAntiguaAActualizar);
+      };
       continue;
     }
     // si corresponde a una referencia existente eliminar sus imagenes
@@ -166,6 +174,21 @@ const subirImagenesReferencias = async (referencias, referenciasAntiguas) => {
   }
 
   return newReferencias;
+};
+
+const eliminarImagenesReferenciasEliminada = async (referencias, referenciasAntiguas) => {
+  for (let referenciaAntigua of referenciasAntiguas) {
+    // identificar si corresponde a una referencia eliminada
+    let eliminada = true;
+    for (let referencia of referencias) {
+      if (referenciaAntigua._id.equals(referencia._id)) {
+        eliminada = false;
+        break;
+      }
+    }
+    // si corresponde a una referencia eliminada, eliminar sus imagenes
+    if (eliminada) await deleteFolder(`prestaciones/${referenciaAntigua.imagen.carpeta}`);
+  }
 };
 
 const eliminarImagenesReferencias = async (referencias) => {
