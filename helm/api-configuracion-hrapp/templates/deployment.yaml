@@ -23,13 +23,13 @@ spec:
         {{- include "api-configuracion-hrapp.selectorLabels" . | nindent 8 }}
     spec:
       {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
       volumes:
         - name: gcloud-access-volume
           secret:
             secretName: gcloud-access
-      imagePullSecrets:
-        {{- toYaml . | nindent 8 }}
-      {{- end }}
       containers:
           volumeMounts:
           - name: gcloud-access-volume
