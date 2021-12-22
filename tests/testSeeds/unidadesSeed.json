@@ -133,6 +133,7 @@
     "version": 1
   },
   {
+    "_id": "67832a43c8a5d50009611cad",
     "nombre": "Unidad serviciosClinicos",
     "descripcion": "Unidades de apoyo 2",
     "servicios": ["Oncología", "Nutrición Infantil"],
@@ -163,21 +164,7 @@
         }
       }
     ],
-    "referencias": [
-      {
-        "ubicacion": "3 piso",
-        "imagen": {
-          "src": "https://via.placeholder.com/1000x500",
-          "alt": "imagen",
-          "srcset": [
-            "https://via.placeholder.com/30000x1500 2160w",
-            "https://via.placeholder.com/2000x1000 1080w",
-            "https://via.placeholder.com/1000x500 720w",
-            "https://via.placeholder.com/500x250 480w"
-          ]
-        }
-      }
-    ],
+    "referencias": [],
     "tipo": "serviciosClinicos",
     "habilitado": true,
     "posicion": 2,

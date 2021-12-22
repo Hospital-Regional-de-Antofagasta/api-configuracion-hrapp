@@ -998,7 +998,7 @@ describe("Endpoints unidades", () => {
     });
     it("Should delete unidad", async () => {
       const response = await request
-        .delete("/v1/configuracion-hrapp/unidades/67832a43c8a5d50009611cab")
+        .delete("/v1/configuracion-hrapp/unidades/67832a43c8a5d50009611cad")
         .set("Authorization", tokenInterno);
 
       const mensaje = await getMensajes("success");
@@ -1014,7 +1014,7 @@ describe("Endpoints unidades", () => {
       });
 
       const unidad = await Unidades.findOne({
-        _id: "67832a43c8a5d50009611cab",
+        _id: "67832a43c8a5d50009611cad",
       }).exec();
 
       expect(unidad).toBeFalsy();
