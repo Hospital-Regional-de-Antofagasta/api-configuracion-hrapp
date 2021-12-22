@@ -89,6 +89,10 @@ exports.delete = async (req, res) => {
 
     res.status(200).send({ respuesta: await getMensajes("success") });
   } catch (error) {
+    console.log({
+      nombre: error.name,
+      mensaje: error.message,
+    })
     if (process.env.NODE_ENV === "dev")
       return res.status(500).send({
         respuesta: await getMensajes("serverError"),
