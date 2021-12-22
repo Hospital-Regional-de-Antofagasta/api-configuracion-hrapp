@@ -827,6 +827,7 @@ describe("Endpoints unidades", () => {
           ],
           referencias: [
             {
+              _id: "67832a43c8a5d50009611cad",
               ubicacion: "1 piso",
               imagen: {
                 src: "https://via.placeholder.com/500x250",
