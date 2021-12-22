@@ -26,15 +26,11 @@ spec:
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      volumes:
-        - name: gcloud-access-volume
-          secret:
-            secretName: gcloud-access
       containers:
-          volumeMounts:
-          - name: gcloud-access-volume
-            mountPath: /var/app/gcskey.json
-            subPath: gcskey.json
+        volumeMounts:
+        - name: gcloud-access-volume
+          mountPath: /var/app/gcskey.json
+          subPath: gcskey.json
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
@@ -77,6 +73,10 @@ spec:
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           {{- end }}
+      volumes:
+        - name: gcloud-access-volume
+          secret:
+            secretName: gcloud-access
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
