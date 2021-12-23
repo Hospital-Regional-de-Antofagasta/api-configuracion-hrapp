@@ -145,12 +145,6 @@ exports.requiredData = async (req, res, next) => {
         detalles_error: "Se debe ingresar la posición.",
       });
 
-    if (!habilitado)
-      return res.status(400).send({
-        respuesta: await getMensajes("badRequest"),
-        detalles_error: "Se debe ingresar si esta habilitado o no.",
-      });
-
     next();
   } catch (error) {
     if (process.env.NODE_ENV === "dev")
