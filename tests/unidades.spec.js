@@ -403,7 +403,7 @@ describe("Endpoints unidades", () => {
                 ],
               },
               contactos: {
-                telefonos: ["123", "552758966"],
+                telefonos: ["552758967", "552758966"],
                 correos: ["correo@gmail.com", "correo2@gmail.com"],
               },
             },
@@ -485,7 +485,7 @@ describe("Endpoints unidades", () => {
         "14:00"
       );
       expect(unidad.atenciones[0].contactos.telefonos).toEqual([
-        "123",
+        "552758967",
         "552758966",
       ]);
       expect(unidad.atenciones[0].contactos.correos).toEqual([
@@ -709,7 +709,7 @@ describe("Endpoints unidades", () => {
                 ],
               },
               contactos: {
-                telefonos: ["123", "552758966"],
+                telefonos: ["552758967", "552758966"],
                 correos: ["correo@gmail.com", "correo2@gmail.com"],
               },
             },
@@ -799,7 +799,7 @@ describe("Endpoints unidades", () => {
                 ],
               },
               contactos: {
-                telefonos: ["123", "552758966"],
+                telefonos: ["552758967", "552758966"],
                 correos: ["correo@gmail.com", "correo2@gmail.com"],
               },
             },
@@ -887,7 +887,7 @@ describe("Endpoints unidades", () => {
         "14:00"
       );
       expect(unidad.atenciones[0].contactos.telefonos).toEqual([
-        "123",
+        "552758967",
         "552758966",
       ]);
       expect(unidad.atenciones[0].contactos.correos).toEqual([

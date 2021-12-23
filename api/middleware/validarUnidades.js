@@ -178,6 +178,7 @@ exports.invalidData = async (req, res, next) => {
     const regexCorreo = new RegExp(
       /^[a-zA-Z0-9_\-\.]+@([a-zA-Z0-9_-]+\.)+[a-zA-Z0-9_-]+$/
     );
+    const regexPhoneNumber = new RegExp(/^\d{9,11}$/);
     const regexNumber = new RegExp(/^\d*$/);
     const regexBoolean = new RegExp(/^true|false$/);
     const regexSrcUrl = new RegExp(
@@ -272,7 +273,7 @@ exports.invalidData = async (req, res, next) => {
         const { telefonos, correos } = contactos;
 
         for (let telefono of telefonos) {
-          if (!regexString.test(telefono))
+          if (!regexPhoneNumber.test(telefono))
             return res.status(400).send({
               respuesta: await getMensajes("badRequest"),
               detalles_error: "El teléfono no tiene el formato correcto.",
