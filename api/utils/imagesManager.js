@@ -47,7 +47,7 @@ exports.uploadImage = async (image, imageName, folderName) => {
         })
       )
       .on("error", async (error) => {
-        console.log({ text: "error.name: ${error.name}\nerror.message: ${error.message}" })
+        console.log({ text: `error.name: ${error.name}\nerror.message: ${error.message}` })
 
         reject(error);
       })
