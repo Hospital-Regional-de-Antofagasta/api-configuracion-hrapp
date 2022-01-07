@@ -307,7 +307,7 @@ describe("Endpoints menus", () => {
           .set("Authorization", tokenInterno)
           .send({
             icono: "new-icon",
-            title: "Título",
+            title: "Títul o",
             subtitle: "Subtítulo",
             tipo: "tipo",
             habilitado: true,
@@ -326,10 +326,10 @@ describe("Endpoints menus", () => {
           },
         });
 
-        const item = await MenuUnidades.findOne({ title: "Título" }).exec();
+        const item = await MenuUnidades.findOne({ title: "Títul o" }).exec();
 
         expect(item.icono).toBe("new-icon");
-        expect(item.title).toBe("Título");
+        expect(item.title).toBe("Títul o");
         expect(item.subtitle).toBe("Subtítulo");
         expect(item.tipo).toBe("tipo");
         expect(item.habilitado).toBe(true);
@@ -337,6 +337,7 @@ describe("Endpoints menus", () => {
         expect(item.mensajeImplementado).toBe("En construcción");
         expect(item.posicion).toBe(5);
         expect(item.version).toBe(1);
+        expect(item.redirecTo).toBe(`tabs/tab3/menu-prestaciones/unidades?tipo=${item.tipo}&titulo=${item.title.replace(" ", "+")}`);
       });
     });
     describe("PUT /v1/configuracion-hrapp/menu/unidades/:_id", () => {
@@ -483,6 +484,7 @@ describe("Endpoints menus", () => {
         expect(item.mensajeImplementado).toBe("En construcción");
         expect(item.posicion).toBe(2);
         expect(item.version).toBe(1);
+        expect(item.redirecTo).toBe(`tabs/tab3/menu-prestaciones/unidades?tipo=${item.tipo}&titulo=${item.title.replace(" ", "+")}`);
       });
     });
     describe("DELETE /v1/configuracion-hrapp/menu/unidades", () => {

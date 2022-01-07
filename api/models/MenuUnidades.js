@@ -13,6 +13,7 @@ const MenuUnidades = mongoose.model(
     implementado: Boolean,
     mensajeImplementado: String,
     version: Number,
+    redirecTo: String,
   }),
   "menu_unidades"
 );
