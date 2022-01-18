@@ -114,7 +114,7 @@ exports.requiredData = async (req, res, next) => {
     for (let referencia of referencias) {
       const { ubicacion, imagen } = referencia;
 
-      if (!imagen) {
+      if (imagen) {
         const { src, alt, srcset } = imagen;
 
         if (!alt)
