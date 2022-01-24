@@ -300,29 +300,32 @@ exports.invalidData = async (req, res, next) => {
           detalles_error: "la ubicación no tiene el formato correcto.",
         });
 
-      const { src, alt, srcset } = imagen;
+      if (imagen) {
+        const { src, alt, srcset } = imagen;
 
-      if (src)
-        if (!regexSrcUrl.test(src))
+        if (src)
+          if (!regexSrcUrl.test(src))
+            return res.status(400).send({
+              respuesta: await getMensajes("badRequest"),
+              detalles_error:
+                "La url por defecto de la imagen no tiene el formato correcto.",
+            });
+
+        if (!regexString.test(alt))
           return res.status(400).send({
             respuesta: await getMensajes("badRequest"),
             detalles_error:
-              "La url por defecto de la imagen no tiene el formato correcto.",
+              "La descripción de la imagen no tiene el formato correcto.",
           });
 
-      if (!regexString.test(alt))
-        return res.status(400).send({
-          respuesta: await getMensajes("badRequest"),
-          detalles_error:
-            "La descripción de la imagen no tiene el formato correcto.",
-        });
-
-      for (let url of srcset) {
-        if (!regexSrcsetUrl.test(url))
-          return res.status(400).send({
-            respuesta: await getMensajes("badRequest"),
-            detalles_error: "La url de la imagen no tiene el formato correcto.",
-          });
+        for (let url of srcset) {
+          if (!regexSrcsetUrl.test(url))
+            return res.status(400).send({
+              respuesta: await getMensajes("badRequest"),
+              detalles_error:
+                "La url de la imagen no tiene el formato correcto.",
+            });
+        }
       }
     }
 
@@ -419,37 +422,45 @@ exports.invalidImages = async (req, res, next) => {
     for (let referencia of referencias) {
       const { ubicacion, imagen } = referencia;
 
-      const { imagenesEnviar } = imagen;
+      if (imagen) {
+        const { imagenesEnviar } = imagen;
 
-      if (imagenesEnviar)
-        for (let imagenEnviar of imagenesEnviar) {
-          const { imagen, resolucion } = imagenEnviar;
+        if (imagenesEnviar)
+          for (let imagenEnviar of imagenesEnviar) {
+            const { imagen, resolucion } = imagenEnviar;
 
-          if (!imagen)
-            return res.status(400).send({
-              respuesta: await getMensajes("badRequest"),
-              detalles_error: "La imagen no debe ser vacía.",
-            });
+            if (!imagen)
+              return res.status(400).send({
+                respuesta: await getMensajes("badRequest"),
+                detalles_error: "La imagen no debe ser vacía.",
+              });
 
-          const allowedMimeTypes = ["image/png", "image/jpeg"];
+            if (!resolucion)
+              return res.status(400).send({
+                respuesta: await getMensajes("badRequest"),
+                detalles_error: "La resolucion no debe ser vacía.",
+              });
 
-          const mimeType = imagen.match(
-            /data:([a-zA-Z0-9]+\/[a-zA-Z0-9-.+]+).*,.*/
-          )[1];
+            const allowedMimeTypes = ["image/png", "image/jpeg"];
 
-          if (!allowedMimeTypes.includes(mimeType))
-            return res.status(400).send({
-              respuesta: await getMensajes("badRequest"),
-              detalles_error: "La imagen debe ser image/png o image/jpeg.",
-            });
+            const mimeType = imagen.match(
+              /data:([a-zA-Z0-9]+\/[a-zA-Z0-9-.+]+).*,.*/
+            )[1];
 
-          if (!regexResolucion.test(resolucion))
-            return res.status(400).send({
-              respuesta: await getMensajes("badRequest"),
-              detalles_error:
-                "La resolucion de la imagen no tiene el formato correcto.",
-            });
-        }
+            if (!allowedMimeTypes.includes(mimeType))
+              return res.status(400).send({
+                respuesta: await getMensajes("badRequest"),
+                detalles_error: "La imagen debe ser image/png o image/jpeg.",
+              });
+
+            if (!regexResolucion.test(resolucion))
+              return res.status(400).send({
+                respuesta: await getMensajes("badRequest"),
+                detalles_error:
+                  "La resolucion de la imagen no tiene el formato correcto.",
+              });
+          }
+      }
     }
 
     next();
