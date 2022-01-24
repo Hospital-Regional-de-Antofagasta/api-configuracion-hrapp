@@ -68,9 +68,14 @@ exports.update = async (req, res) => {
       unidadAntigua.referencias
     );
     await Unidades.updateOne({ _id: idUnidad }, unidad).exec();
+    console.log("subirImagenesReferencias");
 
     res.status(200).send({ respuesta: await getMensajes("success") });
   } catch (error) {
+    console.log({
+      nombre: error.name,
+      mensaje: error.message,
+    });
     if (process.env.NODE_ENV === "dev")
       return res.status(500).send({
         respuesta: await getMensajes("serverError"),
@@ -120,63 +125,74 @@ const subirImagenesReferencias = async (referencias, referenciasAntiguas) => {
           break;
         }
       }
-    // verificar si se subio una nueva imagen para esta referencia
-    if (!referencia.imagen.imagenesEnviar) {
-      if (referenciaAntiguaAActualizar) {
-        referenciaAntiguaAActualizar.ubicacion = referenciasAntiguas.ubicacion;
-        newReferencias.push(referenciaAntiguaAActualizar);
-      };
-      continue;
+    // verificar si existe una imagen
+    if (referencia.imagen) {
+      // verificar si se subio una nueva imagen para esta referencia
+      if (!referencia.imagen.imagenesEnviar) {
+        if (referenciaAntiguaAActualizar) {
+          referenciaAntiguaAActualizar.ubicacion =
+            referenciasAntiguas.ubicacion;
+          newReferencias.push(referenciaAntiguaAActualizar);
+        }
+        continue;
+      }
     }
     // si corresponde a una referencia existente eliminar sus imagenes
-    if (referenciaAntiguaAActualizar) await deleteFolder(`prestaciones/${carpeta}`);
-    // subir las nuevas imagenes
-    for (let imagenEnviar of referencia.imagen.imagenesEnviar) {
-      const { imagen, resolucion } = imagenEnviar;
-      imagenEnviar.url = await uploadImage(
-        imagen,
-        resolucion,
-        `prestaciones/${carpeta}/`
+    if (referenciaAntiguaAActualizar)
+      await deleteFolder(`prestaciones/${carpeta}`);
+    if (referencia.imagen) {
+      // subir las nuevas imagenes
+      for (let imagenEnviar of referencia.imagen.imagenesEnviar) {
+        const { imagen, resolucion } = imagenEnviar;
+        imagenEnviar.url = await uploadImage(
+          imagen,
+          resolucion,
+          `prestaciones/${carpeta}/`
+        );
+        // calcular la cantidad de pixeles para ordenar las imagenes por resolucion
+        const valoresResolucion = resolucion.split("x");
+        imagenEnviar.cantPixeles = valoresResolucion[0] * valoresResolucion[1];
+      }
+      // ordenar imagenes por resolucion
+      const imagenesEnviarOrdenadas = referencia.imagen.imagenesEnviar.sort(
+        (a, b) => {
+          return b.cantPixeles - a.cantPixeles;
+        }
       );
-      // calcular la cantidad de pixeles para ordenar las imagenes por resolucion
-      const valoresResolucion = resolucion.split("x");
-      imagenEnviar.cantPixeles = valoresResolucion[0] * valoresResolucion[1];
-    }
-    // ordenar imagenes por resolucion
-    const imagenesEnviarOrdenadas = referencia.imagen.imagenesEnviar.sort(
-      (a, b) => {
-        return b.cantPixeles - a.cantPixeles;
+      // agregar a que tamanio de pantalla corresponde cada resolucion
+      const screenSizes = ["2160w", "1080w", "720w", "480w"];
+      const newSrcset = [];
+      let newSrc = "";
+      for (let i = 0; i < screenSizes.length; i++) {
+        if (imagenesEnviarOrdenadas[i])
+          newSrcset.push(`${imagenesEnviarOrdenadas[i].url} ${screenSizes[i]}`);
+        if (i === imagenesEnviarOrdenadas.length - 1) {
+          newSrc = imagenesEnviarOrdenadas[i].url;
+          break;
+        }
+        if (i === screenSizes.length - 1)
+          newSrc = imagenesEnviarOrdenadas[i].url;
       }
-    );
-    // agregar a que tamanio de pantalla corresponde cada resolucion
-    const screenSizes = ["2160w", "1080w", "720w", "480w"];
-    const newSrcset = [];
-    let newSrc = "";
-    for (let i = 0; i < screenSizes.length; i++) {
-      if (imagenesEnviarOrdenadas[i])
-        newSrcset.push(`${imagenesEnviarOrdenadas[i].url} ${screenSizes[i]}`);
-      if (i === imagenesEnviarOrdenadas.length - 1) {
-        newSrc = imagenesEnviarOrdenadas[i].url;
-        break;
-      }
-      if (i === screenSizes.length - 1) newSrc = imagenesEnviarOrdenadas[i].url;
+      // generar la nueva referencia
+      newReferencias.push({
+        ubicacion: referencia.ubicacion,
+        imagen: {
+          src: newSrc,
+          alt: referencia.imagen.alt,
+          srcset: newSrcset,
+          carpeta,
+        },
+      });
     }
-    // generar la nueva referencia
-    newReferencias.push({
-      ubicacion: referencia.ubicacion,
-      imagen: {
-        src: newSrc,
-        alt: referencia.imagen.alt,
-        srcset: newSrcset,
-        carpeta,
-      },
-    });
   }
 
   return newReferencias;
 };
 
-const eliminarImagenesReferenciasEliminada = async (referencias, referenciasAntiguas) => {
+const eliminarImagenesReferenciasEliminada = async (
+  referencias,
+  referenciasAntiguas
+) => {
   for (let referenciaAntigua of referenciasAntiguas) {
     // identificar si corresponde a una referencia eliminada
     let eliminada = true;
@@ -187,7 +203,8 @@ const eliminarImagenesReferenciasEliminada = async (referencias, referenciasAnti
       }
     }
     // si corresponde a una referencia eliminada, eliminar sus imagenes
-    if (eliminada) await deleteFolder(`prestaciones/${referenciaAntigua.imagen.carpeta}`);
+    if (eliminada)
+      await deleteFolder(`prestaciones/${referenciaAntigua.imagen.carpeta}`);
   }
 };
 
