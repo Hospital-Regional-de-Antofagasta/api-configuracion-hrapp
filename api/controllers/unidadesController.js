@@ -68,7 +68,6 @@ exports.update = async (req, res) => {
       unidadAntigua.referencias
     );
     await Unidades.updateOne({ _id: idUnidad }, unidad).exec();
-    console.log("subirImagenesReferencias");
 
     res.status(200).send({ respuesta: await getMensajes("success") });
   } catch (error) {
@@ -125,13 +124,14 @@ const subirImagenesReferencias = async (referencias, referenciasAntiguas) => {
           break;
         }
       }
+    if (!referencia.ubicacion)
+      referencia.ubicacion = referenciaAntiguaAActualizar?.ubicacion;
     // verificar si existe una imagen
     if (referencia.imagen) {
       // verificar si se subio una nueva imagen para esta referencia
       if (!referencia.imagen.imagenesEnviar) {
         if (referenciaAntiguaAActualizar) {
-          referenciaAntiguaAActualizar.ubicacion =
-            referenciasAntiguas.ubicacion;
+          referenciaAntiguaAActualizar.ubicacion = referencia.ubicacion;
           newReferencias.push(referenciaAntiguaAActualizar);
         }
         continue;
@@ -182,6 +182,11 @@ const subirImagenesReferencias = async (referencias, referenciasAntiguas) => {
           srcset: newSrcset,
           carpeta,
         },
+      });
+    } else {
+      // generar la nueva referencia
+      newReferencias.push({
+        ubicacion: referencia.ubicacion,
       });
     }
   }
