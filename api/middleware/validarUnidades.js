@@ -123,12 +123,14 @@ exports.requiredData = async (req, res, next) => {
             detalles_error: "Se debe ingresar la descripción de la imagen.",
           });
 
-        for (let url of srcset) {
-          if (!url)
-            return res.status(400).send({
-              respuesta: await getMensajes("badRequest"),
-              detalles_error: "Se debe ingresar la url de la imagen.",
-            });
+        if (srcset) {
+          for (let url of srcset) {
+            if (!url)
+              return res.status(400).send({
+                respuesta: await getMensajes("badRequest"),
+                detalles_error: "Se debe ingresar la url de la imagen.",
+              });
+          }
         }
       }
     }
@@ -318,13 +320,15 @@ exports.invalidData = async (req, res, next) => {
               "La descripción de la imagen no tiene el formato correcto.",
           });
 
-        for (let url of srcset) {
-          if (!regexSrcsetUrl.test(url))
-            return res.status(400).send({
-              respuesta: await getMensajes("badRequest"),
-              detalles_error:
-                "La url de la imagen no tiene el formato correcto.",
-            });
+        if (srcset) {
+          for (let url of srcset) {
+            if (!regexSrcsetUrl.test(url))
+              return res.status(400).send({
+                respuesta: await getMensajes("badRequest"),
+                detalles_error:
+                  "La url de la imagen no tiene el formato correcto.",
+              });
+          }
         }
       }
     }
