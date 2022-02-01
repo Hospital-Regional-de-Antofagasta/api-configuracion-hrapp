@@ -368,7 +368,7 @@ describe("Endpoints unidades", () => {
         icono: mensaje.icono,
       });
     });
-    it("Should create unidad", async () => {
+    it("Should create unidad without image", async () => {
       const response = await request
         .post("/v1/configuracion-hrapp/unidades")
         .set("Authorization", tokenInterno)
@@ -403,7 +403,7 @@ describe("Endpoints unidades", () => {
                 ],
               },
               contactos: {
-                telefonos: ["123", "552758966"],
+                telefonos: ["123123123", "552758966"],
                 correos: ["correo@gmail.com", "correo2@gmail.com"],
               },
             },
@@ -416,7 +416,7 @@ describe("Endpoints unidades", () => {
                   {
                     dias: {
                       inicio: "Viernes",
-                      fin: "sabado",
+                      fin: "sábado",
                     },
                     horas: [
                       {
@@ -427,21 +427,14 @@ describe("Endpoints unidades", () => {
                   },
                 ],
               },
+              contactos: {
+                correos: ["correo@gmail.com", "correo2@gmail.com"],
+              },
             },
           ],
           referencias: [
             {
               ubicacion: "1 piso",
-              imagen: {
-                src: "https://via.placeholder.com/500x250",
-                alt: "imagen",
-                srcset: [
-                  "https://via.placeholder.com/30000x1500 2160w",
-                  "https://via.placeholder.com/2000x1000 1080w",
-                  "https://via.placeholder.com/1000x500 720w",
-                  "https://via.placeholder.com/500x250 480w",
-                ],
-              },
             },
           ],
           tipo: "serviciosClinicos",
@@ -485,7 +478,7 @@ describe("Endpoints unidades", () => {
         "14:00"
       );
       expect(unidad.atenciones[0].contactos.telefonos).toEqual([
-        "123",
+        "123123123",
         "552758966",
       ]);
       expect(unidad.atenciones[0].contactos.correos).toEqual([
@@ -498,7 +491,7 @@ describe("Endpoints unidades", () => {
       expect(unidad.atenciones[1].horario.periodos[0].dias.inicio).toBe(
         "Viernes"
       );
-      expect(unidad.atenciones[1].horario.periodos[0].dias.fin).toBe("sabado");
+      expect(unidad.atenciones[1].horario.periodos[0].dias.fin).toBe("sábado");
       expect(unidad.atenciones[1].horario.periodos[0].horas[0].inicio).toBe(
         "08:00"
       );
@@ -506,19 +499,12 @@ describe("Endpoints unidades", () => {
         "14:00"
       );
       expect(unidad.atenciones[1].contactos.telefonos).toEqual([]);
-      expect(unidad.atenciones[1].contactos.correos).toEqual([]);
+      expect(unidad.atenciones[1].contactos.correos).toEqual([
+        "correo@gmail.com",
+        "correo2@gmail.com",
+      ]);
 
-      // expect(unidad.referencias[0].ubicacion).toBe("1 piso");
-      // expect(unidad.referencias[0].imagen.src).toBe(
-      //   "https://via.placeholder.com/500x250"
-      // );
-      // expect(unidad.referencias[0].imagen.alt).toBe("imagen");
-      // expect(unidad.referencias[0].imagen.srcset).toEqual([
-      //   "https://via.placeholder.com/30000x1500 2160w",
-      //   "https://via.placeholder.com/2000x1000 1080w",
-      //   "https://via.placeholder.com/1000x500 720w",
-      //   "https://via.placeholder.com/500x250 480w",
-      // ]);
+      expect(unidad.referencias[0].ubicacion).toBe("1 piso");
       expect(unidad.tipo).toBe("serviciosClinicos");
       expect(unidad.habilitado).toBe(true);
       expect(unidad.posicion).toBe(5);
@@ -764,7 +750,7 @@ describe("Endpoints unidades", () => {
         icono: mensaje.icono,
       });
     });
-    it("Should update unidad", async () => {
+    it("Should update unidad without image", async () => {
       const response = await request
         .put("/v1/configuracion-hrapp/unidades/67832a43c8a5d50009611cab")
         .set("Authorization", tokenInterno)
@@ -799,7 +785,7 @@ describe("Endpoints unidades", () => {
                 ],
               },
               contactos: {
-                telefonos: ["123", "552758966"],
+                telefonos: ["123123123", "552758966"],
                 correos: ["correo@gmail.com", "correo2@gmail.com"],
               },
             },
@@ -812,16 +798,19 @@ describe("Endpoints unidades", () => {
                   {
                     dias: {
                       inicio: "Viernes",
-                      fin: "sabado",
+                      fin: "sábado",
                     },
                     horas: [
                       {
-                        inicio: "08:000",
+                        inicio: "08:00",
                         fin: "14:00",
                       },
                     ],
                   },
                 ],
+              },
+              contactos: {
+                telefonos: ["123123123"],
               },
             },
           ],
@@ -887,7 +876,7 @@ describe("Endpoints unidades", () => {
         "14:00"
       );
       expect(unidad.atenciones[0].contactos.telefonos).toEqual([
-        "123",
+        "123123123",
         "552758966",
       ]);
       expect(unidad.atenciones[0].contactos.correos).toEqual([
@@ -900,26 +889,28 @@ describe("Endpoints unidades", () => {
       expect(unidad.atenciones[1].horario.periodos[0].dias.inicio).toBe(
         "Viernes"
       );
-      expect(unidad.atenciones[1].horario.periodos[0].dias.fin).toBe("sabado");
+      expect(unidad.atenciones[1].horario.periodos[0].dias.fin).toBe("sábado");
       expect(unidad.atenciones[1].horario.periodos[0].horas[0].inicio).toBe(
-        "08:000"
+        "08:00"
       );
       expect(unidad.atenciones[1].horario.periodos[0].horas[0].fin).toBe(
         "14:00"
       );
-      expect(unidad.atenciones[1].contactos.telefonos).toEqual([]);
+      expect(unidad.atenciones[1].contactos.telefonos).toEqual([
+        "123123123",
+      ]);
       expect(unidad.atenciones[1].contactos.correos).toEqual([]);
-      // expect(unidad.referencias[0].ubicacion).toBe("1 piso");
-      // expect(unidad.referencias[0].imagen.src).toBe(
-      //   "https://via.placeholder.com/500x250"
-      // );
-      // expect(unidad.referencias[0].imagen.alt).toBe("imagen");
-      // expect(unidad.referencias[0].imagen.srcset).toEqual([
-      //   "https://cdn.apolosalud.net/hra/hrapp/public/prestaciones/banco-sangre/banco-sangre-lg.jpg 2160w",
-      //   "https://via.placeholder.com/2000x1000 1080w",
-      //   "https://via.placeholder.com/1000x500 720w",
-      //   "https://via.placeholder.com/500x250 480w",
-      // ]);
+      expect(unidad.referencias[0].ubicacion).toBe("1 piso");
+      expect(unidad.referencias[0].imagen.src).toBe(
+        "https://via.placeholder.com/1000x500"
+      );
+      expect(unidad.referencias[0].imagen.alt).toBe("imagen");
+      expect(unidad.referencias[0].imagen.srcset).toEqual([
+        "https://via.placeholder.com/30000x1500 2160w",
+        "https://via.placeholder.com/2000x1000 1080w",
+        "https://via.placeholder.com/1000x500 720w",
+        "https://via.placeholder.com/500x250 480w",
+      ]);
       expect(unidad.tipo).toBe("serviciosClinicos");
       expect(unidad.habilitado).toBe(true);
       expect(unidad.posicion).toBe(6);
