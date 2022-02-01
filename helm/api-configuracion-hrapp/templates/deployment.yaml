@@ -71,7 +71,7 @@ spec:
           {{- end }}
           volumeMounts:
           - name: gcloud-access-volume
-            mountPath: /var/app/gcskey.json
+            mountPath: /usr/src/app/gcskey.json
             subPath: gcskey.json
       volumes:
         - name: gcloud-access-volume

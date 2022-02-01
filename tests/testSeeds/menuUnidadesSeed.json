@@ -8,7 +8,8 @@
     "implementado": true,
     "mensajeImplementado": "En construcción",
     "posicion": 1,
-    "version": 1
+    "version": 1,
+    "redirecTo": "tabs/tab3/menu-prestaciones/unidades?tipo=serviciosClinicos&titulo=Servicios+Clínicos"
   },
   {
     "icono": "user-nurse",
@@ -19,7 +20,8 @@
     "implementado": true,
     "mensajeImplementado": "En construcción",
     "posicion": 3,
-    "version": 1
+    "version": 1,
+    "redirecTo": "tabs/tab3/menu-prestaciones/unidades?tipo=unidadesApoyo&titulo=Unidades+de+Apoyo+y+Terapéutico"
   },
   {
     "_id": "67832a43c8a5d50009607cab",
@@ -31,7 +33,8 @@
     "implementado": true,
     "mensajeImplementado": "En construcción",
     "posicion": 2,
-    "version": 1
+    "version": 1,
+    "redirecTo": "tabs/tab3/menu-prestaciones/unidades?tipo=unidadesApoyo&titulo=Otras+Unidades"
   },
   {
     "icono": "user-nurse",
@@ -42,7 +45,8 @@
     "implementado": true,
     "mensajeImplementado": "En construcción",
     "posicion": 4,
-    "version": 1
+    "version": 1,
+    "redirecTo": "tabs/tab3/menu-prestaciones/unidades?tipo=unidadesApoyo&titulo=deshabilitado"
   },
   {
     "icono": "user-nurse",
@@ -53,6 +57,7 @@
     "implementado": true,
     "mensajeImplementado": "En construcción",
     "posicion": 2,
-    "version": 2
+    "version": 2,
+    "redirecTo": "tabs/tab3/menu-prestaciones/unidades?tipo=unidadesApoyo&titulo=Otras+Unidades+2"
   }
 ]

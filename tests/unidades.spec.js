@@ -695,7 +695,7 @@ describe("Endpoints unidades", () => {
                 ],
               },
               contactos: {
-                telefonos: ["123", "552758966"],
+                telefonos: ["552758967", "552758966"],
                 correos: ["correo@gmail.com", "correo2@gmail.com"],
               },
             },

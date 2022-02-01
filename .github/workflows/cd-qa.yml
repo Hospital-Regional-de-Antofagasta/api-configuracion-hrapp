@@ -16,7 +16,7 @@
         API_KEY: ${{ secrets.API_KEY }}
         MONGO_IP: ${{ secrets.MONGO_IP_QA }}
         NODE_ENV: "dev"
-        I_JWT_KEY: ${{ secrets.I_JWT_KEY_PROD }}
+        I_JWT_KEY: ${{ secrets.I_JWT_KEY_QA }}
       steps:
         - name: Checkout
           uses: actions/checkout@v2

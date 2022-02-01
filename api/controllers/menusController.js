@@ -127,6 +127,8 @@ exports.createItemUnidad = async (req, res) => {
     item.mensajeImplementado = "En construcción";
     item.version = 1;
 
+    item.redirecTo = `tabs/tab3/menu-prestaciones/unidades?tipo=${item.tipo}&titulo=${item.title.replace(" ", "+")}`;
+
     await MenuUnidades.create(item);
 
     res.status(201).send({ respuesta: await getMensajes("created") });
