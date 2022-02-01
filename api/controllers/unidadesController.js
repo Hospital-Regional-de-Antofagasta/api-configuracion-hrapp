@@ -1,7 +1,8 @@
 const Unidades = require("../models/Unidades");
 const { getMensajes } = require("../config");
-const { uploadImage, deleteFolder } = require("../utils/imagesManager");
+const { uploadImage, deleteFolder } = require("../utils/controlImagenes");
 const { v4: uuidv4 } = require("uuid");
+const { manejarError } = require("../utils/controlErrores")
 
 exports.get = async (req, res) => {
   try {
@@ -15,15 +16,7 @@ exports.get = async (req, res) => {
     const unidades = await Unidades.find(filter).sort({ posicion: 1 }).exec();
     res.status(200).send(unidades);
   } catch (error) {
-    if (process.env.NODE_ENV === "dev")
-      return res.status(500).send({
-        respuesta: await getMensajes("serverError"),
-        detalles_error: {
-          nombre: error.name,
-          mensaje: error.message,
-        },
-      });
-    res.status(500).send({ respuesta: await getMensajes("serverError") });
+    await manejarError(error, req, res)
   }
 };
 
@@ -39,15 +32,7 @@ exports.create = async (req, res) => {
 
     res.status(201).send({ respuesta: await getMensajes("created") });
   } catch (error) {
-    if (process.env.NODE_ENV === "dev")
-      return res.status(500).send({
-        respuesta: await getMensajes("serverError"),
-        detalles_error: {
-          nombre: error.name,
-          mensaje: error.message,
-        },
-      });
-    res.status(500).send({ respuesta: await getMensajes("serverError") });
+    await manejarError(error, req, res)
   }
 };
 
@@ -67,23 +52,11 @@ exports.update = async (req, res) => {
       unidad.referencias,
       unidadAntigua.referencias
     );
-    await Unidades.updateOne({ _id: idUnidad }, unidad).exec();
+    await Unidades.updateOne({ _id: idUnidad }, unidad, { runValidators: true }).exec();
 
     res.status(200).send({ respuesta: await getMensajes("success") });
   } catch (error) {
-    console.log({
-      nombre: error.name,
-      mensaje: error.message,
-    });
-    if (process.env.NODE_ENV === "dev")
-      return res.status(500).send({
-        respuesta: await getMensajes("serverError"),
-        detalles_error: {
-          nombre: error.name,
-          mensaje: error.message,
-        },
-      });
-    res.status(500).send({ respuesta: await getMensajes("serverError") });
+    await manejarError(error, req, res)
   }
 };
 
@@ -98,15 +71,7 @@ exports.delete = async (req, res) => {
 
     res.status(200).send({ respuesta: await getMensajes("success") });
   } catch (error) {
-    if (process.env.NODE_ENV === "dev")
-      return res.status(500).send({
-        respuesta: await getMensajes("serverError"),
-        detalles_error: {
-          nombre: error.name,
-          mensaje: error.message,
-        },
-      });
-    res.status(500).send({ respuesta: await getMensajes("serverError") });
+    await manejarError(error, req, res)
   }
 };
 

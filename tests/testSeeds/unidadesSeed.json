@@ -88,7 +88,7 @@
     "servicios": ["Oncología", "Cardiología Infantil", "Nutrición Infantil"],
     "atenciones": [
       {
-        "nombre": "",
+        "nombre": null,
         "horario": {
           "nota": "",
           "atiendeFeriados": false,
@@ -140,7 +140,7 @@
     "servicios": ["Oncología", "Nutrición Infantil"],
     "atenciones": [
       {
-        "nombre": "",
+        "nombre": null,
         "horario": {
           "nota": "",
           "atiendeFeriados": false,
@@ -165,7 +165,21 @@
         }
       }
     ],
-    "referencias": [],
+    "referencias": [
+      {
+        "ubicacion": "2 piso",
+        "imagen": {
+          "src": "https://via.placeholder.com/1000x500",
+          "alt": "imagen",
+          "srcset": [
+            "https://via.placeholder.com/30000x1500 2160w",
+            "https://via.placeholder.com/2000x1000 1080w",
+            "https://via.placeholder.com/1000x500 720w",
+            "https://via.placeholder.com/500x250 480w"
+          ]
+        }
+      }
+    ],
     "tipo": "serviciosClinicos",
     "habilitado": true,
     "posicion": 2,
@@ -177,7 +191,7 @@
     "servicios": ["Oncología", "Nutrición Infantil", "Nutrición"],
     "atenciones": [
       {
-        "nombre": "",
+        "nombre": null,
         "horario": {
           "nota": "",
           "atiendeFeriados": false,
@@ -233,7 +247,32 @@
     ],
     "atenciones": [
       {
-        "nombre": "",
+        "nombre": "2",
+        "horario": {
+          "nota": "",
+          "atiendeFeriados": false,
+          "periodos": [
+            {
+              "dias": {
+                "inicio": "martes",
+                "fin": "viernes"
+              },
+              "horas": [
+                {
+                  "inicio": "08:00",
+                  "fin": "16:00"
+                }
+              ]
+            }
+          ]
+        },
+        "contactos": {
+          "telefonos": ["552758965"],
+          "correos": ["correo3@gmail.com"]
+        }
+      },
+      {
+        "nombre": "hola",
         "horario": {
           "nota": "",
           "atiendeFeriados": false,
@@ -289,7 +328,7 @@
     ],
     "atenciones": [
       {
-        "nombre": "",
+        "nombre": null,
         "horario": {
           "nota": "",
           "atiendeFeriados": false,
