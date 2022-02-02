@@ -7,18 +7,21 @@ const ConfigApiConfiguracion = require("../api/models/ConfigApiConfiguracion");
 const configSeed = require("./testSeeds/configSeed.json");
 const MensajesInformacion = require("../api/models/MensajesInformacion");
 const mensajesInformacionSeed = require("./testSeeds/mensajesInformacionSeed.json");
+const AuditLogging = require("../api/models/AuditLogging.js");
 
 const request = supertest(app);
 
 const secretoInterno = process.env.JWT_SECRET_INTERNO;
 
+const user = {
+  _id: "61832a43c8a4d50009607cab",
+  userName: "admin",
+  role: "admin",
+};
+
 const tokenInterno = jwt.sign(
   {
-    user: {
-      _id: "61832a43c8a4d50009607cab",
-      userName: "admin",
-      role: "admin",
-    },
+    user,
   },
   secretoInterno
 );
@@ -34,6 +37,18 @@ const tokenInternoSinUsuario = jwt.sign(
   secretoInterno
 );
 
+const expectAuditLog = async (action) => {
+  const registro = await AuditLogging.findOne({
+    userName: user.userName,
+    userId: user._id,
+    action,
+  }).exec();
+
+  expect(registro).toBeTruthy();
+  expect(registro.affectedData._ids.length).toBe(12);
+  expect(registro.createdAt).toBeTruthy();
+}
+
 beforeEach(async () => {
   await mongoose.disconnect();
   await mongoose.connect(`${process.env.MONGO_URI}/mensajes_informacion_test`, {
@@ -47,6 +62,7 @@ beforeEach(async () => {
 afterEach(async () => {
   await MensajesInformacion.deleteMany();
   await ConfigApiConfiguracion.deleteMany();
+  await AuditLogging.deleteMany();
   await mongoose.disconnect();
 });
 
@@ -85,7 +101,7 @@ describe("Endpoint mensajes informacion", () => {
       expect(response.body[11].pagina).toBe("solicitudCita");
     });
   });
-  describe("PUT /v1/configuracion-hrapp/menu/unidades/:_id", () => {
+  describe("PUT /v1/configuracion-hrapp/mensajes-informacion", () => {
     it("Should not update mensajes de informacion without token", async () => {
       const response = await request
         .put("/v1/configuracion-hrapp/mensajes-informacion")
@@ -471,6 +487,8 @@ describe("Endpoint mensajes informacion", () => {
       expect(mensajesInformacion[9].texto).toBe("historicoHorasExamenes");
       expect(mensajesInformacion[10].texto).toBe("detalleReceta");
       expect(mensajesInformacion[11].texto).toBe("actualizarDatosPaciente");
+
+      await expectAuditLog("PUT /v1/configuracion-hrapp/mensajes-informacion");
     });
   });
 });

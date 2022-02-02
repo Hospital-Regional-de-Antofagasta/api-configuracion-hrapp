@@ -17,18 +17,21 @@ const MenuUnidades = require("../api/models/MenuUnidades");
 const menuUnidadesSeed = require("./testSeeds/menuUnidadesSeed.json");
 const MenuTabs = require("../api/models/MenuTabs");
 const menuTabsSeed = require("./testSeeds/menuTabsSeed.json");
+const AuditLogging = require("../api/models/AuditLogging.js");
 
 const request = supertest(app);
 
 const secretoInterno = process.env.JWT_SECRET_INTERNO;
 
+const user = {
+  _id: "61832a43c8a4d50009607cab",
+  userName: "admin",
+  role: "admin",
+};
+
 const tokenInterno = jwt.sign(
   {
-    user: {
-      _id: "61832a43c8a4d50009607cab",
-      userName: "admin",
-      role: "admin",
-    },
+    user,
   },
   secretoInterno
 );
@@ -43,6 +46,18 @@ const tokenInternoSinUsuario = jwt.sign(
   },
   secretoInterno
 );
+
+const expectAuditLog = async (action) => {
+  const registro = await AuditLogging.findOne({
+    userName: user.userName,
+    userId: user._id,
+    action,
+  }).exec();
+
+  expect(registro).toBeTruthy();
+  expect(registro.affectedData._id).toBeTruthy();
+  expect(registro.createdAt).toBeTruthy();
+}
 
 beforeEach(async () => {
   await mongoose.disconnect();
@@ -67,6 +82,7 @@ afterEach(async () => {
   await MenuUnidades.deleteMany();
   await MenuTabs.deleteMany();
   await ConfigApiConfiguracion.deleteMany();
+  await AuditLogging.deleteMany();
   await mongoose.disconnect();
 });
 
@@ -337,7 +353,13 @@ describe("Endpoints menus", () => {
         expect(item.mensajeImplementado).toBe("En construcción");
         expect(item.posicion).toBe(5);
         expect(item.version).toBe(1);
-        expect(item.redirecTo).toBe(`tabs/tab3/menu-prestaciones/unidades?tipo=${item.tipo}&titulo=${item.title.replace(" ", "+")}`);
+        expect(item.redirecTo).toBe(
+          `tabs/tab3/menu-prestaciones/unidades?tipo=${
+            item.tipo
+          }&titulo=${item.title.replace(" ", "+")}`
+        );
+
+        await expectAuditLog("POST /v1/configuracion-hrapp/menu/unidades");
       });
     });
     describe("PUT /v1/configuracion-hrapp/menu/unidades/:_id", () => {
@@ -484,7 +506,13 @@ describe("Endpoints menus", () => {
         expect(item.mensajeImplementado).toBe("En construcción");
         expect(item.posicion).toBe(2);
         expect(item.version).toBe(1);
-        expect(item.redirecTo).toBe(`tabs/tab3/menu-prestaciones/unidades?tipo=${item.tipo}&titulo=${item.title.replace(" ", "+")}`);
+        expect(item.redirecTo).toBe(
+          `tabs/tab3/menu-prestaciones/unidades?tipo=${
+            item.tipo
+          }&titulo=${item.title.replace(" ", "+")}`
+        );
+
+        await expectAuditLog("PUT /v1/configuracion-hrapp/menu/unidades/:_id");
       });
     });
     describe("DELETE /v1/configuracion-hrapp/menu/unidades", () => {
@@ -590,6 +618,8 @@ describe("Endpoints menus", () => {
         }).exec();
 
         expect(item).toBeFalsy();
+
+        await expectAuditLog("DELETE /v1/configuracion-hrapp/menu/unidades/:_id");
       });
     });
   });

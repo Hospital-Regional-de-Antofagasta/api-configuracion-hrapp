@@ -7,18 +7,21 @@ const ConfigApiConfiguracion = require("../api/models/ConfigApiConfiguracion");
 const configSeed = require("./testSeeds/configSeed.json");
 const Unidades = require("../api/models/Unidades");
 const unidadesSeed = require("./testSeeds/unidadesSeed.json");
+const AuditLogging = require("../api/models/AuditLogging.js");
 
 const request = supertest(app);
 
 const secretoInterno = process.env.JWT_SECRET_INTERNO;
 
+const user = {
+  _id: "61832a43c8a4d50009607cab",
+  userName: "admin",
+  role: "admin",
+};
+
 const tokenInterno = jwt.sign(
   {
-    user: {
-      _id: "61832a43c8a4d50009607cab",
-      userName: "admin",
-      role: "admin",
-    },
+    user,
   },
   secretoInterno
 );
@@ -34,6 +37,18 @@ const tokenInternoSinUsuario = jwt.sign(
   secretoInterno
 );
 
+const expectAuditLog = async (action) => {
+  const registro = await AuditLogging.findOne({
+    userName: user.userName,
+    userId: user._id,
+    action,
+  }).exec();
+
+  expect(registro).toBeTruthy();
+  expect(registro.affectedData._id).toBeTruthy();
+  expect(registro.createdAt).toBeTruthy();
+}
+
 beforeEach(async () => {
   await mongoose.disconnect();
   await mongoose.connect(`${process.env.MONGO_URI}/unidades_test`, {
@@ -47,6 +62,7 @@ beforeEach(async () => {
 afterEach(async () => {
   await Unidades.deleteMany();
   await ConfigApiConfiguracion.deleteMany();
+  await AuditLogging.deleteMany();
   await mongoose.disconnect();
 });
 
@@ -509,6 +525,8 @@ describe("Endpoints unidades", () => {
       expect(unidad.habilitado).toBe(true);
       expect(unidad.posicion).toBe(5);
       expect(unidad.version).toBe(1);
+
+      await expectAuditLog("POST /v1/configuracion-hrapp/unidades");
     });
   });
   describe("PUT /v1/configuracion-hrapp/unidades/:_id", () => {
@@ -898,9 +916,7 @@ describe("Endpoints unidades", () => {
       expect(unidad.atenciones[1].horario.periodos[0].horas[0].fin).toBe(
         "14:00"
       );
-      expect(unidad.atenciones[1].contactos.telefonos).toEqual([
-        "123123123",
-      ]);
+      expect(unidad.atenciones[1].contactos.telefonos).toEqual(["123123123"]);
       expect(unidad.atenciones[1].contactos.correos).toEqual([]);
       expect(unidad.referencias[0].ubicacion).toBe("1 piso");
       expect(unidad.referencias[0].imagen.src).toBe(
@@ -917,6 +933,8 @@ describe("Endpoints unidades", () => {
       expect(unidad.habilitado).toBe(true);
       expect(unidad.posicion).toBe(6);
       expect(unidad.version).toBe(1);
+
+      await expectAuditLog("PUT /v1/configuracion-hrapp/unidades/:_id");
     });
   });
   describe("DELETE /v1/configuracion-hrapp/unidades", () => {

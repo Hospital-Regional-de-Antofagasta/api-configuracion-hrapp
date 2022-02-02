@@ -13,11 +13,7 @@ exports.manejarError = async (error, req, res) => {
         detalles_error: errors,
       });
   }
-  console.log({
-    nombre: error.name,
-    mensaje: error.message,
-  })
-  if (process.env.NODE_ENV === "dev")
+  if (process.env.NODE_ENV === "dev" || process.env.NODE_ENV === "test")
     return res.status(500).send({
       respuesta: await getMensajes("serverError"),
       detalles_error: {
