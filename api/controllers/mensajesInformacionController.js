@@ -1,5 +1,7 @@
 const MensajesInformacion = require("../models/MensajesInformacion");
 const { getMensajes } = require("../config");
+const { manejarError } = require("../utils/errorController");
+const { registerAuditLog } = require("../utils/auditLogController");
 
 exports.get = async (req, res) => {
   try {
@@ -8,15 +10,7 @@ exports.get = async (req, res) => {
       .exec();
     res.status(200).send(mensajesInformacion);
   } catch (error) {
-    if (process.env.NODE_ENV === "dev")
-      return res.status(500).send({
-        respuesta: await getMensajes("serverError"),
-        detalles_error: {
-          nombre: error.name,
-          mensaje: error.message,
-        },
-      });
-    res.status(500).send({ respuesta: await getMensajes("serverError") });
+    await manejarError(error, req, res)
   }
 };
 
@@ -24,24 +18,27 @@ exports.updateMany = async (req, res) => {
   try {
     const mensajesInformacion = req.body;
 
+    const idsMensajesInformacion = [];
+
     for (let mensaje of mensajesInformacion) {
       const { _id, pagina, ...datosAActualizar } = mensaje;
+
+      idsMensajesInformacion.push(_id)
 
       const filter = { pagina };
 
       await MensajesInformacion.updateOne(filter, datosAActualizar).exec();
     }
 
+    await registerAuditLog(
+      req.user.userName,
+      req.user._id,
+      "PUT /v1/configuracion-hrapp/mensajes-informacion",
+      { _ids: idsMensajesInformacion }
+    );
+
     res.status(200).send({ respuesta: await getMensajes("success") });
   } catch (error) {
-    if (process.env.NODE_ENV === "dev")
-      return res.status(500).send({
-        respuesta: await getMensajes("serverError"),
-        detalles_error: {
-          nombre: error.name,
-          mensaje: error.message,
-        },
-      });
-    res.status(500).send({ respuesta: await getMensajes("serverError") });
+    await manejarError(error, req, res)
   }
 };

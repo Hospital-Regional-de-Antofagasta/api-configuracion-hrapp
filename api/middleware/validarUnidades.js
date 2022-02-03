@@ -1,6 +1,6 @@
 const { getMensajes } = require("../config");
 const Unidades = require("../models/Unidades");
-const { manejarError } = require("../utils/controlErrores");
+const { manejarError } = require("../utils/errorController");
 
 exports.unidadExists = async (req, res, next) => {
   try {

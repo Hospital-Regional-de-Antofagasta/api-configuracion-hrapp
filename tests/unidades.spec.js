@@ -7,18 +7,21 @@ const ConfigApiConfiguracion = require("../api/models/ConfigApiConfiguracion");
 const configSeed = require("./testSeeds/configSeed.json");
 const Unidades = require("../api/models/Unidades");
 const unidadesSeed = require("./testSeeds/unidadesSeed.json");
+const AuditLogging = require("../api/models/AuditLogging.js");
 
 const request = supertest(app);
 
 const secretoInterno = process.env.JWT_SECRET_INTERNO;
 
+const user = {
+  _id: "61832a43c8a4d50009607cab",
+  userName: "admin",
+  role: "admin",
+};
+
 const tokenInterno = jwt.sign(
   {
-    user: {
-      _id: "61832a43c8a4d50009607cab",
-      userName: "admin",
-      role: "admin",
-    },
+    user,
   },
   secretoInterno
 );
@@ -34,6 +37,18 @@ const tokenInternoSinUsuario = jwt.sign(
   secretoInterno
 );
 
+const expectAuditLog = async (action) => {
+  const registro = await AuditLogging.findOne({
+    userName: user.userName,
+    userId: user._id,
+    action,
+  }).exec();
+
+  expect(registro).toBeTruthy();
+  expect(registro.affectedData._id).toBeTruthy();
+  expect(registro.createdAt).toBeTruthy();
+};
+
 beforeEach(async () => {
   await mongoose.disconnect();
   await mongoose.connect(`${process.env.MONGO_URI}/unidades_test`, {
@@ -47,6 +62,7 @@ beforeEach(async () => {
 afterEach(async () => {
   await Unidades.deleteMany();
   await ConfigApiConfiguracion.deleteMany();
+  await AuditLogging.deleteMany();
   await mongoose.disconnect();
 });
 
@@ -368,6 +384,90 @@ describe("Endpoints unidades", () => {
         icono: mensaje.icono,
       });
     });
+    it("Should not create unidad with same name", async () => {
+      const response = await request
+        .post("/v1/configuracion-hrapp/unidades")
+        .set("Authorization", tokenInterno)
+        .send({
+          nombre: "Pediatría",
+          descripcion: "Descripción",
+          servicios: [
+            "Servicio 1.",
+            "Servicio 2.",
+            "Servicio 3.",
+            "Servicio 4.",
+          ],
+          atenciones: [
+            {
+              nombre: "Nombre Atención",
+              horario: {
+                nota: "Nota",
+                atiendeFeriados: true,
+                periodos: [
+                  {
+                    dias: {
+                      inicio: "lunes",
+                      fin: "lunes",
+                    },
+                    horas: [
+                      {
+                        inicio: "08:00",
+                        fin: "14:00",
+                      },
+                    ],
+                  },
+                ],
+              },
+              contactos: {
+                telefonos: ["123123123", "552758966"],
+                correos: ["correo@gmail.com", "correo2@gmail.com"],
+              },
+            },
+            {
+              nombre: "Encargado",
+              horario: {
+                nota: "Atención telefónica",
+                atiendeFeriados: true,
+                periodos: [
+                  {
+                    dias: {
+                      inicio: "Viernes",
+                      fin: "sábado",
+                    },
+                    horas: [
+                      {
+                        inicio: "08:00",
+                        fin: "14:00",
+                      },
+                    ],
+                  },
+                ],
+              },
+              contactos: {
+                correos: ["correo@gmail.com", "correo2@gmail.com"],
+              },
+            },
+          ],
+          referencias: [
+            {
+              ubicacion: "1 piso",
+            },
+          ],
+          tipo: "serviciosClinicos",
+          habilitado: true,
+          posicion: 5,
+        });
+
+      const mensaje = await getMensajes("badRequest");
+
+      expect(response.status).toBe(400);
+      expect(response.body.respuesta).toEqual({
+        titulo: mensaje.titulo,
+        mensaje: mensaje.mensaje,
+        color: mensaje.color,
+        icono: mensaje.icono,
+      });
+    });
     it("Should create unidad without image", async () => {
       const response = await request
         .post("/v1/configuracion-hrapp/unidades")
@@ -509,6 +609,8 @@ describe("Endpoints unidades", () => {
       expect(unidad.habilitado).toBe(true);
       expect(unidad.posicion).toBe(5);
       expect(unidad.version).toBe(1);
+
+      await expectAuditLog("POST /v1/configuracion-hrapp/unidades");
     });
   });
   describe("PUT /v1/configuracion-hrapp/unidades/:_id", () => {
@@ -752,6 +854,104 @@ describe("Endpoints unidades", () => {
         icono: mensaje.icono,
       });
     });
+    it("Should not update unidad with same name", async () => {
+      const response = await request
+        .put("/v1/configuracion-hrapp/unidades/67832a43c8a5d50009611cab")
+        .set("Authorization", tokenInterno)
+        .send({
+          nombre: "Pediatría",
+          descripcion: "Descripción",
+          servicios: [
+            "Servicio 1.",
+            "Servicio 2.",
+            "Servicio 3.",
+            "Servicio 4.",
+          ],
+          atenciones: [
+            {
+              nombre: "Nombre Atención",
+              horario: {
+                nota: "Nota",
+                atiendeFeriados: true,
+                periodos: [
+                  {
+                    dias: {
+                      inicio: "lunes",
+                      fin: "lunes",
+                    },
+                    horas: [
+                      {
+                        inicio: "08:00",
+                        fin: "14:00",
+                      },
+                    ],
+                  },
+                ],
+              },
+              contactos: {
+                telefonos: ["123123123", "552758966"],
+                correos: ["correo@gmail.com", "correo2@gmail.com"],
+              },
+            },
+            {
+              nombre: "Encargado",
+              horario: {
+                nota: "Atención telefónica",
+                atiendeFeriados: true,
+                periodos: [
+                  {
+                    dias: {
+                      inicio: "Viernes",
+                      fin: "sábado",
+                    },
+                    horas: [
+                      {
+                        inicio: "08:00",
+                        fin: "14:00",
+                      },
+                    ],
+                  },
+                ],
+              },
+              contactos: {
+                telefonos: ["123123123"],
+              },
+            },
+          ],
+          referencias: [
+            {
+              _id: "67832a43c8a5d50009611cad",
+              ubicacion: "1 piso",
+              imagen: {
+                src: "https://via.placeholder.com/500x250",
+                alt: "imagen",
+                srcset: [
+                  "https://via.placeholderr.com/30000x1500 2160w",
+                  "https://via.placeholder.com/2000x1000 1080w",
+                  "https://via.placeholder.com/1000x500 720w",
+                  "https://via.placeholder.com/500x250 480w",
+                ],
+              },
+            },
+          ],
+          tipo: "serviciosClinicos",
+          habilitado: true,
+          posicion: 6,
+          _id: "id",
+          __v: "v",
+          version: "version",
+        });
+
+      const mensaje = await getMensajes("badRequest");
+
+      expect(response.status).toBe(400);
+      expect(response.body.respuesta).toEqual({
+        titulo: mensaje.titulo,
+        mensaje: mensaje.mensaje,
+        color: mensaje.color,
+        icono: mensaje.icono,
+      });
+    });
     it("Should update unidad without image", async () => {
       const response = await request
         .put("/v1/configuracion-hrapp/unidades/67832a43c8a5d50009611cab")
@@ -898,9 +1098,7 @@ describe("Endpoints unidades", () => {
       expect(unidad.atenciones[1].horario.periodos[0].horas[0].fin).toBe(
         "14:00"
       );
-      expect(unidad.atenciones[1].contactos.telefonos).toEqual([
-        "123123123",
-      ]);
+      expect(unidad.atenciones[1].contactos.telefonos).toEqual(["123123123"]);
       expect(unidad.atenciones[1].contactos.correos).toEqual([]);
       expect(unidad.referencias[0].ubicacion).toBe("1 piso");
       expect(unidad.referencias[0].imagen.src).toBe(
@@ -917,6 +1115,8 @@ describe("Endpoints unidades", () => {
       expect(unidad.habilitado).toBe(true);
       expect(unidad.posicion).toBe(6);
       expect(unidad.version).toBe(1);
+
+      await expectAuditLog("PUT /v1/configuracion-hrapp/unidades/:_id");
     });
   });
   describe("DELETE /v1/configuracion-hrapp/unidades", () => {

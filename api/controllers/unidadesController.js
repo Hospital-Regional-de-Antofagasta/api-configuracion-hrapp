@@ -1,8 +1,9 @@
 const Unidades = require("../models/Unidades");
 const { getMensajes } = require("../config");
-const { uploadImage, deleteFolder } = require("../utils/controlImagenes");
+const { uploadImage, deleteFolder } = require("../utils/imagesController");
 const { v4: uuidv4 } = require("uuid");
-const { manejarError } = require("../utils/controlErrores")
+const { manejarError } = require("../utils/errorController")
+const { registerAuditLog } = require("../utils/auditLogController");
 
 exports.get = async (req, res) => {
   try {
@@ -28,7 +29,14 @@ exports.create = async (req, res) => {
 
     unidad.referencias = await subirImagenesReferencias(unidad.referencias, []);
 
-    await Unidades.create(unidad);
+    const newUnidad = await Unidades.create(unidad);
+
+    await registerAuditLog(
+      req.user.userName,
+      req.user._id,
+      "POST /v1/configuracion-hrapp/unidades",
+      { _id: newUnidad._id }
+    );
 
     res.status(201).send({ respuesta: await getMensajes("created") });
   } catch (error) {
@@ -54,6 +62,13 @@ exports.update = async (req, res) => {
     );
     await Unidades.updateOne({ _id: idUnidad }, unidad, { runValidators: true }).exec();
 
+    await registerAuditLog(
+      req.user.userName,
+      req.user._id,
+      "PUT /v1/configuracion-hrapp/unidades/:_id",
+      { _id: idUnidad }
+    );
+
     res.status(200).send({ respuesta: await getMensajes("success") });
   } catch (error) {
     await manejarError(error, req, res)
@@ -68,6 +83,13 @@ exports.delete = async (req, res) => {
     await eliminarImagenesReferencias(unidad.referencias);
 
     await Unidades.deleteOne({ _id }).exec();
+
+    await registerAuditLog(
+      req.user.userName,
+      req.user._id,
+      "DELETE /v1/configuracion-hrapp/unidades/:_id",
+      { _id }
+    );
 
     res.status(200).send({ respuesta: await getMensajes("success") });
   } catch (error) {
