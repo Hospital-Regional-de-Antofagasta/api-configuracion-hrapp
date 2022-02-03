@@ -47,7 +47,7 @@ const expectAuditLog = async (action) => {
   expect(registro).toBeTruthy();
   expect(registro.affectedData._id).toBeTruthy();
   expect(registro.createdAt).toBeTruthy();
-}
+};
 
 beforeEach(async () => {
   await mongoose.disconnect();
@@ -372,6 +372,90 @@ describe("Endpoints unidades", () => {
           tipo: "serviciosClinicos",
           habilitado: true,
           posicion: 1,
+        });
+
+      const mensaje = await getMensajes("badRequest");
+
+      expect(response.status).toBe(400);
+      expect(response.body.respuesta).toEqual({
+        titulo: mensaje.titulo,
+        mensaje: mensaje.mensaje,
+        color: mensaje.color,
+        icono: mensaje.icono,
+      });
+    });
+    it("Should not create unidad with same name", async () => {
+      const response = await request
+        .post("/v1/configuracion-hrapp/unidades")
+        .set("Authorization", tokenInterno)
+        .send({
+          nombre: "Pediatría",
+          descripcion: "Descripción",
+          servicios: [
+            "Servicio 1.",
+            "Servicio 2.",
+            "Servicio 3.",
+            "Servicio 4.",
+          ],
+          atenciones: [
+            {
+              nombre: "Nombre Atención",
+              horario: {
+                nota: "Nota",
+                atiendeFeriados: true,
+                periodos: [
+                  {
+                    dias: {
+                      inicio: "lunes",
+                      fin: "lunes",
+                    },
+                    horas: [
+                      {
+                        inicio: "08:00",
+                        fin: "14:00",
+                      },
+                    ],
+                  },
+                ],
+              },
+              contactos: {
+                telefonos: ["123123123", "552758966"],
+                correos: ["correo@gmail.com", "correo2@gmail.com"],
+              },
+            },
+            {
+              nombre: "Encargado",
+              horario: {
+                nota: "Atención telefónica",
+                atiendeFeriados: true,
+                periodos: [
+                  {
+                    dias: {
+                      inicio: "Viernes",
+                      fin: "sábado",
+                    },
+                    horas: [
+                      {
+                        inicio: "08:00",
+                        fin: "14:00",
+                      },
+                    ],
+                  },
+                ],
+              },
+              contactos: {
+                correos: ["correo@gmail.com", "correo2@gmail.com"],
+              },
+            },
+          ],
+          referencias: [
+            {
+              ubicacion: "1 piso",
+            },
+          ],
+          tipo: "serviciosClinicos",
+          habilitado: true,
+          posicion: 5,
         });
 
       const mensaje = await getMensajes("badRequest");
@@ -758,6 +842,104 @@ describe("Endpoints unidades", () => {
           tipo: "serviciosClinicos",
           habilitado: true,
           posicion: 1,
+        });
+
+      const mensaje = await getMensajes("badRequest");
+
+      expect(response.status).toBe(400);
+      expect(response.body.respuesta).toEqual({
+        titulo: mensaje.titulo,
+        mensaje: mensaje.mensaje,
+        color: mensaje.color,
+        icono: mensaje.icono,
+      });
+    });
+    it("Should not update unidad with same name", async () => {
+      const response = await request
+        .put("/v1/configuracion-hrapp/unidades/67832a43c8a5d50009611cab")
+        .set("Authorization", tokenInterno)
+        .send({
+          nombre: "Pediatría",
+          descripcion: "Descripción",
+          servicios: [
+            "Servicio 1.",
+            "Servicio 2.",
+            "Servicio 3.",
+            "Servicio 4.",
+          ],
+          atenciones: [
+            {
+              nombre: "Nombre Atención",
+              horario: {
+                nota: "Nota",
+                atiendeFeriados: true,
+                periodos: [
+                  {
+                    dias: {
+                      inicio: "lunes",
+                      fin: "lunes",
+                    },
+                    horas: [
+                      {
+                        inicio: "08:00",
+                        fin: "14:00",
+                      },
+                    ],
+                  },
+                ],
+              },
+              contactos: {
+                telefonos: ["123123123", "552758966"],
+                correos: ["correo@gmail.com", "correo2@gmail.com"],
+              },
+            },
+            {
+              nombre: "Encargado",
+              horario: {
+                nota: "Atención telefónica",
+                atiendeFeriados: true,
+                periodos: [
+                  {
+                    dias: {
+                      inicio: "Viernes",
+                      fin: "sábado",
+                    },
+                    horas: [
+                      {
+                        inicio: "08:00",
+                        fin: "14:00",
+                      },
+                    ],
+                  },
+                ],
+              },
+              contactos: {
+                telefonos: ["123123123"],
+              },
+            },
+          ],
+          referencias: [
+            {
+              _id: "67832a43c8a5d50009611cad",
+              ubicacion: "1 piso",
+              imagen: {
+                src: "https://via.placeholder.com/500x250",
+                alt: "imagen",
+                srcset: [
+                  "https://via.placeholderr.com/30000x1500 2160w",
+                  "https://via.placeholder.com/2000x1000 1080w",
+                  "https://via.placeholder.com/1000x500 720w",
+                  "https://via.placeholder.com/500x250 480w",
+                ],
+              },
+            },
+          ],
+          tipo: "serviciosClinicos",
+          habilitado: true,
+          posicion: 6,
+          _id: "id",
+          __v: "v",
+          version: "version",
         });
 
       const mensaje = await getMensajes("badRequest");

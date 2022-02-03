@@ -391,7 +391,7 @@ const Unidades = mongoose.model(
     posicion: {
       type: Number,
       required: [true, "La posición es obligatoria."],
-      max: [99, "La posición no puede ser mayor a 999"],
+      max: [99, "La posición no puede ser mayor a 99"],
       min: [1, "La posición no puede ser menor a 0"],
     },
     version: Number,

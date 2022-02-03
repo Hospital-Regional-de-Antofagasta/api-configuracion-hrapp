@@ -116,7 +116,9 @@ exports.updateItemUnidad = async (req, res) => {
     delete item.__v;
     delete item.version;
 
-    await MenuUnidades.updateOne({ _id }, item).exec();
+    item.redirecTo = `tabs/tab3/menu-prestaciones/unidades?tipo=${item.tipo}&titulo=${item.title.replace(" ", "+")}`;
+
+    await MenuUnidades.updateOne({ _id }, item, { runValidators: true }).exec();
 
     await registerAuditLog(
       req.user.userName,

@@ -57,7 +57,7 @@ const expectAuditLog = async (action) => {
   expect(registro).toBeTruthy();
   expect(registro.affectedData._id).toBeTruthy();
   expect(registro.createdAt).toBeTruthy();
-}
+};
 
 beforeEach(async () => {
   await mongoose.disconnect();
@@ -317,6 +317,29 @@ describe("Endpoints menus", () => {
           icono: mensaje.icono,
         });
       });
+      it("Should not create item for menu unidades with same title", async () => {
+        const response = await request
+          .post("/v1/configuracion-hrapp/menu/unidades")
+          .set("Authorization", tokenInterno)
+          .send({
+            icono: "new-icon",
+            title: "Servicios Clínicos",
+            subtitle: "Subtítulo",
+            tipo: "tipo",
+            habilitado: true,
+            posicion: 5,
+          });
+
+        const mensaje = await getMensajes("badRequest");
+
+        expect(response.status).toBe(400);
+        expect(response.body.respuesta).toEqual({
+          titulo: mensaje.titulo,
+          mensaje: mensaje.mensaje,
+          color: mensaje.color,
+          icono: mensaje.icono,
+        });
+      });
       it("Should create item for menu unidades", async () => {
         const response = await request
           .post("/v1/configuracion-hrapp/menu/unidades")
@@ -472,13 +495,40 @@ describe("Endpoints menus", () => {
           icono: mensaje.icono,
         });
       });
-      it("Should update item for menu unidades", async () => {
+      it("Should not update item for menu unidades with same name", async () => {
         const response = await request
           .put("/v1/configuracion-hrapp/menu/unidades/67832a43c8a5d50009607cab")
           .set("Authorization", tokenInterno)
           .send({
             icono: "new-icon",
+            title: "Servicios Clínicos",
             subtitle: "Subtítulo",
+            tipo: "tipo",
+            habilitado: true,
+            posicion: 5,
+          });
+
+        const mensaje = await getMensajes("badRequest");
+
+        expect(response.status).toBe(400);
+        expect(response.body.respuesta).toEqual({
+          titulo: mensaje.titulo,
+          mensaje: mensaje.mensaje,
+          color: mensaje.color,
+          icono: mensaje.icono,
+        });
+      });
+      it("Should update item for menu unidades", async () => {
+        const response = await request
+          .put("/v1/configuracion-hrapp/menu/unidades/67832a43c8a5d50009607cab")
+          .set("Authorization", tokenInterno)
+          .send({
+            title: "Servicios",
+            icono: "new-icon",
+            subtitle: "Subtítulo",
+            tipo: "tipo",
+            habilitado: false,
+            posicion: 5,
           });
 
         const mensaje = await getMensajes("success");
@@ -498,13 +548,13 @@ describe("Endpoints menus", () => {
         }).exec();
 
         expect(item.icono).toBe("new-icon");
-        expect(item.title).toBe("Otras Unidades");
+        expect(item.title).toBe("Servicios");
         expect(item.subtitle).toBe("Subtítulo");
-        expect(item.tipo).toBe("unidadesApoyo");
-        expect(item.habilitado).toBe(true);
-        expect(item.implementado).toBe(true);
+        expect(item.tipo).toBe("tipo");
+        expect(item.habilitado).toBeFalsy();
+        expect(item.implementado).toBeTruthy();
         expect(item.mensajeImplementado).toBe("En construcción");
-        expect(item.posicion).toBe(2);
+        expect(item.posicion).toBe(5);
         expect(item.version).toBe(1);
         expect(item.redirecTo).toBe(
           `tabs/tab3/menu-prestaciones/unidades?tipo=${
@@ -619,7 +669,9 @@ describe("Endpoints menus", () => {
 
         expect(item).toBeFalsy();
 
-        await expectAuditLog("DELETE /v1/configuracion-hrapp/menu/unidades/:_id");
+        await expectAuditLog(
+          "DELETE /v1/configuracion-hrapp/menu/unidades/:_id"
+        );
       });
     });
   });
