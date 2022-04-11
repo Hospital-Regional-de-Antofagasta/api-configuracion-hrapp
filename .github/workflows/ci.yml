@@ -22,6 +22,7 @@ jobs:
           PORT: "3000"
           HOST_NAME: "localhost"
           JWT_SECRET: "TEST"
+          JWT_SECRET_INTERNO: "TEST"
         run: |
           chmod +x ./gradlew
           ./gradlew build

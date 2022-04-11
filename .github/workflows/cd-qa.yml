@@ -13,9 +13,10 @@
         KEY: ${{ secrets.GCP_KEY }}
         API_ZONE: ${{ secrets.GCP_ZONE_QA }}
         API_CLUSTER: ${{ secrets.GCP_CLUSTER_QA }}
-        API_KEY: ${{ secrets.API_KEY }}
+        API_KEY: ${{ secrets.API_KEY_QA }}
         MONGO_IP: ${{ secrets.MONGO_IP_QA }}
         NODE_ENV: "dev"
+        I_JWT_KEY: ${{ secrets.I_JWT_KEY_QA }}
       steps:
         - name: Checkout
           uses: actions/checkout@v2
@@ -29,6 +30,7 @@
             PORT: "3000"
             HOST_NAME: "localhost"
             JWT_SECRET: "TEST"
+            JWT_SECRET_INTERNO: "TEST"
           run: |
             chmod +x ./gradlew
             ./gradlew helmInstallToCloud

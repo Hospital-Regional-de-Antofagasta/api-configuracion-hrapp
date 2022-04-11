@@ -59,11 +59,24 @@ spec:
                 secretKeyRef:
                   name: {{ include "api-configuracion-hrapp.secrets" . }}
                   key: mongo
+            - name: JWT_SECRET_INTERNO
+              valueFrom:
+                secretKeyRef:
+                  name: {{ include "api-configuracion-hrapp.secrets" . }}
+                  key: i-jwt-key
 
           {{- if .Values.resources }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           {{- end }}
+          volumeMounts:
+          - name: gcloud-access-volume
+            mountPath: /usr/src/app/gcskey.json
+            subPath: gcskey.json
+      volumes:
+        - name: gcloud-access-volume
+          secret:
+            secretName: gcloud-access
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}

@@ -1,5 +1,6 @@
 [
   {
+    "_id": "67832a43c8a5d50009611cab",
     "nombre": "Pediatría",
     "descripcion": "Servicios Clínicos",
     "servicios": [
@@ -11,26 +12,24 @@
     "atenciones": [
       {
         "nombre": "Secretaría",
-        "horario": [
-          {
-            "nota": "",
-            "atiendeFeriados": true,
-            "periodos": [
-              {
-                "dias": {
-                  "inicio": "lunes",
-                  "fin": "sábado"
-                },
-                "horas": [
-                  {
-                    "inicio": "08:00",
-                    "fin": "14:00"
-                  }
-                ]
-              }
-            ]
-          }
-        ],
+        "horario": {
+          "nota": "",
+          "atiendeFeriados": true,
+          "periodos": [
+            {
+              "dias": {
+                "inicio": "lunes",
+                "fin": "sábado"
+              },
+              "horas": [
+                {
+                  "inicio": "08:00",
+                  "fin": "14:00"
+                }
+              ]
+            }
+          ]
+        },
         "contactos": {
           "telefonos": ["552758965", "552758966"],
           "correos": ["correo@gmail.com", "correo2@gmail.com"]
@@ -38,26 +37,24 @@
       },
       {
         "nombre": "Encargado",
-        "horario": [
-          {
-            "nota": "Atención telefónica",
-            "atiendeFeriados": true,
-            "periodos": [
-              {
-                "dias": {
-                  "inicio": "lunes",
-                  "fin": "viernes"
-                },
-                "horas": [
-                  {
-                    "inicio": "08:00",
-                    "fin": "14:00"
-                  }
-                ]
-              }
-            ]
-          }
-        ],
+        "horario": {
+          "nota": "Atención telefónica",
+          "atiendeFeriados": true,
+          "periodos": [
+            {
+              "dias": {
+                "inicio": "lunes",
+                "fin": "viernes"
+              },
+              "horas": [
+                {
+                  "inicio": "08:00",
+                  "fin": "14:00"
+                }
+              ]
+            }
+          ]
+        },
         "contactos": {
           "telefonos": ["552758111", "552758222"],
           "correos": ["correo1@gmail.com", "correo5@gmail.com"]
@@ -66,6 +63,7 @@
     ],
     "referencias": [
       {
+        "_id": "67832a43c8a5d50009611cad",
         "ubicacion": "1 piso",
         "imagen": {
           "src": "https://via.placeholder.com/1000x500",
@@ -90,27 +88,25 @@
     "servicios": ["Oncología", "Cardiología Infantil", "Nutrición Infantil"],
     "atenciones": [
       {
-        "nombre": "",
-        "horario": [
-          {
-            "nota": "",
-            "atiendeFeriados": false,
-            "periodos": [
-              {
-                "dias": {
-                  "inicio": "lunes",
-                  "fin": "viernes"
-                },
-                "horas": [
-                  {
-                    "inicio": "08:00",
-                    "fin": "15:00"
-                  }
-                ]
-              }
-            ]
-          }
-        ],
+        "nombre": null,
+        "horario": {
+          "nota": "",
+          "atiendeFeriados": false,
+          "periodos": [
+            {
+              "dias": {
+                "inicio": "lunes",
+                "fin": "viernes"
+              },
+              "horas": [
+                {
+                  "inicio": "08:00",
+                  "fin": "15:00"
+                }
+              ]
+            }
+          ]
+        },
         "contactos": {
           "telefonos": ["552758965"],
           "correos": ["correo3@gmail.com"]
@@ -138,32 +134,31 @@
     "version": 1
   },
   {
+    "_id": "67832a43c8a5d50009611cad",
     "nombre": "Unidad serviciosClinicos",
     "descripcion": "Unidades de apoyo 2",
     "servicios": ["Oncología", "Nutrición Infantil"],
     "atenciones": [
       {
-        "nombre": "",
-        "horario": [
-          {
-            "nota": "",
-            "atiendeFeriados": false,
-            "periodos": [
-              {
-                "dias": {
-                  "inicio": "martes",
-                  "fin": "viernes"
-                },
-                "horas": [
-                  {
-                    "inicio": "08:00",
-                    "fin": "16:00"
-                  }
-                ]
-              }
-            ]
-          }
-        ],
+        "nombre": null,
+        "horario": {
+          "nota": "",
+          "atiendeFeriados": false,
+          "periodos": [
+            {
+              "dias": {
+                "inicio": "martes",
+                "fin": "viernes"
+              },
+              "horas": [
+                {
+                  "inicio": "08:00",
+                  "fin": "16:00"
+                }
+              ]
+            }
+          ]
+        },
         "contactos": {
           "telefonos": ["552758965"],
           "correos": ["correo3@gmail.com"]
@@ -172,7 +167,7 @@
     ],
     "referencias": [
       {
-        "ubicacion": "3 piso",
+        "ubicacion": "2 piso",
         "imagen": {
           "src": "https://via.placeholder.com/1000x500",
           "alt": "imagen",
@@ -196,27 +191,25 @@
     "servicios": ["Oncología", "Nutrición Infantil", "Nutrición"],
     "atenciones": [
       {
-        "nombre": "",
-        "horario": [
-          {
-            "nota": "",
-            "atiendeFeriados": false,
-            "periodos": [
-              {
-                "dias": {
-                  "inicio": "martes",
-                  "fin": "viernes"
-                },
-                "horas": [
-                  {
-                    "inicio": "08:00",
-                    "fin": "16:00"
-                  }
-                ]
-              }
-            ]
-          }
-        ],
+        "nombre": null,
+        "horario": {
+          "nota": "",
+          "atiendeFeriados": false,
+          "periodos": [
+            {
+              "dias": {
+                "inicio": "martes",
+                "fin": "viernes"
+              },
+              "horas": [
+                {
+                  "inicio": "08:00",
+                  "fin": "16:00"
+                }
+              ]
+            }
+          ]
+        },
         "contactos": {
           "telefonos": ["552758965"],
           "correos": ["correo3@gmail.com"]
@@ -254,27 +247,50 @@
     ],
     "atenciones": [
       {
-        "nombre": "",
-        "horario": [
-          {
-            "nota": "",
-            "atiendeFeriados": false,
-            "periodos": [
-              {
-                "dias": {
-                  "inicio": "martes",
-                  "fin": "viernes"
-                },
-                "horas": [
-                  {
-                    "inicio": "08:00",
-                    "fin": "16:00"
-                  }
-                ]
-              }
-            ]
-          }
-        ],
+        "nombre": "2",
+        "horario": {
+          "nota": "",
+          "atiendeFeriados": false,
+          "periodos": [
+            {
+              "dias": {
+                "inicio": "martes",
+                "fin": "viernes"
+              },
+              "horas": [
+                {
+                  "inicio": "08:00",
+                  "fin": "16:00"
+                }
+              ]
+            }
+          ]
+        },
+        "contactos": {
+          "telefonos": ["552758965"],
+          "correos": ["correo3@gmail.com"]
+        }
+      },
+      {
+        "nombre": "hola",
+        "horario": {
+          "nota": "",
+          "atiendeFeriados": false,
+          "periodos": [
+            {
+              "dias": {
+                "inicio": "martes",
+                "fin": "viernes"
+              },
+              "horas": [
+                {
+                  "inicio": "08:00",
+                  "fin": "16:00"
+                }
+              ]
+            }
+          ]
+        },
         "contactos": {
           "telefonos": ["552758965"],
           "correos": ["correo3@gmail.com"]
@@ -312,27 +328,25 @@
     ],
     "atenciones": [
       {
-        "nombre": "",
-        "horario": [
-          {
-            "nota": "",
-            "atiendeFeriados": false,
-            "periodos": [
-              {
-                "dias": {
-                  "inicio": "martes",
-                  "fin": "viernes"
-                },
-                "horas": [
-                  {
-                    "inicio": "08:00",
-                    "fin": "16:00"
-                  }
-                ]
-              }
-            ]
-          }
-        ],
+        "nombre": null,
+        "horario": {
+          "nota": "",
+          "atiendeFeriados": false,
+          "periodos": [
+            {
+              "dias": {
+                "inicio": "martes",
+                "fin": "viernes"
+              },
+              "horas": [
+                {
+                  "inicio": "08:00",
+                  "fin": "16:00"
+                }
+              ]
+            }
+          ]
+        },
         "contactos": {
           "telefonos": ["552758965"],
           "correos": ["correo3@gmail.com"]
@@ -354,9 +368,9 @@
         }
       }
     ],
-    "tipo": "serviciosClinicos3",
+    "tipo": "serviciosClinicos",
     "habilitado": false,
-    "posicion": 1,
-    "version": 2
+    "posicion": 8,
+    "version": 1
   }
 ]

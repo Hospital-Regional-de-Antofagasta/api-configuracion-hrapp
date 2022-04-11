@@ -4,54 +4,60 @@
     "title": "Servicios Clínicos",
     "subtitle": "Conoce información relevante respecto a todos los servicios",
     "tipo": "serviciosClinicos",
-    "habilitado": "true",
-    "implementado": "true",
+    "habilitado": true,
+    "implementado": true,
     "mensajeImplementado": "En construcción",
     "posicion": 1,
-    "version": 1
+    "version": 1,
+    "redirecTo": "tabs/tab3/menu-prestaciones/unidades?tipo=serviciosClinicos&titulo=Servicios+Clínicos"
   },
   {
     "icono": "user-nurse",
     "title": "Unidades de Apoyo y Terapéutico",
     "subtitle": "Conoce información relevante respecto a todas las unidades",
     "tipo": "unidadesApoyo",
-    "habilitado": "true",
-    "implementado": "true",
+    "habilitado": true,
+    "implementado": true,
     "mensajeImplementado": "En construcción",
     "posicion": 3,
-    "version": 1
+    "version": 1,
+    "redirecTo": "tabs/tab3/menu-prestaciones/unidades?tipo=unidadesApoyo&titulo=Unidades+de+Apoyo+y+Terapéutico"
   },
   {
+    "_id": "67832a43c8a5d50009607cab",
     "icono": "user-nurse",
     "title": "Otras Unidades",
     "subtitle": "Conoce información relevante respecto a todas las unidades",
     "tipo": "unidadesApoyo",
-    "habilitado": "true",
-    "implementado": "true",
+    "habilitado": true,
+    "implementado": true,
     "mensajeImplementado": "En construcción",
     "posicion": 2,
-    "version": 1
+    "version": 1,
+    "redirecTo": "tabs/tab3/menu-prestaciones/unidades?tipo=unidadesApoyo&titulo=Otras+Unidades"
   },
   {
     "icono": "user-nurse",
     "title": "deshabilitado",
     "subtitle": "Conoce información relevante respecto a todas las unidades",
     "tipo": "unidadesApoyo",
-    "habilitado": "false",
-    "implementado": "true",
+    "habilitado": false,
+    "implementado": true,
     "mensajeImplementado": "En construcción",
-    "posicion": 2,
-    "version": 1
+    "posicion": 4,
+    "version": 1,
+    "redirecTo": "tabs/tab3/menu-prestaciones/unidades?tipo=unidadesApoyo&titulo=deshabilitado"
   },
   {
     "icono": "user-nurse",
     "title": "Otras Unidades 2",
     "subtitle": "Conoce información relevante respecto a todas las unidades",
     "tipo": "unidadesApoyo",
-    "habilitado": "true",
-    "implementado": "true",
+    "habilitado": true,
+    "implementado": true,
     "mensajeImplementado": "En construcción",
     "posicion": 2,
-    "version": 2
+    "version": 2,
+    "redirecTo": "tabs/tab3/menu-prestaciones/unidades?tipo=unidadesApoyo&titulo=Otras+Unidades+2"
   }
 ]

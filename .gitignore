@@ -60,3 +60,4 @@ Thumbs.db
 build
 /.tests.*
 /key.json
+/gcskey.json
