@@ -19,12 +19,6 @@ const validarMinimo1 = (valor) => {
   return true;
 };
 
-const validarNoDuplicado = async (valor) => {
-  const valorExistente = await Unidades.findOne({ nombre: valor }).exec();
-  if (valorExistente) return false;
-  return true;
-};
-
 const validarDiaInicioMayorADiaFin = (dias) => {
   const { inicio, fin } = dias;
 
@@ -79,12 +73,6 @@ const validarNombreAtencion = (atenciones) => {
   return true;
 };
 
-const validarExisteItemMenuUnidad = async (valor) => {
-  const valorExistente = await MenuUnidades.findById(valor).exec();
-  if (!valorExistente) return false;
-  return true;
-};
-
 const validarIngresarAlt = (alt) => {
   if (!alt) return false;
   return true;
@@ -104,10 +92,6 @@ const Unidades = mongoose.model(
       ],
       maxLength: [50, "El nombre no puede superar los 50 caracteres."],
       minLength: [1, "El nombre es obligatorio."],
-      validate: {
-        validator: validarNoDuplicado,
-        message: "El nombre no puede ser duplicado.",
-      },
     },
     descripcion: {
       type: String,

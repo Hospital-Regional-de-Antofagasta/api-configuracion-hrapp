@@ -859,7 +859,7 @@ describe("Endpoints unidades", () => {
         .put("/v1/configuracion-hrapp/unidades/67832a43c8a5d50009611cab")
         .set("Authorization", tokenInterno)
         .send({
-          nombre: "Pediatría",
+          nombre: "Laboratorio Clínico",
           descripcion: "Descripción",
           servicios: [
             "Servicio 1.",
@@ -1057,6 +1057,172 @@ describe("Endpoints unidades", () => {
       }).exec();
 
       expect(unidad.nombre).toBe("Nombre");
+      expect(unidad.descripcion).toBe("Descripción");
+      expect(unidad.servicios).toEqual([
+        "Servicio 1.",
+        "Servicio 2.",
+        "Servicio 3.",
+        "Servicio 4.",
+      ]);
+      expect(unidad.atenciones[0].nombre).toBe("Nombre Atención");
+      expect(unidad.atenciones[0].horario.nota).toBe("Nota");
+      expect(unidad.atenciones[0].horario.atiendeFeriados).toBe(true);
+      expect(unidad.atenciones[0].horario.periodos[0].dias.inicio).toBe(
+        "lunes"
+      );
+      expect(unidad.atenciones[0].horario.periodos[0].dias.fin).toBe("lunes");
+      expect(unidad.atenciones[0].horario.periodos[0].horas[0].inicio).toBe(
+        "08:00"
+      );
+      expect(unidad.atenciones[0].horario.periodos[0].horas[0].fin).toBe(
+        "14:00"
+      );
+      expect(unidad.atenciones[0].contactos.telefonos).toEqual([
+        "123123123",
+        "552758966",
+      ]);
+      expect(unidad.atenciones[0].contactos.correos).toEqual([
+        "correo@gmail.com",
+        "correo2@gmail.com",
+      ]);
+      expect(unidad.atenciones[1].nombre).toBe("Encargado");
+      expect(unidad.atenciones[1].horario.nota).toBe("Atención telefónica");
+      expect(unidad.atenciones[1].horario.atiendeFeriados).toBe(true);
+      expect(unidad.atenciones[1].horario.periodos[0].dias.inicio).toBe(
+        "Viernes"
+      );
+      expect(unidad.atenciones[1].horario.periodos[0].dias.fin).toBe("sábado");
+      expect(unidad.atenciones[1].horario.periodos[0].horas[0].inicio).toBe(
+        "08:00"
+      );
+      expect(unidad.atenciones[1].horario.periodos[0].horas[0].fin).toBe(
+        "14:00"
+      );
+      expect(unidad.atenciones[1].contactos.telefonos).toEqual(["123123123"]);
+      expect(unidad.atenciones[1].contactos.correos).toEqual([]);
+      expect(unidad.referencias[0].ubicacion).toBe("1 piso");
+      expect(unidad.referencias[0].imagen.src).toBe(
+        "https://via.placeholder.com/1000x500"
+      );
+      expect(unidad.referencias[0].imagen.alt).toBe("imagen");
+      expect(unidad.referencias[0].imagen.srcset).toEqual([
+        "https://via.placeholder.com/30000x1500 2160w",
+        "https://via.placeholder.com/2000x1000 1080w",
+        "https://via.placeholder.com/1000x500 720w",
+        "https://via.placeholder.com/500x250 480w",
+      ]);
+      expect(unidad.tipo).toBe("serviciosClinicos");
+      expect(unidad.habilitado).toBe(true);
+      expect(unidad.posicion).toBe(6);
+      expect(unidad.version).toBe(1);
+
+      await expectAuditLog("PUT /v1/configuracion-hrapp/unidades/:_id");
+    });
+    it("Should update unidad without image with same nombre", async () => {
+      const response = await request
+        .put("/v1/configuracion-hrapp/unidades/67832a43c8a5d50009611cab")
+        .set("Authorization", tokenInterno)
+        .send({
+          nombre: "Pediatría",
+          descripcion: "Descripción",
+          servicios: [
+            "Servicio 1.",
+            "Servicio 2.",
+            "Servicio 3.",
+            "Servicio 4.",
+          ],
+          atenciones: [
+            {
+              nombre: "Nombre Atención",
+              horario: {
+                nota: "Nota",
+                atiendeFeriados: true,
+                periodos: [
+                  {
+                    dias: {
+                      inicio: "lunes",
+                      fin: "lunes",
+                    },
+                    horas: [
+                      {
+                        inicio: "08:00",
+                        fin: "14:00",
+                      },
+                    ],
+                  },
+                ],
+              },
+              contactos: {
+                telefonos: ["123123123", "552758966"],
+                correos: ["correo@gmail.com", "correo2@gmail.com"],
+              },
+            },
+            {
+              nombre: "Encargado",
+              horario: {
+                nota: "Atención telefónica",
+                atiendeFeriados: true,
+                periodos: [
+                  {
+                    dias: {
+                      inicio: "Viernes",
+                      fin: "sábado",
+                    },
+                    horas: [
+                      {
+                        inicio: "08:00",
+                        fin: "14:00",
+                      },
+                    ],
+                  },
+                ],
+              },
+              contactos: {
+                telefonos: ["123123123"],
+              },
+            },
+          ],
+          referencias: [
+            {
+              _id: "67832a43c8a5d50009611cad",
+              ubicacion: "1 piso",
+              imagen: {
+                src: "https://via.placeholder.com/500x250",
+                alt: "imagen",
+                srcset: [
+                  "https://via.placeholderr.com/30000x1500 2160w",
+                  "https://via.placeholder.com/2000x1000 1080w",
+                  "https://via.placeholder.com/1000x500 720w",
+                  "https://via.placeholder.com/500x250 480w",
+                ],
+              },
+            },
+          ],
+          tipo: "serviciosClinicos",
+          habilitado: true,
+          posicion: 6,
+          _id: "id",
+          __v: "v",
+          version: "version",
+        });
+
+      const mensaje = await getMensajes("success");
+
+      expect(response.status).toBe(200);
+      expect(response.body).toEqual({
+        respuesta: {
+          titulo: mensaje.titulo,
+          mensaje: mensaje.mensaje,
+          color: mensaje.color,
+          icono: mensaje.icono,
+        },
+      });
+
+      const unidad = await Unidades.findOne({
+        _id: "67832a43c8a5d50009611cab",
+      }).exec();
+
+      expect(unidad.nombre).toBe("Pediatría");
       expect(unidad.descripcion).toBe("Descripción");
       expect(unidad.servicios).toEqual([
         "Servicio 1.",

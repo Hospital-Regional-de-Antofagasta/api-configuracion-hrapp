@@ -2,6 +2,39 @@ const { getMensajes } = require("../config");
 const Unidades = require("../models/Unidades");
 const { manejarError } = require("../utils/errorController");
 
+exports.validateCreate = async (req, res, next) => {
+  try {
+    const { nombre } = req.body;
+
+    if (!(await uniqueNombre(nombre, null)))
+      return res.status(400).send({
+        respuesta: await getMensajes("badRequest"),
+        detalles_error: "El nombre no puede ser duplicado.",
+      });
+
+    next();
+  } catch (error) {
+    await manejarError(error, req, res);
+  }
+};
+
+exports.validateUpdate = async (req, res, next) => {
+  try {
+    const { _id } = req.params;
+    const { nombre } = req.body;
+
+    if (!(await uniqueNombre(nombre, _id)))
+      return res.status(400).send({
+        respuesta: await getMensajes("badRequest"),
+        detalles_error: "El nombre no puede ser duplicado.",
+      });
+
+    next();
+  } catch (error) {
+    await manejarError(error, req, res);
+  }
+};
+
 exports.unidadExists = async (req, res, next) => {
   try {
     const { _id } = req.params;
@@ -28,16 +61,7 @@ exports.unidadExists = async (req, res, next) => {
 
 exports.requireNewImages = async (req, res, next) => {
   try {
-    const {
-      nombre,
-      descripcion,
-      servicios,
-      atenciones,
-      referencias,
-      tipo,
-      habilitado,
-      posicion,
-    } = req.body;
+    const { referencias } = req.body;
 
     if (!referencias)
       return res.status(400).send({
@@ -50,7 +74,7 @@ exports.requireNewImages = async (req, res, next) => {
       });
 
     for (let referencia of referencias) {
-      const { ubicacion, imagen } = referencia;
+      const { imagen } = referencia;
 
       if (imagen) {
         const { imagenesEnviar } = imagen;
@@ -72,16 +96,7 @@ exports.requireNewImages = async (req, res, next) => {
 
 exports.invalidImages = async (req, res, next) => {
   try {
-    const {
-      nombre,
-      descripcion,
-      servicios,
-      atenciones,
-      referencias,
-      tipo,
-      habilitado,
-      posicion,
-    } = req.body;
+    const { referencias } = req.body;
 
     const regexResolucion = new RegExp(/^(800x400|1600x800|2400x1200)$/);
 
@@ -149,5 +164,14 @@ exports.invalidImages = async (req, res, next) => {
     next();
   } catch (error) {
     await manejarError(error, req, res);
+  }
+};
+
+const uniqueNombre = async (nombre, _id) => {
+  if (nombre) {
+    const unidadConMismoTitulo = _id
+      ? await Unidades.findOne({ nombre, _id: { $ne: _id } }).exec()
+      : await Unidades.findOne({ nombre }).exec();
+    return unidadConMismoTitulo ? false : true;
   }
 };
