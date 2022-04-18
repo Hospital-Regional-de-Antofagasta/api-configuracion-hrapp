@@ -277,7 +277,7 @@ describe("Endpoints menus", () => {
           .set("Authorization", tokenInterno)
           .send({
             icono: "user-nurse",
-            title: "Otras Unidades",
+            title: "Otras Unidadess",
             tipo: "unidadesApoyo",
             habilitado: true,
             posicion: 2,
@@ -549,6 +549,52 @@ describe("Endpoints menus", () => {
 
         expect(item.icono).toBe("new-icon");
         expect(item.title).toBe("Servicios");
+        expect(item.subtitle).toBe("Subtítulo");
+        expect(item.tipo).toBe("tipo");
+        expect(item.habilitado).toBeFalsy();
+        expect(item.implementado).toBeTruthy();
+        expect(item.mensajeImplementado).toBe("En construcción");
+        expect(item.posicion).toBe(5);
+        expect(item.version).toBe(1);
+        expect(item.redirecTo).toBe(
+          `tabs/tab3/menu-prestaciones/unidades?tipo=${
+            item.tipo
+          }&titulo=${item.title.replace(" ", "+")}`
+        );
+
+        await expectAuditLog("PUT /v1/configuracion-hrapp/menu/unidades/:_id");
+      });
+      it("Should update item for menu unidades with same title", async () => {
+        const response = await request
+          .put("/v1/configuracion-hrapp/menu/unidades/67832a43c8a5d50009607cab")
+          .set("Authorization", tokenInterno)
+          .send({
+            title: "Otras Unidades",
+            icono: "new-icon",
+            subtitle: "Subtítulo",
+            tipo: "tipo",
+            habilitado: false,
+            posicion: 5,
+          });
+
+        const mensaje = await getMensajes("success");
+
+        expect(response.status).toBe(200);
+        expect(response.body).toEqual({
+          respuesta: {
+            titulo: mensaje.titulo,
+            mensaje: mensaje.mensaje,
+            color: mensaje.color,
+            icono: mensaje.icono,
+          },
+        });
+
+        const item = await MenuUnidades.findOne({
+          _id: "67832a43c8a5d50009607cab",
+        }).exec();
+
+        expect(item.icono).toBe("new-icon");
+        expect(item.title).toBe("Otras Unidades");
         expect(item.subtitle).toBe("Subtítulo");
         expect(item.tipo).toBe("tipo");
         expect(item.habilitado).toBeFalsy();

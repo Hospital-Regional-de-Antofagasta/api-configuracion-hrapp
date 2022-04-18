@@ -2,12 +2,6 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const { regex } = require("../utils/regexValidaciones");
 
-const validarNoDuplicado = async (valor) => {
-  const valorExistente = await MenuUnidades.findOne({ title: valor }).exec();
-  if (valorExistente) return false;
-  return true;
-};
-
 const MenuUnidades = mongoose.model(
   "menu_unidades",
   new Schema({
@@ -33,10 +27,6 @@ const MenuUnidades = mongoose.model(
       ],
       maxLength: [50, "El título no puede superar los 50 caracteres."],
       minLength: [1, "El título es obligatorio."],
-      validate: {
-        validator: validarNoDuplicado,
-        message: "El título no puede ser duplicado.",
-      },
     },
     subtitle: {
       type: String,

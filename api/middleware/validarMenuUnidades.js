@@ -1,155 +1,37 @@
 const { getMensajes } = require("../config");
 const MenuUnidades = require("../models/MenuUnidades");
+const { manejarError } = require("../utils/errorController");
 
-exports.requiredData = async (req, res, next) => {
+exports.validateCreate = async (req, res, next) => {
   try {
-    const {
-      icono,
-      title,
-      subtitle,
-      tipo,
-      habilitado,
-      implementado,
-      mensajeImplementado,
-      posicion,
-    } = req.body;
+    const { title } = req.body;
 
-    if (!icono)
+    if (!(await uniqueTitle(title, null)))
       return res.status(400).send({
         respuesta: await getMensajes("badRequest"),
-        detalles_error: "Se debe ingresar el icono.",
-      });
-
-    if (!title)
-      return res.status(400).send({
-        respuesta: await getMensajes("badRequest"),
-        detalles_error: "Se debe ingresar el título.",
-      });
-
-    if (!subtitle)
-      return res.status(400).send({
-        respuesta: await getMensajes("badRequest"),
-        detalles_error: "Se debe ingresar el subtítulo.",
-      });
-
-    if (!tipo)
-      return res.status(400).send({
-        respuesta: await getMensajes("badRequest"),
-        detalles_error: "Se debe ingresar el tipo.",
-      });
-
-    if (habilitado === null || habilitado === "")
-      return res.status(400).send({
-        respuesta: await getMensajes("badRequest"),
-        detalles_error: "Se debe ingresar si esta habilitado o no.",
-      });
-
-    if (!posicion)
-      return res.status(400).send({
-        respuesta: await getMensajes("badRequest"),
-        detalles_error: "Se debe ingresar la posición.",
+        detalles_error: "El nombre no puede ser duplicado.",
       });
 
     next();
   } catch (error) {
-    if (process.env.NODE_ENV === "dev")
-      return res.status(500).send({
-        respuesta: await getMensajes("serverError"),
-        detalles_error: {
-          nombre: error.name,
-          mensaje: error.message,
-        },
-      });
-    res.status(500).send({ respuesta: await getMensajes("serverError") });
+    await manejarError(error, req, res);
   }
 };
 
-exports.invalidaData = async (req, res, next) => {
+exports.validateUpdate = async (req, res, next) => {
   try {
-    const {
-      icono,
-      title,
-      subtitle,
-      tipo,
-      habilitado,
-      implementado,
-      mensajeImplementado,
-      posicion,
-    } = req.body;
+    const { _id } = req.params;
+    const { title } = req.body;
 
-    const regexString = new RegExp(
-      /^[\s\w\.\,\-áéíóúÁÉÍÓÚñÑ%$¡!¿?(){}[\]:;'"+*]+$/
-    );
-    const regexNumber = new RegExp(/^\d*$/);
-    const regexBoolean = new RegExp(/^true|false$/);
-    const regexTipo = new RegExp(/^[a-zA-Z]{1,50}$/);
-
-    if (icono !== undefined) {
-      if (!regexString.test(icono))
-        return res.status(400).send({
-          respuesta: await getMensajes("badRequest"),
-          detalles_error: "El icono no tiene el formato correcto.",
-        });
-    }
-
-    if (title !== undefined) {
-      if (!regexString.test(title))
-        return res.status(400).send({
-          respuesta: await getMensajes("badRequest"),
-          detalles_error: "El título no tiene el formato correcto.",
-        });
-    }
-
-    if (subtitle !== undefined) {
-      if (!regexString.test(subtitle))
-        return res.status(400).send({
-          respuesta: await getMensajes("badRequest"),
-          detalles_error: "El subtítulo no tiene el formato correcto.",
-        });
-    }
-
-    if (tipo !== undefined) {
-      if (!regexTipo.test(tipo))
-        return res.status(400).send({
-          respuesta: await getMensajes("badRequest"),
-          detalles_error: "El tipo no tiene el formato correcto.",
-        });
-    }
-
-    if (habilitado !== undefined) {
-      if (!regexBoolean.test(habilitado))
-        return res.status(400).send({
-          respuesta: await getMensajes("badRequest"),
-          detalles_error:
-            "Si esta habilitado o no no tiene el formato correcto.",
-        });
-    }
-
-    if (posicion !== undefined) {
-      if (!regexNumber.test(posicion))
-        return res.status(400).send({
-          respuesta: await getMensajes("badRequest"),
-          detalles_error: "La posición no tiene el formato correcto.",
-        });
-
-      if (posicion <= 0)
-        return res.status(400).send({
-          respuesta: await getMensajes("badRequest"),
-          detalles_error: "La posición debe ser mayor a 0.",
-        });
-    }
+    if (!(await uniqueTitle(title, _id)))
+      return res.status(400).send({
+        respuesta: await getMensajes("badRequest"),
+        detalles_error: "El nombre no puede ser duplicado.",
+      });
 
     next();
   } catch (error) {
-    if (process.env.NODE_ENV === "dev")
-      return res.status(500).send({
-        respuesta: await getMensajes("serverError"),
-        detalles_error: {
-          nombre: error.name,
-          mensaje: error.message,
-        },
-      });
-    res.status(500).send({ respuesta: await getMensajes("serverError") });
+    await manejarError(error, req, res);
   }
 };
 
@@ -173,14 +55,15 @@ exports.itemExists = async (req, res, next) => {
 
     next();
   } catch (error) {
-    if (process.env.NODE_ENV === "dev")
-      return res.status(500).send({
-        respuesta: await getMensajes("serverError"),
-        detalles_error: {
-          nombre: error.name,
-          mensaje: error.message,
-        },
-      });
-    res.status(500).send({ respuesta: await getMensajes("serverError") });
+    await manejarError(error, req, res);
+  }
+};
+
+const uniqueTitle = async (title, _id) => {
+  if (title) {
+    const menuUnidadConMismoTitulo = _id
+      ? await MenuUnidades.findOne({ title, _id: { $ne: _id } }).exec()
+      : await MenuUnidades.findOne({ title }).exec();
+    return menuUnidadConMismoTitulo ? false : true;
   }
 };

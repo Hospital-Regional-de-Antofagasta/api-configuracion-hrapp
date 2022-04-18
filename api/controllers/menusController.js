@@ -89,7 +89,8 @@ exports.createItemUnidad = async (req, res) => {
     item.mensajeImplementado = "En construcción";
     item.version = 1;
 
-    item.redirecTo = `tabs/tab3/menu-prestaciones/unidades?tipo=${item.tipo}&titulo=${item.title.replace(" ", "+")}`;
+    if (item.title)
+      item.redirecTo = `tabs/tab3/menu-prestaciones/unidades?tipo=${item.tipo}&titulo=${item.title.replace(" ", "+")}`;
 
     const newItemMenuUnidad = await MenuUnidades.create(item);
 

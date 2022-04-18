@@ -5,6 +5,8 @@ const {
   unidadExists,
   requireNewImages,
   invalidImages,
+  validateCreate,
+  validateUpdate,
 } = require("../middleware/validarUnidades");
 
 const router = express.Router();
@@ -17,6 +19,7 @@ router.post(
   hasRole(["user", "admin"]),
   requireNewImages,
   invalidImages,
+  validateCreate,
   unidadesController.create
 );
 
@@ -26,6 +29,7 @@ router.put(
   hasRole(["user", "admin"]),
   unidadExists,
   invalidImages,
+  validateUpdate,
   unidadesController.update
 );
 
