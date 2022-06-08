@@ -8,7 +8,7 @@ const actions = [
   "POST /v1/configuracion-hrapp/menu/unidades",
   "PUT /v1/configuracion-hrapp/menu/unidades/:_id",
   "DELETE /v1/configuracion-hrapp/menu/unidades/:_id",
-  "PUT /v1/configuracion-hrapp/mensajes-informacion"
+  "PUT /v1/configuracion-hrapp/mensajes-informacion",
 ];
 
 const UsuariosInternos = mongoose.model(

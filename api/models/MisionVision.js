@@ -3,19 +3,22 @@ const Schema = mongoose.Schema;
 
 const MisionVision = mongoose.model(
   "mision_vision",
-  new Schema({
-    mision: {
-      titulo: String,
-      texto: String,
-      icono: String,
+  new Schema(
+    {
+      mision: {
+        titulo: String,
+        texto: String,
+        icono: String,
+      },
+      vision: {
+        titulo: String,
+        texto: String,
+        icono: String,
+      },
+      version: Number,
     },
-    vision: {
-      titulo: String,
-      texto: String,
-      icono: String,
-    },
-    version: Number,
-  }),
+    { timestamps: true }
+  ),
   "mision_vision"
 );
 

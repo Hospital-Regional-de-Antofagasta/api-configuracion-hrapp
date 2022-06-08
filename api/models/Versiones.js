@@ -3,11 +3,14 @@ const Schema = mongoose.Schema;
 
 const Versiones = mongoose.model(
   "versiones",
-  new Schema({
-    version: String,
-    recordarActualizacion: Boolean,
-    deprecada: Boolean,
-  }),
+  new Schema(
+    {
+      version: String,
+      recordarActualizacion: Boolean,
+      deprecada: Boolean,
+    },
+    { timestamps: true }
+  ),
   "versiones"
 );
 
