@@ -13,6 +13,7 @@ const versiones = require("./routes/versiones");
 const slidesGuiaInicio = require("./routes/slidesGuiaInicio");
 const seccionAyuda = require("./routes/seccionAyuda");
 const diccionarioSiglas = require("./routes/diccionarioSiglas");
+const diccionarioDispositivos = require("./routes/diccionarioDispositivos");
 
 const app = express();
 
@@ -49,6 +50,8 @@ app.use("/v1/configuracion-hrapp/slides-guia-inicio", slidesGuiaInicio);
 app.use("/v1/configuracion-hrapp/seccion-ayuda", seccionAyuda);
 
 app.use("/v1/configuracion-hrapp/diccionario-siglas", diccionarioSiglas);
+
+app.use("/v1/configuracion-hrapp/diccionario_dispositivos", diccionarioDispositivos);
 
 if (require.main === module) { // true if file is executed
   process.on("SIGINT",function (){
